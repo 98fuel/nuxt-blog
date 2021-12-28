@@ -13,6 +13,10 @@
               :key="category"
             >{{category}}</nuxt-link>
           </div>
+          <div class="article-visitors">
+            访问:
+            <span id="twikoo_visitors">0</span>
+          </div>
         </div>
         <div class="article-content markdown-body" v-html="article.html"></div>
         <div class="article-copyright"></div>
@@ -43,9 +47,7 @@ export default {
     Comments
   },
   async asyncData ({ params }) {
-    // TODO 路径错误跳转到404页
     const article = await import(`~/content/posts/${params.slug}.md`);
-    // console.log(article);
     return {
       article
     };
@@ -75,8 +77,10 @@ export default {
     }
     .article-meta {
       padding: 0;
-      margin: 15px 0 0;
+      margin: 0;
+      border-bottom: 1px solid #eee;
       color: #6e7173;
+      font-size: 0.9em;
       text-indent: 0.15em;
       display: flex;
       align-items: center;
@@ -102,10 +106,23 @@ export default {
           padding-right: 0.3em;
         }
       }
+      .article-visitors {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .link {
+          margin-right: 6px;
+        }
+        &::before {
+          font-family: 'FontAwesome';
+          content: '\f06e';
+          padding-right: 0.3em;
+        }
+      }
     }
     .article-content {
-      font-size: 15px;
-      line-height: 1.77;
+      font-size: 16px;
+      line-height: 1.8;
       color: #444;
       padding-top: 15px;
       text-align: justify;
@@ -118,12 +135,13 @@ export default {
       align-items: center;
       flex-wrap: wrap;
       margin-top: 2em;
+      &::before {
+        font-family: 'FontAwesome';
+        content: '\f02b';
+        margin-right: 10px;
+      }
       .link {
-        margin-right: 1em;
-        &::before {
-          font-family: 'FontAwesome';
-          content: '\f02b';
-        }
+        margin-right: 10px;
       }
     }
     .article-nav {

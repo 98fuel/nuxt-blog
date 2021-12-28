@@ -56,17 +56,17 @@ export default {
     box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
     background: #fff;
     .archive-list {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 2;
       padding-bottom: 0.8em;
       .archive-item {
         .archive-time {
+          font-weight: 600;
           margin: 0;
           font-size: 1.5rem;
         }
         .article-list {
           margin: 15px 0;
-          padding-left: 20px;
           list-style: none;
           .article-item {
             .article-date {

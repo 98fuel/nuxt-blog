@@ -12,20 +12,24 @@
       <nuxt-link to="/" class="nav-link" exact-active-class="current">
         <i class="fa fa-home"> 首页</i>
       </nuxt-link>
+      
       <nuxt-link to="/archives" class="nav-link" exact-active-class="current">
         <i class="fa fa-archive"> 归档</i>
       </nuxt-link>
+
       <!-- <nuxt-link to="/tags" class="nav-link" exact-active-class="current">
         <i class="fa fa-tag"> 标签</i>
       </nuxt-link> -->
-      <nuxt-link to="/about" class="nav-link" exact-active-class="current">
-        <i class="fa fa-user"> 关于</i>
-      </nuxt-link>
+      
       <!-- <nuxt-link to="/history" class="nav-link" exact-active-class="current">
         <i class="fa fa-book"> 历史</i>
       </nuxt-link> -->
       <nuxt-link to="/message" class="nav-link" exact-active-class="current">
         <i class="fa fa-comments"> 留言</i>
+      </nuxt-link>
+
+      <nuxt-link to="/about" class="nav-link" exact-active-class="current">
+        <i class="fa fa-user"> 关于</i>
       </nuxt-link>
     </div>
   </header>

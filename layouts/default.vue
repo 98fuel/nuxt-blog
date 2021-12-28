@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  max-width: 1150px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #fff;
   box-shadow: 0 0 6px 4px rgb(0 0 0 / 5%);

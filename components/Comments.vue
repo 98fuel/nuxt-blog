@@ -1,11 +1,13 @@
 <template>
-  <div class="comments">
-    <!-- Twikoo -->
-    <div id="tcomment"></div>
-    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.9/dist/twikoo.all.min.js"></script>
-    <!-- lightGallery -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery.css" />
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js"></script>
+  <div class="wrapper">
+    <div class="archive">
+      <!-- Twikoo -->
+      <div id="tcomment"></div>
+      <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.9/dist/twikoo.all.min.js"></script>
+      <!-- lightGallery -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery.css" />
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js"></script>
+    </div>
   </div>
 </template>
 
@@ -67,5 +69,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.wrapper {
+  padding: 0 2%;
+  .archive {
+    padding: 25px 3% 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+    background: #fff;
+  }
+}
 </style>

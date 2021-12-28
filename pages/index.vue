@@ -6,6 +6,14 @@
       </h1>
       <div class="article-meta">
         <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+        <div class="article-category">
+          <nuxt-link
+            class="link"
+            :to="`/categories/${category}`"
+            v-for="category in article.attributes.categories"
+            :key="category"
+          >{{category}}</nuxt-link>
+        </div>
       </div>
       <div class="article-content markdown-body" v-html="article.summary"></div>
       <div class="article-more">
@@ -86,16 +94,31 @@ export default {
     }
     .article-meta {
       padding: 0;
-      margin: 15px 0 0;
+      margin: 0;
       color: #6e7173;
+      font-size: 0.9em;
       text-indent: 0.15em;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       .article-date {
+        margin-right: 12px;
         &::before {
           font-family: 'FontAwesome';
           content: '\f073';
+          padding-right: 0.3em;
+        }
+      }
+      .article-category {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .link {
+          margin-right: 6px;
+        }
+        &::before {
+          font-family: 'FontAwesome';
+          content: '\f07c';
           padding-right: 0.3em;
         }
       }

@@ -1,16 +1,22 @@
 <template>
   <div class="wrapper">
     <div class="archive">
-      <h2>关于</h2>
-      <div class="article-content markdown-body">
-
-      </div>
+      <h2>{{ article.attributes.title }}</h2>
+      <div class="article-content markdown-body" v-html="article.html"></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  async asyncData ({ params }) {
+    // 调用 about.md 内的数据
+    const article = await import(`~/content/about.md`);
+    return {
+      article
+    };
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -22,7 +28,12 @@ export default {}
     border-radius: 4px;
     box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
     background: #fff;
-    
+    .article-content {
+      font-family: 'HYQiHei';
+      line-height: 1.8;
+      color: #444;
+      margin-top: 20px;
+    }
   }
 }
 </style>

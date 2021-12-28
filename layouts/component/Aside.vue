@@ -3,10 +3,10 @@
     <div class="wrapper">
       <!-- <div class="widget">
         <input class="search" type="text" placeholder="Search" maxlength="20" />
-      </div> -->
+      </div>-->
       <div class="widget">
         <div class="widget-title">
-          <i class="fa fa-folder-o"> 分类</i>
+          <i class="fa fa-folder-o">分类</i>
         </div>
         <ul class="category-list">
           <li class="category-list-item" v-for="category in categories" :key="category">
@@ -16,7 +16,7 @@
       </div>
       <div class="widget">
         <div class="widget-title">
-          <i class="fa fa-tag"> 标签</i>
+          <i class="fa fa-tag">标签</i>
         </div>
         <div class="tag-list">
           <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
@@ -24,32 +24,15 @@
       </div>
       <div class="widget">
         <div class="widget-title">
-          <i class="fa fa-file-o"> 最近文章</i>
+          <i class="fa fa-file-o">最近文章</i>
         </div>
         <ul class="article-list">
-          <li class="article-list-item" v-for="article in rencentArticles" :key="article.attributes.title">
-            <nuxt-link class="link" :to="article.path">
-              {{ article.attributes.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </div>
-      <div class="widget">
-        <div class="widget-title">
-          <i class="fa fa-external-link"> 友情链接</i>
-        </div>
-        <ul class="friend-list">
-          <li class="friend-list-item">
-            <a class="link" title="链接1" href="/" target="_blank">链接1</a>
-          </li>
-          <li class="friend-list-item">
-            <a class="link" title="链接2" href="/" target="_blank">链接2</a>
-          </li>
-          <li class="friend-list-item">
-            <a class="link" title="链接3" href="/" target="_blank">链接3</a>
-          </li>
-          <li class="friend-list-item">
-            <a class="link" title="链接4" href="/" target="_blank">链接4</a>
+          <li
+            class="article-list-item"
+            v-for="article in rencentArticles"
+            :key="article.attributes.title"
+          >
+            <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
           </li>
         </ul>
       </div>
@@ -59,7 +42,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       categories: [],
       tags: [],
@@ -67,7 +50,7 @@ export default {
     }
   },
   methods: {
-    getCategories(articles) {
+    getCategories (articles) {
       const categories = []
       articles.forEach(article => {
         article.attributes.categories.forEach(category => {
@@ -78,7 +61,7 @@ export default {
       })
       return categories
     },
-    getTags(articles) {
+    getTags (articles) {
       const tags = []
       articles.forEach(article => {
         article.attributes.tags.forEach(tag => {
@@ -107,15 +90,15 @@ export default {
 <style lang="scss" scoped>
 .aside {
   width: 25%;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
   .wrapper {
     word-wrap: break-word;
     .widget {
       background: #fff;
       margin-top: 20px;
       padding: 10px 4%;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
       .widget-title {
-        color: #6E7173;
+        color: #6e7173;
         line-height: 2.7;
         margin-top: 0;
         font-size: 16px;
