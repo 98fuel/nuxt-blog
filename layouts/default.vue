@@ -35,14 +35,13 @@ export default {
   background: #fff;
   box-shadow: 0 0 6px 4px rgb(0 0 0 / 5%);
   .container {
-    padding: 0 60px;
     display: flex;
+    background: #f9f9f9;
   }
 }
 @media print, screen and (max-width: 48em) {
   .layout {
     .container {
-      padding: 0 30px;
       display: block;
     }
   }
@@ -50,7 +49,7 @@ export default {
 @media print, screen and (max-width: 35.5em) {
   .layout {
     .container {
-      padding: 0 20px;
+     
     }
   }
 }

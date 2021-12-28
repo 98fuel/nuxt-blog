@@ -11,8 +11,6 @@ export default {}
 <style lang="scss" scoped>
 .main {
   width: 75%;
-  padding-right: 50px;
-  padding-top: 20px;
 }
 @media print, screen and (max-width: 48em) {
   .main {

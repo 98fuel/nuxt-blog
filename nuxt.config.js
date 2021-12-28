@@ -31,7 +31,7 @@ export default {
       { hid: 'description', name: 'description', content: '子舒 | 个人博客 | Blog | Markdown | Vue | Nuxt' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*

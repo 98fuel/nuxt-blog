@@ -69,10 +69,11 @@ export default {};
       font-size: 13px;
       border: 1px solid transparent;
       &:hover {
-        border-bottom-color: #444;
+        color: #fff;
+        border-bottom-color: #fff;
       }
       &.current {
-        // border: 1px solid #ddd;
+        color: #fff;
         border-bottom-color: #fff;
       }
     }
