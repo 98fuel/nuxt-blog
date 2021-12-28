@@ -107,16 +107,13 @@ export default {
 <style lang="scss" scoped>
 .aside {
   width: 25%;
-  padding-top: 40px;
-  background: #fff;
   box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
   .wrapper {
-    border-left: 1px solid #ddd;
-    padding-left: 35px;
-    padding-bottom: 20px;
     word-wrap: break-word;
     .widget {
-      margin-bottom: 30px;
+      background: #fff;
+      margin-top: 20px;
+      padding: 10px 4%;
       .widget-title {
         color: #6E7173;
         line-height: 2.7;

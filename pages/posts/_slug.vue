@@ -1,42 +1,46 @@
 <template>
-  <div class="wrapper">
-    <article class="article">
-      <h1 class="article-title">{{ article.attributes.title }}</h1>
-      <div class="article-meta">
-        <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-        <div class="article-category">
+  <div>
+    <div class="wrapper">
+      <article class="article">
+        <h1 class="article-title">{{ article.attributes.title }}</h1>
+        <div class="article-meta">
+          <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+          <div class="article-category">
+            <nuxt-link
+              class="link"
+              :to="`/categories/${category}`"
+              v-for="category in article.attributes.categories"
+              :key="category"
+            >{{category}}</nuxt-link>
+          </div>
+        </div>
+        <div class="article-content markdown-body" v-html="article.html"></div>
+        <div class="article-copyright"></div>
+        <div class="article-tags">
           <nuxt-link
             class="link"
-            :to="`/categories/${category}`"
-            v-for="category in article.attributes.categories"
-            :key="category"
-          >{{category}}</nuxt-link>
+            :to="`/tags/${tag}`"
+            v-for="tag in article.attributes.tags"
+            :key="tag"
+          >{{tag}}</nuxt-link>
         </div>
-      </div>
-      <div class="article-content markdown-body" v-html="article.html"></div>
-      <div class="article-copyright"></div>
-      <div class="article-tags">
-        <nuxt-link
-          class="link"
-          :to="`/tags/${tag}`"
-          v-for="tag in article.attributes.tags"
-          :key="tag"
-        >{{tag}}</nuxt-link>
-      </div>
-      <div class="article-nav">
+        <!-- <div class="article-nav">
         <nuxt-link class="link" to="/">上一篇文章</nuxt-link>
         <nuxt-link class="link" to="/">下一篇文章</nuxt-link>
-      </div>
-    </article>
+        </div>-->
+      </article>
+    </div>
+    <Comments />
   </div>
 </template>
 
 <script>
 import { getArticles, getPagerCount, formatDate } from '@/util'
+import Comments from '@/components/Comments'
 
 export default {
   components: {
-
+    Comments
   },
   async asyncData ({ params }) {
     // TODO 路径错误跳转到404页
@@ -67,8 +71,7 @@ export default {
       margin: 0;
       color: #555;
       text-align: left;
-      font: bold 25px/1.1 'ff-tisa-web-pro', Cambria, 'Times New Roman', Georgia,
-        Times, sans-serif;
+      font-weight: 600;
     }
     .article-meta {
       padding: 0;
@@ -108,6 +111,7 @@ export default {
       text-align: justify;
       text-justify: distribute;
       word-break: normal;
+      font-family: 'HYQiHei';
     }
     .article-tags {
       display: flex;

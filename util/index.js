@@ -14,6 +14,7 @@ export function getPagerCount (totalCount, perCount) {
   return pagerCount
 }
 
+// 显示 年、月、日
 export function formatDate (date) {
   let year = new Date(date).getFullYear()
   let month = new Date(date).getMonth() + 1
@@ -21,6 +22,15 @@ export function formatDate (date) {
   month = month < 10 ? `0${month}` : month
   day = day < 10 ? `0${day}` : day
   return `${year}年${month}月${day}日`
+}
+
+// 显示 月、日
+export function formatDateArticle (date) {
+  let month = new Date(date).getMonth() + 1
+  let day = new Date(date).getDate()
+  month = month < 10 ? `0${month}` : month
+  day = day < 10 ? `0${day}` : day
+  return `${month}月${day}日`
 }
 
 export function formatArticles (articles, perCount) {

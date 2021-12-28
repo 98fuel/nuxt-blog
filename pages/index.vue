@@ -79,8 +79,7 @@ export default {
       margin: 0;
       color: #555;
       text-align: left;
-      font: 500 25px/1.1 'ff-tisa-web-pro', Cambria, 'Times New Roman', Georgia,
-        Times, sans-serif;
+      font-weight: 600;
       .link {
         color: #555;
       }

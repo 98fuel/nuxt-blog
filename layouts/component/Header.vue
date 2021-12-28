@@ -43,7 +43,7 @@ export default {};
   position: relative;
   background-image: linear-gradient(to right, #2E4C6D, #DADDFC);
   .site-name {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     .logo {
       display: block;
       font-size: 26px;
@@ -60,13 +60,13 @@ export default {};
     }
   }
   .nav-menu {
-    margin: 10px 0 -1px;
+    margin: 10px 0 2px;
     padding: 0;
     .nav-link {
       padding: 3px 20px 3px;
       line-height: 30px;
       color: #444;
-      font-size: 13px;
+      font-size: 16px;
       border: 1px solid transparent;
       &:hover {
         color: #fff;
