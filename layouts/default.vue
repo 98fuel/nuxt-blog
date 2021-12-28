@@ -30,24 +30,28 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  padding: 0 60px;
   max-width: 1150px;
   margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 6px 4px rgb(0 0 0 / 5%);
   .container {
+    padding: 0 60px;
     display: flex;
   }
 }
 @media print, screen and (max-width: 48em) {
   .layout {
-    padding: 0 30px;
     .container {
+      padding: 0 30px;
       display: block;
     }
   }
 }
 @media print, screen and (max-width: 35.5em) {
   .layout {
-    padding: 0 20px;
+    .container {
+      padding: 0 20px;
+    }
   }
 }
 </style>

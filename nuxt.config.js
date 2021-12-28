@@ -3,7 +3,7 @@ import glob from 'glob'
 import Mode from 'frontmatter-markdown-loader/mode'
 import MarkdownIt from 'markdown-it'
 
-const markdownPaths = ['blog']
+const markdownPaths = ['posts']
 
 export default {
   /*
@@ -31,7 +31,7 @@ export default {
       { hid: 'description', name: 'description', content: '子舒 | 个人博客 | Blog | Markdown | Vue | Nuxt' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }
     ]
   },
   /*

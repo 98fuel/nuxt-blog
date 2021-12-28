@@ -1,9 +1,9 @@
 <template>
   <aside class="aside">
     <div class="wrapper">
-      <div class="widget">
+      <!-- <div class="widget">
         <input class="search" type="text" placeholder="Search" maxlength="20" />
-      </div>
+      </div> -->
       <div class="widget">
         <div class="widget-title">
           <i class="fa fa-folder-o"> 分类</i>

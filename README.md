@@ -1,11 +1,14 @@
 # blog
 
 源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
-在线预览: [http://81.69.240.210/nuxt-blog](http://81.69.240.210/nuxt-blog)
+
+在线预览: [http://81.69.240.210](http://81.69.240.210)
 
 ## 介绍
 
-基于vue+nuxt.js技术实现的静态博客，作为个人项目，可能会存在一些bug，遇到问题请提 
+基于 vue+nuxt.js 技术实现的静态博客，因为对后端不是很了解，所以没有写后台管理
+
+作为个人项目，可能会存在一些bug，遇到问题请提 issuse
 
 ## 使用
 

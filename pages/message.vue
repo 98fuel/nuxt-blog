@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    留言
+    <h2>留言</h2>
   </div>
 </template>
 

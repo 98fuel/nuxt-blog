@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="wrapper">
-      Copyright © 2020 -2021<a href="/">子舒的博客</a>, 技术栈使用 vue + nuxt.js 搭建而成。
+      Copyright © 2020 -2021<a href="/">子舒的博客</a>, 基于 vue + nuxt.js 构建而成。
     </div>
   </footer>
 </template>

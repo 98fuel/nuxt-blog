@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    关于
+    <h2>关于</h2>
   </div>
 </template>
 

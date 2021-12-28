@@ -12,13 +12,16 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
-
+@font-face {
+  font-family: 'HYQiHei';
+  src: url("./HYQiHei-50S.woff") format("truetype");
+}
 body {
-  font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
-  line-height: 1.15;
-  font-size: 14px;
+  font-family: 'HYQiHei';
+  line-height: 1.8;
+  font-size: 16px;
   color: #444;
-  background-color: #fff;
+  background-color: #E1E5EA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

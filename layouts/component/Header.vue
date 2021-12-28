@@ -1,8 +1,9 @@
 <template>
   <header class="header">
     <div class="site-name">
-      <h1 class="hidden">子舒的博客</h1>
-      <nuxt-link class="logo" to="/">子舒的博客</nuxt-link>
+      <h1>
+        <nuxt-link class="logo" to="/">子舒的博客</nuxt-link>
+      </h1>
       <p class="description">
         路漫漫其修远兮，吾将上下而求索！
       </p>
@@ -14,16 +15,16 @@
       <nuxt-link to="/archives" class="nav-link" exact-active-class="current">
         <i class="fa fa-archive"> 归档</i>
       </nuxt-link>
-      <nuxt-link to="/tags" class="nav-link" exact-active-class="current">
+      <!-- <nuxt-link to="/tags" class="nav-link" exact-active-class="current">
         <i class="fa fa-tag"> 标签</i>
-      </nuxt-link>
+      </nuxt-link> -->
       <nuxt-link to="/about" class="nav-link" exact-active-class="current">
         <i class="fa fa-user"> 关于</i>
       </nuxt-link>
       <!-- <nuxt-link to="/history" class="nav-link" exact-active-class="current">
         <i class="fa fa-book"> 历史</i>
       </nuxt-link> -->
-      <nuxt-link to="/guestbook" class="nav-link" exact-active-class="current">
+      <nuxt-link to="/message" class="nav-link" exact-active-class="current">
         <i class="fa fa-comments"> 留言</i>
       </nuxt-link>
     </div>
@@ -36,40 +37,31 @@ export default {};
 
 <style lang="scss" scoped>
 .header {
-  padding: 58px 0 0;
-  text-align: left;
+  padding: 30px 0 0;
+  text-align: center;
   border-bottom: 1px solid #ddd;
   position: relative;
+  background-image: linear-gradient(to right, #2E4C6D, #DADDFC);
   .site-name {
     margin-bottom: 40px;
-    .hidden {
-      padding: 0;
-      margin: 0;
-      height: 0;
-      overflow: hidden;
-      display: none;
-      font-weight: 400;
-    }
     .logo {
-      font: 26px/1.12 "Times New Roman", Georgia, Times, sans-serif;
-      color: #555;
+      display: block;
+      font-size: 26px;
+      font-family: "Times New Roman", Georgia, Times, sans-serif;
+      color: #000;
       word-break: break-all;
       &:hover {
-        color: #777;
+        opacity: 0.9;
       }
     }
     .description {
       margin: 0.2em 0 0;
-      color: #999;
+      color: #000;
     }
   }
   .nav-menu {
-    display: flex;
     margin: 10px 0 -1px;
     padding: 0;
-    position: absolute;
-    right: 0;
-    bottom: 0;
     .nav-link {
       padding: 3px 20px 3px;
       line-height: 30px;
@@ -80,7 +72,7 @@ export default {};
         border-bottom-color: #444;
       }
       &.current {
-        border: 1px solid #ddd;
+        // border: 1px solid #ddd;
         border-bottom-color: #fff;
       }
     }
