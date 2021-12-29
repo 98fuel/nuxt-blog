@@ -79,6 +79,7 @@ export default {
     .article-meta {
       padding: 0;
       margin: 0;
+      margin-top: 4px;
       border-bottom: 1px solid #eee;
       color: #6e7173;
       font-size: 0.9em;
@@ -123,13 +124,14 @@ export default {
     }
     .article-content {
       font-size: 16px;
-      line-height: 1.8;
+      line-height: 2;
       color: #444;
       padding-top: 15px;
       text-align: left;
       text-justify: distribute;
       word-break: normal;
       font-family: 'HYQiHei';
+      
     }
     .article-tags {
       display: flex;

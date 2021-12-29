@@ -30,7 +30,7 @@ export default {
     background: #fff;
     .article-content {
       font-family: 'HYQiHei';
-      line-height: 1.8;
+      line-height: 2;
       color: #444;
       margin-top: 20px;
     }

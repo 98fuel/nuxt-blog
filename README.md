@@ -1,4 +1,4 @@
-# blog
+## blog
 
 源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
 
@@ -14,8 +14,6 @@
 
 
 ## 使用
-
-克隆本项目，运行如下命令，即可使用
 
 ```bash
 # 安装

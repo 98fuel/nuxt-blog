@@ -110,7 +110,7 @@ function dynamicMarkdownRoutes () {
   )
 }
 
-function markdownRenderer() {
+function markdownRenderer () {
   const md = MarkdownIt({ html: true, breaks: true })
   md.use(require('markdown-it-prism'))
   return md

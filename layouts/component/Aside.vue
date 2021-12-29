@@ -1,9 +1,17 @@
 <template>
   <aside class="aside">
     <div class="wrapper">
-      <!-- <div class="widget">
-        <input class="search" type="text" placeholder="Search" maxlength="20" />
-      </div>-->
+      <div class="widget">
+        <div class="widget-title">
+          <i class="fa fa-bookmark-o">关于</i>
+        </div>
+        <div>
+          <p>我的个人博客，使用 vue + nuxt.js 开发</p>
+          <nuxt-link to="/about">
+            <i>more...</i>
+          </nuxt-link>
+        </div>
+      </div>
       <div class="widget">
         <div class="widget-title">
           <i class="fa fa-folder-o">分类</i>
@@ -14,6 +22,7 @@
           </li>
         </ul>
       </div>
+
       <div class="widget">
         <div class="widget-title">
           <i class="fa fa-tag">标签</i>
@@ -22,6 +31,7 @@
           <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
         </div>
       </div>
+
       <div class="widget">
         <div class="widget-title">
           <i class="fa fa-file-o">最近文章</i>

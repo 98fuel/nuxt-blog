@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  props: ['ele'], // 这个是接收父组件传递过来的值
+  props: ['ele'],
   data () {
     return {
       opacity: '1',
@@ -40,7 +40,7 @@ export default {
     };
   },
   mounted () {
-    window.addEventListener('scroll', this.handleScroll, true);  // 注册滚动事件
+    window.addEventListener('scroll', this.handleScroll, true);
   },
   methods: {
     enterBackTop () {
@@ -61,9 +61,6 @@ export default {
         : (this.gotop = false);
     },
     handleScrollTop () {
-      // this.$nextTick(() => {
-      //   this.ele.scrollIntoView({ behavior: 'smooth' });
-      // });
       const that = this;
       const timer = setInterval(() => {
         const ispeed = Math.floor(-that.scrollTop / 5);
