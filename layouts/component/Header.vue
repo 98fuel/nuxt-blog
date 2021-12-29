@@ -74,11 +74,9 @@ export default {};
       border: 1px solid transparent;
       &:hover {
         color: #fff;
-        border-bottom-color: #fff;
       }
       &.current {
         color: #fff;
-        border-bottom-color: #fff;
       }
     }
   }

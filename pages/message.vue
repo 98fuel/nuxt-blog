@@ -6,16 +6,16 @@
         <div class="article-content markdown-body" v-html="article.html"></div>
       </div>
     </div>
-    <Comments />
+    <!-- <Comments /> -->
   </div>
 </template>
 
 <script>
-import Comments from '@/components/Comments'
+// import Comments from '@/components/Comments'
 export default {
-  components: {
-    Comments
-  },
+  // components: {
+  //   Comments
+  // },
   async asyncData ({ params }) {
     // 调用 message.md 内的数据
     const article = await import(`~/content/message.md`);

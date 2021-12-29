@@ -103,6 +103,9 @@ export default {
         margin-top: 0;
         font-size: 16px;
         border-bottom: 1px solid #ddd;
+        i::before {
+          padding-right: 6px;
+        }
       }
       ul {
         list-style: none;
@@ -111,12 +114,6 @@ export default {
         li {
           margin: 5px 0;
           line-height: 1.5;
-          /* .link {
-            color: #6E7173;
-            &:hover {
-              color: #444;
-            }
-          } */
         }
       }
       .tag-list {

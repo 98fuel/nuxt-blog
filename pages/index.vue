@@ -88,6 +88,7 @@ export default {
       color: #555;
       text-align: left;
       font-weight: 600;
+      font-size: 1.4rem;
       .link {
         color: #555;
       }
@@ -135,6 +136,16 @@ export default {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
+      * {
+        margin: 0;
+        padding: 0;
+        color: inherit;
+      }
+      p {
+        img {
+          display: none;
+        }
+      }
     }
     .article-more {
       display: flex;
@@ -164,6 +175,16 @@ export default {
     padding: 25px 0 0;
     font-size: 14px;
     text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .wrapper {
+    .article {
+      .article-title {
+        font-size: 1.2rem;
+      }
+    }
   }
 }
 </style>

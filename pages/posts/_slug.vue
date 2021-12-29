@@ -34,18 +34,18 @@
         </div>-->
       </article>
     </div>
-    <Comments />
+    <!-- <Comments /> -->
   </div>
 </template>
 
 <script>
 import { getArticles, getPagerCount, formatDate } from '@/util'
-import Comments from '@/components/Comments'
+// import Comments from '@/components/Comments'
 
 export default {
-  components: {
-    Comments
-  },
+  // components: {
+  //   Comments
+  // },
   async asyncData ({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);
     return {
@@ -74,6 +74,7 @@ export default {
       color: #555;
       text-align: left;
       font-weight: 600;
+      font-size: 1.4rem;
     }
     .article-meta {
       padding: 0;
@@ -125,7 +126,7 @@ export default {
       line-height: 1.8;
       color: #444;
       padding-top: 15px;
-      text-align: justify;
+      text-align: left;
       text-justify: distribute;
       word-break: normal;
       font-family: 'HYQiHei';
@@ -169,6 +170,16 @@ export default {
           content: '\f0da';
           padding-left: 0.3em;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .wrapper {
+    .article {
+      .article-title {
+        font-size: 1.2rem;
       }
     }
   }
