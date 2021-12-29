@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .layout {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   background: #fff;
   box-shadow: 0 0 6px 4px rgb(0 0 0 / 5%);
   .container {

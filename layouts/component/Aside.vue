@@ -5,12 +5,12 @@
         <div class="widget-title">
           <i class="fa fa-bookmark-o">关于</i>
         </div>
-        <div>
-          <p>我的个人博客，使用 vue + nuxt.js 开发</p>
-          <nuxt-link to="/about">
-            <i>more...</i>
-          </nuxt-link>
+        <div class="gg">
+          <p>我的个人博客，写了一些碎碎念！首次加载时间可能较长，请谅解。</p>
         </div>
+        <nuxt-link to="/about">
+          <i>more...</i>
+        </nuxt-link>
       </div>
       <div class="widget">
         <div class="widget-title">
@@ -116,6 +116,10 @@ export default {
         i::before {
           padding-right: 6px;
         }
+      }
+      .gg {
+        color: #6e7173;
+        font-size: 0.96rem;
       }
       ul {
         list-style: none;

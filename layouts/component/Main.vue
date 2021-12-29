@@ -11,6 +11,7 @@ export default {}
 <style lang="scss" scoped>
 .main {
   width: 75%;
+  margin-bottom: 1.6rem;
 }
 @media print, screen and (max-width: 48em) {
   .main {

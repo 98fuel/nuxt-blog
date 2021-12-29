@@ -97,11 +97,12 @@ export default {
       padding: 0;
       margin: 0;
       color: #6e7173;
-      font-size: 0.9em;
+      font-size: 0.8em;
       text-indent: 0.15em;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      opacity: 0.8;
       .article-date {
         margin-right: 12px;
         &::before {
@@ -161,7 +162,6 @@ export default {
     }
   }
   .navigator {
-    border-top: 1px solid #ddd;
     list-style: none;
     margin-top: 25px;
     padding: 25px 0 0;
@@ -175,6 +175,7 @@ export default {
     .article {
       .article-title {
         font-size: 1.2rem;
+        font-weight: 600;
       }
     }
   }

@@ -13,10 +13,6 @@
               :key="category"
             >{{category}}</nuxt-link>
           </div>
-          <div class="article-visitors">
-            访问:
-            <span id="twikoo_visitors">0</span>
-          </div>
         </div>
         <div class="article-content markdown-body" v-html="article.html"></div>
         <div class="article-copyright"></div>
@@ -32,6 +28,10 @@
         <nuxt-link class="link" to="/">上一篇文章</nuxt-link>
         <nuxt-link class="link" to="/">下一篇文章</nuxt-link>
         </div>-->
+      </article>
+
+      <article class="article article-ps">
+        <div>出于个人的考虑，移除了文章内的评论框。如果你想评论留言，请移步<nuxt-link to="/message">留言板</nuxt-link> 。</div>
       </article>
     </div>
     <!-- <Comments /> -->
@@ -73,7 +73,7 @@ export default {
       margin: 0;
       color: #555;
       text-align: left;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.4rem;
     }
     .article-meta {
@@ -82,11 +82,12 @@ export default {
       margin-top: 4px;
       border-bottom: 1px solid #eee;
       color: #6e7173;
-      font-size: 0.9em;
+      font-size: 0.8em;
       text-indent: 0.15em;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      opacity: 0.8;
       .article-date {
         margin-right: 12px;
         &::before {
@@ -105,19 +106,6 @@ export default {
         &::before {
           font-family: 'FontAwesome';
           content: '\f07c';
-          padding-right: 0.3em;
-        }
-      }
-      .article-visitors {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        .link {
-          margin-right: 6px;
-        }
-        &::before {
-          font-family: 'FontAwesome';
-          content: '\f06e';
           padding-right: 0.3em;
         }
       }
@@ -173,6 +161,15 @@ export default {
           padding-left: 0.3em;
         }
       }
+    }
+  }
+  .article-ps {
+    padding: 15px 3%;
+    opacity: 0.9;
+    font-size: 0.96rem;
+    a {
+      color: #0366d6;
+      text-decoration: underline;
     }
   }
 }
