@@ -1,13 +1,15 @@
 <template>
   <footer class="footer">
     <div class="wrapper">
-      Copyright © 2020 -2021
-      <a href="/">子舒的博客</a>,
-      基于 vue + nuxt.js 构建而成，
-      <a
-        href="https://github.com/Nov8nana/nuxt-blog"
-        target="_blank"
-      >Github</a> 地址。
+      <div>Copyright © 2020 -2021
+        <a href="/">子舒的博客</a> · 基于 vue + nuxt.js 构建而成 · 
+        <a href="https://github.com/Nov8nana/nuxt-blog" target="_blank" >Github</a> 
+      </div>
+      <div>
+        <a href="https://beian.miit.gov.cn/" target="_blank"><span> 浙ICP备2021002261号-2</span></a> · 
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802012091">
+        <img src="https://img.xiabanlo.cn/beian.png" >浙公网安备 33010802012091号</a>
+      </div>
     </div>
 
     <!-- 返回顶部 -->
