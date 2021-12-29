@@ -62,7 +62,7 @@ export default {};
     .nav-link {
       padding: 3px 10px 3px;
       line-height: 30px;
-      color: #444;
+      color: #000;
       font-size: 0.98rem;
       border: 1px solid transparent;
       &:hover {

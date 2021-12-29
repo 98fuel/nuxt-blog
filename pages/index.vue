@@ -85,12 +85,12 @@ export default {
     background: #fff;
     .article-title {
       margin: 0;
-      color: #555;
+      color: #000;
       text-align: left;
       font-weight: 500;
       font-size: 1.4rem;
       .link {
-        color: #555;
+        color: inherit;
       }
     }
     .article-meta {

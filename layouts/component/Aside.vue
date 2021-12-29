@@ -101,7 +101,12 @@ export default {
 .aside {
   width: 25%;
   .wrapper {
+    height: 100%;
     word-wrap: break-word;
+    .widget:nth-child(1) {
+      position: sticky;
+      top: 68px;
+    }
     .widget {
       background: #fff;
       margin-top: 20px;
@@ -118,7 +123,6 @@ export default {
         }
       }
       .gg {
-        color: #6e7173;
         font-size: 0.96rem;
       }
       ul {
@@ -140,7 +144,7 @@ export default {
           margin: 3px;
           border: 1px solid #808080;
           border-radius: 5px;
-          color: #aaa;
+          color: #555;
           &:hover {
             color: #fff;
             border: 1px solid #808080;

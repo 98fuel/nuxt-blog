@@ -14,7 +14,7 @@
             >{{category}}</nuxt-link>
           </div>
         </div>
-        <div class="article-content markdown-body" v-html="article.html"></div>
+        <div class="markdown-body article-content" v-html="article.html"></div>
         <div class="article-copyright"></div>
         <div class="article-tags">
           <nuxt-link
@@ -71,7 +71,7 @@ export default {
     background: #fff;
     .article-title {
       margin: 0;
-      color: #555;
+      color: #000;
       text-align: left;
       font-weight: 500;
       font-size: 1.4rem;
@@ -119,7 +119,6 @@ export default {
       text-justify: distribute;
       word-break: normal;
       font-family: 'HYQiHei';
-      
     }
     .article-tags {
       display: flex;

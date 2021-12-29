@@ -12,11 +12,13 @@
 html {
   -webkit-text-size-adjust: 100%;
 }
+
 @font-face {
   font-family: 'HYQiHei';
-  // src: url("./HYQiHei-50S.woff");
-  src: url("./SourceHanSansCN-Normal.otf");
+  src: url("./HYQiHei-50S.woff");
+  // src: url("./SourceHanSansCN-Normal.otf");
 }
+
 body {
   font-family: 'HYQiHei';
   line-height: 1.8;
@@ -32,6 +34,7 @@ a {
   color: #6E7173;
   text-decoration: none;
   transition: all .1s ease-in;
+
   &:hover {
     color: #444;
   }
@@ -51,14 +54,47 @@ input {
   outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
 h2 {
   color: #555;
+  font-size: 1.34rem !important;
+  border: none !important;
+  position: relative;
+  padding: 0 !important;
+  padding-left: 1rem !important;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 28px;
+  background: #6E7173;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+h3 {
+  color: #555 !important;
 }
 
 hr {
   height: 2px !important;
+}
+
+.article-content img {
+  box-shadow: 0 1px 4px rgb(0 0 0 / 18%);
 }
