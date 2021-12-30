@@ -3,13 +3,15 @@
     <div class="archive">
       <!-- Twikoo -->
       <h3>评论~</h3>
-      <div id="tcomment"></div>
+      <div id="tcomment">
+        <a href="/message" class="reload">点击加载评论功能</a>
+      </div>
       <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.9/dist/twikoo.all.min.js"></script>
       <!-- lightGallery -->
       <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery.css" />
-      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.min.js"></script>-->
       <!-- 引入的css样式表 -->
-      <link rel="stylesheet" href="https://cdn.xiabanlo.cn/list/twikoo.css">
+      <link rel="stylesheet" href="https://cdn.xiabanlo.cn/list/twikoo.css" />
     </div>
   </div>
 </template>
@@ -82,6 +84,16 @@ export default {
     background: #fff;
     h3 {
       margin-bottom: 20px;
+    }
+    .reload {
+      background: #000;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: all 0.2s linear;
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 }

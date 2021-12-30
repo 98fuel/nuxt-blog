@@ -97,7 +97,7 @@ export default {
       padding: 0;
       margin: 0;
       color: #6e7173;
-      font-size: 0.8em;
+      font-size: 0.94em;
       text-indent: 0.15em;
       display: flex;
       align-items: center;

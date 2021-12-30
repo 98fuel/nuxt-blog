@@ -5,6 +5,12 @@ import MarkdownIt from 'markdown-it'
 
 const markdownPaths = ['posts']
 
+let remove_console = []
+
+if (process.env.NODE_ENV === 'production') {
+  remove_console.push("transform-remove-console")
+}
+
 export default {
   /*
   ** Nuxt rendering mode
@@ -70,6 +76,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    babel: {
+      'plugins': remove_console
+    },
     loaders: {
       sass: {
         implementation: require("sass")

@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="markdown-body article-content" v-html="article.html"></div>
-        <div class="article-copyright"></div>
+        <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div>
         <div class="article-tags">
           <nuxt-link
             class="link"
@@ -31,7 +31,10 @@
       </article>
 
       <article class="article article-ps">
-        <div>出于个人的考虑，移除了文章内的评论框。如果你想评论留言，请移步<nuxt-link to="/message">留言板</nuxt-link> 。</div>
+        <div>
+          出于个人的考虑，移除了文章内的评论框。如果你想评论留言，请移步
+          <nuxt-link to="/message">留言板</nuxt-link>。
+        </div>
       </article>
     </div>
     <!-- <Comments /> -->
@@ -82,7 +85,7 @@ export default {
       margin-top: 4px;
       border-bottom: 1px solid #eee;
       color: #6e7173;
-      font-size: 0.8em;
+      font-size: 0.94em;
       text-indent: 0.15em;
       display: flex;
       align-items: center;
@@ -119,6 +122,13 @@ export default {
       text-justify: distribute;
       word-break: normal;
       font-family: 'HYQiHei';
+    }
+    .article-updated {
+      margin-top: 1rem;
+      font-size: 0.96rem;
+      color: #6e7173;
+      background: #eee;
+      padding-left: 10px;
     }
     .article-tags {
       display: flex;
