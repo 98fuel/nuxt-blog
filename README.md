@@ -29,3 +29,7 @@ $ npm run start
 # 生成
 $ npm run generate
 ```
+
+## LICENSE
+
+[LICENSE](./LICENSE)
