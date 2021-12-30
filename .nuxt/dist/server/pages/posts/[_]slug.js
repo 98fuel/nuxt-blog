@@ -130,7 +130,7 @@ function sortArr(array, prop) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(162);
+var content = __webpack_require__(164);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -141,7 +141,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 160:
+/***/ 162:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -247,12 +247,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 160;
+webpackAsyncContext.id = 162;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 161:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -264,7 +264,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 162:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -278,7 +278,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 176:
+/***/ 182:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -344,7 +344,7 @@ var util = __webpack_require__(138);
   async asyncData({
     params
   }) {
-    const article = await __webpack_require__(160)(`./${params.slug}.md`);
+    const article = await __webpack_require__(162)(`./${params.slug}.md`);
     return {
       article
     };
@@ -368,7 +368,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(161)
+  var style0 = __webpack_require__(163)
 if (style0.__inject__) style0.__inject__(context)
 
 }

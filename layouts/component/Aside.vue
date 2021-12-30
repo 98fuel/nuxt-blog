@@ -6,7 +6,9 @@
           <i class="fa fa-bookmark-o">关于</i>
         </div>
         <div class="gg">
-          <p>子舒，前端开发...<br>热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索！</p>
+          <p>子舒，前端开发...<br>
+          热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索! <br>
+          <red>更新: 新增了动态说说</red></p>
         </div>
         <nuxt-link to="/about">
           <i>more...</i>

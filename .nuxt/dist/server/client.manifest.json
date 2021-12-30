@@ -3,41 +3,43 @@
   "all": [
     "../server/index.spa.html",
     "../server/index.ssr.html",
-    "10.83090f8.js",
-    "11.b7499f9.js",
+    "11.b196372.js",
+    "12.3a024c1.js",
     "LICENSES",
-    "app.792b6ca.js",
-    "commons.app.2c861ba.js",
+    "app.748db2c.js",
+    "commons.app.8d093dc.js",
     "fonts/HYQiHei-50S.a3b5049.woff",
     "fonts/fontawesome-webfont.674f50d.eot",
     "fonts/fontawesome-webfont.af7ae50.woff2",
     "fonts/fontawesome-webfont.b06871f.ttf",
     "fonts/fontawesome-webfont.fee66e7.woff",
     "img/fontawesome-webfont.acf3dcb.svg",
-    "pages/about.8ab712d.js",
-    "pages/archives.6bad5d9.js",
-    "pages/categories/[_]slug.13469fc.js",
-    "pages/index.79d00f6.js",
-    "pages/message.823019b.js",
-    "pages/posts/[_]slug.4c6170c.js",
-    "pages/tags/[_]slug.e6b6970.js",
-    "runtime.1bb9e6a.js"
+    "pages/about.09c8094.js",
+    "pages/archives.7f1ef31.js",
+    "pages/categories/[_]slug.1d1996c.js",
+    "pages/index.58bdd02.js",
+    "pages/message.b3414d3.js",
+    "pages/posts/[_]slug.8c5b68b.js",
+    "pages/shuoshuo/[_]slug.0eb3411.js",
+    "pages/tags/[_]slug.0ce01f1.js",
+    "runtime.f9b1e7a.js"
   ],
   "initial": [
-    "runtime.1bb9e6a.js",
-    "commons.app.2c861ba.js",
-    "app.792b6ca.js"
+    "runtime.f9b1e7a.js",
+    "commons.app.8d093dc.js",
+    "app.748db2c.js"
   ],
   "async": [
-    "10.83090f8.js",
-    "11.b7499f9.js",
-    "pages/about.8ab712d.js",
-    "pages/archives.6bad5d9.js",
-    "pages/categories/[_]slug.13469fc.js",
-    "pages/index.79d00f6.js",
-    "pages/message.823019b.js",
-    "pages/posts/[_]slug.4c6170c.js",
-    "pages/tags/[_]slug.e6b6970.js"
+    "11.b196372.js",
+    "12.3a024c1.js",
+    "pages/about.09c8094.js",
+    "pages/archives.7f1ef31.js",
+    "pages/categories/[_]slug.1d1996c.js",
+    "pages/index.58bdd02.js",
+    "pages/message.b3414d3.js",
+    "pages/posts/[_]slug.8c5b68b.js",
+    "pages/shuoshuo/[_]slug.0eb3411.js",
+    "pages/tags/[_]slug.0ce01f1.js"
   ],
   "modules": {
     "17325324": [
@@ -80,6 +82,9 @@
       10,
       12
     ],
+    "27613921": [
+      19
+    ],
     "29406210": [
       5,
       7,
@@ -109,6 +114,9 @@
       11,
       10,
       12
+    ],
+    "52945656": [
+      19
     ],
     "58732353": [
       5,
@@ -399,7 +407,7 @@
       10,
       12
     ],
-    "49a9ea9f": [
+    "256162d1": [
       5,
       7,
       8,
@@ -439,7 +447,7 @@
       10,
       12
     ],
-    "0572dac7": [
+    "00d65b2d": [
       5,
       7,
       8,
@@ -509,7 +517,7 @@
       10,
       12
     ],
-    "86a92ce2": [
+    "cf3a3c7e": [
       5,
       7,
       8,
@@ -549,7 +557,7 @@
       10,
       12
     ],
-    "1abd8c52": [
+    "23f68b86": [
       5,
       7,
       8,
@@ -626,12 +634,6 @@
     "4e8c22d7": [
       6
     ],
-    "629c470c": [
-      6
-    ],
-    "dbf7c9ea": [
-      6
-    ],
     "8b47a176": [
       5,
       7,
@@ -641,6 +643,12 @@
       11,
       10,
       12
+    ],
+    "629c470c": [
+      6
+    ],
+    "dbf7c9ea": [
+      6
     ],
     "61fefea6": [
       6
@@ -823,7 +831,7 @@
       10,
       12
     ],
-    "4fd9b712": [
+    "7b4618c4": [
       5,
       7,
       8,
@@ -843,7 +851,7 @@
       10,
       12
     ],
-    "2441e4d0": [
+    "2c649db6": [
       5,
       7,
       8,
@@ -2215,7 +2223,7 @@
       10,
       12
     ],
-    "8e543e98": [
+    "377b7b34": [
       5,
       7,
       8,
@@ -2225,7 +2233,7 @@
       10,
       12
     ],
-    "26f465ff": [
+    "5260c7b1": [
       5,
       7,
       8,
@@ -2245,7 +2253,7 @@
       10,
       12
     ],
-    "4a6a2124": [
+    "3a24af58": [
       5,
       7,
       8,
@@ -2255,7 +2263,7 @@
       10,
       12
     ],
-    "307d1383": [
+    "389fcc69": [
       5,
       7,
       8,
@@ -2353,8 +2361,11 @@
     "65093cb0": [
       18
     ],
-    "0fad9642": [
+    "34033dc4": [
       19
+    ],
+    "0fad9642": [
+      20
     ],
     "09641d45": [
       16
@@ -2431,11 +2442,23 @@
     "7e4b0655": [
       18
     ],
-    "657dbd7d": [
+    "5ccb9893": [
       19
     ],
-    "37abc692": [
+    "5293e1f7": [
       19
+    ],
+    "5c864762": [
+      19
+    ],
+    "30a08412": [
+      19
+    ],
+    "657dbd7d": [
+      20
+    ],
+    "37abc692": [
+      20
     ],
     "d4ba8b0c": [
       16
@@ -2463,24 +2486,6 @@
     ],
     "27ae5ab9": [
       3
-    ],
-    "94f9526c": [
-      16
-    ],
-    "49edd3d0": [
-      16
-    ],
-    "5b8c940e": [
-      16
-    ],
-    "a8fb8a80": [
-      16
-    ],
-    "45f0d10c": [
-      16
-    ],
-    "261c5324": [
-      16
     ],
     "d46907f6": [
       13
@@ -2557,56 +2562,86 @@
     "0f388586": [
       18
     ],
-    "309d4e82": [
+    "54cf2b78": [
       19
+    ],
+    "8aee5bde": [
+      19
+    ],
+    "87233dfa": [
+      19
+    ],
+    "66f90b50": [
+      19
+    ],
+    "309d4e82": [
+      20
     ],
     "7c15a7d4": [
-      19
+      20
     ],
     "692233e8": [
-      19
+      20
     ],
     "3688c9b4": [
-      19
+      20
     ],
     "39dfe696": [
-      19
+      20
+    ],
+    "94f9526c": [
+      16
+    ],
+    "49edd3d0": [
+      16
+    ],
+    "5b8c940e": [
+      16
+    ],
+    "a8fb8a80": [
+      16
+    ],
+    "45f0d10c": [
+      16
     ]
   },
   "assetsMapping": {
     "bba68bf6": [
-      "10.83090f8.js",
-      "11.b7499f9.js"
+      "11.b196372.js",
+      "12.3a024c1.js"
     ],
     "1a3ae26b": [
-      "app.792b6ca.js"
+      "app.748db2c.js"
     ],
     "0859c165": [
-      "commons.app.2c861ba.js"
+      "commons.app.8d093dc.js"
     ],
     "2aff1868": [
-      "pages/about.8ab712d.js"
+      "pages/about.09c8094.js"
     ],
     "73528b52": [
-      "pages/archives.6bad5d9.js"
+      "pages/archives.7f1ef31.js"
     ],
     "8990465c": [
-      "pages/categories/[_]slug.13469fc.js"
+      "pages/categories/[_]slug.1d1996c.js"
     ],
     "2a130dde": [
-      "pages/index.79d00f6.js"
+      "pages/index.58bdd02.js"
     ],
     "675986f4": [
-      "pages/message.823019b.js"
+      "pages/message.b3414d3.js"
     ],
     "018682b2": [
-      "pages/posts/[_]slug.4c6170c.js"
+      "pages/posts/[_]slug.8c5b68b.js"
+    ],
+    "0bf310d4": [
+      "pages/shuoshuo/[_]slug.0eb3411.js"
     ],
     "47b62ae2": [
-      "pages/tags/[_]slug.e6b6970.js"
+      "pages/tags/[_]slug.0ce01f1.js"
     ],
     "6fca0322": [
-      "runtime.1bb9e6a.js"
+      "runtime.f9b1e7a.js"
     ]
   }
 }
