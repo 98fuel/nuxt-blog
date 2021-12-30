@@ -1,14 +1,20 @@
 <template>
   <footer class="footer">
     <div class="wrapper">
-      <div>Copyright © 2020 -2021
-        <a href="/">子舒的博客</a> · 基于 vue + nuxt.js 构建而成 · 
-        <a href="https://github.com/Nov8nana/nuxt-blog" target="_blank" >Github</a> 
+      <div>
+        Copyright © 2020 -2021
+        <a href="/">子舒的博客</a> · Power Nuxt.js
       </div>
       <div>
-        <a href="https://beian.miit.gov.cn/" target="_blank"><span> 浙ICP备2021002261号-2</span></a> · 
-        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802012091">
-        <img src="https://img.xiabanlo.cn/beian.png" >浙公网安备 33010802012091号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">
+          <span>浙ICP备2021002261号-2</span>
+        </a> ·
+        <a
+          target="_blank"
+          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802012091"
+        >
+          <img src="https://img.xiabanlo.cn/beian.png" />浙公网安备 33010802012091号
+        </a>
       </div>
     </div>
 
@@ -82,7 +88,6 @@ export default {
   width: 75%;
   margin-top: 1.8em;
   .wrapper {
-    line-height: 2.5;
     color: #6e7173;
     padding: 0.8em 0 1.6em;
     text-align: center;
@@ -97,8 +102,6 @@ export default {
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
-    // display: none;
-    // opacity: 0;
     height: 40px;
     justify-content: center;
     transition: all 0.4s ease;

@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
     <Header />
+    <HeadDate />
     <div class="container">
       <Main />
       <Aside />
@@ -14,13 +15,15 @@ import Header from './component/Header'
 import Main from './component/Main'
 import Aside from './component/Aside'
 import Footer from './component/Footer'
+import HeadDate from '@/components/HeadDate'
 
 export default {
   components: {
     Header,
     Main,
     Aside,
-    Footer
+    Footer,
+    HeadDate
   },
   // async fetch () {
 
@@ -32,7 +35,7 @@ export default {
 .layout {
   max-width: 1000px;
   margin: 0 auto 1rem;
-  background: #fff;
+  background: #f9f9f9;
   box-shadow: 0 0 6px 4px rgb(0 0 0 / 5%);
   .container {
     display: flex;
@@ -49,7 +52,6 @@ export default {
 @media print, screen and (max-width: 35.5em) {
   .layout {
     .container {
-     
     }
   }
 }

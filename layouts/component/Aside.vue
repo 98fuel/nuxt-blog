@@ -6,7 +6,7 @@
           <i class="fa fa-bookmark-o">关于</i>
         </div>
         <div class="gg">
-          <p>我的个人博客，写了一些碎碎念！首次加载时间可能较长，请谅解。</p>
+          <p>子舒，前端开发...<br>热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索！</p>
         </div>
         <nuxt-link to="/about">
           <i>more...</i>
@@ -105,7 +105,7 @@ export default {
     word-wrap: break-word;
     .widget:nth-child(1) {
       position: sticky;
-      top: 68px;
+      top: 48px;
     }
     .widget {
       background: #fff;

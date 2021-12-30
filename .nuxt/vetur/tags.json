@@ -1,0 +1,20 @@
+{
+  "Comments": {
+    "description": "Auto imported from components/Comments.vue"
+  },
+  "LazyComments": {
+    "description": "Auto imported from components/Comments.vue"
+  },
+  "HeadDate": {
+    "description": "Auto imported from components/HeadDate.vue"
+  },
+  "LazyHeadDate": {
+    "description": "Auto imported from components/HeadDate.vue"
+  },
+  "Pager": {
+    "description": "Auto imported from components/Pager.vue"
+  },
+  "LazyPager": {
+    "description": "Auto imported from components/Pager.vue"
+  }
+}

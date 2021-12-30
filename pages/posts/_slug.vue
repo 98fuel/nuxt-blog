@@ -24,10 +24,6 @@
             :key="tag"
           >{{tag}}</nuxt-link>
         </div>
-        <!-- <div class="article-nav">
-        <nuxt-link class="link" to="/">上一篇文章</nuxt-link>
-        <nuxt-link class="link" to="/">下一篇文章</nuxt-link>
-        </div>-->
       </article>
 
       <article class="article article-ps">
@@ -142,33 +138,6 @@ export default {
       }
       .link {
         margin-right: 10px;
-      }
-    }
-    .article-nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      overflow: hidden;
-      margin-top: 15px;
-      margin-bottom: 20px;
-      padding: 10px;
-      white-space: nowrap;
-      border-top: 1px solid #eee;
-      .link {
-        line-height: 25px;
-        font-size: 15px;
-        color: #555;
-        &:first-child::before {
-          font-family: 'FontAwesome';
-          content: '\f0d9';
-          padding-right: 0.3em;
-        }
-        &:last-child::after {
-          font-family: 'FontAwesome';
-          content: '\f0da';
-          padding-left: 0.3em;
-        }
       }
     }
   }
