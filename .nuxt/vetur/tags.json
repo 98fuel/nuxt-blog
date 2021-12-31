@@ -11,6 +11,12 @@
   "LazyHeadDate": {
     "description": "Auto imported from components/HeadDate.vue"
   },
+  "Imgbig": {
+    "description": "Auto imported from components/Imgbig.vue"
+  },
+  "LazyImgbig": {
+    "description": "Auto imported from components/Imgbig.vue"
+  },
   "Pager": {
     "description": "Auto imported from components/Pager.vue"
   },

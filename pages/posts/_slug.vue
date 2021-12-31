@@ -32,19 +32,19 @@
           <nuxt-link to="/message">留言板</nuxt-link>。
         </div>
       </article>
+      <Imgbig />
     </div>
-    <!-- <Comments /> -->
   </div>
 </template>
 
 <script>
-import { getArticles, getPagerCount, formatDate } from '@/util'
-// import Comments from '@/components/Comments'
+import { formatDate } from '@/util'
+import Imgbig from '@/components/Imgbig'
 
 export default {
-  // components: {
-  //   Comments
-  // },
+  components: {
+    Imgbig,
+  },
   async asyncData ({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);
     return {

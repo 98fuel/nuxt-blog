@@ -89,9 +89,28 @@ export default {
       text-align: left;
       font-weight: 500;
       font-size: 1.4rem;
-      .link {
-        color: inherit;
+      a {
+        position: relative;
+        &:hover {
+          color: #444;
+        }
+        &::after {
+          content: '';
+          width: 0;
+          height: 2px;
+          background: #484949;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: all 0.2s linear;
+        }
+        &:hover::after {
+          width: 100%;
+        }
       }
+    }
+    .link {
+      color: inherit;
     }
     .article-meta {
       padding: 0;
@@ -138,7 +157,7 @@ export default {
       -webkit-line-clamp: 3;
       overflow: hidden;
       max-height: 140px;
-      font-family: "HYQiHei";
+      font-family: 'HYQiHei';
     }
     .article-more {
       display: flex;

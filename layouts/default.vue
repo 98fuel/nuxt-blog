@@ -20,10 +20,10 @@ import HeadDate from '@/components/HeadDate'
 export default {
   components: {
     Header,
+    HeadDate,
     Main,
     Aside,
     Footer,
-    HeadDate
   },
   // async fetch () {
 

@@ -8,7 +8,8 @@
         <div class="gg">
           <p>子舒，前端开发...<br>
           热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索! <br>
-          <red>更新: 新增了动态说说</red></p>
+          <span class="red">更新: 新增了动态说说</span>
+          </p>
         </div>
         <nuxt-link to="/about">
           <i>more...</i>

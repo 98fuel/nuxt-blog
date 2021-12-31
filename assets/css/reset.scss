@@ -103,8 +103,26 @@ img {
   vertical-align: text-bottom;
 }
 
+details {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+details summary {
+  background: #f3f3f3;
+  padding: 0 10px;
+}
+
+details summary+* {
+  padding: 0 10px;
+}
+
 // 自定义标签
-red {
+span.red {
   color: #cc3434;
   font-style: italic;
 }

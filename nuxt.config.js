@@ -38,6 +38,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://cdn.xiabanlo.cn/list/jquery3.6.0.js' }
     ]
   },
   /*
