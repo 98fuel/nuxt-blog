@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_260e2f93 from 'nuxt_plugin_plugin_260e2f93' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_baidu_355f6736 from 'nuxt_plugin_baidu_355f6736' // Source: ..\\plugins\\baidu (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -50,7 +51,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"子舒的博客","meta":[{"charset":"utf-8"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"format-detection","content":"telephone=no"},{"name":"viewport","content":"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"},{"hid":"description","name":"description","content":"子舒 | 个人博客 | Blog | Markdown | Vue | Nuxt"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[{"src":"https:\u002F\u002Fcdn.xiabanlo.cn\u002Flist\u002Fjquery3.6.0.js"}],"style":[]},
+    head: {"title":"子舒的博客","meta":[{"charset":"utf-8"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"format-detection","content":"telephone=no"},{"name":"viewport","content":"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"},{"hid":"description","name":"description","content":"子舒 | 个人博客 | Blog | Markdown | Vue | Nuxt"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"script":[{"src":"https:\u002F\u002Fcdn.xiabanlo.cn\u002Flist\u002Fjquery3.6.0.js"},{"src":"https:\u002F\u002Fhm.baidu.com\u002Fhm.js?f41d830174f36ac5eb0838f79f75bee2"}],"style":[]},
 
     router,
     nuxt: {
@@ -166,6 +167,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_260e2f93 === 'function') {
     await nuxt_plugin_plugin_260e2f93(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_baidu_355f6736 === 'function') {
+    await nuxt_plugin_baidu_355f6736(app.context, inject)
   }
 
   // Lock enablePreview in context

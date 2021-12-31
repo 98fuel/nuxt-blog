@@ -1,4 +1,6 @@
-## blog
+<img src="./static/white-logo.png" style="display:block;margin:0 auto;">
+
+<div style="text-align:center;font-size:20px;font-weight:600">nuxt-blog</div>
 
 源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
 
@@ -14,8 +16,8 @@
 
 ## 版本
 
-![ ] 动态说说功能正在开发中...
-![ ] 爱情墙，先开发着，万一用上了呢...
+*[x] 动态说说功能正在开发中...
+*[ ] 爱情墙，先开发着，万一用上了呢...
 
 
 ## 使用

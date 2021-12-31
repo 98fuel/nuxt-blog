@@ -40,7 +40,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://cdn.xiabanlo.cn/list/jquery3.6.0.js' }
+      { src: 'https://cdn.xiabanlo.cn/list/jquery3.6.0.js' },
+      { src: 'https://hm.baidu.com/hm.js?f41d830174f36ac5eb0838f79f75bee2' }
     ]
   },
   /*
@@ -55,6 +56,9 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    {
+      src: '~/plugins/baidu'
+    }
   ],
   /*
   ** Auto import components
