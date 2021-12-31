@@ -98,7 +98,7 @@ export default {
           content: '';
           width: 0;
           height: 2px;
-          background: #484949;
+          background: #444;
           position: absolute;
           left: 0;
           bottom: 0;

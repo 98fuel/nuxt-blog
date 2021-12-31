@@ -3,48 +3,56 @@
     "name": "about",
     "path": "/about",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_6d7f4a76"
   },
   {
     "name": "archives",
     "path": "/archives",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\archives.vue",
-    "chunkName": "pages/archives"
+    "chunkName": "pages/archives",
+    "_name": "_784122e9"
   },
   {
     "name": "message",
     "path": "/message",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\message.vue",
-    "chunkName": "pages/message"
+    "chunkName": "pages/message",
+    "_name": "_4697223f"
   },
   {
     "name": "categories-slug",
     "path": "/categories/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\categories\\\\_slug.vue",
-    "chunkName": "pages/categories/_slug"
+    "chunkName": "pages/categories/_slug",
+    "_name": "_3031d926"
   },
   {
     "name": "posts-slug",
     "path": "/posts/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\posts\\\\_slug.vue",
-    "chunkName": "pages/posts/_slug"
+    "chunkName": "pages/posts/_slug",
+    "_name": "_7b46fe62"
   },
   {
     "name": "shuoshuo-slug",
     "path": "/shuoshuo/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\shuoshuo\\\\_slug.vue",
-    "chunkName": "pages/shuoshuo/_slug"
+    "chunkName": "pages/shuoshuo/_slug",
+    "_name": "_1b985bb8"
   },
   {
     "name": "tags-slug",
     "path": "/tags/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
-    "chunkName": "pages/tags/_slug"
+    "chunkName": "pages/tags/_slug",
+    "_name": "_5a83d9ee"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_2e0f94ec"
   }
 ]

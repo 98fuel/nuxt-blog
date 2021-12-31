@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div>
         Copyright © 2020 -2021
-        <a href="/">子舒的博客</a> · Power Nuxt.js
+        <a href="/">子舒的博客</a> · Power <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
       </div>
       <div>
         <a href="https://beian.miit.gov.cn/" target="_blank">
