@@ -1,4 +1,4 @@
-<img src="./static/white-logo.png" style="display:block;margin:0 auto;">
+<img src="./static/black-logo.png" style="display:block;margin:0 auto;">
 
 <div style="text-align:center;font-size:20px;font-weight:600">nuxt-blog</div>
 
