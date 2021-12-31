@@ -1,6 +1,8 @@
-<img src="./static/black-logo.png" style="display:block;margin:0 auto;">
 
-<div style="text-align:center;font-size:20px;font-weight:600">nuxt-blog</div>
+<div align="center"><img src="./static/black-logo.png" style="display:block;margin:0 auto;">
+</div>
+
+<div align="center"><h2>nuxt-blog</h2></div>
 
 源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
 
