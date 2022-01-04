@@ -3,10 +3,10 @@
   "all": [
     "../server/index.spa.html",
     "../server/index.ssr.html",
-    "11.ac46ee2.js",
-    "12.738aec2.js",
+    "11.793a1fd.js",
+    "12.afc810e.js",
     "LICENSES",
-    "app.9bacf0e.js",
+    "app.3fd733e.js",
     "commons.app.988c3c6.js",
     "fonts/HYQiHei-50S.a3b5049.woff",
     "fonts/fontawesome-webfont.674f50d.eot",
@@ -14,32 +14,32 @@
     "fonts/fontawesome-webfont.b06871f.ttf",
     "fonts/fontawesome-webfont.fee66e7.woff",
     "img/fontawesome-webfont.acf3dcb.svg",
-    "pages/about.155f0b0.js",
-    "pages/archives.3249859.js",
-    "pages/categories/[_]slug.a576f77.js",
-    "pages/index.744316d.js",
-    "pages/message.43a48b7.js",
-    "pages/posts/[_]slug.0d5602d.js",
-    "pages/shuoshuo/[_]slug.ba73b84.js",
-    "pages/tags/[_]slug.61195db.js",
-    "runtime.b079d58.js"
+    "pages/about.0ee0c54.js",
+    "pages/archives.d4b6780.js",
+    "pages/categories/[_]slug.9953484.js",
+    "pages/index.2431641.js",
+    "pages/message.9fec7e3.js",
+    "pages/posts/[_]slug.8697833.js",
+    "pages/shuoshuo/[_]slug.206b49d.js",
+    "pages/tags/[_]slug.c514b87.js",
+    "runtime.cbd7c26.js"
   ],
   "initial": [
-    "runtime.b079d58.js",
+    "runtime.cbd7c26.js",
     "commons.app.988c3c6.js",
-    "app.9bacf0e.js"
+    "app.3fd733e.js"
   ],
   "async": [
-    "11.ac46ee2.js",
-    "12.738aec2.js",
-    "pages/about.155f0b0.js",
-    "pages/archives.3249859.js",
-    "pages/categories/[_]slug.a576f77.js",
-    "pages/index.744316d.js",
-    "pages/message.43a48b7.js",
-    "pages/posts/[_]slug.0d5602d.js",
-    "pages/shuoshuo/[_]slug.ba73b84.js",
-    "pages/tags/[_]slug.61195db.js"
+    "11.793a1fd.js",
+    "12.afc810e.js",
+    "pages/about.0ee0c54.js",
+    "pages/archives.d4b6780.js",
+    "pages/categories/[_]slug.9953484.js",
+    "pages/index.2431641.js",
+    "pages/message.9fec7e3.js",
+    "pages/posts/[_]slug.8697833.js",
+    "pages/shuoshuo/[_]slug.206b49d.js",
+    "pages/tags/[_]slug.c514b87.js"
   ],
   "modules": {
     "10739195": [
@@ -86,6 +86,16 @@
       19
     ],
     "40752774": [
+      5,
+      7,
+      8,
+      8,
+      9,
+      11,
+      10,
+      12
+    ],
+    "43605773": [
       5,
       7,
       8,
@@ -447,7 +457,7 @@
       10,
       12
     ],
-    "00d65b2d": [
+    "5631f863": [
       5,
       7,
       8,
@@ -538,16 +548,6 @@
       12
     ],
     "8d8309b2": [
-      5,
-      7,
-      8,
-      8,
-      9,
-      11,
-      10,
-      12
-    ],
-    "23f68b86": [
       5,
       7,
       8,
@@ -851,7 +851,7 @@
       10,
       12
     ],
-    "2c649db6": [
+    "75ddaf6c": [
       5,
       7,
       8,
@@ -2250,7 +2250,7 @@
       10,
       12
     ],
-    "3a24af58": [
+    "2c66ba0a": [
       5,
       7,
       8,
@@ -2260,7 +2260,7 @@
       10,
       12
     ],
-    "389fcc69": [
+    "fbce43c2": [
       5,
       7,
       8,
@@ -2453,6 +2453,9 @@
     "5294cab5": [
       19
     ],
+    "52953f14": [
+      19
+    ],
     "5c864762": [
       19
     ],
@@ -2612,41 +2615,41 @@
   },
   "assetsMapping": {
     "bba68bf6": [
-      "11.ac46ee2.js",
-      "12.738aec2.js"
+      "11.793a1fd.js",
+      "12.afc810e.js"
     ],
     "1a3ae26b": [
-      "app.9bacf0e.js"
+      "app.3fd733e.js"
     ],
     "0859c165": [
       "commons.app.988c3c6.js"
     ],
     "2aff1868": [
-      "pages/about.155f0b0.js"
+      "pages/about.0ee0c54.js"
     ],
     "73528b52": [
-      "pages/archives.3249859.js"
+      "pages/archives.d4b6780.js"
     ],
     "8990465c": [
-      "pages/categories/[_]slug.a576f77.js"
+      "pages/categories/[_]slug.9953484.js"
     ],
     "2a130dde": [
-      "pages/index.744316d.js"
+      "pages/index.2431641.js"
     ],
     "675986f4": [
-      "pages/message.43a48b7.js"
+      "pages/message.9fec7e3.js"
     ],
     "018682b2": [
-      "pages/posts/[_]slug.0d5602d.js"
+      "pages/posts/[_]slug.8697833.js"
     ],
     "0bf310d4": [
-      "pages/shuoshuo/[_]slug.ba73b84.js"
+      "pages/shuoshuo/[_]slug.206b49d.js"
     ],
     "47b62ae2": [
-      "pages/tags/[_]slug.61195db.js"
+      "pages/tags/[_]slug.c514b87.js"
     ],
     "6fca0322": [
-      "runtime.b079d58.js"
+      "runtime.cbd7c26.js"
     ]
   }
 }

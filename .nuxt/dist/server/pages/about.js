@@ -44,7 +44,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 178:
+/***/ 179:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -73,7 +73,7 @@ var staticRenderFns = []
     params
   }) {
     // 调用 about.md 内的数据
-    const article = await __webpack_require__.e(/* import() */ 9).then(__webpack_require__.t.bind(null, 176, 7));
+    const article = await __webpack_require__.e(/* import() */ 9).then(__webpack_require__.t.bind(null, 177, 7));
     return {
       article
     };

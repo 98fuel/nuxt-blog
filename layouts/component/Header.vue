@@ -4,7 +4,7 @@
       <h1>
         <nuxt-link class="logo" to="/">
           <img src="https://img.xiabanlo.cn/favicon1.png" />
-          <span>子舒的博客</span>
+          <!-- <span>子舒的博客</span> -->
         </nuxt-link>
       </h1>
       <!-- <p class="description">路漫漫其修远兮，吾将上下而求索！</p> -->

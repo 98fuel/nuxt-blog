@@ -170,7 +170,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 180:
+/***/ 181:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -210,7 +210,7 @@ var Comments = __webpack_require__(148);
     params
   }) {
     // 调用 message.md 内的数据
-    const article = await __webpack_require__.e(/* import() */ 10).then(__webpack_require__.t.bind(null, 177, 7));
+    const article = await __webpack_require__.e(/* import() */ 10).then(__webpack_require__.t.bind(null, 178, 7));
     return {
       article
     };

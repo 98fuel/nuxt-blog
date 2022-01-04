@@ -140,7 +140,7 @@ const perHomeCount = 7;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(169);
+var content = __webpack_require__(170);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -157,7 +157,8 @@ module.exports.__inject__ = function (context) {
 var map = {
 	"./1.md": 165,
 	"./2.md": 166,
-	"./3.md": 167
+	"./3.md": 167,
+	"./4.md": 168
 };
 
 
@@ -219,6 +220,18 @@ module.exports = {
 /***/ }),
 
 /***/ 168:
+/***/ (function(module, exports) {
+
+
+module.exports = { 
+      attributes: {"date":"2022-01-04 13:11"},
+    
+      html: "<p>新域名 imhan.cn 正在备案中，马上可以换马甲了。。。</p>\n",
+     }
+
+/***/ }),
+
+/***/ 169:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -230,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 169:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -244,7 +257,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 183:
+/***/ 184:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -319,7 +332,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(168)
+  var style0 = __webpack_require__(169)
 if (style0.__inject__) style0.__inject__(context)
 
 }

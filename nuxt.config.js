@@ -27,7 +27,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: '子舒的博客',
+    title: '十一月的生活',
     meta: [
       { charset: 'utf-8' },
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
