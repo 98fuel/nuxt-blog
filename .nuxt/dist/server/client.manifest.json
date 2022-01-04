@@ -3,55 +3,43 @@
   "all": [
     "../server/index.spa.html",
     "../server/index.ssr.html",
-    "11.793a1fd.js",
-    "12.afc810e.js",
+    "10.41c7238.js",
+    "11.437d761.js",
     "LICENSES",
-    "app.3fd733e.js",
-    "commons.app.988c3c6.js",
+    "app.234575f.js",
+    "commons.app.82e43fa.js",
     "fonts/HYQiHei-50S.a3b5049.woff",
     "fonts/fontawesome-webfont.674f50d.eot",
     "fonts/fontawesome-webfont.af7ae50.woff2",
     "fonts/fontawesome-webfont.b06871f.ttf",
     "fonts/fontawesome-webfont.fee66e7.woff",
     "img/fontawesome-webfont.acf3dcb.svg",
-    "pages/about.0ee0c54.js",
-    "pages/archives.d4b6780.js",
-    "pages/categories/[_]slug.9953484.js",
-    "pages/index.2431641.js",
-    "pages/message.9fec7e3.js",
-    "pages/posts/[_]slug.8697833.js",
-    "pages/shuoshuo/[_]slug.206b49d.js",
-    "pages/tags/[_]slug.c514b87.js",
-    "runtime.cbd7c26.js"
+    "pages/about.790ab85.js",
+    "pages/archives.0d7615d.js",
+    "pages/categories/[_]slug.eddb6d8.js",
+    "pages/index.e985aef.js",
+    "pages/message.70373dd.js",
+    "pages/posts/[_]slug.abc6226.js",
+    "pages/tags/[_]slug.6512143.js",
+    "runtime.d704e1b.js"
   ],
   "initial": [
-    "runtime.cbd7c26.js",
-    "commons.app.988c3c6.js",
-    "app.3fd733e.js"
+    "runtime.d704e1b.js",
+    "commons.app.82e43fa.js",
+    "app.234575f.js"
   ],
   "async": [
-    "11.793a1fd.js",
-    "12.afc810e.js",
-    "pages/about.0ee0c54.js",
-    "pages/archives.d4b6780.js",
-    "pages/categories/[_]slug.9953484.js",
-    "pages/index.2431641.js",
-    "pages/message.9fec7e3.js",
-    "pages/posts/[_]slug.8697833.js",
-    "pages/shuoshuo/[_]slug.206b49d.js",
-    "pages/tags/[_]slug.c514b87.js"
+    "10.41c7238.js",
+    "11.437d761.js",
+    "pages/about.790ab85.js",
+    "pages/archives.0d7615d.js",
+    "pages/categories/[_]slug.eddb6d8.js",
+    "pages/index.e985aef.js",
+    "pages/message.70373dd.js",
+    "pages/posts/[_]slug.abc6226.js",
+    "pages/tags/[_]slug.6512143.js"
   ],
   "modules": {
-    "10739195": [
-      5,
-      7,
-      8,
-      8,
-      9,
-      11,
-      10,
-      12
-    ],
     "18933426": [
       5,
       7,
@@ -82,20 +70,7 @@
       10,
       12
     ],
-    "27613921": [
-      19
-    ],
     "40752774": [
-      5,
-      7,
-      8,
-      8,
-      9,
-      11,
-      10,
-      12
-    ],
-    "43605773": [
       5,
       7,
       8,
@@ -124,9 +99,6 @@
       11,
       10,
       12
-    ],
-    "52945656": [
-      19
     ],
     "58732353": [
       5,
@@ -417,7 +389,7 @@
       10,
       12
     ],
-    "c51bdab6": [
+    "8daed2f0": [
       5,
       7,
       8,
@@ -457,7 +429,7 @@
       10,
       12
     ],
-    "5631f863": [
+    "b097db90": [
       5,
       7,
       8,
@@ -527,6 +499,16 @@
       10,
       12
     ],
+    "2c2a1578": [
+      5,
+      7,
+      8,
+      8,
+      9,
+      11,
+      10,
+      12
+    ],
     "5f3548c0": [
       5,
       7,
@@ -548,6 +530,16 @@
       12
     ],
     "8d8309b2": [
+      5,
+      7,
+      8,
+      8,
+      9,
+      11,
+      10,
+      12
+    ],
+    "d63b1d70": [
       5,
       7,
       8,
@@ -631,6 +623,12 @@
     "4e8c22d7": [
       6
     ],
+    "629c470c": [
+      6
+    ],
+    "dbf7c9ea": [
+      6
+    ],
     "8b47a176": [
       5,
       7,
@@ -640,12 +638,6 @@
       11,
       10,
       12
-    ],
-    "629c470c": [
-      6
-    ],
-    "dbf7c9ea": [
-      6
     ],
     "00364e54": [
       6
@@ -831,7 +823,7 @@
       10,
       12
     ],
-    "7a27e0d0": [
+    "416553bb": [
       5,
       7,
       8,
@@ -851,7 +843,7 @@
       10,
       12
     ],
-    "75ddaf6c": [
+    "f6c579fe": [
       5,
       7,
       8,
@@ -2210,7 +2202,7 @@
       10,
       12
     ],
-    "2be8393a": [
+    "ab3d0546": [
       5,
       7,
       8,
@@ -2220,7 +2212,7 @@
       10,
       12
     ],
-    "cbf282f6": [
+    "188002a8": [
       5,
       7,
       8,
@@ -2250,7 +2242,7 @@
       10,
       12
     ],
-    "2c66ba0a": [
+    "3b264d9f": [
       5,
       7,
       8,
@@ -2260,7 +2252,7 @@
       10,
       12
     ],
-    "fbce43c2": [
+    "de4f1c98": [
       5,
       7,
       8,
@@ -2348,11 +2340,8 @@
     "20df39a0": [
       18
     ],
-    "34033dc4": [
-      19
-    ],
     "0fad9642": [
-      20
+      19
     ],
     "09641d45": [
       16
@@ -2444,29 +2433,11 @@
     "5ca24366": [
       18
     ],
-    "5ccb9893": [
-      19
-    ],
-    "5293e1f7": [
-      19
-    ],
-    "5294cab5": [
-      19
-    ],
-    "52953f14": [
-      19
-    ],
-    "5c864762": [
-      19
-    ],
-    "30a08412": [
-      19
-    ],
     "657dbd7d": [
-      20
+      19
     ],
     "37abc692": [
-      20
+      19
     ],
     "d4ba8b0c": [
       16
@@ -2494,6 +2465,24 @@
     ],
     "27ae5ab9": [
       3
+    ],
+    "94f9526c": [
+      16
+    ],
+    "81cd0cc8": [
+      16
+    ],
+    "5b8c940e": [
+      16
+    ],
+    "20ade08c": [
+      16
+    ],
+    "45f0d10c": [
+      16
+    ],
+    "261c5324": [
+      16
     ],
     "d46907f6": [
       13
@@ -2570,86 +2559,56 @@
     "0f388586": [
       18
     ],
-    "54cf2b78": [
-      19
-    ],
-    "8aee5bde": [
-      19
-    ],
-    "87233dfa": [
-      19
-    ],
-    "66f90b50": [
-      19
-    ],
     "309d4e82": [
-      20
+      19
     ],
     "7c15a7d4": [
-      20
+      19
     ],
     "692233e8": [
-      20
+      19
     ],
     "3688c9b4": [
-      20
+      19
     ],
     "39dfe696": [
-      20
-    ],
-    "94f9526c": [
-      16
-    ],
-    "81cd0cc8": [
-      16
-    ],
-    "5b8c940e": [
-      16
-    ],
-    "20ade08c": [
-      16
-    ],
-    "45f0d10c": [
-      16
+      19
     ]
   },
   "assetsMapping": {
     "bba68bf6": [
-      "11.793a1fd.js",
-      "12.afc810e.js"
+      "10.41c7238.js",
+      "11.437d761.js"
     ],
     "1a3ae26b": [
-      "app.3fd733e.js"
+      "app.234575f.js"
     ],
     "0859c165": [
-      "commons.app.988c3c6.js"
+      "commons.app.82e43fa.js"
     ],
     "2aff1868": [
-      "pages/about.0ee0c54.js"
+      "pages/about.790ab85.js"
     ],
     "73528b52": [
-      "pages/archives.d4b6780.js"
+      "pages/archives.0d7615d.js"
     ],
     "8990465c": [
-      "pages/categories/[_]slug.9953484.js"
+      "pages/categories/[_]slug.eddb6d8.js"
     ],
     "2a130dde": [
-      "pages/index.2431641.js"
+      "pages/index.e985aef.js"
     ],
     "675986f4": [
-      "pages/message.9fec7e3.js"
+      "pages/message.70373dd.js"
     ],
     "018682b2": [
-      "pages/posts/[_]slug.8697833.js"
-    ],
-    "0bf310d4": [
-      "pages/shuoshuo/[_]slug.206b49d.js"
+      "pages/posts/[_]slug.abc6226.js"
     ],
     "47b62ae2": [
-      "pages/tags/[_]slug.c514b87.js"
+      "pages/tags/[_]slug.6512143.js"
     ],
     "6fca0322": [
-      "runtime.cbd7c26.js"
+      "runtime.d704e1b.js"
     ]
   }
 }

@@ -1,7 +1,7 @@
 {
   "entry": "server.js",
   "files": {
-    "10.js": "10.js",
+    "8.js": "8.js",
     "9.js": "9.js",
     "pages/about.js": "pages/about.js",
     "pages/archives.js": "pages/archives.js",
@@ -9,12 +9,11 @@
     "pages/index.js": "pages/index.js",
     "pages/message.js": "pages/message.js",
     "pages/posts/[_]slug.js": "pages/posts/[_]slug.js",
-    "pages/shuoshuo/[_]slug.js": "pages/shuoshuo/[_]slug.js",
     "pages/tags/[_]slug.js": "pages/tags/[_]slug.js",
     "server.js": "server.js"
   },
   "maps": {
-    "10.js": "10.js.map",
+    "8.js": "8.js.map",
     "9.js": "9.js.map",
     "pages/about.js": "pages/about.js.map",
     "pages/archives.js": "pages/archives.js.map",
@@ -22,7 +21,6 @@
     "pages/index.js": "pages/index.js.map",
     "pages/message.js": "pages/message.js.map",
     "pages/posts/[_]slug.js": "pages/posts/[_]slug.js.map",
-    "pages/shuoshuo/[_]slug.js": "pages/shuoshuo/[_]slug.js.map",
     "pages/tags/[_]slug.js": "pages/tags/[_]slug.js.map",
     "server.js": "server.js.map"
   }

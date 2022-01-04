@@ -25,10 +25,7 @@
       <nuxt-link to="/about" class="nav-link" exact-active-class="current">
         <i>关于</i>
       </nuxt-link>
-
-      <nuxt-link to="/shuoshuo" class="nav-link" exact-active-class="current">
-        <i>动态</i>
-      </nuxt-link>
+      
     </div>
   </header>
 </template>

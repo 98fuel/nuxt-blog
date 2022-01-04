@@ -130,7 +130,7 @@ function sortArr(array, prop) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(163);
+var content = __webpack_require__(161);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -141,7 +141,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 149:
+/***/ 147:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -198,7 +198,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 161:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -304,12 +304,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 161;
+webpackAsyncContext.id = 159;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 162:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -321,7 +321,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 163:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -335,7 +335,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 183:
+/***/ 175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -353,7 +353,7 @@ var staticRenderFns = []
 var util = __webpack_require__(136);
 
 // EXTERNAL MODULE: ./components/Imgbig.vue + 4 modules
-var Imgbig = __webpack_require__(149);
+var Imgbig = __webpack_require__(147);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/posts/_slug.vue?vue&type=script&lang=js&
 //
@@ -405,7 +405,7 @@ var Imgbig = __webpack_require__(149);
   async asyncData({
     params
   }) {
-    const article = await __webpack_require__(161)(`./${params.slug}.md`);
+    const article = await __webpack_require__(159)(`./${params.slug}.md`);
     return {
       article
     };
@@ -429,7 +429,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(162)
+  var style0 = __webpack_require__(160)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -450,7 +450,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var _slug = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Imgbig: __webpack_require__(149).default})
+installComponents(component, {Imgbig: __webpack_require__(147).default})
 
 
 /***/ })

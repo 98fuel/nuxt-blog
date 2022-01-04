@@ -35,13 +35,6 @@
     "_name": "_7b46fe62"
   },
   {
-    "name": "shuoshuo-slug",
-    "path": "/shuoshuo/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\shuoshuo\\\\_slug.vue",
-    "chunkName": "pages/shuoshuo/_slug",
-    "_name": "_1b985bb8"
-  },
-  {
     "name": "tags-slug",
     "path": "/tags/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",

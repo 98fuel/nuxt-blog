@@ -13,8 +13,6 @@ layout: 'about'
 
 the road ahead will be long and our climb will be steep.
 
-一直在优化这个博客的主题，慢慢由三栏变为一栏，再到两栏，最终演变为现在的单栏。才发现，简单才是宇宙的真谛。
-
 ✨2021年的新年愿望是可以 new 一个对象！ ---2020.12  
 2022，希望世界和平。 --2021.12
 

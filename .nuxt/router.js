@@ -8,7 +8,6 @@ const _784122e9 = () => interopDefault(import('..\\pages\\archives.vue' /* webpa
 const _4697223f = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
 const _3031d926 = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/[_]slug" */))
 const _7b46fe62 = () => interopDefault(import('..\\pages\\posts\\_slug.vue' /* webpackChunkName: "pages/posts/[_]slug" */))
-const _1b985bb8 = () => interopDefault(import('..\\pages\\shuoshuo\\_slug.vue' /* webpackChunkName: "pages/shuoshuo/[_]slug" */))
 const _5a83d9ee = () => interopDefault(import('..\\pages\\tags\\_slug.vue' /* webpackChunkName: "pages/tags/[_]slug" */))
 const _2e0f94ec = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -48,10 +47,6 @@ export const routerOptions = {
     path: "/posts/:slug?",
     component: _7b46fe62,
     name: "posts-slug"
-  }, {
-    path: "/shuoshuo/:slug?",
-    component: _1b985bb8,
-    name: "shuoshuo-slug"
   }, {
     path: "/tags/:slug?",
     component: _5a83d9ee,

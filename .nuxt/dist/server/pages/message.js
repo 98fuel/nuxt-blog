@@ -7,7 +7,7 @@ exports.modules = {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(156);
+var content = __webpack_require__(154);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -24,7 +24,7 @@ module.exports.__inject__ = function (context) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(158);
+var content = __webpack_require__(156);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
@@ -35,7 +35,7 @@ module.exports.__inject__ = function (context) {
 
 /***/ }),
 
-/***/ 148:
+/***/ 146:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -96,7 +96,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(155)
+  var style0 = __webpack_require__(153)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -118,7 +118,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 155:
+/***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 156:
+/***/ 154:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -144,7 +144,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 157:
+/***/ 155:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -156,7 +156,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 158:
+/***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -170,7 +170,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 181:
+/***/ 173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -185,7 +185,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/message.vue?vue&type=template&id=7f855aa0&scoped=true&
 
 // EXTERNAL MODULE: ./components/Comments.vue + 4 modules
-var Comments = __webpack_require__(148);
+var Comments = __webpack_require__(146);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/message.vue?vue&type=script&lang=js&
 //
@@ -210,7 +210,7 @@ var Comments = __webpack_require__(148);
     params
   }) {
     // 调用 message.md 内的数据
-    const article = await __webpack_require__.e(/* import() */ 10).then(__webpack_require__.t.bind(null, 178, 7));
+    const article = await __webpack_require__.e(/* import() */ 9).then(__webpack_require__.t.bind(null, 169, 7));
     return {
       article
     };
@@ -228,7 +228,7 @@ var componentNormalizer = __webpack_require__(1);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(157)
+  var style0 = __webpack_require__(155)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -249,7 +249,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var message = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Comments: __webpack_require__(148).default})
+installComponents(component, {Comments: __webpack_require__(146).default})
 
 
 /***/ })
