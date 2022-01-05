@@ -23,7 +23,7 @@ body {
   line-height: 1.8;
   font-size: 16px;
   color: #444;
-  background-color: #d0d0c9;
+  background-color: #F3EEE5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -44,10 +44,25 @@ a {
   }
 }
 
-/* ul,
-ol {
-  list-style: none;
-} */
+.article-index .article-content img,
+.article-index .article-content table {
+  display: none;
+}
+
+.article-index .article-content h2,
+.article-index .article-content h3,
+.article-index .article-content p {
+  font-weight: inherit !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.article-index .article-content h2::after {
+  display: none;
+}
 
 button,
 input {

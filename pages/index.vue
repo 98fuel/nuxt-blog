@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <article class="article" v-for="article in articles" :key="article.attributes.title">
+    <article class="article article-index" v-for="article in articles" :key="article.attributes.title">
       <h1 class="article-title">
         <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
       </h1>
@@ -16,9 +16,6 @@
         </div>
       </div>
       <div class="article-content markdown-body" v-html="article.summary"></div>
-      <!-- <div class="article-more">
-        <nuxt-link class="link" :to="article.path">阅读全文</nuxt-link>
-      </div>-->
     </article>
     <nav class="navigator">
       <pager
@@ -142,26 +139,6 @@ export default {
       overflow: hidden;
       max-height: 140px;
       font-family: 'HYQiHei';
-    }
-    .article-more {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 10px;
-      .link {
-        font-size: 14px;
-        color: #444;
-        padding: 5px 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        &::after {
-          font-family: 'FontAwesome';
-          content: '\f101';
-          padding-left: 0.3em;
-        }
-        &:hover {
-          background: #f8f8f8;
-        }
-      }
     }
   }
   .navigator {

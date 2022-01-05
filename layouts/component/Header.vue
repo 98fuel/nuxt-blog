@@ -3,11 +3,10 @@
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">
-          <!-- <img src="https://img.xiabanlo.cn/favicon1.png" /> -->
           <span>子舒的博客</span>
         </nuxt-link>
       </h1>
-      <!-- <p class="description">路漫漫其修远兮，吾将上下而求索！</p> -->
+      <p class="description">路漫漫其修远兮，吾将上下而求索！</p>
     </div>
     <div class="nav-menu">
       <nuxt-link to="/" class="nav-link" exact-active-class="current">
@@ -39,7 +38,6 @@ export default {};
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  // align-items: center;
   z-index: 9;
   padding: 0 2%;
   border-bottom: 1px solid #eee;
@@ -47,28 +45,12 @@ export default {};
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     h1 {
       a {
         display: flex;
         align-items: center;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-        img {
-          margin-right: 1rem;
-          height: 40px;
-          animation: mymove 5s infinite;
-          -webkit-animation: mymove 5s infinite;
-          @-webkit-keyframes mymove {
-            50% {
-              -webkit-transform: rotate(360deg);
-            }
-          }
-          @keyframes mymove {
-            50% {
-              transform: rotate(360deg);
-            }
-          }
-        }
         span {
           display: block;
           font-size: 2rem;
@@ -84,7 +66,7 @@ export default {};
     }
     .description {
       margin: 0.2em 0 0;
-      color: #000;
+      color: rgba(0, 0, 0, 0.6);
     }
   }
   .nav-menu {
@@ -111,10 +93,17 @@ export default {};
   }
 }
 @media (max-width: 768px) {
-  .nav-menu {
-    .nav-link {
-      i {
-        font-style: inherit;
+  header {
+    .site-name {
+      .description {
+        display: none;
+      }
+    }
+    .nav-menu {
+      .nav-link {
+        i {
+          font-style: inherit;
+        }
       }
     }
   }
