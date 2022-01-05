@@ -1,8 +1,10 @@
 <template>
   <div class="pager" :class="{hide: hideIfOnePage && totalPage <= 1}">
-    <span class="pager-item prev-nav" @click="onClickPage(currentPage - 1)" :class="{hidden: currentPage === 1}">
-     上一页
-    </span>
+    <span
+      class="pager-item prev-nav"
+      @click="onClickPage(currentPage - 1)"
+      :class="{hidden: currentPage === 1}"
+    >上一页</span>
     <template v-for="(page, index) in pages">
       <template v-if="page === currentPage">
         <span :key="index" class="pager-item current">{{page}}</span>
@@ -14,9 +16,11 @@
         <span :key="index" class="pager-item other" @click="onClickPage(page)">{{page}}</span>
       </template>
     </template>
-    <span class="pager-item next-nav" @click="onClickPage(currentPage + 1)" :class="{hidden: currentPage === totalPage}">
-      下一页
-    </span>
+    <span
+      class="pager-item next-nav"
+      @click="onClickPage(currentPage + 1)"
+      :class="{hidden: currentPage === totalPage}"
+    >下一页</span>
   </div>
 </template>
 
@@ -83,10 +87,7 @@ function unique (array) {
 
 <style lang="scss" scoped>
 .pager {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; */
+  padding: 0 3%;
   user-select: none;
   &.hide {
     display: none;
@@ -122,8 +123,8 @@ function unique (array) {
       float: left;
       margin: 0;
       &::before {
-        font-family: "FontAwesome";
-        content: "\f100";
+        font-family: 'FontAwesome';
+        content: '\f100';
         padding-right: 0.3em;
       }
       &.hidden {
@@ -134,8 +135,8 @@ function unique (array) {
       float: right;
       margin: 0;
       &::after {
-        font-family: "FontAwesome";
-        content: "\f101";
+        font-family: 'FontAwesome';
+        content: '\f101';
         padding-left: 0.3em;
       }
       &.hidden {

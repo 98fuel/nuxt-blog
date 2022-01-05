@@ -25,7 +25,6 @@
       <nuxt-link to="/about" class="nav-link" exact-active-class="current">
         <i>关于</i>
       </nuxt-link>
-      
     </div>
   </header>
 </template>
@@ -36,22 +35,24 @@ export default {};
 
 <style lang="scss" scoped>
 .header {
-  height: 48px;
-  background-image: linear-gradient(to right, #2e4c6d, #daddfc);
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
+  flex-direction: column;
+  // align-items: center;
   z-index: 9;
   padding: 0 2%;
-  box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+  border-bottom: 1px solid #eee;
   .site-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
     h1 {
       a {
         display: flex;
         align-items: center;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
         img {
           margin-right: 1rem;
           height: 40px;
@@ -70,9 +71,11 @@ export default {};
         }
         span {
           display: block;
-          font-size: 1.3rem;
-          color: #fff;
+          font-size: 2rem;
+          color: rgba(0, 0, 0, 0.623);
           word-break: break-all;
+          font-family: BodoniModa, LXGWWenKai, serif;
+          font-weight: 600;
           &:hover {
             opacity: 0.9;
           }
@@ -89,14 +92,15 @@ export default {};
     .nav-link {
       padding: 3px 10px 3px;
       line-height: 30px;
-      color: #000;
-      font-size: 0.98rem;
+      color: #a8a29e;
+      font-size: 1rem;
+      font-style: normal;
       border: 1px solid transparent;
       &:hover {
-        color: #fff;
+        color: #333;
       }
       &.current {
-        color: #fff;
+        color: #333;
       }
       i {
         &::before {
@@ -107,21 +111,10 @@ export default {};
   }
 }
 @media (max-width: 768px) {
-  .header {
-    .site-name {
-      h1 {
-        a {
-          span {
-            display: none;
-          }
-        }
-      }
-    }
-    .nav-menu {
-      .nav-link {
-        i {
-          font-style: inherit;
-        }
+  .nav-menu {
+    .nav-link {
+      i {
+        font-style: inherit;
       }
     }
   }

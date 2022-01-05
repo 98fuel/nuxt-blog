@@ -6,8 +6,10 @@
           <i class="fa fa-bookmark-o">关于</i>
         </div>
         <div class="gg">
-          <p>子舒，前端开发...<br>
-          热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索! <br>
+          <p>
+            子舒，前端开发...
+            <br />热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索!
+            <br />
           </p>
         </div>
         <nuxt-link to="/about">
@@ -33,7 +35,6 @@
           <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
         </div>
       </div>
-
     </div>
   </aside>
 </template>
@@ -89,10 +90,7 @@ export default {
   .wrapper {
     height: 100%;
     word-wrap: break-word;
-    .widget:nth-child(1) {
-      position: sticky;
-      top: 48px;
-    }
+
     .widget {
       background: #fff;
       margin-top: 20px;

@@ -61,25 +61,18 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 0 2%;
   .article {
     padding: 25px 3% 15px;
-    margin-top: 20px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
-    background: #fff;
     .article-title {
       margin: 0;
       color: #000;
-      text-align: left;
       font-weight: 500;
-      font-size: 1.4rem;
+      font-size: 24px;
     }
     .article-meta {
       padding: 0;
       margin: 0;
       margin-top: 4px;
-      border-bottom: 1px solid #eee;
       color: #6e7173;
       font-size: 0.94em;
       text-indent: 0.15em;
@@ -89,11 +82,6 @@ export default {
       opacity: 0.8;
       .article-date {
         margin-right: 12px;
-        &::before {
-          font-family: 'FontAwesome';
-          content: '\f073';
-          padding-right: 0.3em;
-        }
       }
       .article-category {
         display: flex;
@@ -101,11 +89,6 @@ export default {
         flex-wrap: wrap;
         .link {
           margin-right: 6px;
-        }
-        &::before {
-          font-family: 'FontAwesome';
-          content: '\f07c';
-          padding-right: 0.3em;
         }
       }
     }
@@ -152,13 +135,4 @@ export default {
   }
 }
 
-@media (max-width: 520px) {
-  .wrapper {
-    .article {
-      .article-title {
-        font-size: 1.2rem;
-      }
-    }
-  }
-}
 </style>

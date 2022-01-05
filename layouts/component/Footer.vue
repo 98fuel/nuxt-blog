@@ -85,7 +85,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-  width: 75%;
+  width: 100%;
   margin-top: 1.8em;
   font-size: 0.9rem;
   .wrapper {

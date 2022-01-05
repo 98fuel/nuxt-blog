@@ -15,10 +15,10 @@
           >{{category}}</nuxt-link>
         </div>
       </div>
-      <!-- <div class="article-content markdown-body" v-html="article.summary"></div> -->
+      <div class="article-content markdown-body" v-html="article.summary"></div>
       <!-- <div class="article-more">
         <nuxt-link class="link" :to="article.path">阅读全文</nuxt-link>
-      </div> -->
+      </div>-->
     </article>
     <nav class="navigator">
       <pager
@@ -76,29 +76,23 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 0 2%;
   .article {
     padding: 25px 3% 15px;
-    margin-top: 20px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
-    background: #fff;
+    border-bottom: 2px solid #eee;
     .article-title {
       margin: 0;
-      color: #000;
       text-align: left;
       font-weight: 500;
-      font-size: 1.26rem;
+      font-size: 23px;
+      color: #3f4142;
       a {
         position: relative;
-        &:hover {
-          color: #444;
-        }
+        color: inherit;
         &::after {
           content: '';
           width: 0;
           height: 2px;
-          background: #444;
+          background: #6e7173;
           position: absolute;
           left: 0;
           bottom: 0;
@@ -124,11 +118,6 @@ export default {
       opacity: 0.8;
       .article-date {
         margin-right: 12px;
-        &::before {
-          font-family: 'FontAwesome';
-          content: '\f073';
-          padding-right: 0.3em;
-        }
       }
       .article-category {
         display: flex;
@@ -136,11 +125,6 @@ export default {
         flex-wrap: wrap;
         .link {
           margin-right: 6px;
-        }
-        &::before {
-          font-family: 'FontAwesome';
-          content: '\f07c';
-          padding-right: 0.3em;
         }
       }
     }
@@ -154,7 +138,7 @@ export default {
       word-break: normal;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 2;
       overflow: hidden;
       max-height: 140px;
       font-family: 'HYQiHei';

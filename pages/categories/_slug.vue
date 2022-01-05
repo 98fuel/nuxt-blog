@@ -53,13 +53,8 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 0 2%;
   .article {
     padding: 25px 3% 15px;
-    margin-top: 20px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
-    background: #fff;
     .title {
       font-size: 20px;
       font-weight: normal;
