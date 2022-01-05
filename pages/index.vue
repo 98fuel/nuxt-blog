@@ -15,10 +15,10 @@
           >{{category}}</nuxt-link>
         </div>
       </div>
-      <div class="article-content markdown-body" v-html="article.summary"></div>
-      <div class="article-more">
+      <!-- <div class="article-content markdown-body" v-html="article.summary"></div> -->
+      <!-- <div class="article-more">
         <nuxt-link class="link" :to="article.path">阅读全文</nuxt-link>
-      </div>
+      </div> -->
     </article>
     <nav class="navigator">
       <pager
@@ -88,7 +88,7 @@ export default {
       color: #000;
       text-align: left;
       font-weight: 500;
-      font-size: 1.4rem;
+      font-size: 1.26rem;
       a {
         position: relative;
         &:hover {

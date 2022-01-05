@@ -34,20 +34,6 @@
         </div>
       </div>
 
-      <div class="widget">
-        <div class="widget-title">
-          <i class="fa fa-file-o">最近文章</i>
-        </div>
-        <ul class="article-list">
-          <li
-            class="article-list-item"
-            v-for="article in rencentArticles"
-            :key="article.attributes.title"
-          >
-            <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
-          </li>
-        </ul>
-      </div>
     </div>
   </aside>
 </template>
@@ -57,8 +43,7 @@ export default {
   data () {
     return {
       categories: [],
-      tags: [],
-      rencentArticles: []
+      tags: []
     }
   },
   methods: {
@@ -92,7 +77,6 @@ export default {
       path: `/posts/${key.replace('.md', '').replace('./', '')}`
     }))
     articles.sort((a, b) => new Date(b.attributes.date).getTime() - new Date(a.attributes.date).getTime())
-    this.rencentArticles = articles.slice(0, 5)
     this.categories = this.getCategories(articles)
     this.tags = this.getTags(articles)
   },
