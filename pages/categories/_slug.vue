@@ -1,6 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="article">
+      <div class="archive-category">
+        <nuxt-link to="/categories/技术">技术</nuxt-link>
+        <nuxt-link to="/categories/随笔">随笔</nuxt-link>
+      </div>
       <h1 class="title">正在查看 {{keyword}} 分类下的文章</h1>
       <div class="archive">
         <div class="archive-list">
@@ -55,13 +59,24 @@ export default {
 .wrapper {
   .article {
     padding: 25px 3% 15px;
+    .archive-category {
+      margin-bottom: 1rem;
+      a {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 4px 10px;
+        color: #fff;
+        background: rgb(99, 175, 165);
+        border-radius: 4px;
+      }
+    }
     .title {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: normal;
       color: #888;
     }
     .archive {
-      padding: 25px 0 15px;
+      padding: 10px 0 15px;
       .archive-list {
         font-size: 16px;
         line-height: 2;

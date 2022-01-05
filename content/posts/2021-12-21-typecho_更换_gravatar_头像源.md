@@ -12,7 +12,7 @@ tags:
 
 找到根目录下 `config.inc.php` 文件，在最前面加入下面的代码。
 
-![9fb4430fc79684a5a9d48a9c5b1f51c.png](https://img.xiabanlo.cn/2021/12/21/857b4b8c3d94d.png)
+![](https://cdn.jsdelivr.net/gh/Nov8nana/pic-cdn@c549d6cfb8b83d2410899cf619a663d8cebbffe1/2022/01/05/3e5e307b9fb3ba048fdc9f7b5351d7b9.png)
 
 ```php
 define('__TYPECHO_GRAVATAR_PREFIX__', 'https://sdn.geekzu.org/avatar/');

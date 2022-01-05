@@ -17,6 +17,10 @@
         <i>归档</i>
       </nuxt-link>
 
+      <nuxt-link to="/tags" class="nav-link" exact-active-class="current">
+        <i>标签</i>
+      </nuxt-link>
+
       <nuxt-link to="/message" class="nav-link" exact-active-class="current">
         <i>留言</i>
       </nuxt-link>
@@ -34,7 +38,6 @@ export default {};
 
 <style lang="scss" scoped>
 .header {
-  height: 100px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -53,6 +56,7 @@ export default {};
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         span {
           display: block;
+          padding: 1rem 0;
           font-size: 2rem;
           color: rgba(0, 0, 0, 0.623);
           word-break: break-all;

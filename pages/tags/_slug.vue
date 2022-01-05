@@ -1,11 +1,15 @@
 <template>
   <div class="wrapper">
     <div class="archive">
+      <div class="widget">
+        <h2>标签</h2>
+        <div class="tag-list">
+          <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
+        </div>
+      </div>
       <h1 class="title">正在查看 {{keyword}} 标签下的文章</h1>
-
       <div class="archive-list">
         <div class="archive-item" v-for="archive in archives" :key="archive.date">
-          <h2 class="archive-time">{{archive.date}}</h2>
           <ul
             class="article-list"
             v-for="article in archive.articles"
@@ -29,6 +33,11 @@
 <script>
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
+  data () {
+    return {
+      tags: []
+    }
+  },
   async asyncData ({ isDev, route, store, env, params, query, req, res, redirect, error }) {
     const context = await require.context('~/content/posts', true, /\.md$/)
     let articles = await context.keys().map(key => ({
@@ -45,8 +54,28 @@ export default {
   methods: {
     formatDateArticle (date) {
       return formatDateArticle(date)
+    },
+    getTags (articles) {
+      const tags = []
+      articles.forEach(article => {
+        article.attributes.tags.forEach(tag => {
+          if (tags.filter(item => item === tag).length === 0) {
+            tags.push(tag)
+          }
+        })
+      })
+      return tags
     }
-  }
+  },
+  // 获取标签云
+  async fetch () {
+    const context = await require.context('~/content/posts', true, /\.md$/)
+    const articles = await context.keys().map(key => ({
+      ...context(key),
+      path: `/posts/${key.replace('.md', '').replace('./', '')}`
+    }))
+    this.tags = this.getTags(articles)
+  },
 }
 </script>
 
@@ -54,12 +83,23 @@ export default {
 .wrapper {
   .archive {
     padding: 25px 3% 15px;
+    .widget {
+      .tag-list {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        a {
+          display: inline-block;
+          padding: 4px 10px;
+          white-space: nowrap;
+        }
+      }
+    }
     .title {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: normal;
       color: #888;
     }
-
     .archive-list {
       font-size: 16px;
       line-height: 2;
