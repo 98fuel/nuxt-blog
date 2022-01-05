@@ -87,6 +87,7 @@ export default {
 .footer {
   width: 75%;
   margin-top: 1.8em;
+  font-size: 0.9rem;
   .wrapper {
     color: #6e7173;
     padding: 0.8em 0 1.6em;

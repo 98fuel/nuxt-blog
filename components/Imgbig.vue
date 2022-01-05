@@ -4,7 +4,6 @@
     <img src alt class="bigimg" />
     <div class="mask"></div>
     <script src="https://cdn.xiabanlo.cn/list/zoom.js"></script>
-    <script src="https://cdn.xiabanlo.cn/list/demo.js"></script>
   </div>
 </template>
 
