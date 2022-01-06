@@ -28,6 +28,7 @@ export default {
   margin-right: 1%;
   background: #fff;
   border-radius: 4px;
+  border: 1px solid #d6d6d6;
   box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
   .container {
     display: flex;
