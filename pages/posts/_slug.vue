@@ -28,8 +28,7 @@
 
       <article class="article article-ps">
         <div>
-          出于个人的考虑，移除了文章内的评论框。如果你想评论留言，请移步
-          <nuxt-link to="/message">留言板</nuxt-link>。
+          出于个人的考虑，移除了文章内的评论框。如果你想评论留言，请移步 <a href="/message">留言板</a>。
         </div>
       </article>
       <Imgbig />
