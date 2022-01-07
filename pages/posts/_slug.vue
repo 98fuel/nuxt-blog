@@ -69,15 +69,20 @@ export default {
       color: #1a374d;
       font-weight: 600;
       font-size: 24px;
+      line-height: 1.2;
+      padding: 8px 0;
+      text-align: center;
     }
     .article-meta {
       padding: 0;
       margin: 0;
       margin-top: 4px;
       color: #6e7173;
+      border-bottom: 1px solid #eee;
       font-size: 0.94em;
       text-indent: 0.15em;
       display: flex;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       opacity: 0.8;

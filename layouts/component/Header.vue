@@ -3,7 +3,7 @@
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">
-          <img src="https://img.xiabanlo.cn/favicon.png" alt="favicon" />
+          <img src="https://img.xiabanlo.cn/favicon.png" />
           <span>子舒的博客</span>
         </nuxt-link>
       </h1>
@@ -69,7 +69,7 @@ export default {
         }
         span {
           display: block;
-          font-size: 1.6rem;
+          font-size: 1.3rem;
           color: rgba(0, 0, 0, 0.623);
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
@@ -108,6 +108,7 @@ export default {
     padding: 0 1%;
     color: rgba(0, 0, 0, 0.6);
     transition: all 0.2s linear;
+    display: none;
   }
 }
 .topheader {
