@@ -1,11 +1,16 @@
 <template>
   <div class="wrapper">
-    <article class="article article-index" v-for="article in articles" :key="article.attributes.title">
+    <article
+      class="article article-index"
+      v-for="article in articles"
+      :key="article.attributes.title"
+    >
       <h1 class="article-title">
         <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
-      </h1>
-      <div class="article-meta">
         <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+      </h1>
+      <div class="article-content markdown-body" v-html="article.summary"></div>
+      <div class="article-meta">
         <div class="article-category">
           <nuxt-link
             class="link"
@@ -15,7 +20,6 @@
           >{{category}}</nuxt-link>
         </div>
       </div>
-      <div class="article-content markdown-body" v-html="article.summary"></div>
     </article>
     <nav class="navigator">
       <pager
@@ -74,14 +78,16 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 3% 15px;
+    padding: 25px 1% 15px;
     border-bottom: 2px solid #eee;
     .article-title {
       margin: 0;
-      text-align: left;
       font-weight: 500;
-      font-size: 23px;
-      color: #3f4142;
+      font-size: 1.3rem;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       a {
         position: relative;
         color: inherit;
@@ -89,7 +95,7 @@ export default {
           content: '';
           width: 0;
           height: 2px;
-          background: #6e7173;
+          background: #000;
           position: absolute;
           left: 0;
           bottom: 0;
@@ -99,37 +105,21 @@ export default {
           width: 100%;
         }
       }
+      .article-date {
+        color: #6e7173;
+        font-size: 0.94rem;
+        opacity: 0.8;
+      }
     }
     .link {
       color: inherit;
     }
-    .article-meta {
-      padding: 0;
-      margin: 0;
-      color: #6e7173;
-      font-size: 0.94em;
-      text-indent: 0.15em;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      opacity: 0.8;
-      .article-date {
-        margin-right: 12px;
-      }
-      .article-category {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        .link {
-          margin-right: 6px;
-        }
-      }
-    }
+
     .article-content {
       font-size: 15px;
       line-height: 1.77;
-      color: #444;
-      padding-top: 15px;
+      color: #4b5563;
+      padding-top: 8px;
       text-align: justify;
       text-justify: distribute;
       word-break: normal;
@@ -139,6 +129,28 @@ export default {
       overflow: hidden;
       max-height: 140px;
       font-family: 'HYQiHei';
+    }
+    .article-meta {
+      margin-top: 1rem;
+      padding: 0;
+      color: #6e7173;
+      font-size: 0.94em;
+      text-indent: 0.15em;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      opacity: 0.8;
+      .article-category {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .link {
+          margin-right: 6px;
+          background: #f3f3f3;
+          padding: 0 8px;
+          border-radius: 4px;
+        }
+      }
     }
   }
   .navigator {
@@ -156,6 +168,11 @@ export default {
       .article-title {
         font-size: 1.2rem;
         font-weight: 600;
+        flex-direction: column;
+        align-items: flex-start;
+        .article-date {
+          font-weight: 500;
+        }
       }
     }
   }

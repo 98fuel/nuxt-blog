@@ -53,7 +53,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .archive {
-    padding: 25px 3% 15px;
+    padding: 25px 1% 15px;
     .archive-category {
       margin-bottom: 1rem;
       a {

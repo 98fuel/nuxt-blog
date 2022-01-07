@@ -3,6 +3,8 @@
     <Header />
     <div class="container">
       <Main />
+      <!-- <Aside /> -->
+      
     </div>
     <Footer />
   </div>
@@ -11,12 +13,14 @@
 <script>
 import Header from './component/Header'
 import Main from './component/Main'
+import Aside from './component/Aside'
 import Footer from './component/Footer'
 
 export default {
   components: {
     Header,
     Main,
+    Aside,
     Footer,
   },
 }
@@ -24,21 +28,13 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  margin-left: 1%;
-  margin-right: 1%;
-  background: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 4px;
-  border: 1px solid #d6d6d6;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
   .container {
-    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
   }
 }
-@media print, screen and (max-width: 48em) {
-  .layout {
-    .container {
-      display: block;
-    }
-  }
-}
+
 </style>

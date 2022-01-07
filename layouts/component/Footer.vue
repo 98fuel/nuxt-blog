@@ -2,8 +2,12 @@
   <footer class="footer">
     <div class="wrapper">
       <div>
-        Copyright © 2020 -2021
-        <a href="/">子舒的博客</a> · Power <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
+        © 2020 -2022 ·
+        <a href="/">子舒的博客</a> ·
+        已运行
+        <span id="days">0</span> 天 ·
+        Power
+        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
       </div>
       <div>
         <a href="https://beian.miit.gov.cn/" target="_blank">
@@ -33,6 +37,7 @@
         <i></i>
       </div>
     </div>
+    <script src="https://cdn.xiabanlo.cn/list/main.js"></script>
   </footer>
 </template>
 
@@ -43,7 +48,7 @@ export default {
     return {
       opacity: '1',
       gotop: false,
-      scrollHeight: 200,
+      scrollHeight: 140,
       scrollTop: 0
     };
   },
@@ -88,10 +93,13 @@ export default {
   width: 100%;
   margin-top: 1.8em;
   font-size: 0.9rem;
+  border-top: 1px solid #eee;
   .wrapper {
     color: #6e7173;
-    padding: 0.8em 0 1.6em;
-    text-align: center;
+    padding: 1.4em 0 1.6em;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
   }
   .top-btn {
     position: fixed;

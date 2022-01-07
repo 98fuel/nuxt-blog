@@ -4,7 +4,8 @@
       <article class="article">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
         <div class="article-meta">
-          <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+          <div>子舒 /</div>
+          <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
           <div class="article-category">
             <nuxt-link
               class="link"
@@ -15,7 +16,7 @@
           </div>
         </div>
         <div class="markdown-body article-content" v-html="article.html"></div>
-        <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div>
+        <!-- <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div> -->
         <div class="article-tags">
           <nuxt-link
             class="link"
@@ -28,7 +29,8 @@
 
       <article class="article article-ps">
         <div>
-          出于个人的考虑，移除了文章内的评论框。如果你想评论留言，请移步 <a href="/message">留言板</a>。
+          出于个人的考虑，没有在文章内设置评论框。如果你想评论留言，请移步
+          <a href="/message">留言板</a>。
         </div>
       </article>
       <Imgbig />
@@ -61,11 +63,11 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 3% 15px;
+    padding: 25px 1% 15px;
     .article-title {
       margin: 0;
-      color: #000;
-      font-weight: 500;
+      color: #1a374d;
+      font-weight: 600;
       font-size: 24px;
     }
     .article-meta {
@@ -80,7 +82,7 @@ export default {
       flex-wrap: wrap;
       opacity: 0.8;
       .article-date {
-        margin-right: 12px;
+        margin-right: 0;
       }
       .article-category {
         display: flex;
@@ -94,10 +96,8 @@ export default {
     .article-content {
       font-size: 16px;
       line-height: 2;
-      color: #444;
+      color: #4b5563;
       padding-top: 15px;
-      text-align: left;
-      text-justify: distribute;
       word-break: normal;
       font-family: 'HYQiHei';
     }
@@ -105,8 +105,6 @@ export default {
       margin-top: 1rem;
       font-size: 0.96rem;
       color: #6e7173;
-      background: #eee;
-      padding-left: 10px;
     }
     .article-tags {
       display: flex;
@@ -124,7 +122,7 @@ export default {
     }
   }
   .article-ps {
-    padding: 15px 3%;
+    padding: 15px 1%;
     opacity: 0.9;
     font-size: 0.96rem;
     a {
@@ -133,5 +131,4 @@ export default {
     }
   }
 }
-
 </style>
