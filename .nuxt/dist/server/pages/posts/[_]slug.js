@@ -148,12 +148,12 @@ module.exports.__inject__ = function (context) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Imgbig.vue?vue&type=template&id=633410a6&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<link rel=\"stylesheet\" href=\"https://cdn.xiabanlo.cn/list/zoom.css\" data-v-633410a6> <img src alt class=\"bigimg\" data-v-633410a6> <div class=\"mask\" data-v-633410a6></div> <script src=\"https://cdn.xiabanlo.cn/list/zoom.js\" data-v-633410a6></script>")])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Imgbig.vue?vue&type=template&id=76622010&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/Nov8nana/cdn/css/zoom.css\" data-v-76622010> <img src alt class=\"bigimg\" data-v-76622010> <div class=\"mask\" data-v-76622010></div> <script src=\"https://cdn.jsdelivr.net/gh/Nov8nana/cdn/js/zoom.js\" data-v-76622010></script>")])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/Imgbig.vue?vue&type=template&id=633410a6&scoped=true&
+// CONCATENATED MODULE: ./components/Imgbig.vue?vue&type=template&id=76622010&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/Imgbig.vue?vue&type=script&lang=js&
 //
@@ -188,7 +188,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "633410a6",
+  "76622010",
   "42fdc8da"
   
 )

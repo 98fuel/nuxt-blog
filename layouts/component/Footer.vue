@@ -9,7 +9,7 @@
         Power
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
       </div>
-      <div>
+      <!-- <div>
         <a href="https://beian.miit.gov.cn/" target="_blank">
           <span>浙ICP备2021002261号-2</span>
         </a> ·
@@ -17,9 +17,9 @@
           target="_blank"
           href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802012091"
         >
-          <img src="https://img.xiabanlo.cn/beian.png" />浙公网安备 33010802012091号
+        浙公网安备 33010802012091号
         </a>
-      </div>
+      </div> -->
     </div>
 
     <!-- 返回顶部 -->
@@ -37,7 +37,19 @@
         <i></i>
       </div>
     </div>
-    <script src="https://cdn.xiabanlo.cn/list/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script>
+  VANTA.HALO({
+    el: "#your-element-selector",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+  });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/js/nuxt-blog-main.js"></script>
   </footer>
 </template>
 

@@ -3,7 +3,7 @@
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">
-          <img src="https://img.xiabanlo.cn/favicon.png" />
+          <img src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/img/favicon.png" />
           <span>子舒的博客</span>
         </nuxt-link>
       </h1>
@@ -30,6 +30,7 @@
       </div>
     </div>
     <p class="description">路漫漫其修远兮，吾将上下而求索！</p>
+    
   </header>
 </template>
 
@@ -70,7 +71,7 @@ export default {
         span {
           display: block;
           font-size: 1.3rem;
-          color: rgba(0, 0, 0, 0.623);
+          color: #4d4e4e;
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
           font-weight: 600;
@@ -85,15 +86,15 @@ export default {
       .nav-link {
         padding: 3px 10px 3px;
         line-height: 30px;
-        color: #a8a29e;
+        color: #6E7173;
         font-size: 1rem;
         font-style: normal;
         border: 1px solid transparent;
         &:hover {
-          color: #333;
+          color: #000;
         }
         &.current {
-          color: #333;
+          color: #000;
         }
         i {
           &::before {
