@@ -82,9 +82,9 @@ export default {
     border-bottom: 2px solid #eee;
     .article-title {
       margin: 0;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 1.3rem;
-      color: #000;
+      color: #3c3a3a;
       display: flex;
       justify-content: space-between;
       align-items: center;

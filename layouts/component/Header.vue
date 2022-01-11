@@ -1,9 +1,10 @@
 <template>
   <header class="header" @scroll="scrollEvent">
+    <div class="bg"></div>
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">
-          <img src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/img/favicon.png" />
+          <img src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/img/favicon1.png" />
           <span>子舒的博客</span>
         </nuxt-link>
       </h1>
@@ -29,8 +30,9 @@
         </nuxt-link>
       </div>
     </div>
-    <p class="description">路漫漫其修远兮，吾将上下而求索！</p>
-    
+    <p class="description">
+      <i>路漫漫其修远兮，吾将上下而求索！</i>
+    </p>
   </header>
 </template>
 
@@ -46,20 +48,35 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  max-width: 700px;
+  position: relative;
+  max-width: 100%;
+  height: 240px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  z-index: 9;
-  border-bottom: 1px solid #eee;
-  transition: all 0.2s linear;
+  align-items: center;
+  .bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 240px;
+    background-image: linear-gradient(to bottom, #1a374d, #406882d8);
+    // box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    z-index: -1;
+  }
   .site-name {
-    padding: 20px 0;
+    z-index: 999;
+    padding: 8px 3%;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(to right, #1a374d, #406882);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.2s linear;
     h1 {
       a {
         display: flex;
@@ -71,7 +88,7 @@ export default {
         span {
           display: block;
           font-size: 1.3rem;
-          color: #4d4e4e;
+          color: #fff;
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
           font-weight: 600;
@@ -86,15 +103,15 @@ export default {
       .nav-link {
         padding: 3px 10px 3px;
         line-height: 30px;
-        color: #6E7173;
+        color: #eee;
         font-size: 1rem;
-        font-style: normal;
+        font-style: inherit;
         border: 1px solid transparent;
         &:hover {
-          color: #000;
+          color: #fff;
         }
         &.current {
-          color: #000;
+          color: #fff;
         }
         i {
           &::before {
@@ -105,32 +122,19 @@ export default {
     }
   }
   .description {
-    font-size: 0.88rem;
-    padding: 0 1%;
-    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    padding: 0 1% 14px;
+    color: rgb(233, 230, 230);
     transition: all 0.2s linear;
-    display: none;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
 .topheader {
-  padding: 0 3%;
-  position: sticky;
-  top: 0;
-  max-width: 100%;
-  background: rgba(255, 255, 255, 0.5);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  backdrop-filter: blur(5px);
   .site-name {
-    padding: 8px 0;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
     h1 {
-      a {
-        span {
-          font-size: 1.3rem;
-        }
-      }
     }
   }
   .description {
@@ -140,9 +144,9 @@ export default {
 @media (max-width: 520px) {
   .header {
     .site-name {
-      padding: 8px 0;
       flex-direction: column;
       h1 {
+        padding: 20px 0;
         a {
           span {
             font-size: 1.3rem;

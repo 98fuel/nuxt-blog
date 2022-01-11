@@ -4,9 +4,8 @@
     <div class="container">
       <Main />
       <!-- <Aside /> -->
-      
+      <Footer />
     </div>
-    <Footer />
   </div>
 </template>
 
@@ -28,13 +27,24 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 4px;
   .container {
-    max-width: 700px;
-    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto 60px;
+    padding: 10px 2%;
+    z-index: 9;
+    background: #fff;
+    margin-top: -100px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
   }
 }
-
+@media (max-width: 820px) {
+  .layout {
+    .container {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
 </style>

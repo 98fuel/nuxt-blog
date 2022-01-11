@@ -75,8 +75,7 @@ export default {
     }
     .article-meta {
       padding: 0;
-      margin: 0;
-      margin-top: 4px;
+      margin: 10px 0 20px;
       color: #6e7173;
       border-bottom: 1px solid #eee;
       font-size: 0.94em;
@@ -101,7 +100,7 @@ export default {
     .article-content {
       font-size: 16px;
       line-height: 2;
-      color: #4b5563;
+      color: inherit;
       padding-top: 15px;
       word-break: normal;
       font-family: 'HYQiHei';
