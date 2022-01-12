@@ -35,6 +35,21 @@
           <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
         </div>
       </div>
+
+      <div class="widget">
+        <div class="widget-title">
+          <i class="fa fa-file-o">最近文章</i>
+        </div>
+        <ul class="article-list">
+          <li
+            class="article-list-item"
+            v-for="article in rencentArticles"
+            :key="article.attributes.title"
+          >
+            <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </aside>
 </template>
@@ -44,7 +59,8 @@ export default {
   data () {
     return {
       categories: [],
-      tags: []
+      tags: [],
+      rencentArticles: []
     }
   },
   methods: {
@@ -78,6 +94,7 @@ export default {
       path: `/posts/${key.replace('.md', '').replace('./', '')}`
     }))
     articles.sort((a, b) => new Date(b.attributes.date).getTime() - new Date(a.attributes.date).getTime())
+    this.rencentArticles = articles.slice(0, 5)
     this.categories = this.getCategories(articles)
     this.tags = this.getTags(articles)
   },
@@ -86,16 +103,17 @@ export default {
 
 <style lang="scss" scoped>
 .aside {
-  width: 25%;
+  width: 100%;
+  height: 100%;
   .wrapper {
     height: 100%;
     word-wrap: break-word;
-
     .widget {
       background: #fff;
-      margin-top: 20px;
+      margin-bottom: 20px;
       padding: 10px 4%;
-      box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+      box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+      border-radius: 4px;
       .widget-title {
         color: #6e7173;
         line-height: 2.7;
@@ -137,13 +155,10 @@ export default {
         }
       }
     }
-  }
-}
-@media print, screen and (max-width: 48em) {
-  .aside {
-    display: none;
-    .wrapper {
-      border-left-width: 0px;
+
+    .widget:nth-child(1) {
+      position: sticky;
+      top: 70px;
     }
   }
 }

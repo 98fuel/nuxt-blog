@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="article">
-      <div class="archive-category">
+      <!-- <div class="archive-category">
         <nuxt-link to="/categories/技术">技术</nuxt-link>
         <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-      </div>
+      </div> -->
       <h1 class="title">正在查看 {{keyword}} 分类下的文章</h1>
       <div class="archive">
         <div class="archive-list">

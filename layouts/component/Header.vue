@@ -61,7 +61,11 @@ export default {
     top: 0;
     width: 100%;
     height: 240px;
-    background-image: linear-gradient(to bottom, #1a374d, #406882d8);
+    background-image: linear-gradient(
+      to bottom,
+      #1a374d,
+      rgba(64, 104, 130, 0)
+    );
     // box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
     z-index: -1;
   }
@@ -77,6 +81,7 @@ export default {
     width: 100%;
     top: 0;
     transition: all 0.2s linear;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
     h1 {
       a {
         display: flex;
@@ -138,13 +143,14 @@ export default {
     }
   }
   .description {
-    display: none;
   }
 }
 @media (max-width: 520px) {
   .header {
+    align-items: flex-start;
     .site-name {
       flex-direction: column;
+      position: relative;
       h1 {
         padding: 20px 0;
         a {
@@ -154,6 +160,8 @@ export default {
         }
       }
       .nav-menu {
+        position: sticky;
+        top: 0;
         .nav-link {
           i {
             font-style: inherit;

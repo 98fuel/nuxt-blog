@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="archive">
-      <div class="archive-category">
+      <!-- <div class="archive-category">
         <nuxt-link to="/categories/技术">技术</nuxt-link>
         <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-      </div>
+      </div> -->
       <div class="archive-list">
         <div class="archive-item" v-for="archive in archives" :key="archive.date">
           <h2 class="archive-time">{{archive.date}}</h2>

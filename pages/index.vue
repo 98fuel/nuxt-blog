@@ -109,6 +109,7 @@ export default {
         color: #6e7173;
         font-size: 0.94rem;
         opacity: 0.8;
+        font-weight: 500;
       }
     }
     .link {

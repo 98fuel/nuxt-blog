@@ -1,10 +1,14 @@
 <template>
   <div class="layout">
     <Header />
-    <div class="container">
-      <Main />
-      <!-- <Aside /> -->
-      <Footer />
+    <div class="body">
+      <div class="container">
+        <Main />
+        <Footer />
+      </div>
+      <div class="sidebar">
+        <Aside />
+      </div>
     </div>
   </div>
 </template>
@@ -27,23 +31,52 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  .container {
-    border-radius: 4px;
-    position: relative;
-    max-width: 800px;
+  .body {
+    display: flex;
+    justify-content: space-between;
     margin: 20px auto 60px;
-    padding: 10px 2%;
-    z-index: 9;
-    background: #fff;
     margin-top: -100px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    max-width: 1000px;
+    .container {
+      border-radius: 4px;
+      position: relative;
+      height: 100%;
+      max-width: 720px;
+      overflow: hidden;
+      flex: 1;
+      padding: 10px 2%;
+      z-index: 9;
+      background: #fff;
+      box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    }
+    .sidebar {
+      width: 280px;
+      padding-left: 20px;
+    }
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 1020px) {
   .layout {
-    .container {
-      margin-left: 10px;
-      margin-right: 10px;
+    .body {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .layout {
+    .body {
+      display: block;
+      .container {
+        max-width: 100%;
+        width: 100%;
+      }
+      .sidebar {
+        margin-top: 20px;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
 }
