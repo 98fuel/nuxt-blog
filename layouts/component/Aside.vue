@@ -2,21 +2,37 @@
   <aside class="aside">
     <div class="wrapper">
       <div class="widget">
-        <div class="widget-title">
-          <i class="fa fa-bookmark-o">关于</i>
-        </div>
         <div class="gg">
-          <p>
-            子舒，前端开发...
-            <br />热爱生活，喜欢折腾。路漫漫其修远兮，吾将上下而求索!
-            <br />
-          </p>
+          <nuxt-link to="/">
+            <img src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/img/author.png" />
+          </nuxt-link>
+          <div>
+            <h3>子舒</h3>
+            <p>前端开发...</p>
+            <nuxt-link to="/about">more...</nuxt-link>
+          </div>
         </div>
-        <nuxt-link to="/about">
-          <i>more...</i>
-        </nuxt-link>
+
+        <ul class="share">
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <a>杭州</a>
+          </li>
+          <li>
+            <i class="fa fa-github"></i>
+            <a href="https://github.com/Nov8nana" target="_blank">Github</a>
+          </li>
+          <li>
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:shuxhan@163.com">shuxhan@163.com</a>
+          </li>
+          <li>
+            <i class="fa fa-link"></i>
+            <a href="/">我的博客</a>
+          </li>
+        </ul>
       </div>
-      <div class="widget">
+      <!-- <div class="widget">
         <div class="widget-title">
           <i class="fa fa-folder-o">分类</i>
         </div>
@@ -25,9 +41,9 @@
             <nuxt-link class="link" :to="`/categories/${category}`">{{category}}</nuxt-link>
           </li>
         </ul>
-      </div>
+      </div>-->
 
-      <div class="widget">
+      <!-- <div class="widget">
         <div class="widget-title">
           <i class="fa fa-tag">标签</i>
         </div>
@@ -49,7 +65,7 @@
             <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
           </li>
         </ul>
-      </div>
+      </div>-->
     </div>
   </aside>
 </template>
@@ -106,26 +122,62 @@ export default {
   width: 100%;
   height: 100%;
   .wrapper {
-    height: 100%;
     word-wrap: break-word;
+    position: sticky;
+    top: 20px;
     .widget {
-      background: #fff;
-      margin-bottom: 20px;
       padding: 10px 4%;
-      box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
       border-radius: 4px;
+      opacity: 0.8;
+      transition: all 0.2s linear;
+      &:hover {
+        opacity: 1;
+      }
       .widget-title {
         color: #6e7173;
         line-height: 2.7;
         margin-top: 0;
-        font-size: 16px;
         border-bottom: 1px solid #ddd;
         i::before {
           padding-right: 6px;
         }
       }
       .gg {
-        font-size: 0.96rem;
+        font-size: 15px;
+        a {
+          display: block;
+          img {
+            border-radius: 50%;
+            height: 80px;
+          }
+        }
+        div {
+          h3 {
+            font-weight: 600;
+            padding: 6px 0 3px;
+          }
+        }
+      }
+      .share {
+        margin-left: -4px;
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          padding: 1px 0;
+          i {
+            width: 20px;
+            font-size: 12px;
+            margin-right: 2px;
+            display: flex;
+            justify-content: center;
+          }
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
       }
       ul {
         list-style: none;
@@ -134,6 +186,7 @@ export default {
         li {
           margin: 5px 0;
           line-height: 1.5;
+          font-size: 14px;
         }
       }
       .tag-list {
@@ -155,10 +208,25 @@ export default {
         }
       }
     }
-
-    .widget:nth-child(1) {
-      position: sticky;
-      top: 70px;
+  }
+}
+@media (max-width: 900px) {
+  .aside {
+    .wrapper {
+      .widget {
+        .gg {
+          display: flex;
+          div {
+            margin-left: 2rem;
+            h3 {
+              padding-top: 0;
+            }
+          }
+        }
+        .share {
+          display: none;
+        }
+      }
     }
   }
 }

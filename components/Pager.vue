@@ -87,8 +87,11 @@ function unique (array) {
 
 <style lang="scss" scoped>
 .pager {
-  padding: 0 3%;
+  padding: 0;
   user-select: none;
+  display: inline-block;
+  border: 1px solid #c4c2c2;
+  border-radius: 4px;
   &.hide {
     display: none;
   }
@@ -96,53 +99,22 @@ function unique (array) {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
     font-size: 14px;
     height: 36px;
     line-height: 36px;
-    padding: 6px 10px;
+    padding: 6px 14px;
     color: #444;
-    margin: 0 3px;
+    margin: 0;
     cursor: pointer;
-    border: 1px solid #ddd;
-    &:not(.separator):hover {
-      background-color: #f8f8f8;
-      border-color: #999;
-    }
+    border-right: 1px solid #c4c2c2;
     &:not(.separator).current {
       cursor: default;
-      background-color: #f8f8f8;
-      border-color: #999;
+      background-color: #6f777d;
+      color: #fff;
     }
-    &.separator {
-      font-weight: bold;
-      cursor: default;
-      border: none;
-    }
-    &.prev-nav {
-      float: left;
-      margin: 0;
-      &::before {
-        font-family: 'FontAwesome';
-        content: '\f100';
-        padding-right: 0.3em;
-      }
-      &.hidden {
-        display: none;
-      }
-    }
-    &.next-nav {
-      float: right;
-      margin: 0;
-      &::after {
-        font-family: 'FontAwesome';
-        content: '\f101';
-        padding-left: 0.3em;
-      }
-      &.hidden {
-        display: none;
-      }
-    }
+  }
+  .pager-item:last-child{
+    border: none;
   }
 }
 </style>

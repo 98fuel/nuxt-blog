@@ -7,7 +7,7 @@
           <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
         </div>
       </div>
-      <h1 class="title">正在查看 {{keyword}} 标签下的文章</h1>
+      <h1 class="title">正在查看 "{{keyword}}" 标签下的文章</h1>
       <div class="archive-list">
         <div class="archive-item" v-for="archive in archives" :key="archive.date">
           <ul
@@ -92,6 +92,7 @@ export default {
           display: inline-block;
           padding: 4px 10px;
           white-space: nowrap;
+          color: #000;
         }
       }
     }

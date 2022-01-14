@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="article">
-      <!-- <div class="archive-category">
+      <div class="archive-category">
         <nuxt-link to="/categories/技术">技术</nuxt-link>
         <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-      </div> -->
+      </div>
       <h1 class="title">正在查看 {{keyword}} 分类下的文章</h1>
       <div class="archive">
         <div class="archive-list">
@@ -65,9 +65,10 @@ export default {
         display: inline-block;
         margin-right: 20px;
         padding: 4px 10px;
-        color: #fff;
-        background: rgb(99, 175, 165);
-        border-radius: 4px;
+        color: #000;
+        border-bottom: 2px solid #000;
+        // background: rgb(99, 175, 165);
+        // border-radius: 4px;
       }
     }
     .title {

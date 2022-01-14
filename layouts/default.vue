@@ -2,14 +2,17 @@
   <div class="layout">
     <Header />
     <div class="body">
-      <div class="container">
-        <Main />
-        <Footer />
-      </div>
       <div class="sidebar">
         <Aside />
       </div>
+      <div class="container">
+        <Main />
+      </div>
+      <div class="toc">
+      
+      </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -34,24 +37,24 @@ export default {
   .body {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 60px;
-    margin-top: -100px;
-    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1%;
+    max-width: 1280px;
+    margin-top: 16px;
     .container {
       border-radius: 4px;
       position: relative;
       height: 100%;
-      max-width: 720px;
+      max-width: 700px;
       overflow: hidden;
       flex: 1;
-      padding: 10px 2%;
-      z-index: 9;
-      background: #fff;
-      box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
     }
     .sidebar {
-      width: 280px;
-      padding-left: 20px;
+      width: 260px;
+      padding-right: 20px;
+    }
+    .toc {
+      width: 300px;
     }
   }
 }

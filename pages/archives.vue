@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="archive">
-      <!-- <div class="archive-category">
+      <div class="archive-category">
         <nuxt-link to="/categories/技术">技术</nuxt-link>
         <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-      </div> -->
+      </div>
       <div class="archive-list">
         <div class="archive-item" v-for="archive in archives" :key="archive.date">
           <h2 class="archive-time">{{archive.date}}</h2>
@@ -59,10 +59,11 @@ export default {
       a {
         display: inline-block;
         margin-right: 20px;
-        padding: 4px 10px;
-        color: #fff;
-        background: rgb(99, 175, 165);
-        border-radius: 4px;
+        padding: 4px 10px 0;
+        color: #000;
+        border-bottom: 2px solid #000;
+        // background: rgb(99, 175, 165);
+        // border-radius: 4px;
       }
     }
     .archive-list {

@@ -5,11 +5,13 @@
       v-for="article in articles"
       :key="article.attributes.title"
     >
-      <h1 class="article-title">
-        <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
-        <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-      </h1>
-      <div class="article-content markdown-body" v-html="article.summary"></div>
+      <nuxt-link class="link" :to="article.path">
+        <h1 class="article-title">
+          <span>{{ article.attributes.title }}</span>
+          <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+        </h1>
+        <div class="article-content markdown-body" v-html="article.summary"></div>
+      </nuxt-link>
       <div class="article-meta">
         <div class="article-category">
           <nuxt-link
@@ -78,49 +80,39 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 1% 15px;
-    border-bottom: 2px solid #eee;
+    padding: 20px 1% 4px;
+    opacity: 0.95;
+    transition: all 0.2s linear;
+    &:hover {
+      opacity: 1;
+      .article-title {
+        color: #184d5e;
+      }
+    }
     .article-title {
       margin: 0;
       font-weight: 600;
-      font-size: 1.3rem;
-      color: #3c3a3a;
+      font-size: 20px;
+      color: #4e91a5;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      a {
-        position: relative;
-        color: inherit;
-        &::after {
-          content: '';
-          width: 0;
-          height: 2px;
-          background: #000;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          transition: all 0.2s linear;
-        }
-        &:hover::after {
-          width: 100%;
-        }
+      transition: all 0.2s linear;
+      span {
+        text-decoration: underline;
       }
       .article-date {
         color: #6e7173;
         font-size: 0.94rem;
         opacity: 0.8;
         font-weight: 500;
+        text-decoration: none;
       }
     }
-    .link {
-      color: inherit;
-    }
-
     .article-content {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 1.77;
       color: #4b5563;
-      padding-top: 8px;
       text-align: justify;
       text-justify: distribute;
       word-break: normal;
@@ -132,7 +124,7 @@ export default {
       font-family: 'HYQiHei';
     }
     .article-meta {
-      margin-top: 1rem;
+      margin-top: 10px;
       padding: 0;
       color: #6e7173;
       font-size: 0.94em;
@@ -159,7 +151,6 @@ export default {
     margin-top: 25px;
     padding: 25px 0 0;
     font-size: 14px;
-    text-align: center;
   }
 }
 

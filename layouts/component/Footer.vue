@@ -1,6 +1,28 @@
 <template>
   <footer class="footer">
     <div class="wrapper">
+      <ul class="social-icons">
+        <li>
+          <a href="https://github.com/Nov8nana" target="_blank">
+            <i class="fa fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);">
+            <i class="fa fa-envelope"></i> shuxhan@163.com
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i class="fa fa-link"></i> 我的博客
+          </a>
+        </li>
+        <li>
+          <a href="/about">
+            <i class="fa fa-rss"></i> 关于我
+          </a>
+        </li>
+      </ul>
       <div>
         © 2020 -2022 ·
         <a href="/">子舒的博客</a> ·
@@ -19,7 +41,7 @@
         >
         浙公网安备 33010802012091号
         </a>
-      </div> -->
+      </div>-->
     </div>
 
     <!-- 返回顶部 -->
@@ -92,14 +114,24 @@ export default {
 .footer {
   width: 100%;
   margin-top: 1.8em;
-  font-size: 0.9rem;
-  border-top: 1px solid #eee;
+  font-size: 0.8rem;
+  background: #f2f3f3;
   .wrapper {
     color: #6e7173;
-    padding: 1.4em 0 1.6em;
+    padding: 1.6em 2%;
     text-align: left;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
+    .social-icons {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin-right: 1rem;
+        font-weight: 600;
+        padding: 4px 0;
+      }
+    }
   }
   .top-btn {
     position: fixed;
