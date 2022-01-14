@@ -120,7 +120,7 @@ export default {
     color: #6e7173;
     padding: 1.6em 2%;
     text-align: left;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     .social-icons {
       list-style: none;

@@ -125,6 +125,7 @@ export default {
     word-wrap: break-word;
     position: sticky;
     top: 20px;
+    border-right: 1px solid #eee;
     .widget {
       padding: 10px 4%;
       border-radius: 4px;

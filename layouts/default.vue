@@ -39,7 +39,7 @@ export default {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1%;
-    max-width: 1280px;
+    max-width: 980px;
     margin-top: 16px;
     .container {
       border-radius: 4px;
@@ -54,7 +54,7 @@ export default {
       padding-right: 20px;
     }
     .toc {
-      width: 300px;
+      // width: 300px;
     }
   }
 }
