@@ -50,6 +50,7 @@ export default {
   css: [
     '@/assets/css/reset.scss',
     '@/assets/css/app.scss',
+    '@/assets/css/twikoo.css'
   ],
   /*
   ** Plugins to load before mounting the App
