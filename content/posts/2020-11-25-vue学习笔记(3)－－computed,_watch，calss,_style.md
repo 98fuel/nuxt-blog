@@ -7,11 +7,10 @@ categories:
 tags: 
   - vue
   - 笔记
-thumb: 
 ---
 
 
-
+<!-- more -->
 
 
 ## 一、计算属性computed

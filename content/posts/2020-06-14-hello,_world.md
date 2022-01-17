@@ -6,7 +6,7 @@ categories:
   - 随笔
 tags: 
   - 博客
-thumb: 
+abs: 
 ---
 
 

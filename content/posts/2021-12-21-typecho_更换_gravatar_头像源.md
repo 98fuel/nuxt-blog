@@ -12,6 +12,8 @@ tags:
 
 找到根目录下 `config.inc.php` 文件，在最前面加入下面的代码。
 
+<!-- more -->
+
 ![](https://cdn.jsdelivr.net/gh/Nov8nana/pic-cdn@c549d6cfb8b83d2410899cf619a663d8cebbffe1/2022/01/05/3e5e307b9fb3ba048fdc9f7b5351d7b9.png)
 
 ```php

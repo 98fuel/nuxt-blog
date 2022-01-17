@@ -1,15 +1,15 @@
 <template>
   <div class="wrapper">
     <article
-      class="article article-index"
+      class="article"
       v-for="article in articles"
       :key="article.attributes.title"
     >
       <nuxt-link class="link" :to="article.path">
-        <h1 class="article-title">
+        <div class="article-title">
           <span>{{ article.attributes.title }}</span>
           <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-        </h1>
+        </div>
         <div class="article-content markdown-body" v-html="article.summary"></div>
       </nuxt-link>
       <div class="article-meta">
@@ -42,7 +42,6 @@ import { getArticles, getPagerCount, formatDate } from '@/util'
 export default {
   async asyncData () {
     const context = await require.context('~/content/posts', true, /\.md$/)
-    // console.log(context(context.keys()[0]))
     const articles = await context.keys().map(key => ({
       ...context(key),
       summary: context(key).html.split('<!-- more -->')[0],

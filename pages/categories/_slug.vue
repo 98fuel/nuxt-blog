@@ -64,11 +64,9 @@ export default {
       a {
         display: inline-block;
         margin-right: 20px;
-        padding: 4px 10px;
+        padding: 4px 10px 0;
         color: #000;
         border-bottom: 2px solid #000;
-        // background: rgb(99, 175, 165);
-        // border-radius: 4px;
       }
     }
     .title {

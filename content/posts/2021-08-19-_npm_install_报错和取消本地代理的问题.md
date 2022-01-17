@@ -18,6 +18,8 @@ tags:
 npm ERR! FetchError: request to https://registry.npm.taobao.org/cnpm failed, reason: connect ECONNREFUSED 127.0.0.1:1181
 ```
 
+<!-- more -->
+
 调试过后发现是本地代理的问题，取消它。
 
 ```shell
