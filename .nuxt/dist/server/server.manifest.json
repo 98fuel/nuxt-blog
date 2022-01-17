@@ -1,0 +1,27 @@
+{
+  "entry": "server.js",
+  "files": {
+    "8.js": "8.js",
+    "9.js": "9.js",
+    "pages/about.js": "pages/about.js",
+    "pages/archives.js": "pages/archives.js",
+    "pages/categories/[_]slug.js": "pages/categories/[_]slug.js",
+    "pages/index.js": "pages/index.js",
+    "pages/message.js": "pages/message.js",
+    "pages/posts/[_]slug.js": "pages/posts/[_]slug.js",
+    "pages/tags/[_]slug.js": "pages/tags/[_]slug.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "8.js": "8.js.map",
+    "9.js": "9.js.map",
+    "pages/about.js": "pages/about.js.map",
+    "pages/archives.js": "pages/archives.js.map",
+    "pages/categories/[_]slug.js": "pages/categories/[_]slug.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/message.js": "pages/message.js.map",
+    "pages/posts/[_]slug.js": "pages/posts/[_]slug.js.map",
+    "pages/tags/[_]slug.js": "pages/tags/[_]slug.js.map",
+    "server.js": "server.js.map"
+  }
+}
