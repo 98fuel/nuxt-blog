@@ -23,11 +23,10 @@ export default {
 .wrapper {
   .archive {
     padding: 25px 1% 15px;
-    background: #fff;
     .article-content {
       font-family: 'HYQiHei';
       line-height: 2;
-      color: #444;
+      color: #000;
       margin-top: 20px;
     }
   }

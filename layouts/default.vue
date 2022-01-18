@@ -34,6 +34,9 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
   .body {
     display: flex;
     justify-content: space-between;
@@ -57,6 +60,11 @@ export default {
       // width: 300px;
     }
   }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 1020px) {
   .layout {
@@ -68,6 +76,7 @@ export default {
 }
 @media (max-width: 900px) {
   .layout {
+    padding-bottom: 140px;
     .body {
       display: block;
       .container {

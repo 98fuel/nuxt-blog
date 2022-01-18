@@ -112,9 +112,9 @@ export default {
       font-size: 14px;
       line-height: 1.77;
       color: #000;
-      text-align: justify;
       text-justify: distribute;
       word-break: normal;
+      text-align: left;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
