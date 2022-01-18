@@ -111,7 +111,7 @@ export default {
     .article-content {
       font-size: 14px;
       line-height: 1.77;
-      color: #4b5563;
+      color: #000;
       text-align: justify;
       text-justify: distribute;
       word-break: normal;

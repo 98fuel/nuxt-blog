@@ -11,7 +11,6 @@
 </template>
 
 <script>
-
 const envId = 'shuxhan-2gcz5b7m7f845ec3';
 const el = '#tcomment';
 export default {
@@ -39,6 +38,7 @@ export default {
     margin-top: 20px;
     h3 {
       margin-bottom: 20px;
+      font-weight: 600;
     }
     .reload {
       background: #000;

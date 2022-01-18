@@ -16,7 +16,7 @@
         <ul class="share">
           <li>
             <i class="fa fa-map-marker"></i>
-            <a>杭州</a>
+            <span>杭州</span>
           </li>
           <li>
             <i class="fa fa-github"></i>
