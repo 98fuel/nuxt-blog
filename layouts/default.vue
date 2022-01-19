@@ -9,7 +9,7 @@
         <Main />
       </div>
       <div class="toc">
-        <Toc />
+        <!-- <Toc /> -->
       </div>
     </div>
     <Footer />
@@ -20,7 +20,7 @@
 import Header from './component/Header'
 import Main from './component/Main'
 import Aside from './component/Aside'
-import Toc from './component/Toc'
+// import Toc from './component/Toc'
 import Footer from './component/Footer'
 
 export default {
@@ -28,7 +28,7 @@ export default {
     Header,
     Main,
     Aside,
-    Toc,
+    // Toc,
     Footer,
   },
 }
@@ -44,7 +44,8 @@ export default {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1%;
-    max-width: 1280px;
+    // max-width: 1280px;
+    max-width: 980px;
     margin-top: 16px;
     .container {
       border-radius: 4px;
@@ -60,6 +61,7 @@ export default {
     }
     .toc {
       width: 300px;
+      display: none;
     }
   }
   .footer {

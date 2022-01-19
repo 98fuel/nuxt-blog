@@ -115,10 +115,22 @@
   -o-border-radius: 0;
   margin-top: 0;
   color: #000;
-  margin-top: 10px;
   margin-bottom: 10px;
-  background: #e8e8e873;
-  padding: 2px 10px;
+}
+
+.tk-replies-expand {
+  margin-left: -20px;
+}
+
+.tk-replies-expand .tk-comment[data-v-d82ce9a0] {
+  background: #F9F9F9;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .tk-replies .tk-content[data-v-d82ce9a0] {
@@ -156,6 +168,8 @@
 
 .tk-comment[data-v-d82ce9a0] {
   margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 16px;
 }
 
 .tk-comment:hover .tk-actions[data-v-d82ce9a0] a {
@@ -225,7 +239,13 @@
 
 .tk-avatar.tk-has-avatar[data-v-32f45298] {
   background: none;
-  border-radius: 0;
+  border: 1px solid #eee;
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .tk-avatar .tk-avatar-img[data-v-32f45298] {
@@ -277,8 +297,8 @@
 }
 
 .tk-replies .tk-avatar[data-v-32f45298] {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
