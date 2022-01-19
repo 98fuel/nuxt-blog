@@ -58,8 +58,9 @@ export default {
   */
   plugins: [
     {
-      src: '~/plugins/baidu'
+      src: '~/plugins/baidu',
     }
+
   ],
   /*
   ** Auto import components
@@ -75,6 +76,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+
   ],
   generate: {
     routes: dynamicMarkdownRoutes()

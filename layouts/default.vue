@@ -9,7 +9,7 @@
         <Main />
       </div>
       <div class="toc">
-      
+        <Toc />
       </div>
     </div>
     <Footer />
@@ -20,6 +20,7 @@
 import Header from './component/Header'
 import Main from './component/Main'
 import Aside from './component/Aside'
+import Toc from './component/Toc'
 import Footer from './component/Footer'
 
 export default {
@@ -27,6 +28,7 @@ export default {
     Header,
     Main,
     Aside,
+    Toc,
     Footer,
   },
 }
@@ -42,7 +44,7 @@ export default {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 1%;
-    max-width: 980px;
+    max-width: 1280px;
     margin-top: 16px;
     .container {
       border-radius: 4px;
@@ -57,7 +59,7 @@ export default {
       padding-right: 20px;
     }
     .toc {
-      // width: 300px;
+      width: 300px;
     }
   }
   .footer {
@@ -86,6 +88,10 @@ export default {
       .sidebar {
         margin-top: 20px;
         padding: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+      .toc {
         max-width: 100%;
         width: 100%;
       }

@@ -1,10 +1,6 @@
 <template>
   <div class="wrapper">
-    <article
-      class="article"
-      v-for="article in articles"
-      :key="article.attributes.title"
-    >
+    <article class="article" v-for="article in articles" :key="article.attributes.title">
       <nuxt-link class="link" :to="article.path">
         <div class="article-title">
           <span>{{ article.attributes.title }}</span>
@@ -90,7 +86,7 @@ export default {
     }
     .article-title {
       margin: 0;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 20px;
       color: #4e91a5;
       display: flex;

@@ -95,6 +95,10 @@ export default {
         flex-wrap: wrap;
         .link {
           margin-right: 6px;
+          color: #6e7173;
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
@@ -121,6 +125,7 @@ export default {
       }
       .link {
         margin-left: 10px;
+        color: #6e7173;
       }
     }
   }

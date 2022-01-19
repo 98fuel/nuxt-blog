@@ -8,7 +8,7 @@
           </nuxt-link>
           <div>
             <h3>子舒</h3>
-            <p>前端开发...</p>
+            <p>记录我的生活...</p>
             <nuxt-link to="/about">more...</nuxt-link>
           </div>
         </div>
@@ -32,88 +32,13 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="widget">
-        <div class="widget-title">
-          <i class="fa fa-folder-o">分类</i>
-        </div>
-        <ul class="category-list">
-          <li class="category-list-item" v-for="category in categories" :key="category">
-            <nuxt-link class="link" :to="`/categories/${category}`">{{category}}</nuxt-link>
-          </li>
-        </ul>
-      </div>-->
-
-      <!-- <div class="widget">
-        <div class="widget-title">
-          <i class="fa fa-tag">标签</i>
-        </div>
-        <div class="tag-list">
-          <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
-        </div>
-      </div>
-
-      <div class="widget">
-        <div class="widget-title">
-          <i class="fa fa-file-o">最近文章</i>
-        </div>
-        <ul class="article-list">
-          <li
-            class="article-list-item"
-            v-for="article in rencentArticles"
-            :key="article.attributes.title"
-          >
-            <nuxt-link class="link" :to="article.path">{{ article.attributes.title }}</nuxt-link>
-          </li>
-        </ul>
-      </div>-->
     </div>
   </aside>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-      categories: [],
-      tags: [],
-      rencentArticles: []
-    }
-  },
-  methods: {
-    getCategories (articles) {
-      const categories = []
-      articles.forEach(article => {
-        article.attributes.categories.forEach(category => {
-          if (categories.filter(item => item === category).length === 0) {
-            categories.push(category)
-          }
-        })
-      })
-      return categories
-    },
-    getTags (articles) {
-      const tags = []
-      articles.forEach(article => {
-        article.attributes.tags.forEach(tag => {
-          if (tags.filter(item => item === tag).length === 0) {
-            tags.push(tag)
-          }
-        })
-      })
-      return tags
-    }
-  },
-  async fetch () {
-    const context = await require.context('~/content/posts', true, /\.md$/)
-    const articles = await context.keys().map(key => ({
-      ...context(key),
-      path: `/posts/${key.replace('.md', '').replace('./', '')}`
-    }))
-    articles.sort((a, b) => new Date(b.attributes.date).getTime() - new Date(a.attributes.date).getTime())
-    this.rencentArticles = articles.slice(0, 5)
-    this.categories = this.getCategories(articles)
-    this.tags = this.getTags(articles)
-  },
+
 };
 </script>
 
@@ -129,7 +54,7 @@ export default {
     .widget {
       padding: 10px 4%;
       border-radius: 4px;
-      opacity: 0.8;
+      opacity: 0.6;
       transition: all 0.2s linear;
       &:hover {
         opacity: 1;
@@ -146,7 +71,7 @@ export default {
       .gg {
         font-size: 15px;
         a {
-          display: block;
+          display: inline-block;
           img {
             border-radius: 50%;
             height: 80px;
@@ -215,6 +140,7 @@ export default {
   .aside {
     .wrapper {
       .widget {
+        opacity: 1;
         .gg {
           display: flex;
           div {

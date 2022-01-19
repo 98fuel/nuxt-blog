@@ -128,8 +128,16 @@ export default {
       flex-wrap: wrap;
       li {
         margin-right: 1rem;
-        font-weight: 600;
+        font-weight: 500;
         padding: 4px 0;
+        a {
+          color: #6e7173;
+        }
+      }
+    }
+    div {
+      a {
+        color: #6e7173;
       }
     }
   }
