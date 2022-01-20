@@ -15,9 +15,9 @@ layout: 'message'
 <details>
 <summary>如果你是对某篇文章进行评论，可以使用下面的格式...</summary>
 <br>
-<blockquote>
+
 《这两天的碎碎念》评论
-<br><br>
+
 不错不错，简单实用！
-</blockquote>
+
 </details>

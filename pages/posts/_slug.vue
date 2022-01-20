@@ -27,13 +27,9 @@
               :key="tag"
             >{{tag}}</nuxt-link>
           </div>
-        </div>
-      </article>
-
-      <article class="article article-ps">
-        <div>
-          出于个人的考虑，没有在文章内设置留言。如果你想评论，请移步
-          <a href="/message">留言板</a>。
+          <div>
+            <a href="/message">点击留言</a>
+          </div>
         </div>
       </article>
       <Imgbig />
@@ -109,7 +105,7 @@ export default {
       padding-top: 15px;
       word-break: normal;
       font-family: 'HYQiHei';
-      color: #1e1e1e;
+      color: #0f0f0f;
     }
     .article-other {
       margin: 2rem 0 1rem;

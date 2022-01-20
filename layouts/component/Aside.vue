@@ -54,7 +54,7 @@ export default {
     .widget {
       padding: 10px 4%;
       border-radius: 4px;
-      opacity: 0.6;
+      opacity: 0.8;
       transition: all 0.2s linear;
       &:hover {
         opacity: 1;

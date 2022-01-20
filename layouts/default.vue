@@ -47,6 +47,10 @@ export default {
     // max-width: 1280px;
     max-width: 980px;
     margin-top: 16px;
+    .index-btn {
+      position: fixed;
+      left: 0;
+    }
     .container {
       border-radius: 4px;
       position: relative;

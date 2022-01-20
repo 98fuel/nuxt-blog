@@ -76,7 +76,7 @@ export default {
 .wrapper {
   .article {
     padding: 20px 1% 4px;
-    opacity: 0.95;
+    opacity: 0.98;
     transition: all 0.2s linear;
     &:hover {
       opacity: 1;
@@ -105,7 +105,7 @@ export default {
       }
     }
     .article-content {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.77;
       color: #000;
       text-justify: distribute;
@@ -115,8 +115,7 @@ export default {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden;
-      max-height: 140px;
-      font-family: 'HYQiHei';
+      // font-family: 'HYQiHei';
     }
     .article-meta {
       margin-top: 10px;
