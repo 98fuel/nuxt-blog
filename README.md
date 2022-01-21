@@ -4,7 +4,7 @@
 
 源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
 
-在线预览: [https://xiabanlo.cn](https://xiabanlo.cn)
+在线预览: [https://imhan.cn](https://imhan.cn)(换域名了)
 
 
 ## 介绍
