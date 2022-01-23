@@ -43,7 +43,7 @@ export default {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0 1%;
+    padding: 0 2%;
     // max-width: 1280px;
     max-width: 980px;
     margin-top: 16px;

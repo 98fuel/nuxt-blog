@@ -7,7 +7,7 @@
         已运行
         <span id="days">0</span> 天 ·
         Power
-        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> · 
+        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> ·
         <a href="https://beian.miit.gov.cn/" target="_blank">
           <span>浙ICP备2022002453号-1</span>
         </a>
@@ -29,7 +29,6 @@
         <i></i>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/js/nuxt-blog-main.js"></script>
   </footer>
 </template>
 
@@ -84,7 +83,7 @@ export default {
 .footer {
   width: 100%;
   margin-top: 1.8em;
-  font-size: 0.8rem;
+  font-size: 15px;
   background: #f2f3f3;
   .wrapper {
     color: #6e7173;

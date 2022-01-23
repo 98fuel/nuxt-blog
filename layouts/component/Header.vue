@@ -7,11 +7,11 @@
         </nuxt-link>
       </h1>
       <div class="nav-menu">
-        <nuxt-link to="/" class="nav-link" exact-active-class="current">Home</nuxt-link>
-        <nuxt-link to="/archives" class="nav-link" exact-active-class="current">Posts</nuxt-link>
-        <nuxt-link to="/tags" class="nav-link" exact-active-class="current">Tags</nuxt-link>
-        <nuxt-link to="/message" class="nav-link" exact-active-class="current">Message</nuxt-link>
-        <nuxt-link to="/about" class="nav-link" exact-active-class="current">About</nuxt-link>
+        <nuxt-link to="/" class="nav-link" exact-active-class="current">首页</nuxt-link>
+        <nuxt-link to="/archives" class="nav-link" exact-active-class="current">归档</nuxt-link>
+        <nuxt-link to="/tags" class="nav-link" exact-active-class="current">标签</nuxt-link>
+        <nuxt-link to="/message" class="nav-link" exact-active-class="current">留言</nuxt-link>
+        <nuxt-link to="/about" class="nav-link" exact-active-class="current">关于</nuxt-link>
       </div>
     </div>
     <p class="description">
@@ -65,19 +65,20 @@ export default {
     .nav-menu {
       padding: 0;
       .nav-link {
-        padding: 10px 2px 4px;
+        padding: 10px 2px 0;
         margin: 3px 10px 3px;
         line-height: 30px;
         color: #6f777d;
         font-size: 1rem;
         font-style: inherit;
         border: 1px solid transparent;
+        word-break: keep-all;
         &:hover {
           color: #000;
         }
         &.current {
           color: #000;
-          border-bottom: 2px solid #000;
+          border-bottom: 2px solid rgba(0, 0, 0, 0.705);
         }
         i {
           &::before {
@@ -105,7 +106,7 @@ export default {
       flex-direction: column;
       position: relative;
       h1 {
-        padding: 20px 0;
+        padding: 20px 0 14px;
         a {
           span {
             font-size: 1.3rem;
@@ -116,6 +117,7 @@ export default {
         text-align: center;
         position: sticky;
         top: 0;
+        display: flex;
         .nav-link {
           i {
             font-style: inherit;
