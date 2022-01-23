@@ -6,6 +6,7 @@
         <a href="/message" class="reload">点击加载评论功能</a>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.9/dist/twikoo.all.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.imhan.cn/list/twikoo.css">
     </div>
   </div>
 </template>

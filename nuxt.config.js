@@ -40,7 +40,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://cdn.jsdelivr.net/gh/Nov8nana/cdn/js/jquery3.6.0.js' },
+      { src: 'https://cdn.imhan.cn/list/jquery3.6.0.js' },
       { src: 'https://hm.baidu.com/hm.js?f41d830174f36ac5eb0838f79f75bee2' },
       { src: '/js/main.js' },
     ]
@@ -51,7 +51,6 @@ export default {
   css: [
     '@/assets/css/reset.scss',
     '@/assets/css/app.scss',
-    '@/assets/css/twikoo.css'
   ],
   /*
   ** Plugins to load before mounting the App

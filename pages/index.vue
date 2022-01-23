@@ -6,7 +6,7 @@
           <span>{{ article.attributes.title }}</span>
           <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
         </div>
-        <div class="article-content markdown-body" v-html="article.summary"></div>
+        <div class="article-content" v-html="article.summary"></div>
       </nuxt-link>
       <div class="article-meta">
         <div class="article-category">
@@ -109,13 +109,13 @@ export default {
       line-height: 1.77;
       color: #000;
       text-justify: distribute;
-      word-break: normal;
+      word-break: break-all;
       text-align: left;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden;
-      // font-family: 'HYQiHei';
+      font-family: 'HYQiHei';
     }
     .article-meta {
       margin-top: 10px;

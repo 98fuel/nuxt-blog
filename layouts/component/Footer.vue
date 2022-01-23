@@ -1,47 +1,17 @@
 <template>
   <footer class="footer">
     <div class="wrapper">
-      <ul class="social-icons">
-        <li>
-          <a href="https://github.com/Nov8nana" target="_blank">
-            <i class="fa fa-github"></i> GitHub
-          </a>
-        </li>
-        <li>
-          <a href="javascript:void(0);">
-            <i class="fa fa-envelope"></i> shuxhan@163.com
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <i class="fa fa-link"></i> 我的博客
-          </a>
-        </li>
-        <li>
-          <a href="/about">
-            <i class="fa fa-rss"></i> 关于我
-          </a>
-        </li>
-      </ul>
       <div>
         © 2020 -2022 ·
         <a href="/">子舒的博客</a> ·
         已运行
         <span id="days">0</span> 天 ·
         Power
-        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
-      </div>
-      <!-- <div>
+        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> · 
         <a href="https://beian.miit.gov.cn/" target="_blank">
-          <span>浙ICP备2021002261号-2</span>
-        </a> ·
-        <a
-          target="_blank"
-          href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802012091"
-        >
-        浙公网安备 33010802012091号
+          <span>浙ICP备2022002453号-1</span>
         </a>
-      </div>-->
+      </div>
     </div>
 
     <!-- 返回顶部 -->
@@ -122,19 +92,6 @@ export default {
     text-align: left;
     max-width: 900px;
     margin: 0 auto;
-    .social-icons {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      li {
-        margin-right: 1rem;
-        font-weight: 500;
-        padding: 4px 0;
-        a {
-          color: #6e7173;
-        }
-      }
-    }
     div {
       a {
         color: #6e7173;

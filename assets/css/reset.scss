@@ -21,6 +21,7 @@ html {
 @font-face {
   font-family: 'HYQiHei';
   src: url("./HYQiHei-50S.woff");
+  // src: url("./LXGWWenKaiLite-Regular.ttf");
 }
 
 body {
@@ -174,4 +175,8 @@ details summary+* {
 span.red {
   color: #cc3434;
   font-style: italic;
+}
+
+code {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 }

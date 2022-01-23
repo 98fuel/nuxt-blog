@@ -4,7 +4,7 @@
       <div class="widget">
         <div class="gg">
           <nuxt-link to="/">
-            <img src="https://cdn.jsdelivr.net/gh/Nov8nana/cdn/img/author.png" />
+            <img src="https://img.imhan.cn/author.png" />
           </nuxt-link>
           <div>
             <h3>子舒</h3>
