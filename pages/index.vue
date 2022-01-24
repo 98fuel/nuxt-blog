@@ -151,6 +151,7 @@ export default {
 @media (max-width: 520px) {
   .wrapper {
     .article {
+      box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
       .article-title {
         font-size: 1.2rem;
         font-weight: 600;

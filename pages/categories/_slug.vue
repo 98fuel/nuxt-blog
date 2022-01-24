@@ -68,6 +68,21 @@ export default {
         color: #000;
         border-bottom: 2px solid #000;
       }
+      .nuxt-link-active {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 90%;
+          background-image: linear-gradient(#dadada, #6b6b6b);
+          z-index: -1;
+        }
+      }
     }
     .title {
       font-size: 16px;
