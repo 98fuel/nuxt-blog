@@ -4,7 +4,7 @@
 
 源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
 
-在线预览: [https://imhan.cn](https://imhan.cn)(换域名了)
+在线预览: [https://imhan.cn](https://imhan.cn)
 
 
 ## 介绍
