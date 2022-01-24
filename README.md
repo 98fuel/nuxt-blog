@@ -2,7 +2,7 @@
 
 <div align="center"><h2>Nuxt-Blog</h2></div>
 
-源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
+源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
 
 在线预览: [https://imhan.cn](https://imhan.cn)(换域名了)
 
@@ -13,7 +13,7 @@
 
 由于对后端不是很了解，因此没有写后台管理。
 
-可能会存在一些bug，遇到问题请提 [Issues](https://github.com/Nov8nana/nuxt-blog/issues) 。
+可能会存在一些bug，遇到问题请提 [Issues](https://github.com/imhan0cn/nuxt-blog/issues) 。
 
 使用第三方评论 Twikoo 部署留言板，目前已有文章页面，归档，分类，标签等，其他的页面及功能将会在后期保持更新。(不过也没有什么功能好更新了，博客项目写那么复杂做什么？简单点不好吗。)
 
@@ -26,6 +26,10 @@
 ## 使用
 
 ```bash
+# git clone
+git clone git@github.com:imhan0cn/nuxt-blog.git
+cd nuxt-blog
+
 # 安装依赖
 $ npm install
 

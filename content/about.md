@@ -7,7 +7,7 @@ layout: 'about'
 
 这是一个我在闲暇时间写的博客，会写一些生活琐事，也会写一些技术笔记，使用 vue + nuxt.js 技术栈构建而成。 
 
-源码地址: [https://github.com/Nov8nana/nuxt-blog](https://github.com/Nov8nana/nuxt-blog)
+源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
 
 如果想知道更多关于这个博客的事情，可以阅读[《关于我为什么要写博客？》](posts/2021-07-21-关于我为什么要写博客？)
 
@@ -19,7 +19,7 @@ the road ahead will be long and our climb will be steep.
 ✨2022，希望世界和平。 --2021.12
 
 
-Github: [https://github.com/Nov8nana](https://github.com/Nov8nana)  
+Github: [https://github.com/imhan0cn](https://github.com/imhan0cn)  
 E-mail: shuxhan#163.com
 
 ---

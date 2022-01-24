@@ -20,7 +20,7 @@
           </li>
           <li>
             <i class="fa fa-github"></i>
-            <a href="https://github.com/Nov8nana" target="_blank">Github</a>
+            <a href="https://github.com/imhan0cn" target="_blank">Github</a>
           </li>
           <li>
             <i class="fa fa-envelope"></i>
@@ -54,7 +54,7 @@ export default {
     .widget {
       padding: 10px 4%;
       border-radius: 4px;
-      opacity: 0.8;
+      opacity: 1;
       transition: all 0.2s linear;
       &:hover {
         opacity: 1;

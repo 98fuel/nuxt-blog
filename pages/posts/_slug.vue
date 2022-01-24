@@ -105,7 +105,6 @@ export default {
       padding-top: 15px;
       word-break: normal;
       font-family: 'HYQiHei';
-      color: #0f0f0f;
     }
     .article-other {
       margin: 2rem 0 1rem;
