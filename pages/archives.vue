@@ -2,9 +2,11 @@
   <div class="wrapper">
     <div class="archive">
       <div class="archive-category">
+        <nuxt-link to="/archives" class="nuxt-link-active">归档</nuxt-link>
         <nuxt-link to="/categories/技术">技术</nuxt-link>
         <nuxt-link to="/categories/随笔">随笔</nuxt-link>
       </div>
+      <h1 class="title">正在查看 归档 下的文章</h1>
       <div class="archive-list">
         <div class="archive-item" v-for="archive in archives" :key="archive.date">
           <h2 class="archive-time">{{archive.date}}</h2>
@@ -56,6 +58,21 @@ export default {
     padding: 25px 1% 15px;
     .archive-category {
       margin-bottom: 1rem;
+      .nuxt-link-active {
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 90%;
+          background-image: linear-gradient(#dadada, #6b6b6b);
+          z-index: -1;
+        }
+      }
       a {
         display: inline-block;
         margin-right: 20px;
@@ -63,6 +80,12 @@ export default {
         color: #000;
         border-bottom: 2px solid #000;
       }
+    }
+    .title {
+      font-size: 16px;
+      font-weight: normal;
+      color: #888;
+      margin-bottom: 10px;
     }
     .archive-list {
       font-size: 16px;

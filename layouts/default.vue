@@ -2,13 +2,13 @@
   <div class="layout">
     <Header />
     <div class="body">
-      <div class="sidebar">
+      <!-- <div class="sidebar">
         <Aside />
-      </div>
+      </div>-->
       <div class="container">
         <Main />
-        <Footer />
       </div>
+      <Footer />
     </div>
   </div>
 </template>
@@ -16,14 +16,14 @@
 <script>
 import Header from './component/Header'
 import Main from './component/Main'
-import Aside from './component/Aside'
+// import Aside from './component/Aside'
 import Footer from './component/Footer'
 
 export default {
   components: {
     Header,
     Main,
-    Aside,
+    // Aside,
     Footer,
   },
 }
@@ -31,28 +31,25 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 100px;
   .body {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 2%;
-    // max-width: 1280px;
-    max-width: 980px;
-    margin-top: 16px;
-    .index-btn {
-      position: fixed;
-      left: 0;
-    }
+    margin-left: 75px;
+    margin-top: 20px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
     .container {
       border-radius: 4px;
       position: relative;
       height: 100%;
       max-width: 700px;
+      margin: 0 auto;
       overflow: hidden;
       flex: 1;
+    }
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
     .sidebar {
       width: 260px;
@@ -62,11 +59,6 @@ export default {
       width: 300px;
       display: none;
     }
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
   }
 }
 @media (max-width: 1020px) {
@@ -79,9 +71,10 @@ export default {
 }
 @media (max-width: 900px) {
   .layout {
-    padding-bottom: 140px;
     .body {
-      display: block;
+      padding: 0;
+      margin-top: 12vw;
+      padding-bottom: 140px;
       .container {
         max-width: 100%;
         width: 100%;

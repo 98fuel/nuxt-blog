@@ -2,6 +2,7 @@
   <div class="wrapper">
     <div class="article">
       <div class="archive-category">
+        <nuxt-link to="/archives">归档</nuxt-link>
         <nuxt-link to="/categories/技术">技术</nuxt-link>
         <nuxt-link to="/categories/随笔">随笔</nuxt-link>
       </div>
