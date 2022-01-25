@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="wrapper">
-      <article class="article">
+      <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
         <div class="article-meta">
           <div>子舒 /</div>

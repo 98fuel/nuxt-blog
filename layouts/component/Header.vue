@@ -4,7 +4,7 @@
       <h1>
         <nuxt-link class="logo" to="/">
           <span>子舒</span>
-          <img src="https://img.imhan.cn/author.png" alt="logo" />
+          <img src="https://img.imhan.cn/author1.png" alt="logo" />
         </nuxt-link>
       </h1>
       <div class="nav-menu">
@@ -36,14 +36,17 @@ export default {
   height: 100%;
   background-color: #2c3e50;
   box-shadow: 0 3px 5px #2c3e50;
-  z-index: 999;
+  z-index: 10;
   .site-name {
     z-index: 999;
-    padding: 8px 1%;
+    padding: 20px 1%;
     margin: 0 auto;
     transition: all 0.2s linear;
     h1 {
       a {
+        &:hover {
+          cursor: inherit;
+        }
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -52,6 +55,13 @@ export default {
           height: 50px;
           border-radius: 50%;
           display: block;
+          &:hover {
+            transform: rotate(666turn);
+            transition-delay: 0.3s;
+            transition-property: all;
+            transition-duration: 59s;
+            transition-timing-function: cubic-bezier(0.34, 0, 0.84, 1);
+          }
         }
         span {
           display: block;
@@ -60,6 +70,7 @@ export default {
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
           font-weight: 600;
+          display: none;
         }
       }
     }
@@ -117,6 +128,7 @@ export default {
       h1 {
         a {
           span {
+            display: block;
             font-size: 1.3rem;
           }
           img {
