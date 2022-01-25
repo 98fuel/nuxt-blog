@@ -7,12 +7,9 @@
       </div>
       <div class="container">
         <Main />
-      </div>
-      <div class="toc">
-        <!-- <Toc /> -->
+        <Footer />
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
@@ -20,7 +17,6 @@
 import Header from './component/Header'
 import Main from './component/Main'
 import Aside from './component/Aside'
-// import Toc from './component/Toc'
 import Footer from './component/Footer'
 
 export default {
@@ -28,7 +24,6 @@ export default {
     Header,
     Main,
     Aside,
-    // Toc,
     Footer,
   },
 }

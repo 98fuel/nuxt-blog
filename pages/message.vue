@@ -33,7 +33,7 @@ export default {
     .article-content {
       font-family: 'HYQiHei';
       line-height: 1.8;
-      color: #444;
+      color: #000;
       margin-top: 20px;
     }
   }
