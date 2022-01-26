@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .archive {
-    padding: 25px 1% 15px;
+    padding: 25px 2% 15px;
     .article-content {
       font-family: 'HYQiHei';
       line-height: 1.8;

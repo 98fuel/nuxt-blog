@@ -75,7 +75,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 20px 1% 4px;
+    padding: 20px 2% 4px;
     opacity: 0.98;
     transition: all 0.2s linear;
     &:hover {
@@ -152,6 +152,8 @@ export default {
   .wrapper {
     .article {
       box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+      margin-top: 20px;
+      padding-bottom: 10px;
       .article-title {
         font-size: 1.2rem;
         font-weight: 600;

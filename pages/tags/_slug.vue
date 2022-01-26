@@ -82,7 +82,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .archive {
-    padding: 25px 1% 15px;
+    padding: 25px 2% 15px;
     .widget {
       .tag-list {
         border-bottom: 1px solid #eee;

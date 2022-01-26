@@ -62,7 +62,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 1% 15px;
+    padding: 25px 2% 15px;
     .article-title {
       margin: 0;
       color: #4e91a5;

@@ -88,7 +88,6 @@ export default {
         word-break: keep-all;
         transition: all 0.2s linear;
         &:hover {
-          padding-left: 10px;
           color: #fff;
           text-decoration: underline;
         }
