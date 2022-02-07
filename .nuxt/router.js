@@ -3,13 +3,13 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6d7f4a76 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _784122e9 = () => interopDefault(import('..\\pages\\archives.vue' /* webpackChunkName: "pages/archives" */))
-const _4697223f = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
-const _3031d926 = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/[_]slug" */))
-const _7b46fe62 = () => interopDefault(import('..\\pages\\posts\\_slug.vue' /* webpackChunkName: "pages/posts/[_]slug" */))
-const _5a83d9ee = () => interopDefault(import('..\\pages\\tags\\_slug.vue' /* webpackChunkName: "pages/tags/[_]slug" */))
-const _2e0f94ec = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _00d4dbe2 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _62de30ac = () => interopDefault(import('..\\pages\\archives.vue' /* webpackChunkName: "pages/archives" */))
+const _29e05fc8 = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
+const _9636d27a = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/[_]slug" */))
+const _4f3215dc = () => interopDefault(import('..\\pages\\posts\\_slug.vue' /* webpackChunkName: "pages/posts/[_]slug" */))
+const _0d428a66 = () => interopDefault(import('..\\pages\\tags\\_slug.vue' /* webpackChunkName: "pages/tags/[_]slug" */))
+const _208cb6a7 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -29,31 +29,31 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _6d7f4a76,
+    component: _00d4dbe2,
     name: "about"
   }, {
     path: "/archives",
-    component: _784122e9,
+    component: _62de30ac,
     name: "archives"
   }, {
     path: "/message",
-    component: _4697223f,
+    component: _29e05fc8,
     name: "message"
   }, {
     path: "/categories/:slug?",
-    component: _3031d926,
+    component: _9636d27a,
     name: "categories-slug"
   }, {
     path: "/posts/:slug?",
-    component: _7b46fe62,
+    component: _4f3215dc,
     name: "posts-slug"
   }, {
     path: "/tags/:slug?",
-    component: _5a83d9ee,
+    component: _0d428a66,
     name: "tags-slug"
   }, {
     path: "/",
-    component: _2e0f94ec,
+    component: _208cb6a7,
     name: "index"
   }],
 
