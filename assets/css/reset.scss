@@ -23,8 +23,16 @@ html {
   src: url("./HYQiHei-50S.woff");
 }
 
+@font-face {
+  font-family: 'DIN-Regular';
+  src: url("./DINPro-Regular.otf");
+}
+
+* {
+  font-family: 'DIN-Regular','PingFang SC',Helvetica,Arial,sans-serif;
+}
+
 body {
-  font-family: 'HYQiHei';
   line-height: 1.8;
   font-size: 16px;
   color: #000;

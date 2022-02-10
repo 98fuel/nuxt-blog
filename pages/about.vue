@@ -24,7 +24,6 @@ export default {
   .archive {
     padding: 25px 2% 15px;
     .article-content {
-      font-family: 'HYQiHei';
       line-height: 2;
       color: #000;
       margin-top: 20px;

@@ -115,7 +115,6 @@ export default {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden;
-      font-family: 'HYQiHei';
     }
     .article-meta {
       margin-top: 10px;

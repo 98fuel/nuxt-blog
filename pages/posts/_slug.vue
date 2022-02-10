@@ -104,7 +104,6 @@ export default {
       color: inherit;
       padding-top: 15px;
       word-break: normal;
-      font-family: 'HYQiHei';
     }
     .article-other {
       margin: 2rem 0 1rem;
