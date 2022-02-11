@@ -10,7 +10,7 @@
 }
 
 ::selection {
-  background: rgba(45, 170, 219, .3);
+  background: rgba(45, 170, 219, 0.3);
 }
 
 html {
@@ -19,17 +19,12 @@ html {
 }
 
 @font-face {
-  font-family: 'HYQiHei';
-  src: url("./HYQiHei-50S.woff");
-}
-
-@font-face {
-  font-family: 'DIN-Regular';
+  font-family: "DIN-Regular";
   src: url("./DINPro-Regular.otf");
 }
 
 * {
-  font-family: 'DIN-Regular','PingFang SC',Helvetica,Arial,sans-serif;
+  font-family: "DIN-Regular", "PingFang SC", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -45,7 +40,7 @@ body {
 a {
   color: #000;
   text-decoration: none;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 
   &:hover {
     color: #444;
@@ -100,13 +95,13 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
   width: 4px;
   height: 28px;
-  background: #6E7173;
+  background: #6e7173;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -131,29 +126,15 @@ h3 {
 .article-content blockquote {
   border: none !important;
   position: relative;
-  padding: 1em 1.5em !important;
-  color: #8c939a !important;
-  background: rgba(238, 238, 238, 0.1);
-}
-
-.article-content blockquote::before,
-.article-content blockquote::after {
-  font-size: 40px;
-  position: absolute;
-  line-height: 0;
-  color: #999;
-}
-
-.article-content blockquote::before {
-  content: '“';
-  top: 25px;
-  left: -20px;
-}
-
-.article-content blockquote::after {
-  content: '”';
-  bottom: 0;
-  right: -20px;
+  color: #3e3939e0 !important;
+  border-left: 3px solid rgba(0, 0, 0, 0.8) !important;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+  margin: 30px 0 !important;
+  padding-left: 1em !important;
+  text-indent: 0;
+  background: #f0eaeaa1;
+  font-size: 15px;
 }
 
 img {
@@ -174,7 +155,7 @@ details summary {
   padding: 0 10px;
 }
 
-details summary+* {
+details summary + * {
   padding: 0 10px;
 }
 
@@ -184,6 +165,7 @@ span.red {
   font-style: italic;
 }
 
-code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+code,
+code * {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important;
 }

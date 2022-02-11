@@ -5,19 +5,24 @@
         <h1 class="article-title">{{ article.attributes.title }}</h1>
         <div class="article-meta">
           <div>子舒 /</div>
-          <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
+          <div class="article-date">
+            {{ formatDate(article.attributes.date) }} /
+          </div>
           <div class="article-category">
             <nuxt-link
               class="link"
               :to="`/categories/${category}`"
               v-for="category in article.attributes.categories"
               :key="category"
-            >{{category}}</nuxt-link>
+              >{{ category }}</nuxt-link
+            >
           </div>
         </div>
         <div class="markdown-body article-content" v-html="article.html"></div>
         <div class="article-other">
-          <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div>
+          <div class="article-updated">
+            最后更新时间: {{ formatDate(article.attributes.updated) }}
+          </div>
           <div class="article-tags">
             标签:
             <nuxt-link
@@ -25,7 +30,8 @@
               :to="`/tags/${tag}`"
               v-for="tag in article.attributes.tags"
               :key="tag"
-            >{{tag}}</nuxt-link>
+              >{{ tag }}</nuxt-link
+            >
           </div>
           <div>
             <a href="/message">点击留言</a>
@@ -38,23 +44,23 @@
 </template>
 
 <script>
-import { formatDate } from '@/util'
-import Imgbig from '@/components/Imgbig'
+import { formatDate } from "@/util";
+import Imgbig from "@/components/Imgbig";
 
 export default {
   components: {
     Imgbig,
   },
-  async asyncData ({ params }) {
+  async asyncData({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);
     return {
-      article
+      article,
     };
   },
   methods: {
-    formatDate (date) {
-      return formatDate(date)
-    }
+    formatDate(date) {
+      return formatDate(date);
+    },
   },
 };
 </script>
@@ -104,6 +110,8 @@ export default {
       color: inherit;
       padding-top: 15px;
       word-break: normal;
+      border-bottom: 2px dashed #ccc;
+      padding-bottom: 20px;
     }
     .article-other {
       margin: 2rem 0 1rem;

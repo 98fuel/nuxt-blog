@@ -120,6 +120,7 @@ export default {
     width: 100%;
     height: 12vw;
     line-height: 12vw;
+    box-shadow: none;
     .site-name {
       padding: 0 2%;
       display: flex;
