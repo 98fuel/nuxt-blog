@@ -32,7 +32,7 @@ export default {
     padding: 25px 2% 15px;
     .article-content {
       line-height: 1.8;
-      color: #000;
+      color: inherit;
       margin-top: 20px;
     }
   }

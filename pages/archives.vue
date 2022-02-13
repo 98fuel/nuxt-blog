@@ -104,6 +104,9 @@ export default {
             .article-date {
               padding-right: 0.7em;
             }
+            a {
+              color: #3e3939e0;
+            }
           }
         }
       }

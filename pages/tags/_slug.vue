@@ -92,7 +92,7 @@ export default {
           display: inline-block;
           padding: 4px 10px;
           white-space: nowrap;
-          color: #000;
+          color: inherit;
         }
       }
     }

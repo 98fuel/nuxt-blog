@@ -78,14 +78,16 @@ export default {
     padding: 20px 2% 4px;
     opacity: 0.98;
     transition: all 0.2s linear;
+    margin-bottom: 12px;
     &:hover {
       opacity: 1;
       .article-title {
-        color: #184d5e;
+        color: rgb(28, 99, 122);
       }
     }
     .article-title {
       margin: 0;
+      margin-bottom: 5px;
       font-weight: 500;
       font-size: 20px;
       color: #4e91a5;
@@ -107,7 +109,7 @@ export default {
     .article-content {
       font-size: 15px;
       line-height: 1.77;
-      color: #000;
+      color: inherit;
       text-justify: distribute;
       word-break: break-all;
       text-align: left;

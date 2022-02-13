@@ -1,8 +1,10 @@
 <template>
   <div class="wrapper">
     <div class="archive">
-      <h2>{{ article.attributes.title }}</h2>
       <div class="article-content markdown-body" v-html="article.html"></div>
+      <div class="iframe">
+        <iframe src="https://love.imhan.cn" frameborder="0" width="100%" height="100vh"></iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -11,7 +13,7 @@
 export default {
   async asyncData ({ params }) {
     // 调用 about.md 内的数据
-    const article = await import(`~/content/about.md`);
+    const article = await import(`~/content/love.md`);
     return {
       article
     };
@@ -27,6 +29,9 @@ export default {
       line-height: 2;
       color: inherit;
       margin-top: 20px;
+    }
+    iframe {
+      overflow-y: inherit;
     }
   }
 }

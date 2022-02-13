@@ -66,7 +66,7 @@ export default {
         display: inline-block;
         margin-right: 20px;
         padding: 4px 10px 0;
-        color: #000;
+        color: inherit;
         border-bottom: 2px solid #000;
       }
       .nuxt-link-active {
@@ -108,6 +108,9 @@ export default {
             .article-item {
               .article-date {
                 padding-right: 0.7em;
+              }
+              a {
+                color: #3e3939e0;
               }
             }
           }

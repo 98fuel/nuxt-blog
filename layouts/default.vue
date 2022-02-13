@@ -33,11 +33,11 @@ export default {
 .layout {
   .body {
     margin-left: 75px;
-    margin-top: 20px;
     position: relative;
     min-height: 100vh;
     padding-bottom: 100px;
     .container {
+      padding-top: 20px;
       border-radius: 4px;
       position: relative;
       height: 100%;
@@ -78,6 +78,7 @@ export default {
       .container {
         max-width: 100%;
         width: 100%;
+        padding-top: 0;
       }
       .sidebar {
         margin-top: 20px;

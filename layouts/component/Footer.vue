@@ -86,14 +86,14 @@ export default {
   font-size: 15px;
   background: #f2f3f3;
   .wrapper {
-    color: #000;
+    color: inherit;
     padding: 1.6em 2%;
     text-align: left;
     max-width: 900px;
     margin: 0 auto;
     div {
       a {
-        color: #000;
+        color: inherit;
       }
     }
   }

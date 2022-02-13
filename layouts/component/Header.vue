@@ -13,7 +13,8 @@
         <nuxt-link to="/tags" class="nav-link" exact-active-class="current">标签</nuxt-link>
         <nuxt-link to="/message" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about" class="nav-link" exact-active-class="current">关于</nuxt-link>
-        <a class="nav-link" href="https://love.imhan.cn" target="_blank">爱情</a>
+        <nuxt-link to="/love" class="nav-link" exact-active-class="current">爱情</nuxt-link>
+        <!-- <a class="nav-link" href="https://love.imhan.cn" target="_blank">爱情</a> -->
       </div>
     </div>
     <p class="description">
@@ -57,6 +58,7 @@ export default {
           border-radius: 50%;
           display: block;
           &:hover {
+            cursor: pointer;
             transform: rotate(666turn);
             transition-delay: 0.3s;
             transition-property: all;
@@ -80,11 +82,11 @@ export default {
       text-align: center;
       margin-top: 10px;
       .nav-link {
-        display: inline-block;
+        display: block;
         padding: 4px 2px;
         line-height: 30px;
         color: #ecf0f1;
-        font-size: 1rem;
+        font-size: 0.96rem;
         font-style: inherit;
         word-break: keep-all;
         transition: all 0.2s linear;
@@ -93,8 +95,8 @@ export default {
           text-decoration: underline;
         }
         &.current {
-          color: #fff;
-          text-decoration: underline;
+          background: #fff;
+          color: #2c3e50;
         }
         i {
           &::before {
@@ -140,6 +142,7 @@ export default {
       .nav-menu {
         margin: 0;
         .nav-link {
+          display: inline-block;
           padding: 0 4px;
           i {
             font-style: inherit;
