@@ -1,13 +1,13 @@
 <template>
   <div class="wrapper">
     <div class="article">
-      <div class="archive-category">
-        <nuxt-link to="/archives">归档</nuxt-link>
-        <nuxt-link to="/categories/技术">技术</nuxt-link>
-        <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-      </div>
-      <h1 class="title">正在查看 {{keyword}} 分类下的文章</h1>
       <div class="archive">
+        <div class="archive-category">
+          <nuxt-link to="/archives">归档</nuxt-link>
+          <nuxt-link to="/categories/技术">技术</nuxt-link>
+          <nuxt-link to="/categories/随笔">随笔</nuxt-link>
+        </div>
+        <h1 class="title">正在查看 {{keyword}} 分类下的文章</h1>
         <div class="archive-list">
           <div class="archive-item" v-for="archive in archives" :key="archive.date">
             <h2 class="archive-time">{{archive.date}}</h2>
@@ -59,7 +59,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 2% 15px;
+    padding: 0;
     .archive-category {
       margin-bottom: 1rem;
       a {
@@ -89,6 +89,7 @@ export default {
       font-size: 16px;
       font-weight: normal;
       color: #888;
+      margin-bottom: 10px;
     }
     .archive {
       padding: 10px 0 15px;
@@ -108,6 +109,7 @@ export default {
             .article-item {
               .article-date {
                 padding-right: 0.7em;
+                color: #718096;
               }
               a {
                 color: #3e3939e0;

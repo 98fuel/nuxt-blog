@@ -103,6 +103,7 @@ export default {
           .article-item {
             .article-date {
               padding-right: 0.7em;
+              color: #718096;
             }
             a {
               color: #3e3939e0;

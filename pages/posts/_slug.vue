@@ -68,10 +68,10 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 2% 15px;
+    padding: 25px 5% 15px;
     .article-title {
       margin: 0;
-      color: #4e91a5;
+      color: #3e3939e0;
       font-weight: 600;
       font-size: 22px;
       line-height: 1.2;

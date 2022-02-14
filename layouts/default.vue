@@ -32,23 +32,18 @@ export default {
 <style lang="scss" scoped>
 .layout {
   .body {
-    margin-left: 75px;
     position: relative;
-    min-height: 100vh;
-    padding-bottom: 100px;
     .container {
+      max-width: 800px;
       padding-top: 20px;
       border-radius: 4px;
       position: relative;
       height: 100%;
-      max-width: 700px;
       margin: 0 auto;
       overflow: hidden;
       flex: 1;
     }
     .footer {
-      position: absolute;
-      bottom: 0;
       width: 100%;
     }
     .sidebar {
@@ -73,8 +68,7 @@ export default {
   .layout {
     .body {
       padding: 0;
-      margin-top: 12vw;
-      padding-bottom: 140px;
+      padding-bottom: 100px;
       .container {
         max-width: 100%;
         width: 100%;

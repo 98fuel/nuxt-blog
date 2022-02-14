@@ -75,14 +75,14 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 20px 2% 4px;
+    padding: 20px 5% 4px;
     opacity: 0.98;
     transition: all 0.2s linear;
     margin-bottom: 12px;
     &:hover {
       opacity: 1;
       .article-title {
-        color: rgb(28, 99, 122);
+        color: #000;
       }
     }
     .article-title {
@@ -90,13 +90,13 @@ export default {
       margin-bottom: 5px;
       font-weight: 500;
       font-size: 20px;
-      color: #4e91a5;
+      color: #3e3939e0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       transition: all 0.2s linear;
       span {
-        text-decoration: underline;
+        // text-decoration: underline;
       }
       .article-date {
         color: #6e7173;
@@ -144,16 +144,17 @@ export default {
   .navigator {
     list-style: none;
     margin-top: 25px;
-    padding: 25px 0 0;
+    padding: 25px 0 35px;
     font-size: 14px;
+    text-align: center;
   }
 }
 
 @media (max-width: 520px) {
   .wrapper {
+    box-shadow: none;
     .article {
       box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
-      margin-top: 20px;
       padding-bottom: 10px;
       .article-title {
         font-size: 1.2rem;

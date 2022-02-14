@@ -3,8 +3,7 @@
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">
-          <span>子舒</span>
-          <img src="https://img.imhan.cn/author1.png" alt="logo" />
+          <span>子舒的博客</span>
         </nuxt-link>
       </h1>
       <div class="nav-menu">
@@ -14,12 +13,13 @@
         <nuxt-link to="/message" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about" class="nav-link" exact-active-class="current">关于</nuxt-link>
         <nuxt-link to="/love" class="nav-link" exact-active-class="current">爱情</nuxt-link>
-        <!-- <a class="nav-link" href="https://love.imhan.cn" target="_blank">爱情</a> -->
       </div>
     </div>
-    <p class="description">
-      <i>路漫漫其修远兮，吾将上下而求索！</i>
-    </p>
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
 </template>
 
@@ -31,62 +31,45 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
-  width: 75px;
-  height: 100%;
-  background-color: #2c3e50;
-  box-shadow: 0 3px 5px #2c3e50;
+  width: 100%;
+  background-color: #38b2ac;
   z-index: 10;
   .site-name {
     z-index: 999;
-    padding: 20px 1%;
     margin: 0 auto;
+    max-width: 1000px;
     transition: all 0.2s linear;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     h1 {
       a {
-        &:hover {
-          cursor: inherit;
-        }
         display: flex;
         align-items: center;
         flex-direction: column;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        img {
-          height: 50px;
-          border-radius: 50%;
-          display: block;
-          &:hover {
-            cursor: pointer;
-            transform: rotate(666turn);
-            transition-delay: 0.3s;
-            transition-property: all;
-            transition-duration: 59s;
-            transition-timing-function: cubic-bezier(0.34, 0, 0.84, 1);
-          }
-        }
         span {
           display: block;
-          font-size: 16px;
+          font-size: 22px;
           color: #ecf0f1;
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
           font-weight: 600;
-          display: none;
         }
       }
     }
     .nav-menu {
-      padding: 0;
+      padding: 7px 0;
       text-align: center;
-      margin-top: 10px;
+      display: flex;
       .nav-link {
         display: block;
-        padding: 4px 2px;
-        line-height: 30px;
-        color: #ecf0f1;
-        font-size: 0.96rem;
+        padding: 4px 8px;
+        color: #b2f5ea;
+        font-size: 16px;
         font-style: inherit;
         word-break: keep-all;
         transition: all 0.2s linear;
@@ -95,8 +78,8 @@ export default {
           text-decoration: underline;
         }
         &.current {
-          background: #fff;
-          color: #2c3e50;
+          color: #fff;
+          text-decoration: underline;
         }
         i {
           &::before {
@@ -106,29 +89,25 @@ export default {
       }
     }
   }
-  .description {
-    font-size: 16px;
-    padding: 0 1% 14px;
-    color: rgb(233, 230, 230);
-    transition: all 0.2s linear;
+  .menu-icon {
     display: none;
-    width: 100%;
-    text-align: center;
   }
 }
 
 @media (max-width: 900px) {
   .header {
-    width: 100%;
-    height: 12vw;
-    line-height: 12vw;
-    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 5%;
     .site-name {
+      margin: 0;
       padding: 0 2%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       h1 {
+        z-index: 9;
         a {
           span {
             display: block;
@@ -141,17 +120,62 @@ export default {
       }
       .nav-menu {
         margin: 0;
+        position: fixed;
+        left: -60%;
+        top: 0;
+        width: 60%;
+        height: 100vh;
+        background: #38b2ac;
+        flex-direction: column;
+        padding-top: 14%;
+        box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+        padding-left: 20%;
+        text-align: left;
+        transition: all 0.2s linear;
         .nav-link {
           display: inline-block;
-          padding: 0 4px;
-          i {
-            font-style: inherit;
-          }
+          padding: 6px 4px;
+          font-size: 16px;
         }
       }
+      .menu-show {
+        left: 0;
+      }
     }
-    .description {
-      display: none;
+    .menu-icon {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 17px;
+      span {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: 2px;
+        transition: all 0.2s linear;
+      }
+      span:nth-child(1) {
+        top: 0;
+      }
+      span:nth-child(2) {
+        top: 50%;
+      }
+      span:nth-child(3) {
+        top: 100%;
+      }
+    }
+    .menu-icon-show {
+      span:nth-child(1) {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+      span:nth-child(2) {
+        display: none;
+      }
+      span:nth-child(3) {
+        top: 50%;
+        transform: rotate(45deg);
+      }
     }
   }
 }
