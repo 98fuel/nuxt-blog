@@ -80,7 +80,8 @@ export default {
   width: 100%;
   font-size: 14px;
   .wrapper {
-    color: #989898;
+    background: none;
+    color: #000;
     padding: 1.6em 2%;
     text-align: center;
     max-width: 900px;
@@ -109,7 +110,7 @@ export default {
     z-index: 1;
     &:hover {
       cursor: pointer;
-      background: #c1c1c1;
+      background: #eeeeee;
     }
     div {
       position: relative;

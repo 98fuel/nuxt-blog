@@ -8,7 +8,7 @@
           </nuxt-link>
           <div>
             <h3>子舒</h3>
-            <p>记录我的生活...</p>
+            <p>路漫漫其修远兮，吾将上下而求索！</p>
             <nuxt-link to="/about">more...</nuxt-link>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default {
   .wrapper {
     word-wrap: break-word;
     position: sticky;
-    top: 20px;
+    top: 70px;
     border-right: 1px solid #eee;
     .widget {
       padding: 10px 4%;
@@ -70,6 +70,7 @@ export default {
       }
       .gg {
         font-size: 15px;
+        text-align: center;
         a {
           display: inline-block;
           img {
@@ -85,7 +86,7 @@ export default {
         }
       }
       .share {
-        margin-left: -4px;
+        padding: 0 10px;
         li {
           display: flex;
           align-items: center;
@@ -99,6 +100,7 @@ export default {
             justify-content: center;
           }
           a {
+            color: rgba(62, 57, 57, 0.87843);
             &:hover {
               text-decoration: underline;
             }
@@ -145,6 +147,7 @@ export default {
           display: flex;
           div {
             margin-left: 2rem;
+            text-align: left;
             h3 {
               padding-top: 0;
             }

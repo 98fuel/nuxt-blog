@@ -33,23 +33,22 @@
               >{{ tag }}</nuxt-link
             >
           </div>
-          <div>
-            <a href="/message">点击留言</a>
-          </div>
         </div>
       </article>
       <Imgbig />
     </div>
+    <Comments />
   </div>
 </template>
 
 <script>
 import { formatDate } from "@/util";
 import Imgbig from "@/components/Imgbig";
-
+import Comments from '@/components/Comments'
 export default {
   components: {
     Imgbig,
+    Comments
   },
   async asyncData({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);
