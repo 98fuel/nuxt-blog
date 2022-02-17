@@ -2,33 +2,18 @@
   <div class="wrapper">
     <div class="archive">
       <h3>评论~</h3>
-      <div id="tcomment">
+      <link href="https://cdn.jsdelivr.net/npm/artalk@2.1.4/dist/Artalk.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.4/dist/Artalk.js"></script>
+      <div id="Comments">
         <a onclick="javascript:location.reload();" class="reload">点击加载评论功能</a>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.9/dist/twikoo.all.min.js"></script>
-      <link rel="stylesheet" href="https://cdn.imhan.cn/list/twikoo.css">
     </div>
   </div>
 </template>
 
 <script>
-const envId = 'shuxhan-2gcz5b7m7f845ec3';
-const el = '#tcomment';
 export default {
   name: 'Comments',
-  mounted () {
-    this.initTwikoo()
-  },
-  methods: {
-    initTwikoo () {
-      try {
-        twikoo.init({
-          envId,
-          el,
-        })
-      } catch (e) { }
-    },
-  }
 }
 </script>
 
@@ -42,11 +27,13 @@ export default {
       font-weight: 600;
     }
     .reload {
-      background: #000;
+      background: #38b2ac;
       color: #fff;
-      padding: 4px 10px;
+      padding: 6px 10px;
       border-radius: 4px;
       transition: all 0.2s linear;
+      display: block;
+      text-align: center;
       &:hover {
         opacity: 0.9;
         cursor: pointer;

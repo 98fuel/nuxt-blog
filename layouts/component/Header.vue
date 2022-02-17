@@ -35,7 +35,8 @@ export default {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #38b2ac;
+  background-color: rgba(246, 247, 248, 0.6);
+  backdrop-filter: blur(32px);
   z-index: 10;
   .site-name {
     z-index: 999;
@@ -51,10 +52,14 @@ export default {
         align-items: center;
         flex-direction: column;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        color: rgba(0, 0, 0, 0.8);
+        transition: all 0.2s linear;
+        &:hover {
+          color: #000;
+        }
         span {
           display: block;
           font-size: 22px;
-          color: #ecf0f1;
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
           font-weight: 600;
@@ -68,17 +73,17 @@ export default {
       .nav-link {
         display: block;
         padding: 4px 8px;
-        color: #b2f5ea;
+        color: #333333a1;
         font-size: 16px;
         font-style: inherit;
         word-break: keep-all;
         transition: all 0.2s linear;
         &:hover {
-          color: #fff;
+          color: #333;
           text-decoration: underline;
         }
         &.current {
-          color: #fff;
+          color: #333;
           text-decoration: underline;
         }
         i {

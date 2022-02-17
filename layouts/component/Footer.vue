@@ -81,7 +81,7 @@ export default {
   font-size: 14px;
   .wrapper {
     background: none;
-    color: #000;
+    color: #333333a1;
     padding: 1.6em 2%;
     text-align: center;
     max-width: 900px;

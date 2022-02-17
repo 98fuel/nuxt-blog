@@ -90,7 +90,7 @@ export default {
       margin-bottom: 5px;
       font-weight: 500;
       font-size: 20px;
-      color: #3e3939e0;
+      color: #3e3939;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -117,6 +117,7 @@ export default {
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       overflow: hidden;
+      opacity: 0.8;
     }
     .article-meta {
       margin-top: 10px;
@@ -153,9 +154,12 @@ export default {
 @media (max-width: 520px) {
   .wrapper {
     box-shadow: none;
+    background: none;
     .article {
       box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
       padding-bottom: 10px;
+      background: #fff;
+      border-radius: 6px;
       .article-title {
         font-size: 1.2rem;
         font-weight: 600;

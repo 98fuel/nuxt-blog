@@ -106,7 +106,7 @@ function unique (array) {
     color: #444;
     margin: 0;
     cursor: pointer;
-    border-right: 1px solid #c4c2c2;
+    // border-right: 1px solid #c4c2c2;
     &:not(.separator).current {
       cursor: default;
       background-color: #6f777d;

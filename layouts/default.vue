@@ -2,12 +2,11 @@
   <div class="layout">
     <Header />
     <div class="body">
-      <div class="sidebar">
+      <!-- <div class="sidebar">
         <Aside />
-      </div>
+      </div> -->
       <div class="container">
         <Main />
-
         <Footer />
       </div>
     </div>
@@ -17,14 +16,14 @@
 <script>
 import Header from './component/Header'
 import Main from './component/Main'
-import Aside from './component/Aside'
+// import Aside from './component/Aside'
 import Footer from './component/Footer'
 
 export default {
   components: {
     Header,
     Main,
-    Aside,
+    // Aside,
     Footer,
   },
 }
@@ -32,13 +31,15 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  background: #c9cacc;
+  // background: #c9cacc url(https://img.imhan.cn/bg.webp) no-repeat fixed center;
+  background: #f6f7f8;
+  background-size: cover;
   min-height: 100vh;
   .body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    max-width: 1060px;
+    max-width: 800px;
     margin: 0 auto;
     .container {
       max-width: 800px;
@@ -46,7 +47,7 @@ export default {
       border-radius: 4px;
       position: relative;
       height: 100%;
-      overflow: hidden;
+      // overflow: hidden;
       flex: 1;
     }
     .footer {

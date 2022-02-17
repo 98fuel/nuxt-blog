@@ -28,7 +28,7 @@
           </li>
           <li>
             <i class="fa fa-link"></i>
-            <a href="/">我的博客</a>
+            <a href="https://imhan.cn">我的博客</a>
           </li>
         </ul>
       </div>
