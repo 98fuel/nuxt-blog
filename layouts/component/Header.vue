@@ -35,9 +35,10 @@ export default {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(246, 247, 248, 0.6);
+  background-color: #e8ecf3;
   backdrop-filter: blur(32px);
   z-index: 10;
+  transition: all 0.2s linear;
   .site-name {
     z-index: 999;
     margin: 0 auto;
@@ -97,6 +98,9 @@ export default {
   .menu-icon {
     display: none;
   }
+}
+.scrollhead {
+  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
 }
 
 @media (max-width: 900px) {

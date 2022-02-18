@@ -1,4 +1,11 @@
 $(function () {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() >= 100) {
+      $('header.header').addClass('scrollhead')
+    } else {
+      $('header.header').removeClass('scrollhead')
+    }
+  });
 
   var s1 = '2020-06-14';
   s1 = new Date(s1.replace(/-/g, "/"));
