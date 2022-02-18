@@ -2,11 +2,12 @@
   <div class="wrapper">
     <div class="archive">
       <h3>评论~</h3>
-      <link href="https://cdn.jsdelivr.net/npm/artalk@2.1.4/dist/Artalk.css" rel="stylesheet" />
-      <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.4/dist/Artalk.js"></script>
       <div id="Comments">
-        <a onclick="javascript:location.reload();" class="reload">点击加载评论功能</a>
+        <a @click="onclickcomment()" class="reload">点击加载评论功能</a>
       </div>
+      <link href="https://cdn.imhan.cn/list/artalk.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.4/dist/Artalk.js"></script>
+      <script src="https://cdn.imhan.cn/list/main.js"></script>
     </div>
   </div>
 </template>
@@ -14,6 +15,14 @@
 <script>
 export default {
   name: 'Comments',
+  methods: {
+    onclickcomment () {
+      let link = location.pathname;
+      console.log(link);
+      window.location.href = link + "#Comments";
+      location.reload();
+    }
+  }
 }
 </script>
 

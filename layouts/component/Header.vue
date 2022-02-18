@@ -8,11 +8,11 @@
       </h1>
       <div class="nav-menu">
         <nuxt-link to="/" class="nav-link" exact-active-class="current">首页</nuxt-link>
-        <nuxt-link to="/archives" class="nav-link" exact-active-class="current">归档</nuxt-link>
-        <nuxt-link to="/tags" class="nav-link" exact-active-class="current">标签</nuxt-link>
-        <nuxt-link to="/message" class="nav-link" exact-active-class="current">留言</nuxt-link>
-        <nuxt-link to="/about" class="nav-link" exact-active-class="current">关于</nuxt-link>
-        <nuxt-link to="/love" class="nav-link" exact-active-class="current">爱情</nuxt-link>
+        <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link>
+        <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
+        <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
+        <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
+        <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
       </div>
     </div>
     <div class="menu-icon">
@@ -130,7 +130,7 @@ export default {
         top: 0;
         width: 60%;
         height: 100vh;
-        background: #38b2ac;
+        background: rgb(246, 247, 248);
         flex-direction: column;
         padding-top: 14%;
         box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
@@ -154,7 +154,7 @@ export default {
       height: 17px;
       span {
         position: absolute;
-        background: #fff;
+        background: rgba(0, 0, 0, 0.8);
         width: 100%;
         height: 2px;
         transition: all 0.2s linear;

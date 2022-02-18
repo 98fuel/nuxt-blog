@@ -41,7 +41,7 @@ export default {
     const articles = await context.keys().map(key => ({
       ...context(key),
       summary: context(key).html.split('<!-- more -->')[0],
-      path: `/posts/${key.replace('.md', '').replace('./', '')}`
+      path: `/posts/${key.replace('.md', '').replace('./', '')}/`
     }))
     // TODO 使用脚本来生成文章，默认添加标题和时间，根据生成时的创建时间来排序
     articles.sort((a, b) => new Date(b.attributes.date).getTime() - new Date(a.attributes.date).getTime())

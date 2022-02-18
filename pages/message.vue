@@ -4,6 +4,7 @@
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
+        
       </div>
     </div>
     <Comments />

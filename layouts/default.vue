@@ -1,10 +1,11 @@
 <template>
   <div class="layout">
+    <div class="opacity"></div>
     <Header />
     <div class="body">
       <!-- <div class="sidebar">
         <Aside />
-      </div> -->
+      </div>-->
       <div class="container">
         <Main />
         <Footer />
@@ -31,10 +32,12 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  // background: #c9cacc url(https://img.imhan.cn/bg.webp) no-repeat fixed center;
   background: #f6f7f8;
   background-size: cover;
   min-height: 100vh;
+  .opacity {
+    display: none;
+  }
   .body {
     position: relative;
     display: flex;
@@ -47,7 +50,6 @@ export default {
       border-radius: 4px;
       position: relative;
       height: 100%;
-      // overflow: hidden;
       flex: 1;
     }
     .footer {
@@ -62,6 +64,15 @@ export default {
 
 @media (max-width: 900px) {
   .layout {
+    .opacity {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 9;
+    }
     .body {
       padding: 0;
       display: block;
