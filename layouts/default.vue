@@ -81,6 +81,7 @@ export default {
       .container {
         max-width: 100%;
         width: 100%;
+        padding-top: 0;
       }
       .sidebar {
         width: 100%;

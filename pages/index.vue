@@ -118,6 +118,7 @@ export default {
       -webkit-line-clamp: 2;
       overflow: hidden;
       opacity: 0.8;
+      color: #3e3939e0;
     }
     .article-meta {
       margin-top: 10px;

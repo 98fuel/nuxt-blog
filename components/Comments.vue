@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="archive">
       <h3>评论~</h3>
-      <div id="Comments">
+      <div id="artalk">
         <a @click="onclickcomment()" class="reload">点击加载评论功能</a>
       </div>
       <link href="https://cdn.imhan.cn/list/artalk.css" rel="stylesheet" />
@@ -19,7 +19,7 @@ export default {
     onclickcomment () {
       let link = location.pathname;
       console.log(link);
-      window.location.href = link + "#Comments";
+      window.location.href = link + "#artalk";
       location.reload();
     }
   }

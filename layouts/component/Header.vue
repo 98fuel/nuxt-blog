@@ -79,6 +79,7 @@ export default {
         font-style: inherit;
         word-break: keep-all;
         transition: all 0.2s linear;
+        font-family: 'Noto Sans SC', sans-serif;
         &:hover {
           color: #333;
           text-decoration: underline;
@@ -120,7 +121,7 @@ export default {
         a {
           span {
             display: block;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
           }
           img {
             display: none;
