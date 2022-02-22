@@ -1,4 +1,5 @@
 $(function () {
+
   $(window).on("scroll", function () {
     if ($(window).scrollTop() >= 100) {
       $('header.header').addClass('scrollhead')
@@ -44,3 +45,4 @@ console.log(
   "%c love 蔡蔡 - 余万人中万幸得以相识",
   "color:#fff;font-size:12px;font-weight:400;background:#2c3e50;padding:6px 4px;border-radius:6px;font-family:'Noto Sans SC', sans-serif"
 )
+
