@@ -27,6 +27,7 @@
         </div>
         <div class="article-other">
           <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div>
+          <p>版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。</p>
         </div>
       </article>
       <Imgbig />

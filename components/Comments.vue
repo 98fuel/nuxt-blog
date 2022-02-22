@@ -6,7 +6,7 @@
         <a @click="onclickcomment()" class="reload">点击加载评论功能</a>
       </div>
       <link href="https://cdn.imhan.cn/list/artalk.css" rel="stylesheet" />
-      <script src="https://cdn.jsdelivr.net/npm/artalk@2.1.4/dist/Artalk.js"></script>
+      <script src="https://cdn.imhan.cn/list/artalk.min.js"></script>
       <script src="https://cdn.imhan.cn/list/main.js"></script>
     </div>
   </div>
