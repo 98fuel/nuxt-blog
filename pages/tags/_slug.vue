@@ -88,6 +88,7 @@ export default {
         border-bottom: 1px solid #eee;
         padding-bottom: 10px;
         margin-bottom: 10px;
+        margin-top: 20px;
         a {
           display: inline-block;
           padding: 4px 10px;

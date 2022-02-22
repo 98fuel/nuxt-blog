@@ -90,7 +90,7 @@ export default {
       margin-bottom: 5px;
       font-weight: 500;
       font-size: 20px;
-      color: #3e3939;
+      color: #3d3737;
       display: flex;
       justify-content: space-between;
       align-items: center;

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Imgbig />
     <div class="wrapper">
       <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
@@ -30,7 +31,6 @@
           <p>版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。</p>
         </div>
       </article>
-      <Imgbig />
     </div>
     <Comments />
   </div>
@@ -65,8 +65,8 @@ export default {
     padding: 25px 5% 15px;
     .article-title {
       margin: 0;
-      color: #3e3939e0;
-      font-weight: 600;
+      color: #3d3737;
+      font-weight: 500;
       font-size: 22px;
       line-height: 1.2;
       padding: 8px 0;
