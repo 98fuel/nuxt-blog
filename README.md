@@ -27,25 +27,51 @@ docker update --restart=always artalk-go
 
 目前已有文章页面，归档，分类，标签等，其他的页面及功能将会在后期保持更新。(不过也没有什么功能好更新了，博客项目写那么复杂做什么？简单点不好吗。)
 
-依旧存在一些bug, 慢慢修复吧。   2020-02-23
+依旧存在一些bug, 慢慢优化吧...
 
 
 ## 2.使用前必读
 
-`/nuxt.config.js`: 基本信息配置（title, description, icon 等等）
+`/nuxt.config.js`: 基本信息配置（title, description, icon 等）
 
 `/config/index.js`: 首页每页显示文章数量
 
-`/content`: 存放 markdown 格式的文章文件
+`/Conmmonents`: 组件目录
+
+`/layouts`: 结构目录
+
+`/pages`: 模板页面文件
+
+`/assets`: 全局 css 样式
+
+`/static`: 静态资源
+
+`/content`: 存放 markdown 格式文件
+
+文件头设置，title(标题), date(发布时间), updated(最后更新时间), categories(分类), tags(标签)。
+
+```md
+---
+title: hello, world
+date: 2020/06/14 20:57:00
+updated: 2021/11/29 11:39:36
+categories: 
+  - 随笔
+tags: 
+  - 博客
+  - 网站
+---
+
+```
 
 ---
 
-里面会有一些cdn，我是挂靠在自己的存储空间，所以稳定性和安全性自行考虑，建议把相关的 cdn 文件上传至 github 然后通用 jsdelivr 进行加速。
+**里面会有一些cdn，我是挂靠在自己的存储空间，所以稳定性和安全性自行考虑，建议把相关的 cdn 文件上传至 github 然后通用 jsdelivr 进行加速。**
 
 比如 `/Component/comments.vue` 文件，这是一个有关评论的组件，如果不需要可以将文件去除，然后在 `/pages` 文件夹下面的相关模板页面内删除组件；如果想使用其他的评论程序，亦可以改造 `/Component/comments.vue` 文件。
 
 
-## 3.快速使用
+## 3.快速启动
 
 ```bash
 # git clone
