@@ -90,6 +90,7 @@ $ npm run start
 
 # 生成dist目录
 $ npm run generate
+
 ```
 
 ## 4.版本更新
@@ -106,6 +107,10 @@ $ npm run generate
 
 1. 修复了评论路径变化产生的bug
 2. 优化了结构层级错乱导致的问题
+
+### 2022-02-23
+
+1. 重写 `readme.md` 文档
 
 ## 5.LICENSE
 
