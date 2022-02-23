@@ -32,7 +32,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout {
-  background: #e8ecf3;
+  background: #f5f5f5;
   background-size: cover;
   min-height: 100vh;
   .opacity {

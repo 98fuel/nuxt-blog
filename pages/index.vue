@@ -75,10 +75,21 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 20px 5% 4px;
+    padding: 20px 5% 10px;
     opacity: 0.98;
     transition: all 0.2s linear;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 90%;
+      background: #eee;
+    }
     &:hover {
       opacity: 1;
       .article-title {
@@ -95,9 +106,6 @@ export default {
       justify-content: space-between;
       align-items: center;
       transition: all 0.2s linear;
-      span {
-        // text-decoration: underline;
-      }
       .article-date {
         color: #6e7173;
         font-size: 0.94rem;

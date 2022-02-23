@@ -35,7 +35,8 @@ export default {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #e8ecf3;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px;
   backdrop-filter: blur(32px);
   z-index: 10;
   transition: all 0.2s linear;
@@ -53,7 +54,7 @@ export default {
         align-items: center;
         flex-direction: column;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        color: rgba(0, 0, 0, 0.8);
+        color: rgba(0, 0, 0, 0.6);
         transition: all 0.2s linear;
         &:hover {
           color: #000;
@@ -101,7 +102,7 @@ export default {
   }
 }
 .scrollhead {
-  box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px;
 }
 
 @media (max-width: 900px) {
