@@ -76,7 +76,50 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxt/content',
+    'nuxt-content-body-html',
+    '@nuxtjs/feed',
+  ],
 
+  /*
+  ** Rss feed.xml
+  */
+  feed: [
+    {
+      create: async (feed) => {
+        const $content = require('@nuxt/content').$content;
+        feed.options = {
+          title: '不如吃茶去',
+          link: 'https://imhan.cn/feed.xml',
+          description:
+            '这是一个我在闲暇时间写的博客, 会写一些生活琐事, 也会写一些技术笔记, 使用 vue + nuxt.js 技术栈构建而成。',
+        };
+
+        const posts = await $content('posts')
+          .sortBy('date', 'desc')
+          .fetch();
+        posts.forEach((post) => {
+          const url = `https://imhan.cn/posts/${post.slug}`;
+          feed.addItem({
+            id: url,
+            title: post.title,
+            description: post.description,
+            date: new Date(post.date),
+            content: post.content,
+            link: url,
+            author: {
+              name: '子舒',
+              email: 'shuxhan@163.com',
+              link: 'https://imhan.cn',
+            },
+          });
+        });
+      },
+      path: '/feed.xml',
+      type: 'rss2',
+      data: ['posts', 'xml'],
+    },
   ],
   generate: {
     routes: dynamicMarkdownRoutes()
@@ -117,7 +160,7 @@ export default {
         }
       )
     }
-  }
+  },
 }
 
 function dynamicMarkdownRoutes () {
@@ -134,3 +177,4 @@ function markdownRenderer () {
   md.use(require('markdown-it-prism'))
   return md
 }
+

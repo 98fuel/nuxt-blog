@@ -6,7 +6,11 @@
         <br />
         <a href="/">子舒的博客</a> · 网站已稳定运行 <span id="days">0</span> 天
         <br />
-        Powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> & <a href="https://github.com/imhan0cn/nuxt-blog">Github</a>
+        Powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> 
+        & 
+        <a href="https://github.com/imhan0cn/nuxt-blog">Github</a> 
+        & 
+        <a href="/feed.xml" target="_blank">rss</a>
       </div>
     </div>
 
