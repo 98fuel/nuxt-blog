@@ -3,7 +3,7 @@
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">
-          <span>子舒的博客</span>
+          <span>不如吃茶去</span>
         </nuxt-link>
       </h1>
       <div class="nav-menu">

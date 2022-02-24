@@ -1,7 +1,9 @@
 <template>
   <div>
     <Imgbig />
+    <Toc />
     <div class="wrapper">
+      
       <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
         <div class="article-meta">
@@ -40,10 +42,12 @@
 import { formatDate } from "@/util";
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments'
+import Toc from '@/components/Toc'
 export default {
   components: {
     Imgbig,
-    Comments
+    Comments,
+    Toc,
   },
   async asyncData ({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);

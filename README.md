@@ -13,7 +13,9 @@
 
 由于对后端不是很了解，因此没有写后台管理。
 
-可能会存在一些bug，遇到问题请提 [Issues](https://github.com/imhan0cn/nuxt-blog/issues) 。
+如果有任何疑问或错误，欢迎在 [Issues](https://github.com/imhan0cn/nuxt-blog/issues) 进行提问或给予修正意见。
+
+如果喜欢或对你有所帮助，欢迎 Star，对作者是一种鼓励和推进 😀
 
 ~~使用第三方评论 Twikoo 部署留言板~~，开始转入Artalk评论，后端部署在服务器。
 
