@@ -157,6 +157,7 @@ export default {
       width: 100%;
       height: 3px;
       transition: all 0.2s linear;
+      border-radius: 30px;
     }
     span:nth-child(1) {
       top: 0;
