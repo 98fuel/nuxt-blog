@@ -113,6 +113,7 @@ $ npm run generate
 ### 2022-02-23
 
 1. 重写 `readme.md` 文档
+2. 将导航栏移动到左侧，点击按钮显示隐藏
 
 ## 5.LICENSE
 

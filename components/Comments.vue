@@ -36,7 +36,7 @@ export default {
       font-weight: 600;
     }
     .reload {
-      background: #38b2ac;
+      background: #0084ffcc;
       color: #fff;
       padding: 6px 10px;
       border-radius: 4px;

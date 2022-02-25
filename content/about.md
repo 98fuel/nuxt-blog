@@ -9,7 +9,7 @@ layout: 'about'
 
 源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
 
-如果想知道更多关于这个博客的事情，可以阅读[《关于我为什么要写博客？》](posts/2021-07-21-关于我为什么要写博客？)
+如果想知道更多关于这个博客的事情，可以阅读[《关于我为什么要写博客？》](/posts/20210721)
 
 欢迎和我一起探讨一些问题，或者聊聊人生与理想。 
 

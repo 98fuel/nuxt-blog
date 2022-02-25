@@ -33,10 +33,18 @@ export default {
 <style lang="scss" scoped>
 .layout {
   background: #f5f5f5;
+  // background: url(https://img.imhan.cn/bg.webp) no-repeat center fixed;
   background-size: cover;
   min-height: 100vh;
   .opacity {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9;
   }
   .body {
     position: relative;
@@ -64,15 +72,6 @@ export default {
 
 @media (max-width: 900px) {
   .layout {
-    .opacity {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 9;
-    }
     .body {
       padding: 0;
       display: block;

@@ -80,53 +80,73 @@ export default {
     transition: all 0.2s linear;
     margin-bottom: 6px;
     position: relative;
-    &::after{
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 1px;
-      width: 90%;
-      background: #eee;
-    }
-    &:hover {
-      opacity: 1;
+    .link {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 90%;
+        background: #eee;
+      }
+      &:hover {
+        opacity: 1;
+        .article-title {
+          color: #000;
+          span {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
       .article-title {
-        color: #000;
-      }
-    }
-    .article-title {
-      margin: 0;
-      margin-bottom: 5px;
-      font-weight: 500;
-      font-size: 20px;
-      color: #3d3737;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: all 0.2s linear;
-      .article-date {
-        color: #6e7173;
-        font-size: 0.94rem;
-        opacity: 0.8;
+        margin: 0;
+        margin-bottom: 5px;
         font-weight: 500;
-        text-decoration: none;
+        font-size: 20px;
+        color: #3d3737;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.2s linear;
+        span {
+          position: relative;
+          &::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background: #3d3737;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: all 0.2s linear;
+          }
+        }
+        .article-date {
+          color: #6e7173;
+          font-size: 0.94rem;
+          opacity: 0.8;
+          font-weight: 500;
+          text-decoration: none;
+        }
       }
-    }
-    .article-content {
-      font-size: 15px;
-      line-height: 1.77;
-      color: inherit;
-      text-justify: distribute;
-      word-break: break-all;
-      text-align: left;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      overflow: hidden;
-      opacity: 0.8;
-      color: #3e3939e0;
+      .article-content {
+        font-size: 15px;
+        line-height: 1.77;
+        color: inherit;
+        text-justify: distribute;
+        word-break: break-all;
+        text-align: left;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        opacity: 0.8;
+        color: #3e3939e0;
+      }
     }
     .article-meta {
       margin-top: 10px;
