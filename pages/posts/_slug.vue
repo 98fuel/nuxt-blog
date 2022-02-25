@@ -103,7 +103,7 @@ export default {
       }
     }
     .article-content {
-      font-size: 16px;
+      font-size: inherit;
       line-height: 2;
       color: inherit;
       padding-top: 15px;
@@ -130,11 +130,11 @@ export default {
     }
     .article-other {
       margin: 0.6rem 0 1rem;
-      font-size: 0.96rem;
-      color: #6e7173;
+      font-size: 0.9rem;
+      color: #404041;
       .link {
         margin-left: 10px;
-        color: #6e7173;
+        color: inherit;
       }
     }
   }

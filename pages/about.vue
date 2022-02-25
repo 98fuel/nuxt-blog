@@ -24,6 +24,7 @@ export default {
   .archive {
     padding: 25px 2% 15px;
     .article-content {
+      font-size: inherit;
       line-height: 2;
       color: inherit;
       margin-top: 20px;

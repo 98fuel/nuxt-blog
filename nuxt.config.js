@@ -42,8 +42,8 @@ export default {
     script: [
       { src: 'https://cdn.imhan.cn/list/jquery3.6.0.js' },
       { src: 'https://hm.baidu.com/hm.js?f41d830174f36ac5eb0838f79f75bee2' },
-      { src: '/js/main.js' },
-    ]
+      { src: '/js/main.js' }
+    ],
   },
   /*
   ** Global CSS
@@ -51,6 +51,7 @@ export default {
   css: [
     '@/assets/css/reset.scss',
     '@/assets/css/app.scss',
+    '@/assets/css/article.scss'
   ],
   /*
   ** Plugins to load before mounting the App

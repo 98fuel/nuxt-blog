@@ -105,23 +105,24 @@ export default {
         }
         span {
           color: #666;
+          font-size: 18px;
         }
       }
       .nav-link {
         text-align: center;
         width: 100%;
         display: block;
-        color: #333333a1;
+        color: #333333d6;
         font-style: inherit;
         word-break: keep-all;
         transition: all 0.2s linear;
-        font-family: 'Noto Sans SC', sans-serif;
+        // font-family: 'Noto Sans SC', sans-serif;
         padding: 6px 4px;
-        font-size: 16px;
+        font-size: 17px;
         &:hover {
           color: #fff;
           // text-decoration: underline;
-          background: #2b2b2b;
+          background: #2b2b2bcb;
         }
         &.current {
           color: #fff;
@@ -142,10 +143,10 @@ export default {
   .menu-icon {
     display: block;
     position: relative;
-    width: 30px;
-    height: 17px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 16px;
+    top: 6px;
     left: 30px;
     z-index: 99999999;
     &:hover {
@@ -154,19 +155,19 @@ export default {
     span {
       position: absolute;
       background: rgba(0, 0, 0, 0.8);
-      width: 100%;
+      width: 30px;
       height: 3px;
       transition: all 0.2s linear;
       border-radius: 30px;
     }
     span:nth-child(1) {
-      top: 0;
+      top: 28%;
     }
     span:nth-child(2) {
       top: 50%;
     }
     span:nth-child(3) {
-      top: 100%;
+      top: 72%;
     }
   }
   .menu-icon-show {
@@ -195,9 +196,9 @@ export default {
       h1 {
         z-index: 9;
         a {
+          color: #000;
           span {
             display: block;
-            font-size: 1.2rem;
           }
           img {
             display: none;

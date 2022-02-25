@@ -103,7 +103,7 @@ export default {
       color: #888;
     }
     .archive-list {
-      font-size: 16px;
+      font-size: inherit;
       line-height: 2;
       padding-bottom: 0.8em;
       .archive-item {

@@ -144,8 +144,8 @@ export default {
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
-        opacity: 0.8;
-        color: #3e3939e0;
+        opacity: 0.9;
+        color: #3e3939;
       }
     }
     .article-meta {
@@ -188,14 +188,17 @@ export default {
       box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
       padding-bottom: 10px;
       background: #fff;
-      border-radius: 6px;
-      .article-title {
-        font-size: 1.2rem;
-        font-weight: 600;
-        flex-direction: column;
-        align-items: flex-start;
-        .article-date {
+      border-radius: 0;
+      .link {
+        .article-title {
+          font-size: 1.2rem;
           font-weight: 500;
+          color: #000;
+          flex-direction: column;
+          align-items: flex-start;
+          .article-date {
+            font-weight: 500;
+          }
         }
       }
     }

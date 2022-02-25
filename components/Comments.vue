@@ -7,6 +7,7 @@
       </div>
       <link href="https://cdn.imhan.cn/list/artalk.css" rel="stylesheet" />
       <script src="https://cdn.imhan.cn/list/artalk.min.js"></script>
+      <script src="https://cdn.imhan.cn/list/main.js"></script>
     </div>
   </div>
 </template>

@@ -88,7 +88,7 @@ export default {
       margin-bottom: 10px;
     }
     .archive-list {
-      font-size: 16px;
+      font-size: inherit;
       line-height: 2;
       padding-bottom: 0.8em;
       .archive-item {

@@ -2,14 +2,18 @@
   <footer class="footer">
     <div class="wrapper">
       <div>
-        © 2020 -2022 · <a href="https://beian.miit.gov.cn/" target="_blank"><span>浙ICP备2022002453号-1</span></a>
+        © 2020 -2022 ·
+        <a href="https://beian.miit.gov.cn/" target="_blank">
+          <span>浙ICP备2022002453号-1</span>
+        </a>
         <br />
-        <a href="/">子舒的博客</a> · 网站已稳定运行 <span id="days">0</span> 天
-        <br />
-        Powered by <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a> 
-        & 
-        <a href="https://github.com/imhan0cn/nuxt-blog">Github</a> 
-        & 
+        <a href="/">子舒的博客</a> · 网站已稳定运行
+        <span id="days">0</span> 天
+        <br />Powered by
+        <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
+        &
+        <a href="https://github.com/imhan0cn/nuxt-blog">Github</a>
+        &
         <a href="/feed.xml" target="_blank">rss</a>
       </div>
     </div>
@@ -82,10 +86,10 @@ export default {
 <style lang="scss" scoped>
 .footer {
   width: 100%;
-  font-size: 14px;
   .wrapper {
     background: none;
-    color: #333333a1;
+    color: #333;
+    font-size: 15px;
     padding: 1.6em 2%;
     text-align: center;
     max-width: 900px;
