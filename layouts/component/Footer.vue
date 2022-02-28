@@ -103,24 +103,26 @@ export default {
   }
   .top-btn {
     position: fixed;
-    right: 40px;
-    bottom: 60px;
+    right: 33px;
+    bottom: 90px;
     -ms-flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #fff;
+    background: #eee url(https://img.imhan.cn/blog/top.png) no-repeat center !important;
+    background-size: cover !important;
     border-radius: 50%;
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
-    height: 40px;
     justify-content: center;
     transition: all 0.4s ease;
-    width: 40px;
-    z-index: 1;
+    width: 48px;
+    height: 48px;
+    z-index: 999;
     &:hover {
       cursor: pointer;
-      background: #eeeeee;
+      background: #dbdbdb;
     }
     div {
+      display: none;
       position: relative;
       width: 100%;
       height: 100%;
@@ -128,13 +130,13 @@ export default {
         position: absolute;
         top: 18px;
         background: #666;
-        width: 16px;
+        width: 19px;
         height: 2px;
       }
 
       i:nth-child(1) {
         transform: rotate(-45deg);
-        left: 7px;
+        left: 8px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -143,7 +145,7 @@ export default {
 
       i:nth-child(2) {
         transform: rotate(45deg);
-        right: 7px;
+        right: 8px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);

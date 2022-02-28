@@ -43,7 +43,7 @@ export default {
     let articles = await context.keys().map(key => ({
       ...context(key),
       date: context(key).attributes.date,
-      path: `/posts/${key.replace('.md', '').replace('./', '')}`
+      path: `/posts/${key.replace('.md', '').replace('./', '')}/`
     }))
     const keyword = route.params.slug
     articles = articles.filter(article => {

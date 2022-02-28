@@ -9,7 +9,7 @@ layout: 'about'
 
 源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
 
-如果想知道更多关于这个博客的事情，可以阅读[《关于我为什么要写博客？》](/posts/20210721)
+如果想知道更多关于这个博客的事情，可以阅读[《关于我为什么要写博客？》](/posts/20210721/)
 
 欢迎和我一起探讨一些问题，或者聊聊人生与理想。 
 
@@ -32,7 +32,7 @@ E-mail: shuxhan#163.com
 |kaiboshi| [https://kaiboshi.gitee.io](https://kaiboshi.gitee.io)|
 |梦繁星| [https://emoao.com](https://emoao.com)|
   
->友链申请前往[留言板](/message)  一些简单的要求: 希望申请的博客可以长期保证站点稳定，更新稳定。内容符合社会主义核心价值观，拒绝资源站等类型的平台，只接受个人博客，生活或者技术等类型没有太大的限制。
+>友链申请前往[留言板](/message/)  一些简单的要求: 希望申请的博客可以长期保证站点稳定，更新稳定。内容符合社会主义核心价值观，拒绝资源站等类型的平台，只接受个人博客，生活或者技术等类型没有太大的限制。
 
 ---
 

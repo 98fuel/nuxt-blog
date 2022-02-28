@@ -16,11 +16,5 @@
   },
   "LazyPager": {
     "description": "Auto imported from components/Pager.vue"
-  },
-  "Toc": {
-    "description": "Auto imported from components/Toc.vue"
-  },
-  "LazyToc": {
-    "description": "Auto imported from components/Toc.vue"
   }
 }

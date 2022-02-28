@@ -33,7 +33,6 @@ export default {
 <style lang="scss" scoped>
 .layout {
   background: #f5f5f5;
-  // background: url(https://img.imhan.cn/bg.webp) no-repeat center fixed;
   background-size: cover;
   min-height: 100vh;
   .opacity {

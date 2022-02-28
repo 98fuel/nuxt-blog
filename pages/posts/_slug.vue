@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Imgbig />
-    <Toc />
     <div class="wrapper">
       <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
@@ -19,6 +17,7 @@
         </div>
         <div class="line"></div>
         <div class="markdown-body article-content" v-html="article.html"></div>
+        <Imgbig />
         <div class="article-tags">
           标签:
           <nuxt-link
@@ -42,12 +41,10 @@
 import { formatDate } from "@/util";
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments'
-import Toc from '@/components/Toc'
 export default {
   components: {
     Imgbig,
     Comments,
-    Toc,
   },
   async asyncData ({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);

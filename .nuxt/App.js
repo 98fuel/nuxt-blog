@@ -10,6 +10,8 @@ import '..\\assets\\css\\app.scss'
 
 import '..\\assets\\css\\article.scss'
 
+import '..\\assets\\css\\dark.scss'
+
 import '..\\node_modules\\prismjs\\themes\\prism.css'
 
 import _488d8ed0 from '..\\layouts\\component\\Aside.vue'
