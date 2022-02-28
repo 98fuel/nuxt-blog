@@ -2,49 +2,49 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\about.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\about.vue",
     "chunkName": "pages/about"
   },
   {
     "name": "archives",
     "path": "/archives",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\archives.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\archives.vue",
     "chunkName": "pages/archives"
   },
   {
     "name": "love",
     "path": "/love",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\love.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\love.vue",
     "chunkName": "pages/love"
   },
   {
     "name": "message",
     "path": "/message",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\message.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\message.vue",
     "chunkName": "pages/message"
   },
   {
     "name": "categories-slug",
     "path": "/categories/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\categories\\\\_slug.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\categories\\\\_slug.vue",
     "chunkName": "pages/categories/_slug"
   },
   {
     "name": "posts-slug",
     "path": "/posts/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\posts\\\\_slug.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\posts\\\\_slug.vue",
     "chunkName": "pages/posts/_slug"
   },
   {
     "name": "tags-slug",
     "path": "/tags/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
     "chunkName": "pages/tags/_slug"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\index.vue",
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]

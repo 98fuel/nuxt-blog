@@ -7,8 +7,7 @@
           <span>浙ICP备2022002453号-1</span>
         </a>
         <br />
-        <a href="/">子舒的博客</a> · 网站已稳定运行
-        <span id="days">0</span> 天
+        <a href="/">子舒的博客</a> · 网站已稳定运行 <span id="days">0</span> 天
         <br />Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
         &
@@ -38,26 +37,26 @@
 
 <script>
 export default {
-  props: ['ele'],
-  data () {
+  props: ["ele"],
+  data() {
     return {
-      opacity: '1',
+      opacity: "1",
       gotop: false,
       scrollHeight: 140,
-      scrollTop: 0
+      scrollTop: 0,
     };
   },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll, true);
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll, true);
   },
   methods: {
-    enterBackTop () {
-      this.opacity = '1';
+    enterBackTop() {
+      this.opacity = "1";
     },
-    outBackTop () {
-      this.opacity = '1';
+    outBackTop() {
+      this.opacity = "1";
     },
-    handleScroll (e) {
+    handleScroll(e) {
       const that = this;
       const scrollTop =
         window.pageYOffset ||
@@ -68,7 +67,7 @@ export default {
         ? (this.gotop = true)
         : (this.gotop = false);
     },
-    handleScrollTop () {
+    handleScrollTop() {
       const that = this;
       const timer = setInterval(() => {
         const ispeed = Math.floor(-that.scrollTop / 5);
@@ -78,9 +77,9 @@ export default {
           clearInterval(timer);
         }
       }, 16);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -108,8 +107,7 @@ export default {
     -ms-flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #eee url(https://img.imhan.cn/blog/top.png) no-repeat center !important;
-    background-size: cover !important;
+    background: #fff;
     border-radius: 50%;
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
     justify-content: center;
@@ -117,16 +115,21 @@ export default {
     width: 48px;
     height: 48px;
     z-index: 999;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
     &:hover {
       cursor: pointer;
-      background: #dbdbdb;
+      background: #fff;
     }
     div {
-      display: none;
+      background: #fff url(https://img.imhan.cn/blog/top.png) no-repeat center !important;
+      background-size: cover !important;
       position: relative;
       width: 100%;
       height: 100%;
       i {
+        display: none;
         position: absolute;
         top: 18px;
         background: #666;
