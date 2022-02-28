@@ -3,7 +3,6 @@
     <Imgbig />
     <Toc />
     <div class="wrapper">
-      
       <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
         <div class="article-meta">
@@ -18,6 +17,7 @@
             >{{ category }}</nuxt-link>
           </div>
         </div>
+        <div class="line"></div>
         <div class="markdown-body article-content" v-html="article.html"></div>
         <div class="article-tags">
           标签:
@@ -69,9 +69,9 @@ export default {
     padding: 25px 5% 15px;
     .article-title {
       margin: 0;
-      color: #3d3737;
+      color: var(--color-main);
       font-weight: 500;
-      font-size: 22px;
+      font-size: 24px;
       line-height: 1.2;
       padding: 8px 0;
     }
@@ -79,7 +79,6 @@ export default {
       padding: 0;
       margin: 0;
       color: #6e7173;
-      border-bottom: 1px solid #eee;
       font-size: 0.94em;
       text-indent: 0.15em;
       display: flex;
@@ -101,6 +100,11 @@ export default {
           }
         }
       }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background: rgb(214, 214, 214);
     }
     .article-content {
       font-size: inherit;

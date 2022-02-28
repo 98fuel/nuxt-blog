@@ -118,10 +118,10 @@ export default {
           .article-item {
             .article-date {
               padding-right: 0.7em;
-              color: #718096;
+              color: #3e3939e0;
             }
             .article-link {
-              color: rgba(62,57,57,0.87843);
+              color: var(--color-main);
             }
           }
         }

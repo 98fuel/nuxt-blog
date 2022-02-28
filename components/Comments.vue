@@ -34,9 +34,10 @@ export default {
     h3 {
       margin-bottom: 20px;
       font-weight: 600;
+      font-size: 22px;
     }
     .reload {
-      background: #0084ffcc;
+      background: var(--bg-main);
       color: #fff;
       padding: 6px 10px;
       border-radius: 4px;

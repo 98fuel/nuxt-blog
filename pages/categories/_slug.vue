@@ -40,7 +40,7 @@ export default {
     let articles = await context.keys().map(key => ({
       ...context(key),
       date: context(key).attributes.date,
-      path: `/posts/${key.replace('.md', '').replace('./', '')}`
+      path: `/posts/${key.replace('.md', '').replace('./', '')}/`
     }))
     const keyword = route.params.slug
     articles = articles.filter(article => {
@@ -66,8 +66,9 @@ export default {
         display: inline-block;
         margin-right: 20px;
         padding: 4px 10px 0;
+        font-size: 17px;
         color: inherit;
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid #24a19c;
       }
       .nuxt-link-active {
         position: relative;
@@ -80,7 +81,7 @@ export default {
           left: 0;
           width: 100%;
           height: 90%;
-          background-image: linear-gradient(#dadada, #6b6b6b);
+          background-image: linear-gradient(#dadada66, #24a19c);
           z-index: -1;
         }
       }
@@ -94,7 +95,7 @@ export default {
     .archive {
       padding: 10px 0 15px;
       .archive-list {
-        font-size: inherit;
+        font-size: 17px;
         line-height: 2;
         padding-bottom: 0.8em;
         .archive-item {
@@ -109,10 +110,10 @@ export default {
             .article-item {
               .article-date {
                 padding-right: 0.7em;
-                color: #718096;
+                color: #3e3939e0;
               }
               a {
-                color: #3e3939e0;
+                color: var(--color-main);
               }
             }
           }

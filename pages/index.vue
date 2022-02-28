@@ -94,7 +94,6 @@ export default {
       &:hover {
         opacity: 1;
         .article-title {
-          color: #000;
           span {
             &::after {
               width: 100%;
@@ -107,7 +106,7 @@ export default {
         margin-bottom: 5px;
         font-weight: 500;
         font-size: 20px;
-        color: #3d3737;
+        color: var(--color-main);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -118,7 +117,7 @@ export default {
             content: '';
             width: 0;
             height: 2px;
-            background: #3d3737;
+            background: var(--bg-main);
             position: absolute;
             left: 0;
             bottom: 0;
@@ -134,7 +133,7 @@ export default {
         }
       }
       .article-content {
-        font-size: 15px;
+        font-size: 16px !important;
         line-height: 1.77;
         color: inherit;
         text-justify: distribute;
@@ -193,7 +192,6 @@ export default {
         .article-title {
           font-size: 1.2rem;
           font-weight: 500;
-          color: #000;
           flex-direction: column;
           align-items: flex-start;
           .article-date {

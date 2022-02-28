@@ -59,11 +59,14 @@ export default {
         display: flex;
         align-items: center;
         flex-direction: column;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        color: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
         transition: all 0.2s linear;
+        background: var(--bg-main);
+        opacity: 0.9;
+        padding: 0 8px;
+        border-radius: 4px;
         &:hover {
-          color: #000;
+          opacity: 1;
         }
         span {
           display: block;
@@ -122,12 +125,13 @@ export default {
         &:hover {
           color: #fff;
           // text-decoration: underline;
-          background: #2b2b2bcb;
+          background: var(--bg-main);
+          opacity: 0.9;
         }
         &.current {
           color: #fff;
           // text-decoration: underline;
-          background: #2b2b2b;
+          background: var(--bg-main);
         }
         i {
           &::before {
@@ -154,7 +158,7 @@ export default {
     }
     span {
       position: absolute;
-      background: rgba(0, 0, 0, 0.8);
+      background: #666;
       width: 30px;
       height: 3px;
       transition: all 0.2s linear;
@@ -196,7 +200,6 @@ export default {
       h1 {
         z-index: 9;
         a {
-          color: #000;
           span {
             display: block;
           }
