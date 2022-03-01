@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <Header />
     <div class="container">
       <div class="wrapper">
         <article class="article article-post">
@@ -43,7 +42,6 @@
 
 <script>
 import { formatDate } from "@/util";
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments';
@@ -51,7 +49,6 @@ export default {
   components: {
     Imgbig,
     Comments,
-    Header,
     Footer,
   },
   async asyncData ({ params }) {

@@ -123,9 +123,9 @@ export default {
       .nav-menu {
         margin: 0;
         position: fixed;
-        left: -310px;
+        left: -270px;
         top: 0;
-        width: 300px;
+        width: 260px;
         height: 100vh;
         background: rgb(246, 247, 248);
         flex-direction: column;

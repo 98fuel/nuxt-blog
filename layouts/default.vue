@@ -1,15 +1,18 @@
 <template>
   <div class="layout">
+    <Header />
     <div class="opacity"></div>
     <Main />
   </div>
 </template>
 
 <script>
+import Header from './component/Header'
 import Main from './component/Main'
 
 export default {
   components: {
+    Header,
     Main
   },
 }

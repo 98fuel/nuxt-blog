@@ -10,9 +10,7 @@ layout: 'index'
 
 学习新思想，争做新青年，一个在杭州的新生代农民工。因为一些原因，20年毕业后来到杭州，从事前端方面的工作。
 
-这是一个我在闲暇时间写的博客，会写一些生活琐事，也会写一些技术笔记，使用 vue + nuxt.js 技术栈构建而成。 
-
-源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
+这是一个我在闲暇时间写的博客，会写一些生活琐事和技术笔记，使用 vue + nuxt.js 技术栈构建而成。 
 
 如果想知道更多关于这个博客的事情，可以阅读[《关于我为什么要写博客？》](/posts/20210721/)
 
@@ -20,4 +18,4 @@ layout: 'index'
 
 你可以在 [Github](https://github.com/imhan0cn) 上面找到我。
 
-Email: shuxhan#163.com
+<i class="fa fa-envelope"></i> shuxhan#163.com

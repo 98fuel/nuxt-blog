@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <Header />
     <div class="container">
       <div class="wrapper">
         <div class="archive">
@@ -37,12 +36,10 @@
 </template>
 
 <script>
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
-    Header,
     Footer
   },
   async asyncData () {

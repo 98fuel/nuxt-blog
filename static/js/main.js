@@ -1,5 +1,9 @@
 $(function () {
 
+  if (window.location.pathname == "/") {
+    $('.header').addClass('index-header')
+  }
+
   $(window).on("scroll", function () {
     if ($(window).scrollTop() >= 100) {
       $('header.header').addClass('scrollhead')

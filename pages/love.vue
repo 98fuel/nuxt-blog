@@ -1,9 +1,13 @@
 <template>
-  <div class="wrapper">
-    <div class="archive">
-      <div class="article-content markdown-body" v-html="article.html"></div>
-      <div class="iframe">
-        <iframe src="https://love.imhan.cn" frameborder="0" width="100%"></iframe>
+  <div class="body">
+    <div class="container">
+      <div class="wrapper">
+        <div class="archive">
+          <div class="article-content markdown-body" v-html="article.html"></div>
+          <div class="iframe">
+            <iframe src="https://love.imhan.cn" frameborder="0" width="100%"></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </div>

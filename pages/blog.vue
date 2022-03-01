@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <Header />
     <div class="container">
       <div class="wrapper">
         <article class="article" v-for="article in articles" :key="article.attributes.title">
@@ -37,7 +36,6 @@
 </template>
 
 <script>
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Pager from '@/components/Pager'
 import { perHomeCount } from '@/config';
@@ -45,7 +43,6 @@ import { getArticles, getPagerCount, formatDate } from '@/util';
 
 export default {
   components: {
-    Header,
     Footer,
     Pager
   },
@@ -84,7 +81,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 0 0 50px;
+  // padding: 0 0 50px;
   .article {
     padding: 20px 5% 10px;
     opacity: 0.98;

@@ -14,7 +14,7 @@
         &
         <a href="https://github.com/imhan0cn/nuxt-blog">Github</a>
         &
-        <a href="/feed.xml" target="_blank">rss</a>
+        <a href="/feed.xml" target="_blank">Rss</a>
       </div>
     </div>
 

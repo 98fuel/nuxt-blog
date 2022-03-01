@@ -1,6 +1,5 @@
 <template>
   <div class="body">
-    <Header />
     <div class="container">
       <div class="wrapper">
         <div class="archive">
@@ -14,12 +13,10 @@
 </template>
 
 <script>
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default {
   components: {
-    Header,
     Footer
   },
   async asyncData ({ params }) {
