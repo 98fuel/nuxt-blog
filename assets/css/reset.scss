@@ -76,6 +76,7 @@ a {
   text-decoration: none;
   transition: all 0.1s ease-in;
   word-break: break-all;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:hover {
     color: #444;
@@ -129,4 +130,3 @@ h3 {
   color: var(--color-main) !important;
   font-weight: 500 !important;
 }
-

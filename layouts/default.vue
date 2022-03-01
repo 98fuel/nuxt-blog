@@ -1,36 +1,21 @@
 <template>
   <div class="layout">
     <div class="opacity"></div>
-    <Header />
-    <div class="body">
-      <!-- <div class="sidebar">
-        <Aside />
-      </div>-->
-      <div class="container">
-        <Main />
-        <Footer />
-      </div>
-    </div>
+    <Main />
   </div>
 </template>
 
 <script>
-import Header from './component/Header'
 import Main from './component/Main'
-// import Aside from './component/Aside'
-import Footer from './component/Footer'
 
 export default {
   components: {
-    Header,
-    Main,
-    // Aside,
-    Footer,
+    Main
   },
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .layout {
   background: #f5f5f5;
   background-size: cover;
@@ -47,12 +32,9 @@ export default {
   }
   .body {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
     .container {
       max-width: 800px;
+      margin: 0 auto;
       padding-top: 20px;
       border-radius: 4px;
       position: relative;

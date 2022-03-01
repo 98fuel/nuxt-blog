@@ -22,7 +22,7 @@
   background: #fff;
   border: 1px solid rgb(229 229 229);
   margin-bottom: 20px;
-  // box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
+  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -133,4 +133,36 @@ code * {
     padding: 10px;
     box-sizing: border-box;
   }
+}
+
+
+// index.vue
+.index .wrapper .article-content * {
+  color: #dde1e3cc !important;
+}
+
+.index .wrapper .article-content a {
+  border-bottom: 1px solid #dde1e3cc;
+}
+
+.index .wrapper .article-content a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.index .wrapper .article-content img {
+  max-width: 120px;
+  background: #001522;
+  vertical-align: baseline;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.index .header {
+  background: #001522 !important;
+}
+.index .header a {
+  color: #dde1e3cc !important;
 }

@@ -52,7 +52,6 @@ export default {
     '@/assets/css/reset.scss',
     '@/assets/css/app.scss',
     '@/assets/css/article.scss',
-    '@/assets/css/dark.scss',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -83,7 +82,6 @@ export default {
     '@nuxt/content',
     'nuxt-content-body-html',
     '@nuxtjs/feed',
-    // 'nuxtjs-darkmode-js-module',
   ],
   /*
   ** Rss feed.xml
