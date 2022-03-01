@@ -83,7 +83,7 @@ export default {
     '@nuxt/content',
     'nuxt-content-body-html',
     '@nuxtjs/feed',
-    'nuxtjs-darkmode-js-module',
+    // 'nuxtjs-darkmode-js-module',
   ],
   /*
   ** Rss feed.xml

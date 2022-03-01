@@ -88,13 +88,14 @@ export default {
   width: 100%;
   .wrapper {
     background: none;
+    border: none;
+    box-shadow: none;
     color: #333;
     font-size: 15px;
     padding: 1.6em 2%;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: none;
     div {
       a {
         color: inherit;
@@ -108,25 +109,27 @@ export default {
     -ms-flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #eee url(https://img.imhan.cn/blog/top.png) no-repeat center !important;
-    background-size: cover !important;
     border-radius: 50%;
+    background: #fff;
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
     justify-content: center;
     transition: all 0.4s ease;
     width: 48px;
     height: 48px;
     z-index: 999;
+    overflow: hidden;
+    padding: 5px;
     &:hover {
       cursor: pointer;
-      background: #dbdbdb;
     }
     div {
-      display: none;
+      background: #fff url(https://img.imhan.cn/blog/top.png) no-repeat center !important;
+      background-size: cover !important;
       position: relative;
       width: 100%;
       height: 100%;
       i {
+        display: none;
         position: absolute;
         top: 18px;
         background: #666;

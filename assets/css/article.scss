@@ -1,6 +1,6 @@
 .article-content {
-  color: #000000d6 !important;
-  font-size: 1.06rem !important;
+  color: #000000d2 !important;
+  font-size: 16px !important;
 }
 
 .article-content h2 {
@@ -20,7 +20,9 @@
 
 .wrapper {
   background: #fff;
-  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
+  border: 1px solid rgb(229 229 229);
+  margin-bottom: 20px;
+  // box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;

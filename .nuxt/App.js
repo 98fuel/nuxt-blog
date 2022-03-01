@@ -3,6 +3,7 @@ import Vue from 'vue'
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
 import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '..\\assets\\css\\reset.scss'
 
@@ -19,8 +20,9 @@ import _5d11c1fa from '..\\layouts\\component\\Footer.vue'
 import _57656816 from '..\\layouts\\component\\Header.vue'
 import _2ba6a921 from '..\\layouts\\component\\Main.vue'
 import _6f6c098b from '..\\layouts\\default.vue'
+import _777ba69c from '..\\layouts\\index.vue'
 
-const layouts = { "_component/Aside": sanitizeComponent(_488d8ed0),"_component/Footer": sanitizeComponent(_5d11c1fa),"_component/Header": sanitizeComponent(_57656816),"_component/Main": sanitizeComponent(_2ba6a921),"_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_component/Aside": sanitizeComponent(_488d8ed0),"_component/Footer": sanitizeComponent(_5d11c1fa),"_component/Header": sanitizeComponent(_57656816),"_component/Main": sanitizeComponent(_2ba6a921),"_default": sanitizeComponent(_6f6c098b),"_index": sanitizeComponent(_777ba69c) }
 
 export default {
   render (h, props) {
@@ -55,7 +57,7 @@ export default {
       }
     }, [
       loadingEl,
-
+      h(NuxtBuildIndicator),
       transitionEl
     ])
   },
@@ -105,10 +107,6 @@ export default {
 
     isFetching () {
       return this.nbFetching > 0
-    },
-
-    isPreview () {
-      return Boolean(this.$options.previewData)
     },
   },
 
@@ -185,6 +183,10 @@ export default {
     },
 
     setLayout (layout) {
+      if(layout && typeof layout !== 'string') {
+        throw new Error('[nuxt] Avoid using non-string value as layout property.')
+      }
+
       if (!layout || !layouts['_' + layout]) {
         layout = 'default'
       }

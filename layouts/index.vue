@@ -1,10 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="archive">
-      <div class="article-content markdown-body" v-html="article.html"></div>
-      <div class="iframe">
-        <iframe src="https://love.imhan.cn" frameborder="0" width="100%"></iframe>
-      </div>
+      <!-- <h2>{{ article.attributes.title }}</h2> -->
+      <!-- <div class="article-content markdown-body" v-html="article.html"></div> -->
+      首页
     </div>
   </div>
 </template>
@@ -20,12 +19,10 @@ export default {
   .archive {
     padding: 25px 2% 15px;
     .article-content {
+      font-size: inherit;
       line-height: 2;
       color: inherit;
       margin-top: 20px;
-    }
-    .iframe {
-      padding-bottom: 100%;
     }
   }
 }
