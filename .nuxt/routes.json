@@ -14,13 +14,6 @@
     "_name": "_784122e9"
   },
   {
-    "name": "blog",
-    "path": "/blog",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\blog.vue",
-    "chunkName": "pages/blog",
-    "_name": "_1bd36bcc"
-  },
-  {
     "name": "love",
     "path": "/love",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\love.vue",
@@ -54,5 +47,12 @@
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
     "chunkName": "pages/tags/_slug",
     "_name": "_5a83d9ee"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2e0f94ec"
   }
 ]

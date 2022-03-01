@@ -11,7 +11,13 @@
 
 <script>
 export default {
-  
+  async asyncData ({ params }) {
+    // 调用 about.md 内的数据
+    const article = await import(`~/content/love.md`);
+    return {
+      article
+    };
+  },
 }
 </script>
 

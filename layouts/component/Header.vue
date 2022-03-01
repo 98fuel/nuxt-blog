@@ -118,8 +118,6 @@ export default {
         color: #333333d6;
         font-style: inherit;
         word-break: keep-all;
-        transition: all 0.2s linear;
-        // font-family: 'Noto Sans SC', sans-serif;
         padding: 6px 4px;
         font-size: 17px;
         &:hover {

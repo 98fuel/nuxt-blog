@@ -20,9 +20,8 @@ import _5d11c1fa from '..\\layouts\\component\\Footer.vue'
 import _57656816 from '..\\layouts\\component\\Header.vue'
 import _2ba6a921 from '..\\layouts\\component\\Main.vue'
 import _6f6c098b from '..\\layouts\\default.vue'
-import _777ba69c from '..\\layouts\\index.vue'
 
-const layouts = { "_component/Aside": sanitizeComponent(_488d8ed0),"_component/Footer": sanitizeComponent(_5d11c1fa),"_component/Header": sanitizeComponent(_57656816),"_component/Main": sanitizeComponent(_2ba6a921),"_default": sanitizeComponent(_6f6c098b),"_index": sanitizeComponent(_777ba69c) }
+const layouts = { "_component/Aside": sanitizeComponent(_488d8ed0),"_component/Footer": sanitizeComponent(_5d11c1fa),"_component/Header": sanitizeComponent(_57656816),"_component/Main": sanitizeComponent(_2ba6a921),"_default": sanitizeComponent(_6f6c098b) }
 
 export default {
   render (h, props) {
