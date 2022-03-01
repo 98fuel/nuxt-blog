@@ -64,7 +64,7 @@ export default {
         }
         span {
           display: block;
-          font-size: 19px;
+          font-size: 22px;
           word-break: break-all;
           font-family: BodoniModa, LXGWWenKai, serif;
           font-weight: 600;
