@@ -1,52 +1,38 @@
 <template>
-  <div class="body">
-    <div class="container">
-      <div class="wrapper">
-        <div class="archive">
-          <div class="widget">
-            <h2>标签</h2>
-            <div class="tag-list">
+  <div class="wrapper">
+    <div class="archive">
+      <div class="widget">
+        <h2>标签</h2>
+        <div class="tag-list">
+          <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
+        </div>
+      </div>
+      <h1 class="title">正在查看 "{{keyword}}" 标签下的文章</h1>
+      <div class="archive-list">
+        <div class="archive-item" v-for="archive in archives" :key="archive.date">
+          <ul
+            class="article-list"
+            v-for="article in archive.articles"
+            :key="article.attributes.title"
+          >
+            <li class="article-item">
+              <span class="article-date">{{ formatDateArticle(article.attributes.date) }}</span>
               <nuxt-link
-                class="tag-item"
-                :to="`/tags/${tag}`"
-                v-for="tag in tags"
-                :key="tag"
-              >{{tag}}</nuxt-link>
-            </div>
-          </div>
-          <h1 class="title">正在查看 "{{keyword}}" 标签下的文章</h1>
-          <div class="archive-list">
-            <div class="archive-item" v-for="archive in archives" :key="archive.date">
-              <ul
-                class="article-list"
-                v-for="article in archive.articles"
-                :key="article.attributes.title"
-              >
-                <li class="article-item">
-                  <span class="article-date">{{ formatDateArticle(article.attributes.date) }}</span>
-                  <nuxt-link
-                    class="article-link"
-                    :to="article.path"
-                    :title="article.attributes.title"
-                  >{{ article.attributes.title }}</nuxt-link>
-                </li>
-              </ul>
-            </div>
-          </div>
+                class="article-link"
+                :to="article.path"
+                :title="article.attributes.title"
+              >{{ article.attributes.title }}</nuxt-link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer';
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
-  components: {
-    Footer,
-  },
   data () {
     return {
       tags: []

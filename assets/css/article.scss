@@ -20,9 +20,9 @@
 
 .wrapper {
   background: #fff;
-  border: 1px solid rgb(229 229 229);
+  // border: 1px solid rgb(229 229 229);
   margin-bottom: 20px;
-  box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
+  // box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -30,7 +30,7 @@
   -o-border-radius: 4px;
 
   .archive {
-    padding: 25px 5% !important;
+    padding: 25px 1% !important;
   }
 }
 

@@ -2,25 +2,35 @@
   <div class="layout">
     <Header />
     <div class="opacity"></div>
-    <Main />
+    <div class="body">
+      <div class="container">
+        <Main />
+        <Aside />
+      </div>
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from './component/Header'
 import Main from './component/Main'
+import Aside from './component/Aside'
+import Footer from './component/Footer'
 
 export default {
   components: {
     Header,
-    Main
+    Main,
+    Aside,
+    Footer
   },
 }
 </script>
 
 <style lang="scss">
 .layout {
-  background: #f5f5f5;
+  background: #fff;
   background-size: cover;
   min-height: 100vh;
   .opacity {
@@ -36,20 +46,12 @@ export default {
   .body {
     position: relative;
     .container {
-      max-width: 800px;
+      max-width: 750px;
       margin: 0 auto;
-      padding-top: 20px;
+      padding: 20px 2% 30px;
       border-radius: 4px;
       position: relative;
       height: 100%;
-      flex: 1;
-    }
-    .footer {
-      width: 100%;
-    }
-    .sidebar {
-      width: 260px;
-      padding-right: 20px;
     }
   }
 }
@@ -65,11 +67,6 @@ export default {
         max-width: 100%;
         width: 100%;
         padding-top: 0;
-      }
-      .sidebar {
-        width: 100%;
-        padding: 0;
-        padding-top: 6px;
       }
     }
   }

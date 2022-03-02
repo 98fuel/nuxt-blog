@@ -1,55 +1,50 @@
 <template>
-  <div class="body">
-    <div class="container">
-      <div class="wrapper">
-        <article class="article article-post">
-          <h1 class="article-title">{{ article.attributes.title }}</h1>
-          <div class="article-meta">
-            <div>子舒 /</div>
-            <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
-            <div class="article-category">
-              <nuxt-link
-                class="link"
-                :to="`/categories/${category}`"
-                v-for="category in article.attributes.categories"
-                :key="category"
-              >{{ category }}</nuxt-link>
-            </div>
-          </div>
-          <div class="line"></div>
-          <div class="markdown-body article-content" v-html="article.html"></div>
-          <Imgbig />
-          <div class="article-tags">
-            标签:
+  <div>
+    <div class="wrapper">
+      <article class="article article-post">
+        <h1 class="article-title">{{ article.attributes.title }}</h1>
+        <div class="article-meta">
+          <div>子舒 /</div>
+          <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
+          <div class="article-category">
             <nuxt-link
               class="link"
-              :to="`/tags/${tag}`"
-              v-for="tag in article.attributes.tags"
-              :key="tag"
-            >{{ tag }}</nuxt-link>
+              :to="`/categories/${category}`"
+              v-for="category in article.attributes.categories"
+              :key="category"
+            >{{ category }}</nuxt-link>
           </div>
-          <div class="article-other">
-            <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div>
-            <p>版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。</p>
-          </div>
-        </article>
-      </div>
-      <Comments />
+        </div>
+        <div class="line"></div>
+        <div class="markdown-body article-content" v-html="article.html"></div>
+        <Imgbig />
+        <div class="article-tags">
+          标签:
+          <nuxt-link
+            class="link"
+            :to="`/tags/${tag}`"
+            v-for="tag in article.attributes.tags"
+            :key="tag"
+          >{{ tag }}</nuxt-link>
+        </div>
+        <div class="article-other">
+          <div class="article-updated">最后更新时间: {{ formatDate(article.attributes.updated) }}</div>
+          <p>版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。</p>
+        </div>
+      </article>
     </div>
-    <Footer />
+    <Comments />
   </div>
 </template>
 
 <script>
 import { formatDate } from "@/util";
-import Footer from '@/components/Footer';
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments';
 export default {
   components: {
     Imgbig,
     Comments,
-    Footer,
   },
   async asyncData ({ params }) {
     const article = await import(`~/content/posts/${params.slug}.md`);
@@ -68,7 +63,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 5% 15px;
+    padding: 25px 1% 15px;
     .article-title {
       margin: 0;
       color: var(--color-main);

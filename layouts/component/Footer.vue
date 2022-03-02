@@ -5,11 +5,10 @@
         © 2020 -2022 ·
         <a href="https://beian.miit.gov.cn/" target="_blank">
           <span>浙ICP备2022002453号-1</span>
-        </a>
-        <br />
+        </a> ·
         <a href="/">子舒的博客</a> · 网站已稳定运行
-        <span id="days">0</span> 天
-        <br />Powered by
+        <span id="days">0</span> 天 ·
+        Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
         &
         <a href="https://github.com/imhan0cn/nuxt-blog">Github</a>
@@ -87,15 +86,11 @@ export default {
 .footer {
   width: 100%;
   .wrapper {
-    background: none;
-    border: none;
-    box-shadow: none;
     color: #333;
     font-size: 15px;
-    padding: 1.6em 2%;
+    padding: 4px 10px;
     text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
     div {
       a {
         color: inherit;

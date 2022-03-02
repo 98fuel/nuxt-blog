@@ -1,24 +1,15 @@
 <template>
-  <div class="body">
-    <div class="container">
-      <div class="wrapper">
-        <div class="archive">
-          <h2>{{ article.attributes.title }}</h2>
-          <div class="article-content markdown-body" v-html="article.html"></div>
-        </div>
-      </div>
+  <div class="wrapper">
+    <div class="archive">
+      <h2>{{ article.attributes.title }}</h2>
+      <div class="article-content markdown-body" v-html="article.html"></div>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer';
 
 export default {
-  components: {
-    Footer
-  },
   async asyncData ({ params }) {
     // 调用 about.md 内的数据
     const article = await import(`~/content/about.md`);

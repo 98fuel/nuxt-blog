@@ -1,24 +1,19 @@
 <template>
-  <div class="body">
-    <div class="container">
-      <div class="wrapper">
-        <div class="archive">
-          <h2>{{ article.attributes.title }}</h2>
-          <div class="article-content markdown-body" v-html="article.html"></div>
-        </div>
+  <div>
+    <div class="wrapper">
+      <div class="archive">
+        <h2>{{ article.attributes.title }}</h2>
+        <div class="article-content markdown-body" v-html="article.html"></div>
       </div>
-      <Comments />
     </div>
-    <Footer />
+    <Comments />
   </div>
 </template>
 
 <script>
-import Footer from '@/components/Footer';
 import Comments from '@/components/Comments'
 export default {
   components: {
-    Footer,
     Comments
   },
   async asyncData ({ params }) {

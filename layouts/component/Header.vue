@@ -2,13 +2,11 @@
   <header class="header">
     <div class="site-name">
       <h1>
-        <nuxt-link class="logo" to="/">
-          <span>子舒</span>
-        </nuxt-link>
+        <nuxt-link class="logo" to="/">不如吃茶去</nuxt-link>
       </h1>
       <div class="nav-menu">
-        <nuxt-link to="/blog/" class="nav-link" exact-active-class="current">博客</nuxt-link>
-        <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">分类</nuxt-link>
+        <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
+        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">分类</nuxt-link> -->
         <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
@@ -59,15 +57,13 @@ export default {
         opacity: 0.9;
         padding: 0 8px;
         border-radius: 4px;
+        font-size: 22px;
+        word-break: break-all;
+        font-family: BodoniModa, LXGWWenKai, serif;
+        font-weight: 600;
+        color: rgb(65, 65, 65);
         &:hover {
           opacity: 1;
-        }
-        span {
-          display: block;
-          font-size: 22px;
-          word-break: break-all;
-          font-family: BodoniModa, LXGWWenKai, serif;
-          font-weight: 600;
         }
       }
     }
