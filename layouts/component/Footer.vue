@@ -6,9 +6,14 @@
         <a href="https://beian.miit.gov.cn/" target="_blank">
           <span>浙ICP备2022002453号-1</span>
         </a> ·
-        <a href="/">子舒的博客</a> · 网站已稳定运行
+        <a href="/">子舒的博客</a>
+        <br />网站已稳定运行
         <span id="days">0</span> 天 ·
-        Powered by
+        <span id="busuanzi_container_site_pv">
+          已有
+          <span id="busuanzi_value_site_pv"></span>人看过我
+        </span>
+        <br />Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
         &
         <a href="https://github.com/imhan0cn/nuxt-blog">Github</a>
@@ -32,6 +37,9 @@
         <i></i>
       </div>
     </div>
+
+    <!-- 不蒜子计数 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   </footer>
 </template>
 
