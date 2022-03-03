@@ -1,11 +1,11 @@
 <template>
   <div class="layout">
-    <Header />
+    <!-- <Header /> -->
     <div class="opacity"></div>
     <div class="body">
       <div class="container">
-        <Main />
         <Aside />
+        <Main />
       </div>
     </div>
     <Footer />
@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import Header from './component/Header'
+// import Header from './component/Header'
 import Main from './component/Main'
 import Aside from './component/Aside'
 import Footer from './component/Footer'
 
 export default {
   components: {
-    Header,
+    // Header,
     Main,
     Aside,
     Footer
@@ -48,7 +48,7 @@ export default {
     .container {
       max-width: 850px;
       margin: 0 auto;
-      padding: 20px 2% 30px;
+      padding: 30px 2% 30px;
       border-radius: 4px;
       position: relative;
       height: 100%;

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="archive">
-      <h3>评论~</h3>
+      <h4>评论~</h4>
       <div id="artalk">
         <a @click="onclickcomment()" class="reload">点击加载评论功能</a>
       </div>
@@ -34,7 +34,7 @@ export default {
     // border: 1px solid rgb(229 229 229);
     padding: 25px 3% 15px !important;
     margin-top: 20px;
-    h3 {
+    h4 {
       margin-bottom: 20px;
       font-weight: 600;
       font-size: 22px;

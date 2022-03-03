@@ -5,6 +5,12 @@
   "LazyComments": {
     "description": "Auto imported from components/Comments.vue"
   },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/Header.vue"
+  },
   "Imgbig": {
     "description": "Auto imported from components/Imgbig.vue"
   },
@@ -16,5 +22,11 @@
   },
   "LazyPager": {
     "description": "Auto imported from components/Pager.vue"
+  },
+  "Toc": {
+    "description": "Auto imported from components/Toc.vue"
+  },
+  "LazyToc": {
+    "description": "Auto imported from components/Toc.vue"
   }
 }

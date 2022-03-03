@@ -6,7 +6,7 @@
           <nuxt-link to="/">
             <img src="https://img.imhan.cn/author.png" />
           </nuxt-link>
-          <h3>子舒</h3>
+          <h1>子舒</h1>
           <p>
             不如吃茶去。
             <nuxt-link to="/about">more...</nuxt-link>
@@ -25,13 +25,15 @@ export default {
 
 <style lang="scss" scoped>
 .aside {
+  position: sticky;
+  height: 0;
+  top: 30px;
+  margin-left: 102%;
   .wrapper {
     width: 240px;
     word-wrap: break-word;
-    position: fixed;
-    right: 5%;
-    top: 130px;
     border-left: 1px solid #eee;
+    padding-bottom: 20px;
     .widget {
       padding: 10px 4%;
       border-radius: 4px;
@@ -51,11 +53,11 @@ export default {
             height: 80px;
           }
         }
-        h3 {
+        h1 {
           font-size: 20px;
           font-weight: 600 !important;
           padding: 10px 0 18px;
-          color: #000;
+          color: #181818;
         }
         p {
           color: #000;

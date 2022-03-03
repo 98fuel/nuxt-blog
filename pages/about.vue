@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <Header />
     <div class="archive">
       <h2>{{ article.attributes.title }}</h2>
       <div class="article-content markdown-body" v-html="article.html"></div>
@@ -8,8 +9,12 @@
 </template>
 
 <script>
+import Header from "@/components/Header";
 
 export default {
+  components: {
+    Header,
+  },
   async asyncData ({ params }) {
     // 调用 about.md 内的数据
     const article = await import(`~/content/about.md`);

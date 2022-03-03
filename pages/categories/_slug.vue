@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <Header />
     <div class="article">
       <div class="archive">
         <div class="archive-category">
@@ -33,8 +34,12 @@
 </template>
 
 <script>
+import Header from "@/components/Header";
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
+  components: {
+    Header,
+  },
   async asyncData ({ isDev, route, store, env, params, query, req, res, redirect, error }) {
     const context = await require.context('~/content/posts', true, /\.md$/)
     let articles = await context.keys().map(key => ({

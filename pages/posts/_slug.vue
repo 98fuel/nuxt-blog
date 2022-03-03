@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="wrapper">
+      <Header />
       <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
+        <Toc />
         <div class="article-meta">
           <div>子舒 /</div>
           <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
@@ -42,10 +44,14 @@
 
 <script>
 import { formatDate } from "@/util";
+import Header from "@/components/Header";
+import Toc from "@/components/Toc";
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments';
 export default {
   components: {
+    Header,
+    Toc,
     Imgbig,
     Comments,
   },
