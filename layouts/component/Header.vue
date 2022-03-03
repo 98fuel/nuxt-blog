@@ -6,7 +6,7 @@
       </h1>
       <div class="nav-menu">
         <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
-        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">分类</nuxt-link> -->
+        <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link>
         <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
@@ -38,7 +38,7 @@ export default {
   backdrop-filter: blur(32px);
   z-index: 10;
   transition: all 0.2s linear;
-  padding: 6px 3%;
+  padding: 3px 3%;
   .site-name {
     z-index: 999;
     margin: 0 auto;
@@ -104,7 +104,7 @@ export default {
     .site-name {
       margin: 0;
       padding: 0 2%;
-      justify-content: center;
+      // justify-content: flex-end;
       h1 {
         z-index: 9;
         a {
@@ -145,7 +145,7 @@ export default {
       height: 40px;
       position: absolute;
       top: 3px;
-      left: 30px;
+      right: 30px;
       z-index: 99999999;
       &:hover {
         cursor: pointer;

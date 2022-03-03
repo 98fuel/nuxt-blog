@@ -10,8 +10,8 @@
         <br />网站已稳定运行
         <span id="days">0</span> 天 ·
         <span id="busuanzi_container_site_pv">
-          已有
-          <span id="busuanzi_value_site_pv"></span>人看过我
+          你是第
+          <span id="busuanzi_value_site_pv"></span>个进来的小伙伴！
         </span>
         <br />Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
@@ -94,6 +94,8 @@ export default {
 .footer {
   width: 100%;
   .wrapper {
+    background: none;
+    box-shadow: none;
     color: #333;
     font-size: 15px;
     padding: 4px 10px;

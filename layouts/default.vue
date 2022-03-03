@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss">
 .layout {
-  background: #fff;
+  background: #e2e2e2;
   background-size: cover;
   min-height: 100vh;
   .opacity {
@@ -46,7 +46,7 @@ export default {
   .body {
     position: relative;
     .container {
-      max-width: 750px;
+      max-width: 850px;
       margin: 0 auto;
       padding: 20px 2% 30px;
       border-radius: 4px;
@@ -66,7 +66,7 @@ export default {
       .container {
         max-width: 100%;
         width: 100%;
-        padding-top: 0;
+        padding-top: 16px;
       }
     }
   }

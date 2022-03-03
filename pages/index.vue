@@ -31,13 +31,13 @@
 </template>
 
 <script>
-import Pager from '@/components/Pager'
+// import Pager from '@/components/Pager'
 import { perHomeCount } from '@/config';
 import { getArticles, getPagerCount, formatDate } from '@/util';
 
 export default {
   components: {
-    Pager
+    // Pager,
   },
   async asyncData () {
     const context = await require.context('~/content/posts', true, /\.md$/)
@@ -74,9 +74,9 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  // padding: 0 0 50px;
+  padding: 20px 0 50px;
   .article {
-    padding: 0 1%;
+    padding: 0 4%;
     opacity: 0.98;
     transition: all 0.2s linear;
     margin-bottom: 6px;
@@ -190,8 +190,6 @@ export default {
 
 @media (max-width: 520px) {
   .wrapper {
-    box-shadow: none;
-    background: none;
     .article {
       padding-bottom: 10px;
       border-radius: 0;
@@ -199,9 +197,12 @@ export default {
       .link {
         flex-direction: column;
         align-items: flex-start;
+        .article-title {
+          padding: 8px 0;
+        }
         .article-date {
           width: 100%;
-          text-align: right;
+          text-align: left;
         }
       }
     }

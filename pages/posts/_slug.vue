@@ -12,7 +12,10 @@
               :to="`/categories/${category}`"
               v-for="category in article.attributes.categories"
               :key="category"
-            >{{ category }}</nuxt-link>
+            >{{ category }} /</nuxt-link>
+          </div>
+          <div class="goartalk">
+            <a href="#artalk">去评论</a>
           </div>
         </div>
         <div class="line"></div>
@@ -63,7 +66,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 1% 15px;
+    padding: 25px 4% 15px;
     .article-title {
       margin: 0;
       color: var(--color-main);
@@ -95,6 +98,13 @@ export default {
           &:hover {
             color: #000;
           }
+        }
+      }
+      .goartalk {
+        a {
+          background: #e2e2e2;
+          padding: 1px 4px;
+          border-radius: 2px;
         }
       }
     }
