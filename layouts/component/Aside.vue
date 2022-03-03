@@ -12,6 +12,9 @@
             <nuxt-link to="/about">more...</nuxt-link>
           </p>
         </div>
+        <div class="yy">
+          <p>在深刻认识自己的过程中，越发感到自己的渺小和能力的不足。</p>
+        </div>
       </div>
     </div>
   </aside>
@@ -19,7 +22,6 @@
 
 <script>
 export default {
-
 };
 </script>
 
@@ -33,9 +35,8 @@ export default {
     width: 240px;
     word-wrap: break-word;
     border-left: 1px solid #eee;
-    padding-bottom: 20px;
     .widget {
-      padding: 10px 4%;
+      padding: 10px 4% 20px;
       border-radius: 4px;
       opacity: 1;
       transition: all 0.2s linear;
@@ -45,7 +46,10 @@ export default {
       }
       .gg {
         font-size: 15px;
+        padding-bottom: 1px;
+        margin-bottom: 10px;
         text-align: left;
+        border-bottom: 1px solid #eee;
         a {
           display: inline-block;
           img {
@@ -65,6 +69,8 @@ export default {
             color: #24a19c;
           }
         }
+      }
+      .yy {
       }
     }
   }
