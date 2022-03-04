@@ -2,25 +2,13 @@
   "Comments": {
     "description": "Auto imported from components/Comments.vue"
   },
-  "LazyComments": {
-    "description": "Auto imported from components/Comments.vue"
-  },
   "Imgbig": {
-    "description": "Auto imported from components/Imgbig.vue"
-  },
-  "LazyImgbig": {
     "description": "Auto imported from components/Imgbig.vue"
   },
   "Pager": {
     "description": "Auto imported from components/Pager.vue"
   },
-  "LazyPager": {
-    "description": "Auto imported from components/Pager.vue"
-  },
   "Toc": {
-    "description": "Auto imported from components/Toc.vue"
-  },
-  "LazyToc": {
     "description": "Auto imported from components/Toc.vue"
   }
 }
