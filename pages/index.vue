@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <!-- <Header /> -->
     <article class="article" v-for="article in articles" :key="article.attributes.title">
       <div class="article-meta">
         <div class="article-category">
@@ -17,8 +17,8 @@
           <span>{{ article.attributes.title }}</span>
         </div>
         <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-        <!-- <div class="article-content" v-html="article.summary"></div> -->
       </nuxt-link>
+      <!-- <div class="article-content" v-html="article.summary"></div> -->
     </article>
     <!-- <nav class="navigator">
       <pager
@@ -27,19 +27,19 @@
         :current-page.sync="currentPage"
         @update:currentPage="updatePage"
       />
-    </nav>-->
+    </nav> -->
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 // import Pager from '@/components/Pager'
 import { perHomeCount } from '@/config';
 import { getArticles, getPagerCount, formatDate } from '@/util';
 
 export default {
   components: {
-    Header,
+    // Header,
     // Pager,
   },
   async asyncData () {

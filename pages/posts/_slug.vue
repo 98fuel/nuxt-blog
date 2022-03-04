@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="wrapper">
-      <Header />
+      <!-- <Header /> -->
       <article class="article article-post">
         <h1 class="article-title">{{ article.attributes.title }}</h1>
         <Toc />
@@ -44,13 +44,13 @@
 
 <script>
 import { formatDate } from "@/util";
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import Toc from "@/components/Toc";
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments';
 export default {
   components: {
-    Header,
+    // Header,
     Toc,
     Imgbig,
     Comments,
@@ -72,7 +72,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .article {
-    padding: 25px 4% 15px;
+    padding: 25px 5% 15px;
     .article-title {
       margin: 0;
       color: var(--color-main);

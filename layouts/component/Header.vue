@@ -3,7 +3,6 @@
     <div class="site-name">
       <h1>
         <nuxt-link class="logo" to="/">不如吃茶去</nuxt-link>
-        <span>--- 子舒的博客</span>
       </h1>
       <div class="nav-menu">
         <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
@@ -33,23 +32,26 @@ export default {
   left: 0;
   top: 0;
   width: 100%;
+  height: 60px;
   background-color: #fff;
   backdrop-filter: blur(32px);
   z-index: 10;
-  transition: all 0.1s linear;
-  padding: 20px 3%;
+  transition: all 0.2s linear;
+  padding: 0 3%;
   border-bottom: 1px solid #eee;
-  background-image: linear-gradient(
-    to right,
-    rgb(207, 207, 206),
-    rgb(119, 119, 119)
-  );
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+  position: sticky;
+  top: 0;
   .site-name {
+    height: 100%;
     z-index: 999;
     margin: 0 auto;
     max-width: 1100px;
     transition: all 0.2s linear;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     h1 {
       a {
         display: inline-block;
@@ -57,7 +59,7 @@ export default {
         opacity: 0.9;
         padding: 0 8px;
         border-radius: 4px;
-        font-size: 24px;
+        font-size: 22px;
         word-break: break-all;
         font-family: BodoniModa, LXGWWenKai, serif;
         font-weight: 600;
@@ -66,12 +68,8 @@ export default {
           opacity: 1;
         }
       }
-      span {
-        font-size: 16px;
-      }
     }
     .nav-menu {
-      margin-top: 10px;
       .nav-link {
         text-align: center;
         width: 100%;
@@ -98,24 +96,85 @@ export default {
       }
     }
   }
+  .menu-icon {
+    display: none;
+  }
 }
-
+.scrollhead {
+  height: 48px;
+}
 @media (max-width: 600px) {
   .header {
     padding: 0 3%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .site-name {
       margin: 0;
       padding: 10px 2%;
       h1 {
-        margin-bottom: 10px;
+        transition: all 0.2s linear;
         a {
           padding: 0;
         }
       }
       .nav-menu {
+        position: fixed;
+        left: 0;
+        top: 48px;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+        transition: all 0.2s linear;
+        opacity: 0;
+        display: none;
         .nav-link {
+          display: block;
           font-size: 17px;
         }
+      }
+      .menu-show {
+        display: block;
+        opacity: 1;
+      }
+    }
+    .menu-icon {
+      display: flex;
+      justify-content: center;
+      width: 50px;
+      height: 40px;
+      position: relative;
+      span {
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        transition: all 0.1s linear;
+      }
+      span:nth-child(1) {
+        top: 30%;
+      }
+      span:nth-child(2) {
+        top: 50%;
+      }
+      span:nth-child(3) {
+        top: 70%;
+      }
+    }
+    .menu-icon-show {
+      span:nth-child(1) {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+      span:nth-child(2) {
+        top: 50%;
+        display: none;
+      }
+      span:nth-child(3) {
+        top: 50%;
+        transform: rotate(45deg);
       }
     }
   }

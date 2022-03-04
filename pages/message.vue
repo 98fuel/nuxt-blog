@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="wrapper">
-      <Header />
+      <!-- <Header /> -->
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import Comments from '@/components/Comments'
 export default {
   components: {
-    Header,
+    // Header,
     Comments
   },
   async asyncData ({ params }) {

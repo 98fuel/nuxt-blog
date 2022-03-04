@@ -29,7 +29,7 @@ export default {
 .aside {
   position: sticky;
   height: 0;
-  top: 30px;
+  top: 74px;
   margin-left: 102%;
   .wrapper {
     width: 240px;

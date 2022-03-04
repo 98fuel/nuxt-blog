@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <!-- <Header /> -->
     <div class="archive">
       <div class="widget">
         <h2>标签</h2>
@@ -32,11 +32,11 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
-    Header,
+    // Header,
   },
   data () {
     return {

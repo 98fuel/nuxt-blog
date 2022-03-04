@@ -5,12 +5,6 @@
   "LazyComments": {
     "description": "Auto imported from components/Comments.vue"
   },
-  "Header": {
-    "description": "Auto imported from components/Header.vue"
-  },
-  "LazyHeader": {
-    "description": "Auto imported from components/Header.vue"
-  },
   "Imgbig": {
     "description": "Auto imported from components/Imgbig.vue"
   },

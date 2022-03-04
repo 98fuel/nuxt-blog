@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <!-- <Header /> -->
+    <Header />
     <div class="opacity"></div>
     <div class="body">
       <div class="container">
@@ -13,14 +13,14 @@
 </template>
 
 <script>
-// import Header from './component/Header'
+import Header from './component/Header'
 import Main from './component/Main'
 import Aside from './component/Aside'
 import Footer from './component/Footer'
 
 export default {
   components: {
-    // Header,
+    Header,
     Main,
     Aside,
     Footer
@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss">
 .layout {
-  background: #e2e2e2;
+  background: #f4f5f5;
   background-size: cover;
   min-height: 100vh;
   .opacity {
@@ -48,7 +48,7 @@ export default {
     .container {
       max-width: 850px;
       margin: 0 auto;
-      padding: 30px 2% 30px;
+      padding: 20px 2% 30px;
       border-radius: 4px;
       position: relative;
       height: 100%;
@@ -61,8 +61,6 @@ export default {
     .body {
       padding: 0;
       display: block;
-      margin-left: 1%;
-      margin-right: 1%;
       .container {
         max-width: 100%;
         width: 100%;

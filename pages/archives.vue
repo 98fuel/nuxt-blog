@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <!-- <Header /> -->
     <div class="archive">
       <div class="archive-category">
         <nuxt-link to="/archives" class="nuxt-link-active">归档</nuxt-link>
@@ -32,11 +32,11 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
-    Header,
+    // Header,
   },
   async asyncData () {
     const context = await require.context('~/content/posts', true, /\.md$/)
