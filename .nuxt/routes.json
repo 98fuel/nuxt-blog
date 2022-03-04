@@ -14,6 +14,13 @@
     "_name": "_784122e9"
   },
   {
+    "name": "link",
+    "path": "/link",
+    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\link.vue",
+    "chunkName": "pages/link",
+    "_name": "_60b2de72"
+  },
+  {
     "name": "love",
     "path": "/love",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\love.vue",

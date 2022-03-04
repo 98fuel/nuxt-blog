@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _6d7f4a76 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
 const _784122e9 = () => interopDefault(import('..\\pages\\archives.vue' /* webpackChunkName: "pages/archives" */))
+const _60b2de72 = () => interopDefault(import('..\\pages\\link.vue' /* webpackChunkName: "pages/link" */))
 const _a92b0c2c = () => interopDefault(import('..\\pages\\love.vue' /* webpackChunkName: "pages/love" */))
 const _4697223f = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
 const _3031d926 = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/archives",
     component: _784122e9,
     name: "archives"
+  }, {
+    path: "/link",
+    component: _60b2de72,
+    name: "link"
   }, {
     path: "/love",
     component: _a92b0c2c,

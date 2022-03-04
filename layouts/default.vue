@@ -25,6 +25,7 @@ export default {
     Aside,
     Footer
   },
+
 }
 </script>
 
@@ -52,6 +53,7 @@ export default {
       border-radius: 4px;
       position: relative;
       height: 100%;
+      z-index: 1;
     }
   }
 }
