@@ -77,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 0 0 50px;
+  padding: 20px 0 50px;
   .article:nth-of-type(1) {
     margin-top: 6px;
   }

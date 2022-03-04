@@ -36,7 +36,7 @@ export default {
     word-wrap: break-word;
     border-left: 1px solid #eee;
     .widget {
-      padding: 10px 4% 20px;
+      padding: 20px 4% 20px;
       border-radius: 4px;
       opacity: 1;
       transition: all 0.2s linear;
