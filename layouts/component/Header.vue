@@ -9,8 +9,8 @@
         <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">分类</nuxt-link> -->
         <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
-        <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
+        <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
         <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
       </div>
     </div>
