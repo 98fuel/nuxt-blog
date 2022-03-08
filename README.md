@@ -2,6 +2,8 @@
 
 <div align="center"><h2>Nuxt-Blog</h2></div>
 
+>基于 vue + nuxt.js 技术实现的静态博客。
+
 源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
 
 在线预览: [https://imhan.cn](https://imhan.cn)
@@ -118,6 +120,10 @@ $ npm run generate
 ### 2022-02-28
 
 1. 新增黑夜模式，暂时与其他组件样式有冲突，还在优化中
+
+### 2022-03-08
+
+1. 优化代码和组件
 
 ## 5.LICENSE
 

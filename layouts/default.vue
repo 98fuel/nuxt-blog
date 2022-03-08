@@ -4,7 +4,7 @@
     <div class="opacity"></div>
     <div class="body">
       <div class="container">
-        <Aside />
+        <!-- <Aside /> -->
         <Main />
       </div>
     </div>
@@ -15,14 +15,14 @@
 <script>
 import Header from './component/Header'
 import Main from './component/Main'
-import Aside from './component/Aside'
+// import Aside from './component/Aside'
 import Footer from './component/Footer'
 
 export default {
   components: {
     Header,
     Main,
-    Aside,
+    // Aside,
     Footer
   },
 
