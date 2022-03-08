@@ -34,13 +34,12 @@ export default {
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: #fff;
+  // background-color: #fff;
   backdrop-filter: blur(32px);
   z-index: 10;
   transition: all 0.2s linear;
   padding: 0 3%;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+  // box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
   position: sticky;
   top: 0;
   .site-name {
@@ -103,9 +102,12 @@ export default {
 }
 .scrollhead {
   height: 48px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
 }
 @media (max-width: 600px) {
   .header {
+    background: #fff;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
     padding: 0 3%;
     height: 48px;
     display: flex;
