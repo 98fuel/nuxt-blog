@@ -53,6 +53,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     h1 {
+      display: flex;
+      align-items: center;
       a {
         display: inline-block;
         transition: all 0.2s linear;

@@ -27,7 +27,7 @@
         :current-page.sync="currentPage"
         @update:currentPage="updatePage"
       />
-    </nav> -->
+    </nav>-->
   </div>
 </template>
 
@@ -121,7 +121,7 @@ export default {
         margin: 0;
         padding: 14px 0;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px;
         color: var(--color-main);
         display: flex;
         justify-content: space-between;

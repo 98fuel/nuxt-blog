@@ -85,7 +85,7 @@ export default {
       padding: 0;
       margin: 6px 0;
       color: #6e7173;
-      font-size: 0.94em;
+      font-size: 15px;
       text-indent: 0.15em;
       display: flex;
       align-items: center;
@@ -147,7 +147,7 @@ export default {
     }
     .article-other {
       margin: 0.6rem 0 1rem;
-      font-size: 0.9rem;
+      font-size: 15px;
       color: #404041;
       .link {
         margin-left: 10px;
