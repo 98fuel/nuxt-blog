@@ -1,30 +1,32 @@
 <template>
-  <div class="wrapper">
-    <!-- <Header /> -->
-    <div class="archive">
-      <div class="widget">
-        <h2>标签</h2>
-        <div class="tag-list">
-          <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
+  <div>
+    <HeaderMe />
+    <div class="wrapper">
+      <div class="archive">
+        <div class="widget">
+          <h2>标签</h2>
+          <div class="tag-list">
+            <nuxt-link class="tag-item" :to="`/tags/${tag}`" v-for="tag in tags" :key="tag">{{tag}}</nuxt-link>
+          </div>
         </div>
-      </div>
-      <h1 class="title">正在查看 "{{keyword}}" 标签下的文章</h1>
-      <div class="archive-list">
-        <div class="archive-item" v-for="archive in archives" :key="archive.date">
-          <ul
-            class="article-list"
-            v-for="article in archive.articles"
-            :key="article.attributes.title"
-          >
-            <li class="article-item">
-              <span class="article-date">{{ formatDateArticle(article.attributes.date) }}</span>
-              <nuxt-link
-                class="article-link"
-                :to="article.path"
-                :title="article.attributes.title"
-              >{{ article.attributes.title }}</nuxt-link>
-            </li>
-          </ul>
+        <h1 class="title">正在查看 "{{keyword}}" 标签下的文章</h1>
+        <div class="archive-list">
+          <div class="archive-item" v-for="archive in archives" :key="archive.date">
+            <ul
+              class="article-list"
+              v-for="article in archive.articles"
+              :key="article.attributes.title"
+            >
+              <li class="article-item">
+                <span class="article-date">{{ formatDateArticle(article.attributes.date) }}</span>
+                <nuxt-link
+                  class="article-link"
+                  :to="article.path"
+                  :title="article.attributes.title"
+                >{{ article.attributes.title }}</nuxt-link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -32,11 +34,11 @@
 </template>
 
 <script>
-// import Header from "@/components/Header";
+import HeaderMe from "@/components/HeaderMe";
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
-    // Header,
+    HeaderMe
   },
   data () {
     return {

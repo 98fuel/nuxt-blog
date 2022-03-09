@@ -1,45 +1,47 @@
 <template>
-  <div class="wrapper">
-    <!-- <Header /> -->
-    <article class="article" v-for="article in articles" :key="article.attributes.title">
-      <div class="article-meta">
-        <div class="article-category">
-          <nuxt-link
-            class="link"
-            :to="`/categories/${category}`"
-            v-for="category in article.attributes.categories"
-            :key="category"
-          >{{category}}</nuxt-link>
+  <div>
+    <HeaderMe />
+    <div class="wrapper">
+      <article class="article" v-for="article in articles" :key="article.attributes.title">
+        <div class="article-meta">
+          <div class="article-category">
+            <nuxt-link
+              class="link"
+              :to="`/categories/${category}`"
+              v-for="category in article.attributes.categories"
+              :key="category"
+            >{{category}}</nuxt-link>
+          </div>
         </div>
-      </div>
-      <nuxt-link class="link" :to="article.path">
-        <div class="article-title">
-          <span>{{ article.attributes.title }}</span>
-        </div>
-        <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-      </nuxt-link>
-      <!-- <div class="article-content" v-html="article.summary"></div> -->
-    </article>
-    <!-- <nav class="navigator">
+        <nuxt-link class="link" :to="article.path">
+          <div class="article-title">
+            <span>{{ article.attributes.title }}</span>
+          </div>
+          <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+        </nuxt-link>
+        <!-- <div class="article-content" v-html="article.summary"></div> -->
+      </article>
+      <!-- <nav class="navigator">
       <pager
         :hide-if-one-page="false"
         :total-page="pagerCount"
         :current-page.sync="currentPage"
         @update:currentPage="updatePage"
       />
-    </nav>-->
+      </nav>-->
+    </div>
   </div>
 </template>
 
 <script>
-// import Header from "@/components/Header";
+import HeaderMe from "@/components/HeaderMe";
 // import Pager from '@/components/Pager'
 import { perHomeCount } from '@/config';
 import { getArticles, getPagerCount, formatDate } from '@/util';
 
 export default {
   components: {
-    // Header,
+    HeaderMe,
     // Pager,
   },
   async asyncData () {

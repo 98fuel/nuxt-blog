@@ -1,19 +1,21 @@
 <template>
-  <div class="wrapper">
-    <!-- <Header /> -->
-    <div class="archive">
-      <h2>{{ article.attributes.title }}</h2>
-      <div class="article-content markdown-body" v-html="article.html"></div>
+  <div>
+    <HeaderMe />
+    <div class="wrapper">
+      <div class="archive">
+        <h2>{{ article.attributes.title }}</h2>
+        <div class="article-content markdown-body" v-html="article.html"></div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Header from "@/components/Header";
+import HeaderMe from "@/components/HeaderMe";
 
 export default {
   components: {
-    // Header,
+    HeaderMe,
   },
   async asyncData ({ params }) {
     // 调用 about.md 内的数据

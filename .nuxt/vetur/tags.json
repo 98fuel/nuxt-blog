@@ -2,6 +2,9 @@
   "Comments": {
     "description": "Auto imported from components/Comments.vue"
   },
+  "HeaderMe": {
+    "description": "Auto imported from components/HeaderMe.vue"
+  },
   "Imgbig": {
     "description": "Auto imported from components/Imgbig.vue"
   },

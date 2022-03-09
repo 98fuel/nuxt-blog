@@ -1,4 +1,5 @@
 export const Comments = () => import('../..\\components\\Comments.vue' /* webpackChunkName: "components/comments" */).then(c => wrapFunctional(c.default || c))
+export const HeaderMe = () => import('../..\\components\\HeaderMe.vue' /* webpackChunkName: "components/header-me" */).then(c => wrapFunctional(c.default || c))
 export const Imgbig = () => import('../..\\components\\Imgbig.vue' /* webpackChunkName: "components/imgbig" */).then(c => wrapFunctional(c.default || c))
 export const Pager = () => import('../..\\components\\Pager.vue' /* webpackChunkName: "components/pager" */).then(c => wrapFunctional(c.default || c))
 export const Toc = () => import('../..\\components\\Toc.vue' /* webpackChunkName: "components/toc" */).then(c => wrapFunctional(c.default || c))

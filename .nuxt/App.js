@@ -9,8 +9,6 @@ import '..\\assets\\css\\reset.scss'
 
 import '..\\assets\\css\\app.scss'
 
-import '..\\assets\\css\\NotoSerifSC-Regular\\font.css'
-
 import '..\\assets\\css\\article.scss'
 
 import '..\\node_modules\\prismjs\\themes\\prism.css'

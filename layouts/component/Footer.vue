@@ -93,6 +93,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   width: 100%;
+  padding-bottom: 20px;
   .wrapper {
     background: none;
     box-shadow: none;

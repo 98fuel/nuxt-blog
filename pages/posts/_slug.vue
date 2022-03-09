@@ -1,26 +1,23 @@
 <template>
   <div>
+    <h1 class="article-title">{{ article.attributes.title }}</h1>
+    <div class="article-meta">
+      <div>子舒 /</div>
+      <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
+      <div class="article-category">
+        <nuxt-link
+          class="link"
+          :to="`/categories/${category}`"
+          v-for="category in article.attributes.categories"
+          :key="category"
+        >{{ category }} /</nuxt-link>
+      </div>
+      <div class="goartalk">
+        <a href="#artalk">去评论</a>
+      </div>
+    </div>
     <div class="wrapper">
-      <!-- <Header /> -->
       <article class="article article-post">
-        <h1 class="article-title">{{ article.attributes.title }}</h1>
-        <Toc />
-        <div class="article-meta">
-          <div>子舒 /</div>
-          <div class="article-date">{{ formatDate(article.attributes.date) }} /</div>
-          <div class="article-category">
-            <nuxt-link
-              class="link"
-              :to="`/categories/${category}`"
-              v-for="category in article.attributes.categories"
-              :key="category"
-            >{{ category }} /</nuxt-link>
-          </div>
-          <div class="goartalk">
-            <a href="#artalk">去评论</a>
-          </div>
-        </div>
-        <div class="line"></div>
         <div class="markdown-body article-content" v-html="article.html"></div>
         <Imgbig />
         <div class="article-tags">
@@ -44,14 +41,10 @@
 
 <script>
 import { formatDate } from "@/util";
-// import Header from "@/components/Header";
-import Toc from "@/components/Toc";
 import Imgbig from "@/components/Imgbig";
 import Comments from '@/components/Comments';
 export default {
   components: {
-    // Header,
-    Toc,
     Imgbig,
     Comments,
   },
@@ -70,55 +63,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.article-title {
+  margin: 0;
+  color: var(--color-main);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 8px 0;
+  text-align: center;
+  margin-top: 14px;
+}
+.article-meta {
+  padding: 0;
+  margin: 6px 0;
+  color: #6e7173;
+  font-size: 15px;
+  text-indent: 0.15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  .article-date {
+    margin-right: 0;
+  }
+  .article-category {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .link {
+      margin-right: 6px;
+      color: #6e7173;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .goartalk {
+    a {
+      background: #e2e2e2;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+  }
+}
 .wrapper {
   .article {
     padding: 25px 5% 15px;
-    .article-title {
-      margin: 0;
-      color: var(--color-main);
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 1.2;
-      padding: 8px 0;
-    }
-    .article-meta {
-      padding: 0;
-      margin: 6px 0;
-      color: #6e7173;
-      font-size: 15px;
-      text-indent: 0.15em;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      opacity: 0.8;
-      .article-date {
-        margin-right: 0;
-      }
-      .article-category {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        .link {
-          margin-right: 6px;
-          color: #6e7173;
-          &:hover {
-            color: #000;
-          }
-        }
-      }
-      .goartalk {
-        a {
-          background: #e2e2e2;
-          padding: 1px 4px;
-          border-radius: 2px;
-        }
-      }
-    }
-    .line {
-      width: 100%;
-      height: 1px;
-      background: rgb(214, 214, 214);
-    }
+
     .article-content {
       font-size: inherit;
       line-height: 2;

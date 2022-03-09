@@ -1,20 +1,22 @@
 <template>
-  <div class="wrapper">
-    <!-- <Header /> -->
-    <div class="archive">
-      <div class="article-content markdown-body" v-html="article.html"></div>
-      <div class="iframe">
-        <iframe src="https://love.imhan.cn" frameborder="0" width="100%"></iframe>
+  <div>
+    <HeaderMe />
+    <div class="wrapper">
+      <div class="archive">
+        <div class="article-content markdown-body" v-html="article.html"></div>
+        <div class="iframe">
+          <iframe src="https://love.imhan.cn" frameborder="0" width="100%"></iframe>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Header from "@/components/Header";
+import HeaderMe from "@/components/HeaderMe";
 export default {
   components: {
-    // Header,
+    HeaderMe,
   },
   async asyncData ({ params }) {
     // 调用 about.md 内的数据
