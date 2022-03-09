@@ -51,6 +51,7 @@ export default {
   css: [
     '@/assets/css/reset.scss',
     '@/assets/css/app.scss',
+    '@/assets/css/NotoSerifSC-Regular/font.css',
     '@/assets/css/article.scss',
   ],
   /*

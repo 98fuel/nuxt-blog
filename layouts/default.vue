@@ -31,9 +31,10 @@ export default {
 
 <style lang="scss">
 .layout {
-  background: #f4f5f5;
+  background: #EEEEEE;
   background-size: cover;
   min-height: 100vh;
+  // background-image: linear-gradient(to bottom right, #74959A, #98B4AA);
   .opacity {
     display: none;
     position: fixed;

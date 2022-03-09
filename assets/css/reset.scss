@@ -48,10 +48,10 @@ html {
   overflow-y: scroll;
 }
 
-@font-face {
-  font-family: 'Noto Serif SC';
-  src: url('./NotoSerifSC-Regular.otf');
-}
+// @font-face {
+//   font-family: 'Noto Serif SC';
+//   src: url('./NotoSerifSC-Regular.otf');
+// }
 
 * {
   margin: 0;
@@ -62,7 +62,7 @@ html {
 body {
   line-height: 1.8;
   font-size: 17px;
-  color: #24292e !important;
+  color: #222;
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

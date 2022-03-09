@@ -121,9 +121,12 @@ $ npm run generate
 
 1. 新增黑夜模式，暂时与其他组件样式有冲突，还在优化中
 
-### 2022-03-08
+### 2022-03-09
 
-1. 优化代码和组件
+1. 优化字体  
+[https://imhan.cn/posts/20220309](https://imhan.cn/posts/20220309)  
+[https://github.com/jfcherng/Noto-Serif-SC-CSS](https://github.com/jfcherng/Noto-Serif-SC-CSS)
+
 
 ## 5.LICENSE
 

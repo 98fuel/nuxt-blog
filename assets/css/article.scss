@@ -1,6 +1,16 @@
 .article-content {
-  color: #222 !important;
+  color: #000 !important;
   font-size: 17px !important;
+}
+
+.article-content pre {
+  font-size: 16px !important;
+}
+
+.article-content pre * {
+  background: none !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
 
 .article-content h2 {
