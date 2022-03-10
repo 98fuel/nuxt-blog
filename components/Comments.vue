@@ -29,9 +29,6 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .archive {
-    // box-shadow: rgb(0 0 0 / 10%) 0 4px 6px -1px, rgb(0 0 0 / 10%) 0 2px 4px -1px;
-    // background: #f3f3f3;
-    // border: 1px solid rgb(229 229 229);
     padding: 25px 4% 15px !important;
     margin-top: 20px;
     h4 {

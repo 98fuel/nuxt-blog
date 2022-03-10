@@ -3,6 +3,11 @@
   font-size: 17px !important;
 }
 
+.article-content a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
 .article-content pre {
   font-size: 16px !important;
 }
@@ -135,46 +140,81 @@ code * {
   height: 100%;
 }
 
-.autoMenu {
-  ul {
-    padding: 0;
-    list-style: none;
-    padding: 10px;
-    box-sizing: border-box;
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner>div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4)
+  }
+
+  20% {
+    -webkit-transform: scaleY(1.0)
   }
 }
 
+@keyframes stretchdelay {
 
-// index.vue
-.index .wrapper .article-content * {
-  color: #dde1e3cc !important;
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+
+  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
 }
 
-.index .wrapper .article-content a {
-  border-bottom: 1px solid #dde1e3cc;
-}
+#nuxt_shuoshuo {
+  .item {
+    margin-bottom: 20px;
 
-.index .wrapper .article-content a:hover {
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-}
+    .item-date {
+      font-size: 15px;
+      color: #666;
+    }
 
-.index .wrapper .article-content img {
-  max-width: 120px;
-  height: 120px;
-  background: #001522;
-  vertical-align: baseline;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.index .header {
-  background: #001522 !important;
-}
-
-.index .header a {
-  color: #dde1e3cc !important;
+    .item-text {}
+  }
 }

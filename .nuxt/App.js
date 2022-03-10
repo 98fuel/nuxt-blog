@@ -5,9 +5,9 @@ import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch,
 import NuxtError from '..\\layouts\\error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '..\\assets\\css\\reset.scss'
-
 import '..\\assets\\css\\app.scss'
+
+import '..\\assets\\css\\reset.scss'
 
 import '..\\assets\\css\\article.scss'
 

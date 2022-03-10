@@ -19,16 +19,17 @@
           </div>
           <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
         </nuxt-link>
+
         <!-- <div class="article-content" v-html="article.summary"></div> -->
       </article>
       <!-- <nav class="navigator">
-      <pager
-        :hide-if-one-page="false"
-        :total-page="pagerCount"
-        :current-page.sync="currentPage"
-        @update:currentPage="updatePage"
-      />
-      </nav>-->
+        <pager
+          :hide-if-one-page="false"
+          :total-page="pagerCount"
+          :current-page.sync="currentPage"
+          @update:currentPage="updatePage"
+        />
+      </nav> -->
     </div>
   </div>
 </template>

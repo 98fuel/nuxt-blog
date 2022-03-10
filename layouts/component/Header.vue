@@ -6,11 +6,12 @@
       </h1>
       <div class="nav-menu">
         <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
-        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">分类</nuxt-link> -->
         <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
+        <!-- <nuxt-link to="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav" exact-active-class="current" @click="onclickshuoshuo()">说说</nuxt-link> -->
+        <a href="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav">说说</a>
         <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
       </div>
     </div>
@@ -24,7 +25,15 @@
 
 <script>
 export default {
-
+  // methods: {
+  //   onclickshuoshuo () {
+  //     let link = location.pathname;
+  //     console.log(link);
+  //     window.location.href = link;
+  //     location.reload();
+  //     console.log('shuoshuo')
+  //   }
+  // }
 };
 </script>
 
@@ -33,8 +42,7 @@ export default {
   left: 0;
   top: 0;
   width: 100%;
-  height: 60px;
-  // background-color: #fff;
+  height: 50px;
   backdrop-filter: blur(32px);
   z-index: 10;
   transition: all 0.2s linear;
@@ -103,7 +111,6 @@ export default {
   }
 }
 .scrollhead {
-  height: 48px;
   box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
 }
 @media (max-width: 600px) {

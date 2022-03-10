@@ -13,11 +13,12 @@ layout: 'link'
 
 ***我认为写的不错的个人博客。***
 
-[涛叔 - https://taoshu.in/](https://taoshu.in/)
-
+[涛叔 - https://taoshu.in](https://taoshu.in)
+[依然 - https://wind.ink](https://wind.ink)
+[王宜楷工作室 - http://www.wangyikai.com](http://www.wangyikai.com)
 
 ***小伙伴***
 
 [江卮可乐 - https://blog.ijann.com](https://blog.ijann.com)
 [kaiboshi - https://kaiboshi.gitee.io](https://kaiboshi.gitee.io)
-[梦繁星 - https://emoao.com](https://emoao.com)
+[梦繁星 - https://www.emoao.com](https://www.emoao.com)
