@@ -1,8 +1,8 @@
-export const Comments = () => import('../..\\components\\Comments.vue' /* webpackChunkName: "components/comments" */).then(c => wrapFunctional(c.default || c))
-export const HeaderMe = () => import('../..\\components\\HeaderMe.vue' /* webpackChunkName: "components/header-me" */).then(c => wrapFunctional(c.default || c))
-export const Imgbig = () => import('../..\\components\\Imgbig.vue' /* webpackChunkName: "components/imgbig" */).then(c => wrapFunctional(c.default || c))
-export const Pager = () => import('../..\\components\\Pager.vue' /* webpackChunkName: "components/pager" */).then(c => wrapFunctional(c.default || c))
-export const Toc = () => import('../..\\components\\Toc.vue' /* webpackChunkName: "components/toc" */).then(c => wrapFunctional(c.default || c))
+export { default as Comments } from '../..\\components\\Comments.vue'
+export { default as HeaderMe } from '../..\\components\\HeaderMe.vue'
+export { default as Imgbig } from '../..\\components\\Imgbig.vue'
+export { default as Pager } from '../..\\components\\Pager.vue'
+export { default as Toc } from '../..\\components\\Toc.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
