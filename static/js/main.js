@@ -39,7 +39,7 @@ $(function () {
   var str = '';
   function nuxt_shuoshuo () {
     $.ajax({
-      url: 'http://81.69.240.210/api/nuxt_shuoshuo.php',
+      url: 'https://imhan.cn/api/nuxt_shuoshuo.php',
       type: 'get',
       dataType: 'json',
       async: false,

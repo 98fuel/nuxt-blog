@@ -17,7 +17,9 @@ if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
 }
 
-$sql = "select FROM_UNIXTIME(created) as created,text from nuxt_shuoshuo_comments order by created desc";
+// $tdate = FROM_UNIXTIME(created);
+// $sql = "select FROM_UNIXTIME(created),text from nuxt_shuoshuo_comments order by created desc";
+$sql = "select authorId,author,text,FROM_UNIXTIME(created) as created from nuxt_shuoshuo_comments order by created desc";
 $result = $conn->query($sql);
 
 
