@@ -4,7 +4,7 @@
 
 >基于 vue + nuxt.js 技术实现的静态博客。
 
-源码地址: [https://github.com/imhan0cn/nuxt-blog](https://github.com/imhan0cn/nuxt-blog)
+源码地址: [https://github.com/anghunk/nuxt-blog](https://github.com/anghunk/nuxt-blog)
 
 在线预览: [https://imhan.cn](https://imhan.cn)
 
@@ -15,7 +15,7 @@
 
 由于对后端不是很了解，因此没有写后台管理。
 
-如果有任何疑问或错误，欢迎在 [Issues](https://github.com/imhan0cn/nuxt-blog/issues) 进行提问或给予修正意见。
+如果有任何疑问或错误，欢迎在 [Issues](https://github.com/anghunk/nuxt-blog/issues) 进行提问或给予修正意见。
 
 如果喜欢或对你有所帮助，欢迎 Star，对作者是一种鼓励和推进 😀
 
