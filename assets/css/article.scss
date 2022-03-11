@@ -142,7 +142,7 @@ code * {
 
 .spinner {
   margin: 100px auto;
-  width: 50px;
+  width: 60px;
   height: 60px;
   text-align: center;
   font-size: 10px;
@@ -207,14 +207,54 @@ code * {
 }
 
 #nuxt_shuoshuo {
+  margin-top: 20px;
+
   .item {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 2px 0 10px;
 
-    .item-date {
-      font-size: 15px;
-      color: #666;
+    .img {
+      width: 48px;
+      overflow: hidden;
+      float: left;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+
+      img {
+        width: 100%;
+      }
     }
 
-    .item-text {}
+    .content {
+      flex: 1;
+      padding-left: 1rem;
+
+      .author {
+        color: var(--bg-main);
+      }
+
+      .text {
+        margin-bottom: 6px;
+
+        img {
+          max-width: 300px;
+          padding: 10px;
+          box-sizing: border-box;
+          display: inline;
+        }
+      }
+
+      .date {
+        font-size: 14px;
+        color: #bbb;
+      }
+    }
+
   }
 }

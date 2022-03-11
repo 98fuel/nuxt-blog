@@ -5,7 +5,9 @@
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
-        <!-- <div @click="onclickshuoshuo()">刷新</div> -->
+        <div class="login">
+          <a href="https://note.imhan.cn/" target="_blank">去发布</a>
+        </div>
         <div id="nuxt_shuoshuo">
           <div class="spinner">
             <div class="rect1"></div>
@@ -33,14 +35,6 @@ export default {
       article
     };
   },
-  // methods: {
-  //   onclickshuoshuo () {
-  //     let link = location.pathname;
-  //     console.log(link);
-  //     window.location.href = link;
-  //     location.reload();
-  //   }
-  // }
 }
 </script>
 
@@ -55,7 +49,14 @@ export default {
       margin-top: 20px;
     }
   }
-  #nuxt_shuoshuo {
+  .login {
+    text-align: right;
+    a {
+      margin-right: 6px;
+      background: #f3f3f3;
+      padding: 2px 12px;
+      border-radius: 4px;
+    }
   }
 }
 </style>

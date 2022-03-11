@@ -16,6 +16,7 @@ layout: 'link'
 [涛叔 - https://taoshu.in](https://taoshu.in)
 [依然 - https://wind.ink](https://wind.ink)
 [王宜楷工作室 - http://www.wangyikai.com](http://www.wangyikai.com)
+[随望淡思 - https://www.lushaojun.com/](https://www.lushaojun.com/)
 
 ***小伙伴***
 

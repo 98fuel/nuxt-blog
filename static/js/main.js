@@ -45,15 +45,15 @@ $(function () {
       async: false,
       success: function (data) {
         $.each(data, function (i, item) {
-          // console.log(item)
-          list = "<div class='item'>"+
-          "<p class='item-date'>" + item.created + "</p>"+
-          "<p class='item-text'>"+item.text + "</p>"+
+          list = "<div class='item "+item.authorId+"'>"+
+          "<div class='img'><img src='https://img.imhan.cn/default.png'></div>"+
+          "<div class='content'><p class='author'>" + item.author + "</p>"+
+          "<p class='text'>" + item.text + "</p>"+
+          "<p class='date'>" + item.created + "</p></div>"+
           "</div>"
           str += list;
         }),
           $("#nuxt_shuoshuo").html(str);
-        console.log('数据请求成功')
       },
       error: function () {
         console.log('数据请求失败')
@@ -61,17 +61,9 @@ $(function () {
 
     });
   }
-
   nuxt_shuoshuo();
-  // $('#nuxt_shuoshuo_nav').click(function () {
-  //   $('#nuxt_shuoshuo').html('1')
-  //   console.log('nuxt_shuoshuo()')
-  //   setTimeout(function () {
-  //     nuxt_shuoshuo()
-  //   }, 1000)
-  // })
-
-
+  $('.item.1>.img>img').attr('src','https://img.imhan.cn/author.png')
+  $('.item.2>.img>img').attr('src','https://img.imhan.cn/caicai.png')
 });
 
 

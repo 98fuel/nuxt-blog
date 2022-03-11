@@ -10,8 +10,7 @@
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
-        <!-- <nuxt-link to="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav" exact-active-class="current" @click="onclickshuoshuo()">说说</nuxt-link> -->
-        <a href="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav">说说</a>
+        <a href="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav">动态</a>
         <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
       </div>
     </div>
@@ -25,15 +24,7 @@
 
 <script>
 export default {
-  // methods: {
-  //   onclickshuoshuo () {
-  //     let link = location.pathname;
-  //     console.log(link);
-  //     window.location.href = link;
-  //     location.reload();
-  //     console.log('shuoshuo')
-  //   }
-  // }
+
 };
 </script>
 
@@ -47,7 +38,6 @@ export default {
   z-index: 10;
   transition: all 0.2s linear;
   padding: 0 3%;
-  // box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
   position: sticky;
   top: 0;
   .site-name {
