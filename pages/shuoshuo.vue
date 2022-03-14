@@ -6,7 +6,7 @@
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
         <div class="login">
-          <a href="https://note.imhan.cn/" target="_blank">去发布</a>
+          <a href="https://note.imhan.cn/">去发布</a>
         </div>
         <div id="nuxt_shuoshuo">
           <div class="spinner">

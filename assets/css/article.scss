@@ -240,8 +240,12 @@ code * {
       }
 
       .text {
+        border-radius: 0 15px 15px;
         margin-bottom: 6px;
+        background: #f1f3fa;
         word-break: break-all;
+        padding: 10px 15px;
+        font-size: 15px;
 
         img {
           max-width: 300px;
