@@ -24,7 +24,7 @@
     "@nuxtjs/feed": "^2.0.0",
     "axios": "^0.26.1",
     "frontmatter-markdown-loader": "^3.6.0",
-    "markdown-it": "^12.3.2",
+    "markdown-it": "^11.0.0",
     "markdown-it-prism": "^2.0.5",
     "nth-check": "^2.0.1",
     "nuxt": "^2.13.0",
@@ -32,9 +32,9 @@
   },
   "devDependencies": {
     "babel-plugin-transform-remove-console": "^6.9.4",
-    "github-markdown-css": "^5.1.0",
+    "github-markdown-css": "^4.0.0",
     "prism-themes": "^1.4.0",
     "sass": "^1.26.9",
-    "sass-loader": "^12.6.0"
+    "sass-loader": "^8.0.2"
   }
 }
