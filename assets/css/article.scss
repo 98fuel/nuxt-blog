@@ -1,3 +1,19 @@
+.wrapper {
+  margin-top: 30px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+
+  .archive {
+    padding: 25px 5% !important;
+  }
+}
+
 .article-content {
   color: #000 !important;
   font-size: 17px !important;
@@ -33,21 +49,6 @@
   font-size: 22px !important;
 }
 
-.wrapper {
-  margin-top: 30px;
-  background: #fff;
-  margin-bottom: 20px;
-  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-
-  .archive {
-    padding: 25px 5% !important;
-  }
-}
 
 .article-index .article-content img,
 .article-index .article-content table {
