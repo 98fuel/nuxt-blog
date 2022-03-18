@@ -52,8 +52,10 @@ html {
   overflow-y: scroll;
 }
 
-* {
-  font-family: 'Noto Serif SC', serif;
+@media(min-width:520px) {
+  * {
+    font-family: 'Noto Serif SC', serif;
+  }
 }
 
 body {
