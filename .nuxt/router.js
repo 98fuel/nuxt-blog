@@ -4,16 +4,16 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _6d7f4a76 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _784122e9 = () => interopDefault(import('..\\pages\\archives.vue' /* webpackChunkName: "pages/archives" */))
-const _60b2de72 = () => interopDefault(import('..\\pages\\link.vue' /* webpackChunkName: "pages/link" */))
-const _a92b0c2c = () => interopDefault(import('..\\pages\\love.vue' /* webpackChunkName: "pages/love" */))
-const _4697223f = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
-const _9bbb1754 = () => interopDefault(import('..\\pages\\shuoshuo.vue' /* webpackChunkName: "pages/shuoshuo" */))
-const _3031d926 = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
-const _7b46fe62 = () => interopDefault(import('..\\pages\\posts\\_slug.vue' /* webpackChunkName: "pages/posts/_slug" */))
-const _5a83d9ee = () => interopDefault(import('..\\pages\\tags\\_slug.vue' /* webpackChunkName: "pages/tags/_slug" */))
-const _2e0f94ec = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _00d4dbe2 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _62de30ac = () => interopDefault(import('..\\pages\\archives.vue' /* webpackChunkName: "pages/archives" */))
+const _182b45b5 = () => interopDefault(import('..\\pages\\link.vue' /* webpackChunkName: "pages/link" */))
+const _62e2e12d = () => interopDefault(import('..\\pages\\love.vue' /* webpackChunkName: "pages/love" */))
+const _29e05fc8 = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
+const _c680fbce = () => interopDefault(import('..\\pages\\shuoshuo.vue' /* webpackChunkName: "pages/shuoshuo" */))
+const _9636d27a = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
+const _4f3215dc = () => interopDefault(import('..\\pages\\posts\\_slug.vue' /* webpackChunkName: "pages/posts/_slug" */))
+const _0d428a66 = () => interopDefault(import('..\\pages\\tags\\_slug.vue' /* webpackChunkName: "pages/tags/_slug" */))
+const _208cb6a7 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -28,43 +28,43 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _6d7f4a76,
+    component: _00d4dbe2,
     name: "about"
   }, {
     path: "/archives",
-    component: _784122e9,
+    component: _62de30ac,
     name: "archives"
   }, {
     path: "/link",
-    component: _60b2de72,
+    component: _182b45b5,
     name: "link"
   }, {
     path: "/love",
-    component: _a92b0c2c,
+    component: _62e2e12d,
     name: "love"
   }, {
     path: "/message",
-    component: _4697223f,
+    component: _29e05fc8,
     name: "message"
   }, {
     path: "/shuoshuo",
-    component: _9bbb1754,
+    component: _c680fbce,
     name: "shuoshuo"
   }, {
     path: "/categories/:slug?",
-    component: _3031d926,
+    component: _9636d27a,
     name: "categories-slug"
   }, {
     path: "/posts/:slug?",
-    component: _7b46fe62,
+    component: _4f3215dc,
     name: "posts-slug"
   }, {
     path: "/tags/:slug?",
-    component: _5a83d9ee,
+    component: _0d428a66,
     name: "tags-slug"
   }, {
     path: "/",
-    component: _2e0f94ec,
+    component: _208cb6a7,
     name: "index"
   }],
 

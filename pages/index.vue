@@ -2,7 +2,11 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
-      <article class="article" v-for="article in articles" :key="article.attributes.title">
+      <article
+        class="article"
+        v-for="article in articles"
+        :key="article.attributes.title"
+      >
         <div class="article-meta">
           <div class="article-category">
             <nuxt-link
@@ -10,14 +14,17 @@
               :to="`/categories/${category}`"
               v-for="category in article.attributes.categories"
               :key="category"
-            >{{category}}</nuxt-link>
+              >{{ category }}</nuxt-link
+            >
           </div>
         </div>
         <nuxt-link class="link" :to="article.path">
           <div class="article-title">
             <span>{{ article.attributes.title }}</span>
           </div>
-          <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+          <div class="article-date">
+            {{ formatDate(article.attributes.date) }}
+          </div>
         </nuxt-link>
 
         <!-- <div class="article-content" v-html="article.summary"></div> -->
@@ -37,44 +44,51 @@
 <script>
 import HeaderMe from "@/components/HeaderMe";
 // import Pager from '@/components/Pager'
-import { perHomeCount } from '@/config';
-import { getArticles, getPagerCount, formatDate } from '@/util';
+import { perHomeCount } from "@/config";
+import { getArticles, getPagerCount, formatDate } from "@/util";
 
 export default {
   components: {
     HeaderMe,
     // Pager,
   },
-  async asyncData () {
-    const context = await require.context('~/content/posts', true, /\.md$/)
-    const articles = await context.keys().map(key => ({
+  async asyncData() {
+    const context = await require.context("~/content/posts", true, /\.md$/);
+    const articles = await context.keys().map((key) => ({
       ...context(key),
-      summary: context(key).html.split('<!-- more -->')[0],
-      path: `/posts/${key.replace('.md', '').replace('./', '')}/`
-    }))
+      summary: context(key).html.split("<!-- more -->")[0],
+      path: `/posts/${key.replace(".md", "").replace("./", "")}/`,
+    }));
     // TODO 使用脚本来生成文章，默认添加标题和时间，根据生成时的创建时间来排序
-    articles.sort((a, b) => new Date(b.attributes.date).getTime() - new Date(a.attributes.date).getTime())
-    return { articles: getArticles(1, perHomeCount, articles), allArticles: articles }
+    articles.sort(
+      (a, b) =>
+        new Date(b.attributes.date).getTime() -
+        new Date(a.attributes.date).getTime()
+    );
+    return {
+      articles: getArticles(1, perHomeCount, articles),
+      allArticles: articles,
+    };
   },
-  data () {
+  data() {
     return {
       currentPage: 1,
-    }
+    };
   },
   computed: {
-    pagerCount () {
-      return getPagerCount(this.allArticles.length, perHomeCount)
+    pagerCount() {
+      return getPagerCount(this.allArticles.length, perHomeCount);
     },
   },
   methods: {
-    updatePage (page) {
-      this.currentPage = page
-      this.articles = getArticles(page, perHomeCount, this.allArticles)
+    updatePage(page) {
+      this.currentPage = page;
+      this.articles = getArticles(page, perHomeCount, this.allArticles);
     },
-    formatDate (date) {
-      return formatDate(date)
-    }
-  }
+    formatDate(date) {
+      return formatDate(date);
+    },
+  },
 };
 </script>
 
@@ -93,7 +107,7 @@ export default {
     display: flex;
     align-items: center;
     &:hover {
-      background: #eee;
+      background: rgb(229, 231, 235);
     }
     .link {
       flex: 1;
@@ -101,7 +115,7 @@ export default {
       justify-content: space-between;
       align-items: center;
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -125,7 +139,7 @@ export default {
         padding: 14px 0;
         font-weight: 500;
         font-size: 18px;
-        color: var(--color-main);
+        color: #000;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -133,7 +147,7 @@ export default {
         span {
           position: relative;
           &::after {
-            content: '';
+            content: "";
             width: 0;
             height: 2px;
             background: var(--bg-main);
@@ -145,7 +159,7 @@ export default {
         }
       }
       .article-date {
-        color: #6e7173;
+        color: #000;
         font-size: 0.94rem;
         opacity: 0.8;
         font-weight: 500;
