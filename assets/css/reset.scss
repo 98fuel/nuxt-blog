@@ -127,3 +127,13 @@ h3 {
   color: var(--color-main) !important;
   font-weight: 500 !important;
 }
+
+@media(max-width:520px) {
+  .header-me {
+    display: none;
+  }
+
+  .wrapper {
+    margin-top: 0;
+  }
+}

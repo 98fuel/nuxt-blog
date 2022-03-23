@@ -5,9 +5,9 @@
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
-        <div class="login">
+        <!-- <div class="login">
           <a href="https://note.imhan.cn/">去发布</a>
-        </div>
+        </div> -->
         <div id="nuxt_shuoshuo">
           <div class="spinner">
             <div class="rect1"></div>

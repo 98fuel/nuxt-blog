@@ -5,10 +5,10 @@
         © 2020 -2022 ·
         <a href="https://beian.miit.gov.cn/" target="_blank">
           <span>浙ICP备2022002453号-1</span>
-        </a> ·
+        </a>
+        ·
         <a href="/">不如吃茶去</a>
-        <br />网站已稳定运行
-        <span id="days">0</span> 天 ·
+        <br />网站已稳定运行 <span id="days">0</span> 天 ·
         <span id="busuanzi_container_site_pv">
           你是第
           <span id="busuanzi_value_site_pv"></span>个进来的小伙伴！
@@ -36,35 +36,39 @@
         <i></i>
         <i></i>
       </div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up mx-auto"><polyline points="18 15 12 9 6 15"></polyline></svg> -->
     </div>
 
     <!-- 不蒜子计数 -->
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <script
+      async
+      src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+    ></script>
   </footer>
 </template>
 
 <script>
 export default {
-  props: ['ele'],
-  data () {
+  props: ["ele"],
+  data() {
     return {
-      opacity: '1',
+      opacity: "1",
       gotop: false,
       scrollHeight: 140,
-      scrollTop: 0
+      scrollTop: 0,
     };
   },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll, true);
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll, true);
   },
   methods: {
-    enterBackTop () {
-      this.opacity = '1';
+    enterBackTop() {
+      this.opacity = "1";
     },
-    outBackTop () {
-      this.opacity = '1';
+    outBackTop() {
+      this.opacity = "1";
     },
-    handleScroll (e) {
+    handleScroll(e) {
       const that = this;
       const scrollTop =
         window.pageYOffset ||
@@ -75,7 +79,7 @@ export default {
         ? (this.gotop = true)
         : (this.gotop = false);
     },
-    handleScrollTop () {
+    handleScrollTop() {
       const that = this;
       const timer = setInterval(() => {
         const ispeed = Math.floor(-that.scrollTop / 5);
@@ -85,9 +89,9 @@ export default {
           clearInterval(timer);
         }
       }, 16);
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -120,32 +124,30 @@ export default {
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
     justify-content: center;
     transition: all 0.4s ease;
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     z-index: 999;
     overflow: hidden;
     padding: 5px;
     &:hover {
+      box-shadow: 0 5px 5px 0 rgb(0 0 0 / 20%);
       cursor: pointer;
     }
     div {
-      background: #fff url(https://img.imhan.cn/blog/top.png) no-repeat center !important;
-      background-size: cover !important;
       position: relative;
       width: 100%;
       height: 100%;
       i {
-        display: none;
         position: absolute;
-        top: 18px;
+        top: 15px;
         background: #666;
-        width: 19px;
+        width: 15px;
         height: 2px;
       }
 
       i:nth-child(1) {
         transform: rotate(-45deg);
-        left: 8px;
+        left: 2px;
         -webkit-transform: rotate(-45deg);
         -moz-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -154,7 +156,7 @@ export default {
 
       i:nth-child(2) {
         transform: rotate(45deg);
-        right: 8px;
+        right: 2px;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);

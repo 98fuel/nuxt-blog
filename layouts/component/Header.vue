@@ -149,7 +149,7 @@ export default {
       position: relative;
       span {
         display: inline-block;
-        width: 30px;
+        width: 27px;
         height: 2px;
         background: #333;
         position: absolute;

@@ -1,11 +1,13 @@
 <template>
   <div class="pager" :class="{hide: hideIfOnePage && totalPage <= 1}">
     <span
-      class="pager-item prev-nav"
+      class="pager-item nav-icon prev-nav"
       @click="onClickPage(currentPage - 1)"
       :class="{hidden: currentPage === 1}"
-    >上一页</span>
-    <template v-for="(page, index) in pages">
+    >
+      <i class="fa fa-long-arrow-left"></i>
+    </span>
+    <!-- <template v-for="(page, index) in pages">
       <template v-if="page === currentPage">
         <span :key="index" class="pager-item current">{{page}}</span>
       </template>
@@ -15,12 +17,14 @@
       <template v-else>
         <span :key="index" class="pager-item other" @click="onClickPage(page)">{{page}}</span>
       </template>
-    </template>
+    </template>-->
     <span
-      class="pager-item next-nav"
+      class="pager-item nav-icon next-nav"
       @click="onClickPage(currentPage + 1)"
       :class="{hidden: currentPage === totalPage}"
-    >下一页</span>
+    >
+      <i class="fa fa-long-arrow-right"></i>
+    </span>
   </div>
 </template>
 
@@ -89,9 +93,8 @@ function unique (array) {
 .pager {
   padding: 0;
   user-select: none;
-  display: inline-block;
-  border: 1px solid #c4c2c2;
-  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
   &.hide {
     display: none;
   }
@@ -106,15 +109,32 @@ function unique (array) {
     color: #444;
     margin: 0;
     cursor: pointer;
-    // border-right: 1px solid #c4c2c2;
     &:not(.separator).current {
       cursor: default;
       background-color: #6f777d;
       color: #fff;
     }
   }
-  .pager-item:last-child{
-    border: none;
+  .nav-icon {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 50px;
+    color: #6f777d;
+    background: #eee;
+    transition: all 0.2s linear;
+    &:hover {
+      background: #6f777d;
+      color: #fff;
+    }
+  }
+  .prev-nav {
+    left: 0;
+    border-right: 1px solid #eee;
+  }
+  .next-nav {
+    right: 0;
   }
 }
 </style>
