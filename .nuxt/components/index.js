@@ -2,6 +2,8 @@ export const Comments = () => import('../..\\components\\Comments.vue' /* webpac
 export const HeaderMe = () => import('../..\\components\\HeaderMe.vue' /* webpackChunkName: "components/header-me" */).then(c => wrapFunctional(c.default || c))
 export const Imgbig = () => import('../..\\components\\Imgbig.vue' /* webpackChunkName: "components/imgbig" */).then(c => wrapFunctional(c.default || c))
 export const Pager = () => import('../..\\components\\Pager.vue' /* webpackChunkName: "components/pager" */).then(c => wrapFunctional(c.default || c))
+export const PageSidebar = () => import('../..\\components\\PageSidebar.vue' /* webpackChunkName: "components/page-sidebar" */).then(c => wrapFunctional(c.default || c))
+export const PostSidebar = () => import('../..\\components\\PostSidebar.vue' /* webpackChunkName: "components/post-sidebar" */).then(c => wrapFunctional(c.default || c))
 export const Toc = () => import('../..\\components\\Toc.vue' /* webpackChunkName: "components/toc" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607

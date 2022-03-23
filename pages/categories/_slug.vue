@@ -2,6 +2,7 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
+      <PageSidebar />
       <div class="article">
         <div class="archive">
           <!-- <div class="archive-category">
@@ -40,10 +41,12 @@
 
 <script>
 import HeaderMe from "@/components/HeaderMe";
+import PageSidebar from '@/components/PageSidebar';
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
     HeaderMe,
+    PageSidebar,
   },
   async asyncData ({ isDev, route, store, env, params, query, req, res, redirect, error }) {
     const context = await require.context('~/content/posts', true, /\.md$/)

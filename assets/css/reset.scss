@@ -52,9 +52,13 @@ html {
   overflow-y: scroll;
 }
 
-@media(min-width:520px) {
+* {
+  font-family: 'Noto Serif SC', serif;
+}
+
+@media(max-width:520px) {
   * {
-    font-family: 'Noto Serif SC', serif;
+    font-family: Helvetica, Tahoma, Arial, pingfang sc, hiragino sans gb, microsoft yahei, wenquanyi micro hei, sans-serif;
   }
 }
 

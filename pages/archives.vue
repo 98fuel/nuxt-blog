@@ -2,6 +2,7 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
+      <PageSidebar />
       <div class="archive">
         <!-- <div class="archive-category">
           <nuxt-link to="/archives" class="nuxt-link-active">归档</nuxt-link>
@@ -35,10 +36,12 @@
 
 <script>
 import HeaderMe from "@/components/HeaderMe";
+import PageSidebar from '@/components/PageSidebar'
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
-    HeaderMe
+    HeaderMe,
+    PageSidebar
   },
   async asyncData () {
     const context = await require.context('~/content/posts', true, /\.md$/)

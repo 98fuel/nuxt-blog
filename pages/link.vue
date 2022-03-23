@@ -2,6 +2,7 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
+      <PageSidebar />
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
@@ -12,9 +13,11 @@
 
 <script>
 import HeaderMe from "@/components/HeaderMe";
+import PageSidebar from '@/components/PageSidebar';
 export default {
   components: {
     HeaderMe,
+    PageSidebar
   },
   async asyncData ({ params }) {
     // 调用 link.md 内的数据

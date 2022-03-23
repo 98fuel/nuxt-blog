@@ -147,26 +147,32 @@ export default {
       width: 50px;
       height: 40px;
       position: relative;
+      margin-right: 10px;
       span {
         display: inline-block;
         width: 27px;
         height: 2px;
         background: #333;
         position: absolute;
+        right: 0;
         transition: all 0.1s linear;
       }
       span:nth-child(1) {
+        width: 27px;
         top: 30%;
       }
       span:nth-child(2) {
+        width: 20px;
         top: 50%;
       }
       span:nth-child(3) {
+        width: 24px;
         top: 70%;
       }
     }
     .menu-icon-show {
       span:nth-child(1) {
+        width: 27px;
         top: 50%;
         transform: rotate(-45deg);
       }
@@ -175,6 +181,7 @@ export default {
         display: none;
       }
       span:nth-child(3) {
+        width: 27px;
         top: 50%;
         transform: rotate(45deg);
       }

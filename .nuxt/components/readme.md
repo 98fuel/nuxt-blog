@@ -10,4 +10,6 @@ You can directly use them in pages and other components without the need to impo
 - `<HeaderMe>` | `<header-me>` (components/HeaderMe.vue)
 - `<Imgbig>` | `<imgbig>` (components/Imgbig.vue)
 - `<Pager>` | `<pager>` (components/Pager.vue)
+- `<PageSidebar>` | `<page-sidebar>` (components/PageSidebar.vue)
+- `<PostSidebar>` | `<post-sidebar>` (components/PostSidebar.vue)
 - `<Toc>` | `<toc>` (components/Toc.vue)

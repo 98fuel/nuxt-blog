@@ -2,6 +2,7 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
+      <PageSidebar />
       <div class="archive">
         <div class="article-content markdown-body" v-html="article.html"></div>
         <div class="iframe">
@@ -14,9 +15,11 @@
 
 <script>
 import HeaderMe from "@/components/HeaderMe";
+import PageSidebar from '@/components/PageSidebar';
 export default {
   components: {
     HeaderMe,
+    PageSidebar,
   },
   async asyncData ({ params }) {
     // 调用 about.md 内的数据

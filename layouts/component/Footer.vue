@@ -36,7 +36,6 @@
         <i></i>
         <i></i>
       </div>
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up mx-auto"><polyline points="18 15 12 9 6 15"></polyline></svg> -->
     </div>
 
     <!-- 不蒜子计数 -->
@@ -113,13 +112,14 @@ export default {
     }
   }
   .top-btn {
+    display: none;
     position: fixed;
     right: 33px;
     bottom: 90px;
     -ms-flex-pack: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 10px;
     background: #fff;
     box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%);
     justify-content: center;

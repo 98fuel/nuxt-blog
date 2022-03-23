@@ -2,6 +2,7 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
+      <PageSidebar />
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
         <div class="article-content markdown-body" v-html="article.html"></div>
@@ -13,10 +14,12 @@
 
 <script>
 import HeaderMe from "@/components/HeaderMe";
+import PageSidebar from '@/components/PageSidebar';
 import Comments from '@/components/Comments'
 export default {
   components: {
     HeaderMe,
+    PageSidebar,
     Comments
   },
   async asyncData ({ params }) {

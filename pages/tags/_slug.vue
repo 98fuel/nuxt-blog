@@ -2,6 +2,7 @@
   <div>
     <HeaderMe />
     <div class="wrapper">
+      <PageSidebar />
       <div class="archive">
         <div class="widget">
           <h2>标签</h2>
@@ -35,10 +36,13 @@
 
 <script>
 import HeaderMe from "@/components/HeaderMe";
+import PageSidebar from "@/components/PageSidebar";
+
 import { formatArticles, formatDateArticle } from '@/util'
 export default {
   components: {
-    HeaderMe
+    HeaderMe,
+    PageSidebar
   },
   data () {
     return {

@@ -11,6 +11,12 @@
   "Pager": {
     "description": "Auto imported from components/Pager.vue"
   },
+  "PageSidebar": {
+    "description": "Auto imported from components/PageSidebar.vue"
+  },
+  "PostSidebar": {
+    "description": "Auto imported from components/PostSidebar.vue"
+  },
   "Toc": {
     "description": "Auto imported from components/Toc.vue"
   }
