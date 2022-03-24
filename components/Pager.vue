@@ -4,6 +4,7 @@
       class="pager-item nav-icon prev-nav"
       @click="onClickPage(currentPage - 1)"
       :class="{hidden: currentPage === 1}"
+      onclick="$('html,body').finish().animate({'scrollTop':'0px'},200);"
     >
       <i class="fa fa-long-arrow-left"></i>
     </span>
@@ -22,6 +23,7 @@
       class="pager-item nav-icon next-nav"
       @click="onClickPage(currentPage + 1)"
       :class="{hidden: currentPage === totalPage}"
+      onclick="$('html,body').finish().animate({'scrollTop':'0px'},200);"
     >
       <i class="fa fa-long-arrow-right"></i>
     </span>
@@ -73,7 +75,8 @@ export default {
   methods: {
     onClickPage (n) {
       if (n >= 1 && n <= this.totalPage) {
-        this.$emit('update:currentPage', n)
+        this.$emit('update:currentPage', n);
+
       }
     }
   }

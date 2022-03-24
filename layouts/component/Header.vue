@@ -10,7 +10,7 @@
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
-        <a href="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav">动态</a>
+        <!-- <a href="/shuoshuo/" class="nav-link" id="nuxt_shuoshuo_nav">动态</a> -->
         <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
       </div>
     </div>

@@ -1,2 +1,2 @@
 // 首页每页显示文章数量
-export const perHomeCount = 12
+export const perHomeCount = 16

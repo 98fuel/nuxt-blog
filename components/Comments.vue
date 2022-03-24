@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" id="comments">
     <div class="archive">
       <h4>评论~</h4>
       <div id="artalk">
@@ -29,9 +29,10 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
   .archive {
-    padding: 25px 4% 15px !important;
+    padding: 75px 4% 15px !important;
     margin-top: 20px;
     h4 {
+      margin-top: -30px;
       margin-bottom: 20px;
       font-weight: 600;
       font-size: 22px;

@@ -1,21 +1,24 @@
 <template>
   <div class="post-sidebar">
     <div class="list">
+      <!-- 1 -->
       <div class="item">
         <nuxt-link to="/">
           <i class="fa fa-home"></i>
         </nuxt-link>
         <p>首页</p>
       </div>
+      <!-- 2 -->
       <div
         class="item"
-        onclick="$('html,body').animate({ scrollTop: $('#artalk').offset().top }, 500);"
+        onclick="$('html,body').animate({ scrollTop: $('#comments').offset().top }, 500);"
       >
         <i class="fa fa-comments"></i>
         <p>评论</p>
       </div>
+      <!-- 3 -->
       <div
-        class="back_top top-btn item"
+        class="item"
         @mouseover="enterBackTop"
         @mouseout="outBackTop"
         ref="backTop"
