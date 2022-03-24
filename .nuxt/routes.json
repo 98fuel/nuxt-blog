@@ -3,70 +3,60 @@
     "name": "about",
     "path": "/about",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_6d7f4a76"
+    "chunkName": "pages/about"
   },
   {
     "name": "archives",
     "path": "/archives",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\archives.vue",
-    "chunkName": "pages/archives",
-    "_name": "_784122e9"
+    "chunkName": "pages/archives"
   },
   {
     "name": "link",
     "path": "/link",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\link.vue",
-    "chunkName": "pages/link",
-    "_name": "_60b2de72"
+    "chunkName": "pages/link"
   },
   {
     "name": "love",
     "path": "/love",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\love.vue",
-    "chunkName": "pages/love",
-    "_name": "_a92b0c2c"
+    "chunkName": "pages/love"
   },
   {
     "name": "message",
     "path": "/message",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\message.vue",
-    "chunkName": "pages/message",
-    "_name": "_4697223f"
+    "chunkName": "pages/message"
   },
   {
     "name": "shuoshuo",
     "path": "/shuoshuo",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\shuoshuo.vue",
-    "chunkName": "pages/shuoshuo",
-    "_name": "_9bbb1754"
+    "chunkName": "pages/shuoshuo"
   },
   {
     "name": "categories-slug",
     "path": "/categories/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\categories\\\\_slug.vue",
-    "chunkName": "pages/categories/_slug",
-    "_name": "_3031d926"
+    "chunkName": "pages/categories/_slug"
   },
   {
     "name": "posts-slug",
     "path": "/posts/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\posts\\\\_slug.vue",
-    "chunkName": "pages/posts/_slug",
-    "_name": "_7b46fe62"
+    "chunkName": "pages/posts/_slug"
   },
   {
     "name": "tags-slug",
     "path": "/tags/:slug?",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
-    "chunkName": "pages/tags/_slug",
-    "_name": "_5a83d9ee"
+    "chunkName": "pages/tags/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_2e0f94ec"
+    "chunkName": "pages/index"
   }
 ]

@@ -8,7 +8,7 @@
           <nuxt-link to="/archives" class="nuxt-link-active">归档</nuxt-link>
           <nuxt-link to="/categories/技术">技术</nuxt-link>
           <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-        </div> -->
+        </div>-->
         <h1 class="title">正在查看 归档 下的文章</h1>
         <div class="archive-list">
           <div class="archive-item" v-for="archive in archives" :key="archive.date">

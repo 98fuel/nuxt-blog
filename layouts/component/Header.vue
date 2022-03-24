@@ -6,6 +6,7 @@
       </h1>
       <div class="nav-menu">
         <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
+        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link> -->
         <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>

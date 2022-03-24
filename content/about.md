@@ -24,6 +24,10 @@ the road ahead will be long and our climb will be steep.
 Github: [https://github.com/anghunk](https://github.com/anghunk)  
 E-mail: shuxhan#163.com
 
+版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。
+
 ---
 
-版权声明：网站文章所有版权如无特殊说明，均归本人所有。允许转载，标明出处即可。
+平时我也会在公众号上发一些随笔。
+
+![子舒随笔](https://img.imhan.cn/zishusuibi.png)

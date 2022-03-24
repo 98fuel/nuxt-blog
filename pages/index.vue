@@ -4,24 +4,24 @@
     <div class="wrapper">
       <PageSidebar />
       <article class="article" v-for="article in articles" :key="article.attributes.title">
-        <div class="article-meta">
-          <div class="article-category">
-            <nuxt-link
-              class="link"
-              :to="`/categories/${category}`"
-              v-for="category in article.attributes.categories"
-              :key="category"
-            >{{ category }}</nuxt-link>
+        <div class="top">
+          <div class="article-meta">
+            <div class="article-category">
+              <nuxt-link
+                :to="`/categories/${category}`"
+                v-for="category in article.attributes.categories"
+                :key="category"
+              >{{ category }}</nuxt-link>
+            </div>
           </div>
+          <nuxt-link class="link" :to="article.path">
+            <div class="article-title">
+              <span>{{ article.attributes.title }}</span>
+            </div>
+            <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+          </nuxt-link>
         </div>
-        <nuxt-link class="link" :to="article.path">
-          <div class="article-title">
-            <span>{{ article.attributes.title }}</span>
-          </div>
-          <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-        </nuxt-link>
-
-        <!-- <div class="article-content" v-html="article.summary"></div> -->
+        <!-- <nuxt-link class="link" :to="article.path"><div class="article-content" v-html="article.summary"></div></nuxt-link> -->
       </article>
       <nav class="navigator">
         <pager
@@ -100,102 +100,104 @@ export default {
     transition: all 0.2s linear;
     margin-bottom: 6px;
     position: relative;
-    display: flex;
-    align-items: center;
     &:hover {
       background: rgb(229, 231, 235);
     }
-    .link {
-      flex: 1;
+    .top {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 1px;
-        width: 100%;
-        background: #eee;
-      }
-      &:hover {
-        opacity: 1;
-        .article-title {
-          span {
-            &::after {
-              width: 100%;
-            }
-          }
-        }
-      }
-      .article-title {
-        margin: 0;
-        padding: 14px 0;
-        font-weight: 500;
-        font-size: 18px;
-        color: #000;
+      .link {
+        flex: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        transition: all 0.2s linear;
-        span {
-          position: relative;
-          &::after {
-            content: '';
-            width: 0;
-            height: 2px;
-            background: var(--bg-main);
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            transition: all 0.2s linear;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 1px;
+          width: 100%;
+          background: #eee;
+        }
+        &:hover {
+          opacity: 1;
+          .article-title {
+            span {
+              &::after {
+                width: 100%;
+              }
+            }
           }
         }
+        .article-title {
+          margin: 0;
+          padding: 14px 0;
+          font-weight: 500;
+          font-size: 18px;
+          color: #000;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.2s linear;
+          span {
+            position: relative;
+            &::after {
+              content: '';
+              width: 0;
+              height: 2px;
+              background: var(--bg-main);
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              transition: all 0.2s linear;
+            }
+          }
+        }
+        .article-date {
+          color: #000;
+          font-size: 0.94rem;
+          opacity: 0.8;
+          font-weight: 500;
+          text-decoration: none;
+        }
       }
-      .article-date {
-        color: #000;
-        font-size: 0.94rem;
-        opacity: 0.8;
-        font-weight: 500;
-        text-decoration: none;
-      }
-      .article-content {
-        font-size: 15px !important;
-        line-height: 1.77;
-        color: inherit;
-        text-justify: distribute;
-        word-break: break-all;
-        text-align: left;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-        opacity: 0.9;
-        color: #3e3939;
-      }
-    }
-    .article-meta {
-      padding: 0;
-      color: #6e7173;
-      font-size: 0.94em;
-      text-indent: 0.15em;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      opacity: 0.8;
-      .article-category {
+      .article-meta {
+        padding: 0;
+        color: #6e7173;
+        font-size: 0.94em;
+        text-indent: 0.15em;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        .link {
-          margin-right: 6px;
-          background: #f3f3f3;
-          padding: 0 8px;
-          border-radius: 4px;
+        opacity: 0.8;
+        .article-category {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          a {
+            margin-right: 6px;
+            background: #f3f3f3;
+            padding: 0 8px;
+            border-radius: 4px;
+          }
         }
       }
+    }
+    .article-content {
+      font-size: 15px !important;
+      line-height: 1.77;
+      color: inherit;
+      text-justify: distribute;
+      word-break: break-all;
+      text-align: left;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      opacity: 0.9;
+      color: #3e3939;
     }
   }
   .navigator {
