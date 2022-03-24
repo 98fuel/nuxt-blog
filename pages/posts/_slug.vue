@@ -1,5 +1,6 @@
 <template>
   <div>
+    <PostSidebar />
     <h1 class="article-title">{{ article.attributes.title }}</h1>
     <div class="article-meta">
       <div>子舒 /</div>
@@ -17,7 +18,6 @@
       </div>
     </div>
     <div class="wrapper">
-      <PostSidebar />
       <article class="article article-post">
         <div class="markdown-body article-content" v-html="article.html"></div>
         <Imgbig />

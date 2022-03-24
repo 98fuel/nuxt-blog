@@ -67,7 +67,7 @@ export default {
 <style lang="scss" scoped>
 .post-sidebar {
   position: sticky;
-  top: 100px;
+  top: 200px;
   margin-left: 100%;
   height: 0;
   padding-bottom: 0;
