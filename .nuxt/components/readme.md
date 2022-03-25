@@ -12,4 +12,4 @@ You can directly use them in pages and other components without the need to impo
 - `<Pager>` | `<pager>` (components/Pager.vue)
 - `<PageSidebar>` | `<page-sidebar>` (components/PageSidebar.vue)
 - `<PostSidebar>` | `<post-sidebar>` (components/PostSidebar.vue)
-- `<Toc>` | `<toc>` (components/Toc.vue)
+- `<Search>` | `<search>` (components/Search.vue)

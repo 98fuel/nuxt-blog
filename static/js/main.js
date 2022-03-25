@@ -36,34 +36,6 @@ $(function () {
     i = 1
   })
 
-  var str = '';
-  function nuxt_shuoshuo () {
-    $.ajax({
-      url: 'https://imhan.cn/api/nuxt_shuoshuo.php',
-      type: 'get',
-      dataType: 'json',
-      async: false,
-      success: function (data) {
-        $.each(data, function (i, item) {
-          list = "<div class='item " + item.authorId + "'>" +
-            "<div class='img'><img src='https://img.imhan.cn/default.png'></div>" +
-            "<div class='content'><p class='author'>" + item.author + "</p>" +
-            "<p class='text'>" + item.text + "</p>" +
-            "<p class='date'>" + item.created + "</p></div>" +
-            "</div>"
-          str += list;
-        }),
-          $("#nuxt_shuoshuo").html(str);
-      },
-      error: function () {
-        console.log('数据请求失败')
-      }
-
-    });
-  }
-  nuxt_shuoshuo();
-  $('.item.1>.img>img').attr('src', 'https://img.imhan.cn/author.png')
-  $('.item.2>.img>img').attr('src', 'https://img.imhan.cn/caicai.png')
 });
 
 

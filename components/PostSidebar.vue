@@ -11,7 +11,7 @@
       <!-- 2 -->
       <div
         class="item"
-        onclick="$('html,body').animate({ scrollTop: $('#comments').offset().top }, 500);"
+        onclick="$('html,body').animate({ scrollTop: $('#comments').offset().top }, 200);"
       >
         <i class="fa fa-comments"></i>
         <p>评论</p>

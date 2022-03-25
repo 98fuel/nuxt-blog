@@ -52,4 +52,13 @@ export default {
     }
   }
 }
+@media (max-width: 520px) {
+  .wrapper {
+    .archive {
+      h4 {
+        font-weight: 500;
+      }
+    }
+  }
+}
 </style>

@@ -17,7 +17,7 @@
   "PostSidebar": {
     "description": "Auto imported from components/PostSidebar.vue"
   },
-  "Toc": {
-    "description": "Auto imported from components/Toc.vue"
+  "Search": {
+    "description": "Auto imported from components/Search.vue"
   }
 }

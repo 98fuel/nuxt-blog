@@ -71,6 +71,9 @@ export default {
       currentPage: 1,
     };
   },
+  created () {
+    
+  },
   computed: {
     pagerCount () {
       return getPagerCount(this.allArticles.length, perHomeCount);
@@ -215,15 +218,18 @@ export default {
       padding-bottom: 10px;
       border-radius: 0;
       align-items: baseline;
-      .link {
-        flex-direction: column;
-        align-items: flex-start;
-        .article-title {
-          padding: 8px 0;
-        }
-        .article-date {
-          width: 100%;
-          text-align: left;
+      .top {
+        display: block;
+        .link {
+          flex-direction: column;
+          align-items: flex-start;
+          .article-title {
+            padding: 8px 0;
+          }
+          .article-date {
+            width: 100%;
+            text-align: left;
+          }
         }
       }
     }

@@ -6,7 +6,7 @@
       :class="{hidden: currentPage === 1}"
       onclick="$('html,body').finish().animate({'scrollTop':'0px'},200);"
     >
-      <i class="fa fa-long-arrow-left"></i>
+      <i class="fa fa-long-arrow-left"></i>上一页
     </span>
     <!-- <template v-for="(page, index) in pages">
       <template v-if="page === currentPage">
@@ -25,7 +25,7 @@
       :class="{hidden: currentPage === totalPage}"
       onclick="$('html,body').finish().animate({'scrollTop':'0px'},200);"
     >
-      <i class="fa fa-long-arrow-right"></i>
+      下一页<i class="fa fa-long-arrow-right"></i>
     </span>
   </div>
 </template>

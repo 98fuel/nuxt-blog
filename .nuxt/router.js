@@ -9,7 +9,7 @@ const _784122e9 = () => interopDefault(import('..\\pages\\archives.vue' /* webpa
 const _60b2de72 = () => interopDefault(import('..\\pages\\link.vue' /* webpackChunkName: "pages/link" */))
 const _a92b0c2c = () => interopDefault(import('..\\pages\\love.vue' /* webpackChunkName: "pages/love" */))
 const _4697223f = () => interopDefault(import('..\\pages\\message.vue' /* webpackChunkName: "pages/message" */))
-const _9bbb1754 = () => interopDefault(import('..\\pages\\shuoshuo.vue' /* webpackChunkName: "pages/shuoshuo" */))
+const _3c6555c0 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages/search" */))
 const _3031d926 = () => interopDefault(import('..\\pages\\categories\\_slug.vue' /* webpackChunkName: "pages/categories/_slug" */))
 const _7b46fe62 = () => interopDefault(import('..\\pages\\posts\\_slug.vue' /* webpackChunkName: "pages/posts/_slug" */))
 const _5a83d9ee = () => interopDefault(import('..\\pages\\tags\\_slug.vue' /* webpackChunkName: "pages/tags/_slug" */))
@@ -47,9 +47,9 @@ export const routerOptions = {
     component: _4697223f,
     name: "message"
   }, {
-    path: "/shuoshuo",
-    component: _9bbb1754,
-    name: "shuoshuo"
+    path: "/search",
+    component: _3c6555c0,
+    name: "search"
   }, {
     path: "/categories/:slug?",
     component: _3031d926,
