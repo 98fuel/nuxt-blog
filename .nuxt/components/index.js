@@ -1,10 +1,11 @@
-export { default as Comments } from '../..\\components\\Comments.vue'
-export { default as HeaderMe } from '../..\\components\\HeaderMe.vue'
-export { default as Imgbig } from '../..\\components\\Imgbig.vue'
-export { default as Pager } from '../..\\components\\Pager.vue'
-export { default as PageSidebar } from '../..\\components\\PageSidebar.vue'
-export { default as PostSidebar } from '../..\\components\\PostSidebar.vue'
-export { default as Search } from '../..\\components\\Search.vue'
+export const Comments = () => import('../..\\components\\Comments.vue' /* webpackChunkName: "components/comments" */).then(c => wrapFunctional(c.default || c))
+export const HeaderMe = () => import('../..\\components\\HeaderMe.vue' /* webpackChunkName: "components/header-me" */).then(c => wrapFunctional(c.default || c))
+export const Imgbig = () => import('../..\\components\\Imgbig.vue' /* webpackChunkName: "components/imgbig" */).then(c => wrapFunctional(c.default || c))
+export const Pager = () => import('../..\\components\\Pager.vue' /* webpackChunkName: "components/pager" */).then(c => wrapFunctional(c.default || c))
+export const PageSidebar = () => import('../..\\components\\PageSidebar.vue' /* webpackChunkName: "components/page-sidebar" */).then(c => wrapFunctional(c.default || c))
+export const PostSidebar = () => import('../..\\components\\PostSidebar.vue' /* webpackChunkName: "components/post-sidebar" */).then(c => wrapFunctional(c.default || c))
+export const Search = () => import('../..\\components\\Search.vue' /* webpackChunkName: "components/search" */).then(c => wrapFunctional(c.default || c))
+export const Wave = () => import('../..\\components\\Wave.vue' /* webpackChunkName: "components/wave" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

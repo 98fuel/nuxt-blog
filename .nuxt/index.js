@@ -12,10 +12,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_260e2f93 from 'nuxt_plugin_plugin_260e2f93' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_pluginclient_d650e26e from 'nuxt_plugin_pluginclient_d650e26e' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_0addff5e from 'nuxt_plugin_pluginserver_0addff5e' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_70fa2836 from 'nuxt_plugin_axios_70fa2836' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_ac94516c from 'nuxt_plugin_plugin_ac94516c' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_pluginclient_28668300 from 'nuxt_plugin_pluginclient_28668300' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_e3c016f0 from 'nuxt_plugin_pluginserver_e3c016f0' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_0cce6a6d from 'nuxt_plugin_axios_0cce6a6d' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_baidu_355f6736 from 'nuxt_plugin_baidu_355f6736' // Source: ..\\plugins\\baidu (mode: 'all')
 
 // Component: <ClientOnly>
@@ -66,7 +66,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"不如吃茶去 | 子舒","meta":[{"charset":"utf-8"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"format-detection","content":"telephone=no"},{"name":"viewport","content":"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"},{"hid":"description","name":"description","content":"这是一个我在闲暇时间写的博客, 会写一些生活琐事, 也会写一些技术笔记, 使用 vue + nuxt.js 技术栈构建而成。"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"alternate","type":"application\u002Fatom+xml","href":"\u002Ffeed.xml"}],"script":[{"src":"https:\u002F\u002Fcdn.imhan.cn\u002Flist\u002Fjquery3.6.0.js"},{"src":"https:\u002F\u002Fhm.baidu.com\u002Fhm.js?f41d830174f36ac5eb0838f79f75bee2"},{"src":"\u002Fjs\u002Fmain.js"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fsimplex-noise\u002F2.3.0\u002Fsimplex-noise.min.js"}],"style":[]},
+    head: {"title":"不如吃茶去 | 子舒","meta":[{"charset":"utf-8"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"},{"name":"format-detection","content":"telephone=no"},{"name":"viewport","content":"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"},{"hid":"description","name":"description","content":"这是一个我在闲暇时间写的博客, 会写一些生活琐事, 也会写一些技术笔记, 使用 vue + nuxt.js 技术栈构建而成。"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"alternate","type":"application\u002Fatom+xml","href":"\u002Ffeed.xml"}],"script":[{"src":"https:\u002F\u002Fcdn.imhan.cn\u002Flist\u002Fjquery3.6.0.js"},{"src":"https:\u002F\u002Fhm.baidu.com\u002Fhm.js?f41d830174f36ac5eb0838f79f75bee2"},{"src":"\u002Fjs\u002Fmain.js"}],"style":[]},
 
     router,
     nuxt: {
@@ -180,20 +180,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_260e2f93 === 'function') {
-    await nuxt_plugin_plugin_260e2f93(app.context, inject)
+  if (typeof nuxt_plugin_plugin_ac94516c === 'function') {
+    await nuxt_plugin_plugin_ac94516c(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_d650e26e === 'function') {
-    await nuxt_plugin_pluginclient_d650e26e(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_28668300 === 'function') {
+    await nuxt_plugin_pluginclient_28668300(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_0addff5e === 'function') {
-    await nuxt_plugin_pluginserver_0addff5e(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_e3c016f0 === 'function') {
+    await nuxt_plugin_pluginserver_e3c016f0(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_70fa2836 === 'function') {
-    await nuxt_plugin_axios_70fa2836(app.context, inject)
+  if (typeof nuxt_plugin_axios_0cce6a6d === 'function') {
+    await nuxt_plugin_axios_0cce6a6d(app.context, inject)
   }
 
   if (typeof nuxt_plugin_baidu_355f6736 === 'function') {

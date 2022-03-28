@@ -2,61 +2,71 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_00d4dbe2"
   },
   {
     "name": "archives",
     "path": "/archives",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\archives.vue",
-    "chunkName": "pages/archives"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\archives.vue",
+    "chunkName": "pages/archives",
+    "_name": "_62de30ac"
   },
   {
     "name": "link",
     "path": "/link",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\link.vue",
-    "chunkName": "pages/link"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\link.vue",
+    "chunkName": "pages/link",
+    "_name": "_182b45b5"
   },
   {
     "name": "love",
     "path": "/love",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\love.vue",
-    "chunkName": "pages/love"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\love.vue",
+    "chunkName": "pages/love",
+    "_name": "_62e2e12d"
   },
   {
     "name": "message",
     "path": "/message",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\message.vue",
-    "chunkName": "pages/message"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\message.vue",
+    "chunkName": "pages/message",
+    "_name": "_29e05fc8"
   },
   {
     "name": "search",
     "path": "/search",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\search.vue",
-    "chunkName": "pages/search"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\search.vue",
+    "chunkName": "pages/search",
+    "_name": "_c66e10ba"
   },
   {
     "name": "categories-slug",
     "path": "/categories/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\categories\\\\_slug.vue",
-    "chunkName": "pages/categories/_slug"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\categories\\\\_slug.vue",
+    "chunkName": "pages/categories/_slug",
+    "_name": "_9636d27a"
   },
   {
     "name": "posts-slug",
     "path": "/posts/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\posts\\\\_slug.vue",
-    "chunkName": "pages/posts/_slug"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\posts\\\\_slug.vue",
+    "chunkName": "pages/posts/_slug",
+    "_name": "_4f3215dc"
   },
   {
     "name": "tags-slug",
     "path": "/tags/:slug?",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
-    "chunkName": "pages/tags/_slug"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\tags\\\\_slug.vue",
+    "chunkName": "pages/tags/_slug",
+    "_name": "_0d428a66"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\site-code\\\\nuxt-blog\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "E:\\\\nuxt-blog\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_208cb6a7"
   }
 ]

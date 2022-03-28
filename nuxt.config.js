@@ -38,13 +38,13 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'alternate', type: 'application/atom+xml', href: '/feed.xml' }
-      // <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="涛叔">
     ],
     script: [
       { src: 'https://cdn.imhan.cn/list/jquery3.6.0.js' },
       { src: 'https://hm.baidu.com/hm.js?f41d830174f36ac5eb0838f79f75bee2' },
-      { src: '/js/main.js' },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.3.0/simplex-noise.min.js' }
+      // { src: 'https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.3.0/simplex-noise.min.js' },
+      // { src: '/js/wave.js' },
+      { src: '/js/main.js' }
     ],
   },
   /*
@@ -150,7 +150,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.module.rules.push(
         {
           test: /\.md$/,
@@ -166,7 +166,7 @@ export default {
   },
 }
 
-function dynamicMarkdownRoutes () {
+function dynamicMarkdownRoutes() {
   return [].concat(
     ...markdownPaths.map(mdPath => {
       return glob.sync(`${mdPath}/*.md`, { cwd: 'content' })
@@ -175,7 +175,7 @@ function dynamicMarkdownRoutes () {
   )
 }
 
-function markdownRenderer () {
+function markdownRenderer() {
   const md = MarkdownIt({ html: true, breaks: true })
   md.use(require('markdown-it-prism'))
   return md

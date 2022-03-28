@@ -2,7 +2,7 @@
   <div class="layout">
     <Header />
     <div class="opacity"></div>
-    <div class="body">
+    <div class="body" id="body">
       <div class="container">
         <!-- <Aside /> -->
         <Main />
@@ -13,28 +13,26 @@
 </template>
 
 <script>
-import Header from './component/Header'
-import Main from './component/Main'
+import Header from "./component/Header";
+import Main from "./component/Main";
 // import Aside from './component/Aside'
-import Footer from './component/Footer'
+import Footer from "./component/Footer";
 
 export default {
   components: {
     Header,
     Main,
     // Aside,
-    Footer
+    Footer,
   },
-
-}
+};
 </script>
 
 <style lang="scss">
 .layout {
-  background: #f3f3f3;
+  background: #fff;
   background-size: cover;
   min-height: 100vh;
-  // background-image: linear-gradient(to bottom right, #74959A, #98B4AA);
   .opacity {
     display: none;
     position: fixed;
@@ -47,6 +45,8 @@ export default {
   }
   .body {
     position: relative;
+    margin-top: -100px;
+    padding-top: 20px;
     .container {
       max-width: 850px;
       margin: 0 auto;
@@ -64,6 +64,7 @@ export default {
     .body {
       padding: 0;
       display: block;
+      margin-top: 0;
       .container {
         max-width: 100%;
         width: 100%;

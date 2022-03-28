@@ -19,5 +19,8 @@
   },
   "Search": {
     "description": "Auto imported from components/Search.vue"
+  },
+  "Wave": {
+    "description": "Auto imported from components/Wave.vue"
   }
 }
