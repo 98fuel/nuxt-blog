@@ -1,27 +1,35 @@
 <template>
-  <header class="header">
-    <div class="site-name">
-      <h1>
-        <nuxt-link class="logo" to="/">不如吃茶去</nuxt-link>
-      </h1>
-      <div class="nav-menu">
-        <!-- <Search /> -->
-        <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
-        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link> -->
-        <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
-        <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
-        <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
-        <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
-        <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
-        <nuxt-link to="/search/" class="nav-link" exact-active-class="current">搜索</nuxt-link>
+  <div>
+    <header class="header">
+      <div class="site-name">
+        <h1>
+          <nuxt-link class="logo" to="/">不如吃茶去</nuxt-link>
+        </h1>
+        <div class="nav-menu">
+          <!-- <Search /> -->
+          <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
+          <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link> -->
+          <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link>
+          <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
+          <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
+          <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
+          <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
+          <nuxt-link to="/search/" class="nav-link" exact-active-class="current">搜索</nuxt-link>
+        </div>
       </div>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="img">
+      <img
+        src="https://cdn.jsdelivr.net/gh/anghunk/pic-cdn@d797defc349fa26e653ba71ffc94ddf5ba2a1853/2022/03/28/56aabdda5c475201113d35ec112262b6.png"
+      />
     </div>
-    <div class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </header>
+    <canvas id="canvas"></canvas>
+  </div>
 </template>
 
 <script>
@@ -107,6 +115,16 @@ export default {
 }
 .scrollhead {
   box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+.img {
+  width: 100%;
+  img {
+    width: 100%;
+    margin-top: -50px;
+  }
+}
+canvas {
+  background: #333;
 }
 @media (max-width: 600px) {
   .header {

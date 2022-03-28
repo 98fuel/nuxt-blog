@@ -23,3 +23,4 @@ layout: 'link'
 [江卮可乐 - https://blog.ijann.com](https://blog.ijann.com)
 [kaiboshi - https://kaiboshi.gitee.io](https://kaiboshi.gitee.io)
 [梦繁星 - https://www.emoao.com](https://www.emoao.com)
+[她亦满眼星河 - https://blog.whalefall.space](https://blog.whalefall.space)

@@ -36,12 +36,15 @@ export default {
       { hid: 'description', name: 'description', content: '这是一个我在闲暇时间写的博客, 会写一些生活琐事, 也会写一些技术笔记, 使用 vue + nuxt.js 技术栈构建而成。' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'alternate', type: 'application/atom+xml', href: '/feed.xml' }
+      // <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="涛叔">
     ],
     script: [
       { src: 'https://cdn.imhan.cn/list/jquery3.6.0.js' },
       { src: 'https://hm.baidu.com/hm.js?f41d830174f36ac5eb0838f79f75bee2' },
-      { src: '/js/main.js' }
+      { src: '/js/main.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.3.0/simplex-noise.min.js' }
     ],
   },
   /*
@@ -106,7 +109,7 @@ export default {
             title: post.title,
             description: post.description,
             date: new Date(post.date),
-            content: post.article,
+            content: post.content,
             link: url,
             author: {
               name: '子舒',
