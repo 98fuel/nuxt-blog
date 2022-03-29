@@ -54,13 +54,9 @@ html {
 
 * {
   font-family: 'Noto Serif SC', serif;
+  // font-family: "Montserrat", "SF UI Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-@media(max-width:520px) {
-  * {
-    font-family: Helvetica, Tahoma, Arial, pingfang sc, hiragino sans gb, microsoft yahei, wenquanyi micro hei, sans-serif;
-  }
-}
 
 body {
   line-height: 1.8;
@@ -134,7 +130,7 @@ h3 {
 
 @media(max-width:520px) {
   .header-me {
-    display: none;
+    // display: none;
   }
 
   .wrapper {

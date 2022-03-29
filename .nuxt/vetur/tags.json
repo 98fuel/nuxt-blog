@@ -1,4 +1,7 @@
 {
+  "Canvas": {
+    "description": "Auto imported from components/Canvas.vue"
+  },
   "Comments": {
     "description": "Auto imported from components/Comments.vue"
   },
@@ -16,11 +19,5 @@
   },
   "PostSidebar": {
     "description": "Auto imported from components/PostSidebar.vue"
-  },
-  "Search": {
-    "description": "Auto imported from components/Search.vue"
-  },
-  "Wave": {
-    "description": "Auto imported from components/Wave.vue"
   }
 }

@@ -30,7 +30,7 @@ export default {
 
 <style lang="scss">
 .layout {
-  background: #fff;
+  background: #f3f3f3;
   background-size: cover;
   min-height: 100vh;
   .opacity {

@@ -11,10 +11,7 @@
           :to="`/categories/${category}`"
           v-for="category in article.attributes.categories"
           :key="category"
-        >{{ category }} /</nuxt-link>
-      </div>
-      <div class="goartalk">
-        <a href="#artalk">去评论</a>
+        >{{ category }}</nuxt-link>
       </div>
     </div>
     <div class="wrapper">
@@ -100,13 +97,6 @@ export default {
       &:hover {
         color: #000;
       }
-    }
-  }
-  .goartalk {
-    a {
-      background: #e2e2e2;
-      padding: 1px 4px;
-      border-radius: 2px;
     }
   }
 }

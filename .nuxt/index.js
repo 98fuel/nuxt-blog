@@ -12,10 +12,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_ac94516c from 'nuxt_plugin_plugin_ac94516c' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_pluginclient_28668300 from 'nuxt_plugin_pluginclient_28668300' // Source: .\\content\\plugin.client.js (mode: 'client')
-import nuxt_plugin_pluginserver_e3c016f0 from 'nuxt_plugin_pluginserver_e3c016f0' // Source: .\\content\\plugin.server.js (mode: 'server')
-import nuxt_plugin_axios_0cce6a6d from 'nuxt_plugin_axios_0cce6a6d' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_plugin_260e2f93 from 'nuxt_plugin_plugin_260e2f93' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_pluginclient_d650e26e from 'nuxt_plugin_pluginclient_d650e26e' // Source: .\\content\\plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_0addff5e from 'nuxt_plugin_pluginserver_0addff5e' // Source: .\\content\\plugin.server.js (mode: 'server')
+import nuxt_plugin_axios_70fa2836 from 'nuxt_plugin_axios_70fa2836' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_baidu_355f6736 from 'nuxt_plugin_baidu_355f6736' // Source: ..\\plugins\\baidu (mode: 'all')
 
 // Component: <ClientOnly>
@@ -180,20 +180,20 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_ac94516c === 'function') {
-    await nuxt_plugin_plugin_ac94516c(app.context, inject)
+  if (typeof nuxt_plugin_plugin_260e2f93 === 'function') {
+    await nuxt_plugin_plugin_260e2f93(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_pluginclient_28668300 === 'function') {
-    await nuxt_plugin_pluginclient_28668300(app.context, inject)
+  if (process.client && typeof nuxt_plugin_pluginclient_d650e26e === 'function') {
+    await nuxt_plugin_pluginclient_d650e26e(app.context, inject)
   }
 
-  if (process.server && typeof nuxt_plugin_pluginserver_e3c016f0 === 'function') {
-    await nuxt_plugin_pluginserver_e3c016f0(app.context, inject)
+  if (process.server && typeof nuxt_plugin_pluginserver_0addff5e === 'function') {
+    await nuxt_plugin_pluginserver_0addff5e(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_axios_0cce6a6d === 'function') {
-    await nuxt_plugin_axios_0cce6a6d(app.context, inject)
+  if (typeof nuxt_plugin_axios_70fa2836 === 'function') {
+    await nuxt_plugin_axios_70fa2836(app.context, inject)
   }
 
   if (typeof nuxt_plugin_baidu_355f6736 === 'function') {

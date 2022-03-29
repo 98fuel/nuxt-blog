@@ -4,10 +4,17 @@
       <nuxt-link class="article-title" to="/">子舒</nuxt-link>
     </p>
     <div class="article-meta">
-      <div class="article-category">
-        <nuxt-link to="/categories/技术">技术</nuxt-link>
-        <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-      </div>
+      <ul class="article-category">
+        <li>
+          <nuxt-link to="/archives/">归档</nuxt-link>: 
+          <nuxt-link to="/categories/技术">技术</nuxt-link>
+          <nuxt-link to="/categories/随笔">随笔</nuxt-link>
+        </li>
+        /
+        <li>
+          <nuxt-link to="/tags/">标签</nuxt-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -37,7 +44,7 @@ export default {
     padding: 0;
     margin: 6px 0;
     color: #6e7173;
-    font-size: 15px;
+    font-size: 17px;
     text-indent: 0.15em;
     display: flex;
     align-items: center;
@@ -48,13 +55,19 @@ export default {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      a {
-        display: inline-block;
-        margin-right: 6px;
-        padding: 0 6px;
-        color: #6e7173;
-        &:hover {
-          color: #000;
+      list-style: none;
+      padding: 0;
+      li {
+        position: relative;
+        margin-right: 10px;
+        margin-left: 10px;
+        a {
+          display: inline-block;
+          // padding: 0 6px;
+          color: #6e7173;
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
