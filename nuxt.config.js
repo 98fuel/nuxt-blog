@@ -54,15 +54,15 @@ export default {
     '@/assets/css/app.scss',
     '@/assets/css/reset.scss',
     '@/assets/css/article.scss',
+    '@/assets/css/dark.scss',
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    {
-      src: '~/plugins/baidu',
-    }
+    { src: '~/plugins/baidu' },
+    { src: '~plugins/vueLazyLoad', ssr: false }
 
   ],
   /*
@@ -84,6 +84,23 @@ export default {
     '@nuxt/content',
     'nuxt-content-body-html',
     '@nuxtjs/feed',
+    // ['nuxtjs-darkmode-js-module', { // dark模式
+    //   darkmodejs: {
+    //     bottom: '64px', // default: '32px'
+    //     right: 'unset', // default: '32px'
+    //     left: '32px', // default: 'unset'
+    //     time: '0.5s', // default: '0.3s'
+    //     mixColor: '#fff', // default: '#fff'
+    //     backgroundColor: '#fff',  // default: '#fff'
+    //     buttonColorDark: '#100f2c',  // default: '#100f2c'
+    //     buttonColorLight: '#fff', // default: '#fff'
+    //     saveInCookies: false, // default: true,
+    //     label: '🌓', // default: ''
+    //     autoMatchOsTheme: true, // default: true
+    //     disableWidget: false // default: false
+    //   }
+    // }]
+
   ],
   /*
   ** Rss feed.xml
@@ -150,7 +167,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
       config.module.rules.push(
         {
           test: /\.md$/,
@@ -166,7 +183,7 @@ export default {
   },
 }
 
-function dynamicMarkdownRoutes() {
+function dynamicMarkdownRoutes () {
   return [].concat(
     ...markdownPaths.map(mdPath => {
       return glob.sync(`${mdPath}/*.md`, { cwd: 'content' })
@@ -175,7 +192,7 @@ function dynamicMarkdownRoutes() {
   )
 }
 
-function markdownRenderer() {
+function markdownRenderer () {
   const md = MarkdownIt({ html: true, breaks: true })
   md.use(require('markdown-it-prism'))
   return md

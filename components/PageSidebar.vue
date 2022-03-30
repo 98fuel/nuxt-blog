@@ -2,7 +2,7 @@
   <div class="post-sidebar">
     <div class="list">
       <div
-        class="back_top top-btn item"
+        class="item"
         @mouseover="enterBackTop"
         @mouseout="outBackTop"
         ref="backTop"
@@ -30,8 +30,12 @@ export default {
   },
   mounted () {
     window.addEventListener("scroll", this.handleScroll, true);
+
   },
   methods: {
+    searchshow () {
+      console.log('111')
+    },
     enterBackTop () {
       this.opacity = "1";
     },
@@ -118,7 +122,7 @@ export default {
     position: fixed;
     right: 10px;
     z-index: 11;
-    bottom: 140px;
+    bottom: 200px;
     top: auto;
     .list {
       .item {

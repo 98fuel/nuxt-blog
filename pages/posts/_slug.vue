@@ -65,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 .article-title {
   margin: 0;
-  color: var(--color-main);
+  color: var(--bg-main);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2;

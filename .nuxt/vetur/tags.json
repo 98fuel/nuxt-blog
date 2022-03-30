@@ -19,5 +19,11 @@
   },
   "PostSidebar": {
     "description": "Auto imported from components/PostSidebar.vue"
+  },
+  "Search": {
+    "description": "Auto imported from components/Search.vue"
+  },
+  "JsPhotolist": {
+    "description": "Auto imported from components/js/photolist.js"
   }
 }

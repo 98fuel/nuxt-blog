@@ -5,7 +5,13 @@
       <PageSidebar />
       <article class="article" v-for="article in articles" :key="article.attributes.title">
         <div class="top">
+          <nuxt-link class="link" :to="article.path">
+            <div class="article-title">
+              <span>{{ article.attributes.title }}</span>
+            </div>
+          </nuxt-link>
           <div class="article-meta">
+            <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
             <div class="article-category">
               <nuxt-link
                 :to="`/categories/${category}`"
@@ -14,12 +20,6 @@
               >{{ category }}</nuxt-link>
             </div>
           </div>
-          <nuxt-link class="link" :to="article.path">
-            <div class="article-title">
-              <span>{{ article.attributes.title }}</span>
-            </div>
-            <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
-          </nuxt-link>
         </div>
         <div class="article-content" v-html="article.summary"></div>
       </article>
@@ -109,8 +109,8 @@ export default {
     .top {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       .link {
-        flex: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -159,24 +159,23 @@ export default {
             }
           }
         }
-        .article-date {
-          color: #000;
-          font-size: 0.94rem;
-          opacity: 0.8;
-          font-weight: 500;
-          text-decoration: none;
-        }
       }
       .article-meta {
         padding: 0;
         color: #6e7173;
         font-size: 0.94em;
-        text-indent: 0.15em;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         opacity: 0.8;
+        .article-date {
+          color: #000;
+          font-size: 0.94rem;
+          font-weight: 500;
+          text-decoration: none;
+        }
         .article-category {
+          margin-left: 16px;
           display: flex;
           align-items: center;
           flex-wrap: wrap;
@@ -229,9 +228,14 @@ export default {
             font-size: 19px;
             font-weight: 600;
           }
-          .article-date {
-            width: 100%;
-            text-align: left;
+        }
+        .article-meta {
+          margin-bottom: 10px;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row-reverse;
+          .article-category {
+            margin-left: 0;
           }
         }
       }

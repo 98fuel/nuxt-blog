@@ -5,8 +5,13 @@
     <div class="wrapper">
       <div class="archive">
         <h2>{{ article.attributes.title }}</h2>
-        <p>收集一些自己拍的照片，留作一个纪念。</p>
-        <div class="article-content markdown-body" id="photo" v-html="article.html"></div>
+        <div class="article-content markdown-body" v-html="article.html"></div>
+        <div id="photo">
+          <p v-for="item in list" :key="item.id">
+            <img v-lazy="item.url" />
+            <span>{{ item.date }} - {{ item.text }}</span>
+          </p>
+        </div>
         <Imgbig />
       </div>
     </div>
@@ -14,6 +19,7 @@
 </template>
 
 <script>
+import list from "@/components/js/photolist"
 import HeaderMe from "@/components/HeaderMe";
 import PageSidebar from '@/components/PageSidebar';
 import Imgbig from "@/components/Imgbig";
@@ -21,7 +27,15 @@ export default {
   components: {
     HeaderMe,
     PageSidebar,
-    Imgbig
+    Imgbig,
+  },
+  data () {
+    return {
+      list: []
+    }
+  },
+  created () {
+    this.list = list
   },
   async asyncData ({ params }) {
     // 调用 photo.md 内的数据
@@ -37,13 +51,13 @@ export default {
 .wrapper {
   .archive {
     padding: 25px 2% 15px;
-    p {
-      margin-top: 20px;
-    }
     .article-content {
       font-size: inherit;
       line-height: 1.8;
       color: inherit;
+      margin-top: 20px;
+    }
+    #photo {
       margin-top: 20px;
     }
   }
