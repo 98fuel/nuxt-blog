@@ -118,6 +118,8 @@ export default {
     position: fixed;
     right: 10px;
     z-index: 11;
+    bottom: 140px;
+    top: auto;
     .list {
       .item {
         p {

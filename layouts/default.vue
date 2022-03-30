@@ -8,6 +8,7 @@
         <Main />
       </div>
     </div>
+    <Imgbig />
     <Footer />
   </div>
 </template>
@@ -15,7 +16,8 @@
 <script>
 import Header from "./component/Header";
 import Main from "./component/Main";
-// import Aside from './component/Aside'
+// import Aside from './component/Aside';
+import Imgbig from "@/components/Imgbig";
 import Footer from "./component/Footer";
 
 export default {
@@ -23,6 +25,7 @@ export default {
     Header,
     Main,
     // Aside,
+    Imgbig,
     Footer,
   },
 };
@@ -70,6 +73,13 @@ export default {
         width: 100%;
         padding-top: 16px;
       }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .layout {
+    .body {
+      margin-top: 40px;
     }
   }
 }

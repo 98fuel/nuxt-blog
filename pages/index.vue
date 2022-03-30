@@ -128,6 +128,7 @@ export default {
           opacity: 1;
           .article-title {
             span {
+              opacity: 0.9;
               &::after {
                 width: 100%;
               }
@@ -143,8 +144,8 @@ export default {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          transition: all 0.2s linear;
           span {
+            transition: all 0.2s linear;
             position: relative;
             &::after {
               content: '';
@@ -153,7 +154,7 @@ export default {
               background: var(--bg-main);
               position: absolute;
               left: 0;
-              bottom: 0;
+              bottom: 6px;
               transition: all 0.2s linear;
             }
           }
@@ -225,7 +226,7 @@ export default {
           align-items: flex-start;
           .article-title {
             padding: 8px 0;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 600;
           }
           .article-date {

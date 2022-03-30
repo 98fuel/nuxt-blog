@@ -146,7 +146,6 @@ canvas {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     .site-name {
       margin: 0;
       padding: 10px 2%;
@@ -190,7 +189,7 @@ canvas {
         background: #333;
         position: absolute;
         right: 0;
-        transition: all 0.1s linear;
+        transition: all 0.2s linear;
       }
       span:nth-child(1) {
         width: 27px;
