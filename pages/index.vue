@@ -21,7 +21,7 @@
             <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
           </nuxt-link>
         </div>
-        <!-- <nuxt-link class="link" :to="article.path"><div class="article-content" v-html="article.summary"></div></nuxt-link> -->
+        <div class="article-content" v-html="article.summary"></div>
       </article>
       <nav class="navigator">
         <pager
@@ -72,7 +72,7 @@ export default {
     };
   },
   created () {
-    
+
   },
   computed: {
     pagerCount () {
@@ -98,13 +98,13 @@ export default {
     margin-top: 6px;
   }
   .article {
-    padding: 0 4%;
+    padding: 0 4% 20px;
     opacity: 0.98;
     transition: all 0.2s linear;
     margin-bottom: 6px;
     position: relative;
     &:hover {
-      background: rgb(229, 231, 235);
+      // background: rgb(229, 231, 235);
     }
     .top {
       display: flex;
@@ -138,8 +138,8 @@ export default {
           margin: 0;
           padding: 14px 0;
           font-weight: 500;
-          font-size: 18px;
-          color: #000;
+          font-size: 20px;
+          color: var(--bg-main);
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -215,7 +215,7 @@ export default {
 @media (max-width: 520px) {
   .wrapper {
     .article {
-      padding-bottom: 10px;
+      padding-top: 10px;
       border-radius: 0;
       align-items: baseline;
       .top {
@@ -225,6 +225,8 @@ export default {
           align-items: flex-start;
           .article-title {
             padding: 8px 0;
+            font-size: 18px;
+            font-weight: 600;
           }
           .article-date {
             width: 100%;
