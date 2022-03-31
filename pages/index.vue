@@ -5,13 +5,7 @@
       <PageSidebar />
       <article class="article" v-for="article in articles" :key="article.attributes.title">
         <div class="top">
-          <nuxt-link class="link" :to="article.path">
-            <div class="article-title">
-              <span>{{ article.attributes.title }}</span>
-            </div>
-          </nuxt-link>
           <div class="article-meta">
-            <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
             <div class="article-category">
               <nuxt-link
                 :to="`/categories/${category}`"
@@ -20,17 +14,23 @@
               >{{ category }}</nuxt-link>
             </div>
           </div>
+          <nuxt-link class="link" :to="article.path">
+            <div class="article-title">
+              <span>{{ article.attributes.title }}</span>
+            </div>
+            <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
+          </nuxt-link>
         </div>
-        <div class="article-content" v-html="article.summary"></div>
+        <!-- <div class="article-content" v-html="article.summary"></div> -->
       </article>
-      <nav class="navigator">
+      <!-- <nav class="navigator">
         <pager
           :hide-if-one-page="false"
           :total-page="pagerCount"
           :current-page.sync="currentPage"
           @update:currentPage="updatePage"
         />
-      </nav>
+      </nav> -->
     </div>
   </div>
 </template>
@@ -93,24 +93,25 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-  padding: 20px 0 0;
+  padding: 20px 0 20px;
   .article:nth-of-type(1) {
     margin-top: 6px;
   }
   .article {
-    padding: 0 4% 20px;
+    padding: 0 4%;
     opacity: 0.98;
     transition: all 0.2s linear;
     margin-bottom: 6px;
     position: relative;
     &:hover {
-      // background: rgb(229, 231, 235);
+      background: rgb(229, 231, 235);
     }
     .top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       .link {
+        flex: 1;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -139,8 +140,8 @@ export default {
           margin: 0;
           padding: 14px 0;
           font-weight: 500;
-          font-size: 20px;
-          color: var(--bg-main);
+          font-size: 18px;
+          color: #000;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -151,13 +152,19 @@ export default {
               content: '';
               width: 0;
               height: 2px;
-              background: var(--bg-main);
+              background: #666;
               position: absolute;
               left: 0;
-              bottom: 6px;
+              bottom: 0;
               transition: all 0.2s linear;
             }
           }
+        }
+        .article-date {
+          color: #000;
+          font-size: 0.94rem;
+          font-weight: 500;
+          text-decoration: none;
         }
       }
       .article-meta {
@@ -168,14 +175,8 @@ export default {
         align-items: center;
         flex-wrap: wrap;
         opacity: 0.8;
-        .article-date {
-          color: #000;
-          font-size: 0.94rem;
-          font-weight: 500;
-          text-decoration: none;
-        }
+
         .article-category {
-          margin-left: 16px;
           display: flex;
           align-items: center;
           flex-wrap: wrap;

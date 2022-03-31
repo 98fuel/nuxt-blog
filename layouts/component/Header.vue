@@ -1,44 +1,31 @@
 <template>
-  <div>
-    <header class="header">
-      <div class="site-name">
-        <h1>
-          <nuxt-link class="logo" to="/">不如吃茶去</nuxt-link>
-        </h1>
-        <div class="nav-menu">
-          <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
-          <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link> -->
-          <!-- <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link> -->
-          <nuxt-link to="/photo/" class="nav-link" exact-active-class="current">相册</nuxt-link>
-          <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
-          <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
-          <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
-          <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
-          <nuxt-link to="/search/" class="nav-link" exact-active-class="current">搜索</nuxt-link>
-        </div>
+  <header class="header">
+    <div class="site-name">
+      <h1>
+        <nuxt-link class="logo" to="/">不如吃茶去</nuxt-link>
+      </h1>
+      <div class="nav-menu">
+        <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
+        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link> -->
+        <!-- <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link> -->
+        <nuxt-link to="/photo/" class="nav-link" exact-active-class="current">相册</nuxt-link>
+        <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
+        <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
+        <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
+        <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
+        <nuxt-link to="/search/" class="nav-link" exact-active-class="current">搜索</nuxt-link>
       </div>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
-    <div class="img">
-      <img
-        onclick="$('html,body').animate({ scrollTop: $('#body').offset().top }, 1000);"
-        src="https://img.imhan.cn/blog/bg.webp"
-      />
     </div>
-    <Canvas />
-  </div>
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 </template>
 
 <script>
-import Canvas from "@/components/Canvas";
 export default {
-  components: {
-    Canvas,
-  },
 };
 </script>
 
@@ -51,7 +38,7 @@ export default {
   z-index: 10;
   transition: all 0.2s linear;
   padding: 0 3%;
-  position: fixed;
+  position: sticky;
   top: 0;
   .site-name {
     height: 100%;
@@ -117,26 +104,7 @@ export default {
   box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
   backdrop-filter: blur(32px);
 }
-.img {
-  width: 100%;
-  position: relative;
-  img {
-    width: 100%;
-  }
-  .godown {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
-}
-canvas {
-  background: #333;
-}
+
 @media (max-width: 600px) {
   .header {
     background: #fff;
@@ -220,9 +188,6 @@ canvas {
         transform: rotate(45deg);
       }
     }
-  }
-  .img {
-    display: none;
   }
 }
 </style>

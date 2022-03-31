@@ -2,16 +2,13 @@
   <footer class="footer">
     <div class="wrapper">
       <div>
-        © 2020 -2022 ·
+        © 2020 -2022 · 
         <a href="https://beian.miit.gov.cn/" target="_blank">
           <span>浙ICP备2022002453号-1</span>
         </a>
-        ·
-        <a href="/">不如吃茶去</a>
-        <br />网站已稳定运行 <span id="days">0</span> 天 ·
+        <br />网站运行: <span id="days">0</span> 天 ·
         <span id="busuanzi_container_site_pv">
-          你是第
-          <span id="busuanzi_value_site_pv"></span>个进来的小伙伴！
+          ip统计: <span id="busuanzi_value_site_pv"></span>
         </span>
         <br />Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>

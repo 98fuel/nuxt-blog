@@ -6,11 +6,10 @@
     <div class="article-meta">
       <ul class="article-category">
         <li>
-          <nuxt-link to="/archives/">归档</nuxt-link>: 
+          <nuxt-link to="/archives/">归档</nuxt-link>:
           <nuxt-link to="/categories/技术">技术</nuxt-link>
           <nuxt-link to="/categories/随笔">随笔</nuxt-link>
-        </li>
-        /
+        </li>/
         <li>
           <nuxt-link to="/tags/">标签</nuxt-link>
         </li>
@@ -33,7 +32,7 @@ export default {
     .article-title {
       display: inline-block;
       margin: 0;
-      color: var(--color-main);
+      color: #000;
       font-weight: 500;
       font-size: 24px;
       line-height: 1.2;

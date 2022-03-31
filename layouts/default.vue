@@ -48,8 +48,6 @@ export default {
   }
   .body {
     position: relative;
-    margin-top: -100px;
-    padding-top: 20px;
     .container {
       max-width: 850px;
       margin: 0 auto;
@@ -73,13 +71,6 @@ export default {
         width: 100%;
         padding-top: 16px;
       }
-    }
-  }
-}
-@media (max-width: 600px) {
-  .layout {
-    .body {
-      margin-top: 40px;
     }
   }
 }
