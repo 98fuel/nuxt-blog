@@ -126,7 +126,7 @@ export default {
             title: post.title,
             description: post.description,
             date: new Date(post.date),
-            content: post.content,
+            content: post.summary,
             link: url,
             author: {
               name: '子舒',
