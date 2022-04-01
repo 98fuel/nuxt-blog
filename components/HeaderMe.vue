@@ -7,8 +7,8 @@
       <ul class="article-category">
         <li>
           <nuxt-link to="/archives/">归档</nuxt-link>:
-          <nuxt-link to="/categories/技术">技术</nuxt-link>
-          <nuxt-link to="/categories/随笔">随笔</nuxt-link>
+          <nuxt-link to="/categories/技术" exact-active-class="current">技术</nuxt-link>
+          <nuxt-link to="/categories/随笔" exact-active-class="current">随笔</nuxt-link>
         </li>/
         <li>
           <nuxt-link to="/tags/">标签</nuxt-link>
@@ -62,9 +62,11 @@ export default {
         margin-left: 10px;
         a {
           display: inline-block;
-          // padding: 0 6px;
           color: #6e7173;
           &:hover {
+            color: #000;
+          }
+          &.current  {
             color: #000;
           }
         }

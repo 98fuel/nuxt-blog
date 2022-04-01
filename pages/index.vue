@@ -21,16 +21,16 @@
             <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
           </nuxt-link>
         </div>
-        <!-- <div class="article-content" v-html="article.summary"></div> -->
+        <div class="article-content" v-html="article.summary"></div>
       </article>
-      <!-- <nav class="navigator">
+      <nav class="navigator">
         <pager
           :hide-if-one-page="false"
           :total-page="pagerCount"
           :current-page.sync="currentPage"
           @update:currentPage="updatePage"
         />
-      </nav> -->
+      </nav>
     </div>
   </div>
 </template>
@@ -202,6 +202,7 @@ export default {
       overflow: hidden;
       opacity: 0.9;
       color: #3e3939;
+      display: none;
     }
   }
   .navigator {
@@ -217,6 +218,7 @@ export default {
   .wrapper {
     .article {
       padding-top: 10px;
+      padding-bottom: 20px;
       border-radius: 0;
       align-items: baseline;
       .top {
@@ -226,19 +228,27 @@ export default {
           align-items: flex-start;
           .article-title {
             padding: 8px 0;
-            font-size: 19px;
             font-weight: 600;
+            span {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+          .article-date {
+            text-align: right;
           }
         }
         .article-meta {
-          margin-bottom: 10px;
           display: flex;
-          justify-content: space-between;
-          flex-direction: row-reverse;
+          align-items: flex-start;
           .article-category {
             margin-left: 0;
           }
         }
+      }
+      .article-content {
+        display: block;
       }
     }
   }

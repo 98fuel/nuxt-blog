@@ -9,7 +9,10 @@
           <nuxt-link to="/categories/技术">技术</nuxt-link>
           <nuxt-link to="/categories/随笔">随笔</nuxt-link>
         </div>-->
-        <h1 class="title">正在查看 归档 下的文章</h1>
+        <h1 class="title">
+          正在查看
+          <span>归档</span> 下的文章
+        </h1>
         <div class="archive-list">
           <div class="archive-item" v-for="archive in archives" :key="archive.date">
             <h2 class="archive-time">{{archive.date}}</h2>
@@ -97,6 +100,9 @@ export default {
       font-weight: normal;
       color: #888;
       margin-bottom: 10px;
+      span {
+        color: var(--color-main);
+      }
     }
     .archive-list {
       font-size: 17px;
