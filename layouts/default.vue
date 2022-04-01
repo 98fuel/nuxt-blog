@@ -3,12 +3,11 @@
     <Header />
     <div class="opacity"></div>
     <div class="body" id="body">
-      <div class="container">
+      <div class="container markdown-body-box" v-viewer v-highlight>
         <!-- <Aside /> -->
         <Main />
       </div>
     </div>
-    <Imgbig />
     <Footer />
   </div>
 </template>
@@ -17,7 +16,6 @@
 import Header from "./component/Header";
 import Main from "./component/Main";
 // import Aside from './component/Aside';
-import Imgbig from "@/components/Imgbig";
 import Footer from "./component/Footer";
 
 export default {
@@ -25,7 +23,6 @@ export default {
     Header,
     Main,
     // Aside,
-    Imgbig,
     Footer,
   },
 };
@@ -48,6 +45,7 @@ export default {
   }
   .body {
     position: relative;
+    padding-top: 50px;
     .container {
       max-width: 850px;
       margin: 0 auto;
@@ -63,9 +61,7 @@ export default {
 @media (max-width: 900px) {
   .layout {
     .body {
-      padding: 0;
       display: block;
-      margin-top: 0;
       .container {
         max-width: 100%;
         width: 100%;

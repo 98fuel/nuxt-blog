@@ -49,12 +49,6 @@
   font-size: 22px !important;
 }
 
-
-.article-index .article-content img,
-.article-index .article-content table {
-  display: none;
-}
-
 .article-index .article-content h2,
 .article-index .article-content h3,
 .article-index .article-content p {
@@ -78,6 +72,10 @@
 
 .article-content img {
   box-shadow: 0 1px 4px rgb(0 0 0 / 18%);
+}
+
+.article-content img:hover {
+  cursor: zoom-in;
 }
 
 .article-content blockquote {
@@ -172,6 +170,10 @@ code * {
     img {
       width: 100%;
       vertical-align: bottom;
+
+      &:hover {
+        cursor: zoom-in;
+      }
     }
 
     span {

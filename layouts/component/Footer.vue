@@ -8,7 +8,7 @@
         </a>
         <br />网站运行: <span id="days">0</span> 天 ·
         <span id="busuanzi_container_site_pv">
-          ip统计: <span id="busuanzi_value_site_pv"></span>
+          访问ip统计: <span id="busuanzi_value_site_pv"></span>
         </span>
         <br />Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>

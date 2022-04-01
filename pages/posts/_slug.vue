@@ -17,7 +17,6 @@
     <div class="wrapper">
       <article class="article article-post">
         <div class="markdown-body article-content" v-html="article.html"></div>
-        <Imgbig />
         <div class="article-tags">
           标签:
           <nuxt-link
@@ -39,12 +38,10 @@
 
 <script>
 import { formatDate } from "@/util";
-import Imgbig from "@/components/Imgbig";
 import PostSidebar from '@/components/PostSidebar';
 import Comments from '@/components/Comments';
 export default {
   components: {
-    Imgbig,
     PostSidebar,
     Comments,
   },

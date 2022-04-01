@@ -18,6 +18,7 @@ import nuxt_plugin_pluginserver_0addff5e from 'nuxt_plugin_pluginserver_0addff5e
 import nuxt_plugin_axios_70fa2836 from 'nuxt_plugin_axios_70fa2836' // Source: .\\axios.js (mode: 'all')
 import nuxt_plugin_baidu_355f6736 from 'nuxt_plugin_baidu_355f6736' // Source: ..\\plugins\\baidu (mode: 'all')
 import nuxt_plugin_vueLazyLoad_13d115e9 from 'nuxt_plugin_vueLazyLoad_13d115e9' // Source: ..\\plugins\\vueLazyLoad (mode: 'client')
+import nuxt_plugin_viewer_45f5a106 from 'nuxt_plugin_viewer_45f5a106' // Source: ..\\plugins\\viewer (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -203,6 +204,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_vueLazyLoad_13d115e9 === 'function') {
     await nuxt_plugin_vueLazyLoad_13d115e9(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_viewer_45f5a106 === 'function') {
+    await nuxt_plugin_viewer_45f5a106(app.context, inject)
   }
 
   // Lock enablePreview in context

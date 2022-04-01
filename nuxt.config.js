@@ -42,8 +42,6 @@ export default {
     script: [
       { src: 'https://cdn.imhan.cn/list/jquery3.6.0.js' },
       { src: 'https://hm.baidu.com/hm.js?f41d830174f36ac5eb0838f79f75bee2' },
-      // { src: 'https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.3.0/simplex-noise.min.js' },
-      // { src: '/js/wave.js' },
       { src: '/js/main.js' }
     ],
   },
@@ -62,8 +60,8 @@ export default {
   */
   plugins: [
     { src: '~/plugins/baidu' },
-    { src: '~plugins/vueLazyLoad', ssr: false }
-
+    { src: '~plugins/vueLazyLoad', ssr: false },
+    { src: '@/plugins/viewer', ssr: false }
   ],
   /*
   ** Auto import components

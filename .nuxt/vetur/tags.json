@@ -5,9 +5,6 @@
   "HeaderMe": {
     "description": "Auto imported from components/HeaderMe.vue"
   },
-  "Imgbig": {
-    "description": "Auto imported from components/Imgbig.vue"
-  },
   "Pager": {
     "description": "Auto imported from components/Pager.vue"
   },
@@ -16,9 +13,6 @@
   },
   "PostSidebar": {
     "description": "Auto imported from components/PostSidebar.vue"
-  },
-  "Search": {
-    "description": "Auto imported from components/Search.vue"
   },
   "JsPhotolist": {
     "description": "Auto imported from components/js/photolist.js"

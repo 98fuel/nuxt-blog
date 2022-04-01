@@ -12,7 +12,6 @@
             <span>{{ item.date }} - {{ item.text }}</span>
           </p>
         </div>
-        <Imgbig />
       </div>
     </div>
   </div>
@@ -22,12 +21,10 @@
 import list from "@/components/js/photolist"
 import HeaderMe from "@/components/HeaderMe";
 import PageSidebar from '@/components/PageSidebar';
-import Imgbig from "@/components/Imgbig";
 export default {
   components: {
     HeaderMe,
     PageSidebar,
-    Imgbig,
   },
   data () {
     return {

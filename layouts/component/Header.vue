@@ -38,7 +38,7 @@ export default {
   z-index: 10;
   transition: all 0.2s linear;
   padding: 0 3%;
-  position: sticky;
+  position: fixed;
   top: 0;
   .site-name {
     height: 100%;
