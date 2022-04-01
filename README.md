@@ -101,7 +101,7 @@ $ npm run generate
 
 ```
 
-## 4. 相关依赖
+## 4.相关依赖
 
 * @nuxtjs/feed
 * @nuxtjs/axios
