@@ -36,16 +36,7 @@ $(function () {
     i = 1
   })
 
-  $('.searchshow').click(function () {
-    console.log('searchshow')
-    $('.search').css('transform', 'scale(1) translateX(-50%)')
-    $('.search-opacity').css('display', 'block')
-  })
-
-  $('.search-opacity').click(function () {
-    $('.search').css('transform', 'scale(0) translateX(-50%)')
-    $('.search-opacity').css('display', 'none')
-  })
+  $('.index-article-content a').attr('href', 'javascript:void(0)')
 
 });
 

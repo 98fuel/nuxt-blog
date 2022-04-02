@@ -21,7 +21,9 @@
             <div class="article-date">{{ formatDate(article.attributes.date) }}</div>
           </nuxt-link>
         </div>
-        <div class="article-content" v-html="article.summary"></div>
+        <nuxt-link class="link" :to="article.path">
+          <div class="article-content index-article-content" v-html="article.summary"></div>
+        </nuxt-link>
       </article>
       <nav class="navigator">
         <pager
@@ -98,18 +100,26 @@ export default {
     margin-top: 6px;
   }
   .article {
-    padding: 0 4%;
-    opacity: 0.98;
+    padding: 10px 4%;
     transition: all 0.2s linear;
-    margin-bottom: 6px;
     position: relative;
     &:hover {
       background: rgb(229, 231, 235);
+      .article-title {
+        color: #3e3939;
+        span {
+          opacity: 0.9;
+          &::after {
+            width: 100%;
+          }
+        }
+      }
     }
     .top {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-direction: row-reverse;
       .link {
         flex: 1;
         display: flex;
@@ -127,20 +137,12 @@ export default {
         }
         &:hover {
           opacity: 1;
-          .article-title {
-            span {
-              opacity: 0.9;
-              &::after {
-                width: 100%;
-              }
-            }
-          }
         }
         .article-title {
           margin: 0;
           padding: 14px 0;
-          font-weight: 500;
-          font-size: 18px;
+          font-weight: 600;
+          font-size: 20px;
           color: #000;
           display: flex;
           justify-content: space-between;
@@ -150,7 +152,7 @@ export default {
             position: relative;
             &::after {
               content: '';
-              width: 0;
+              width: 100%;
               height: 2px;
               background: #666;
               position: absolute;
@@ -165,6 +167,7 @@ export default {
           font-size: 0.94rem;
           font-weight: 500;
           text-decoration: none;
+          padding-right: 10px;
         }
       }
       .article-meta {
@@ -196,13 +199,8 @@ export default {
       text-justify: distribute;
       word-break: break-all;
       text-align: left;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      overflow: hidden;
-      opacity: 0.9;
       color: #3e3939;
-      display: none;
+      padding-bottom: 30px;
     }
   }
   .navigator {
@@ -226,6 +224,7 @@ export default {
         .link {
           flex-direction: column;
           align-items: flex-start;
+          padding-bottom: 10px;
           .article-title {
             padding: 8px 0;
             font-weight: 600;
