@@ -105,12 +105,17 @@ export default {
     position: relative;
     &:hover {
       background: rgb(229, 231, 235);
-      .article-title {
-        color: #3e3939;
-        span {
-          opacity: 0.9;
-          &::after {
-            width: 100%;
+      .top {
+        .link {
+          .article-title {
+            color: #21759b;
+            span {
+              opacity: 0.9;
+              &::after {
+                transform: scale(1);
+                background: #21759b;
+              }
+            }
           }
         }
       }
@@ -141,9 +146,9 @@ export default {
         .article-title {
           margin: 0;
           padding: 14px 0;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 20px;
-          color: #000;
+          color: #21759b;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -156,14 +161,15 @@ export default {
               height: 2px;
               background: #666;
               position: absolute;
+              transform: scale(0);
               left: 0;
-              bottom: 0;
+              bottom: 2px;
               transition: all 0.2s linear;
             }
           }
         }
         .article-date {
-          color: #000;
+          color: #666;
           font-size: 0.94rem;
           font-weight: 500;
           text-decoration: none;
@@ -193,13 +199,13 @@ export default {
       }
     }
     .article-content {
-      font-size: 15px !important;
+      font-size: 16px !important;
       line-height: 1.77;
       color: inherit;
       text-justify: distribute;
       word-break: break-all;
       text-align: left;
-      color: #3e3939;
+      color: #666;
       padding-bottom: 30px;
     }
   }
@@ -227,7 +233,7 @@ export default {
           padding-bottom: 10px;
           .article-title {
             padding: 8px 0;
-            font-weight: 600;
+            // font-weight: 600;
             span {
               &::after {
                 width: 100%;

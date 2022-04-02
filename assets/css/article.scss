@@ -17,7 +17,7 @@
 }
 
 .article-content {
-  color: #000 !important;
+  color: hsla(0, 0%, 0%, 0.8) !important;
   font-size: 17px !important;
 }
 
@@ -159,14 +159,6 @@ code * {
 
     &:hover {
       opacity: 0.8;
-
-      span {
-        transform: scale(1);
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-      }
     }
 
     img {
