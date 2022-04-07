@@ -104,7 +104,7 @@ export default {
     transition: all 0.2s linear;
     position: relative;
     &:hover {
-      background: rgb(229, 231, 235);
+      background: rgba(229, 231, 235, 0.349);
       .top {
         .link {
           .article-title {
@@ -146,9 +146,9 @@ export default {
         .article-title {
           margin: 0;
           padding: 14px 0;
-          font-weight: 500;
-          font-size: 20px;
-          color: #21759b;
+          font-weight: 600;
+          font-size: 19px;
+          color: #006795;
           display: flex;
           justify-content: space-between;
           align-items: center;

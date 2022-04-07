@@ -47,7 +47,7 @@ export default {
     position: relative;
     padding-top: 50px;
     .container {
-      max-width: 850px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 20px 2% 30px;
       border-radius: 4px;

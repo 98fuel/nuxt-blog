@@ -9,11 +9,12 @@
         <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link>
         <!-- <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link> -->
         <!-- <nuxt-link to="/photo/" class="nav-link" exact-active-class="current">相册</nuxt-link> -->
+        <a class="nav-link" href="https://photo.imhan.cn" target="_blank">相册</a>
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
         <nuxt-link to="/love/" class="nav-link" exact-active-class="current">爱情</nuxt-link>
-        <nuxt-link to="/search/" class="nav-link" exact-active-class="current">搜索</nuxt-link>
+        <!-- <nuxt-link to="/search/" class="nav-link" exact-active-class="current">搜索</nuxt-link> -->
       </div>
     </div>
     <div class="menu-icon">
