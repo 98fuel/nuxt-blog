@@ -6,9 +6,9 @@
       </h1>
       <div class="nav-menu">
         <nuxt-link to="/" class="nav-link" exact-active-class="current">博客</nuxt-link>
-        <!-- <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link> -->
+        <nuxt-link to="/archives/" class="nav-link" exact-active-class="current">归档</nuxt-link>
         <!-- <nuxt-link to="/tags/" class="nav-link" exact-active-class="current">标签</nuxt-link> -->
-        <nuxt-link to="/photo/" class="nav-link" exact-active-class="current">相册</nuxt-link>
+        <!-- <nuxt-link to="/photo/" class="nav-link" exact-active-class="current">相册</nuxt-link> -->
         <nuxt-link to="/link/" class="nav-link" exact-active-class="current">友链</nuxt-link>
         <nuxt-link to="/message/" class="nav-link" exact-active-class="current">留言</nuxt-link>
         <nuxt-link to="/about/" class="nav-link" exact-active-class="current">关于</nuxt-link>
@@ -135,7 +135,7 @@ export default {
         display: none;
         .nav-link {
           display: block;
-          font-size: 17px;
+          font-size: 18px;
         }
       }
       .menu-show {

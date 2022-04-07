@@ -233,7 +233,7 @@ export default {
           padding-bottom: 10px;
           .article-title {
             padding: 8px 0;
-            // font-weight: 600;
+            font-weight: 600;
             span {
               &::after {
                 width: 100%;

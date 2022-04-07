@@ -9,11 +9,11 @@
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity .1s;
-  -webkit-transition: opacity .1s;
-  -moz-transition: opacity .1s;
-  -ms-transition: opacity .1s;
-  -o-transition: opacity .1s;
+  transition: opacity .05s;
+  -webkit-transition: opacity .05s;
+  -moz-transition: opacity .05s;
+  -ms-transition: opacity .05s;
+  -o-transition: opacity .05s;
 }
 
 .page-enter,

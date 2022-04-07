@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-me {
+  display: none;
   p {
     text-align: center;
     margin-top: 14px;
@@ -66,7 +67,7 @@ export default {
           &:hover {
             color: #000;
           }
-          &.current  {
+          &.current {
             color: #000;
           }
         }

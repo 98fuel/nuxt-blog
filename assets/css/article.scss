@@ -17,8 +17,12 @@
 }
 
 .article-content {
-  color: hsla(0, 0%, 0%, 0.8) !important;
+  color: #2f2f2f !important;
   font-size: 17px !important;
+}
+
+.article-content strong {
+  font-size: 18px;
 }
 
 .article-content a:hover {
@@ -143,9 +147,10 @@ code * {
 
 #photo {
   column-count: 2;
-  column-gap: 0;
+  column-gap: 10px;
 
   p {
+    break-inside: avoid;
     box-sizing: border-box;
     break-inside: avoid;
     padding: 10px;
