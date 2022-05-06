@@ -6,9 +6,6 @@
 
 源码地址: [https://github.com/anghunk/nuxt-blog](https://github.com/anghunk/nuxt-blog)
 
-在线预览: [https://imhan.cn](https://imhan.cn)
-
-
 ## 1.介绍
 
 基于 vue + nuxt.js 技术实现的静态博客，没有使用 ui 框架，样式都是自己一边构思一边写的，所以会有些瑕疵。
